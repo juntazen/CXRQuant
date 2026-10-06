@@ -1,0 +1,10 @@
+model_set,models,config,n_models,FNF_mean,FNF_min,FNF_max,FPF_mean,BLEU4_delta_pp_mean,BLEU4_abs_delta_pp_max,CE_micro_F1_delta_pp_mean,b_sum,c_sum
+all,biogpt|biogpt-large|distilgpt2|gpt2|gpt2-medium|pythia-1b,FP16,6,0.1185,0.0,0.2324,0.0116,0.05,0.36,0.44,112,109
+all,biogpt|biogpt-large|distilgpt2|gpt2|gpt2-medium|pythia-1b,INT8-BnB,6,0.367,0.129,0.6082,0.026,-0.38,1.28,-1.4,313,247
+all,biogpt|biogpt-large|distilgpt2|gpt2|gpt2-medium|pythia-1b,NF4-BnB,6,0.5711,0.3548,0.7938,0.0395,0.1,0.65,1.18,426,378
+functional,biogpt|biogpt-large|pythia-1b,FP16,3,0.0161,0.0,0.0484,0.0,0.1,0.36,0.29,3,0
+functional,biogpt|biogpt-large|pythia-1b,INT8-BnB,3,0.1516,0.129,0.1719,0.004,-0.76,1.28,-0.81,29,20
+functional,biogpt|biogpt-large|pythia-1b,NF4-BnB,3,0.4337,0.3548,0.5156,0.0105,0.28,0.65,4.45,83,53
+degenerate,distilgpt2|gpt2|gpt2-medium,FP16,3,0.2208,0.1981,0.2324,0.0231,0.0,0.01,0.6,109,109
+degenerate,distilgpt2|gpt2|gpt2-medium,INT8-BnB,3,0.5824,0.566,0.6082,0.0481,0.01,0.07,-1.99,284,227
+degenerate,distilgpt2|gpt2|gpt2-medium,NF4-BnB,3,0.7085,0.6054,0.7938,0.0685,-0.07,0.25,-2.09,343,325

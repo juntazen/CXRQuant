@@ -1,0 +1,576 @@
+{
+  "analysis": "top-1/top-2 log-probability margin at first token divergence",
+  "hardware": {
+    "device": "NVIDIA A100-SXM4-40GB MIG 7g.40gb",
+    "memory_fraction_cap": 0.25
+  },
+  "models": {
+    "biogpt-large": {
+      "checkpoint_hash_verified": true,
+      "comparisons": {
+        "FP16": {
+          "diverged_reports": 4,
+          "flips_in_diverged_reports": 3,
+          "flips_in_identical_token_reports": 0,
+          "hazard_by_fp32_margin_quintile": [
+            {
+              "divergences": 4,
+              "quintile": 1,
+              "rate": 0.01311,
+              "steps": 305
+            },
+            {
+              "divergences": 0,
+              "quintile": 2,
+              "rate": 0.0,
+              "steps": 305
+            },
+            {
+              "divergences": 0,
+              "quintile": 3,
+              "rate": 0.0,
+              "steps": 305
+            },
+            {
+              "divergences": 0,
+              "quintile": 4,
+              "rate": 0.0,
+              "steps": 305
+            },
+            {
+              "divergences": 0,
+              "quintile": 5,
+              "rate": 0.0,
+              "steps": 304
+            }
+          ],
+          "margin_quintile_cuts": [
+            0.9132,
+            2.2052,
+            4.0148,
+            6.5926
+          ],
+          "median_fp32_margin_at_agreeing_steps": 3.0061,
+          "median_fp32_margin_at_divergence": 0.0193,
+          "median_quant_margin_at_divergence": 0.0039,
+          "reports": 134,
+          "share_divergences_in_lowest_margin_quintile": 1.0
+        },
+        "INT8-BnB": {
+          "diverged_reports": 34,
+          "flips_in_diverged_reports": 15,
+          "flips_in_identical_token_reports": 0,
+          "hazard_by_fp32_margin_quintile": [
+            {
+              "divergences": 33,
+              "quintile": 1,
+              "rate": 0.13525,
+              "steps": 244
+            },
+            {
+              "divergences": 1,
+              "quintile": 2,
+              "rate": 0.00412,
+              "steps": 243
+            },
+            {
+              "divergences": 0,
+              "quintile": 3,
+              "rate": 0.0,
+              "steps": 243
+            },
+            {
+              "divergences": 0,
+              "quintile": 4,
+              "rate": 0.0,
+              "steps": 243
+            },
+            {
+              "divergences": 0,
+              "quintile": 5,
+              "rate": 0.0,
+              "steps": 243
+            }
+          ],
+          "margin_quintile_cuts": [
+            0.9507,
+            2.3596,
+            4.3,
+            6.673
+          ],
+          "median_fp32_margin_at_agreeing_steps": 3.3106,
+          "median_fp32_margin_at_divergence": 0.1653,
+          "median_quant_margin_at_divergence": 0.1719,
+          "reports": 134,
+          "share_divergences_in_lowest_margin_quintile": 0.9706
+        },
+        "NF4-BnB": {
+          "diverged_reports": 71,
+          "flips_in_diverged_reports": 44,
+          "flips_in_identical_token_reports": 0,
+          "hazard_by_fp32_margin_quintile": [
+            {
+              "divergences": 61,
+              "quintile": 1,
+              "rate": 0.34659,
+              "steps": 176
+            },
+            {
+              "divergences": 10,
+              "quintile": 2,
+              "rate": 0.05714,
+              "steps": 175
+            },
+            {
+              "divergences": 0,
+              "quintile": 3,
+              "rate": 0.0,
+              "steps": 176
+            },
+            {
+              "divergences": 0,
+              "quintile": 4,
+              "rate": 0.0,
+              "steps": 175
+            },
+            {
+              "divergences": 0,
+              "quintile": 5,
+              "rate": 0.0,
+              "steps": 175
+            }
+          ],
+          "margin_quintile_cuts": [
+            1.0418,
+            2.5542,
+            4.5877,
+            6.8735
+          ],
+          "median_fp32_margin_at_agreeing_steps": 3.824,
+          "median_fp32_margin_at_divergence": 0.4897,
+          "median_quant_margin_at_divergence": 0.375,
+          "reports": 134,
+          "share_divergences_in_lowest_margin_quintile": 0.8592
+        }
+      },
+      "reproduced_archived_text": {
+        "FP16": 134,
+        "FP32": 134,
+        "INT8-BnB": 134,
+        "NF4-BnB": 134
+      }
+    },
+    "gpt2-medium": {
+      "checkpoint_hash_verified": true,
+      "comparisons": {
+        "FP16": {
+          "diverged_reports": 54,
+          "flips_in_diverged_reports": 42,
+          "flips_in_identical_token_reports": 0,
+          "hazard_by_fp32_margin_quintile": [
+            {
+              "divergences": 54,
+              "quintile": 1,
+              "rate": 0.04611,
+              "steps": 1171
+            },
+            {
+              "divergences": 0,
+              "quintile": 2,
+              "rate": 0.0,
+              "steps": 1170
+            },
+            {
+              "divergences": 0,
+              "quintile": 3,
+              "rate": 0.0,
+              "steps": 1171
+            },
+            {
+              "divergences": 0,
+              "quintile": 4,
+              "rate": 0.0,
+              "steps": 1170
+            },
+            {
+              "divergences": 0,
+              "quintile": 5,
+              "rate": 0.0,
+              "steps": 1170
+            }
+          ],
+          "margin_quintile_cuts": [
+            0.5008,
+            1.1949,
+            2.4018,
+            5.2748
+          ],
+          "median_fp32_margin_at_agreeing_steps": 1.729,
+          "median_fp32_margin_at_divergence": 0.0223,
+          "median_quant_margin_at_divergence": 0.0,
+          "reports": 134,
+          "share_divergences_in_lowest_margin_quintile": 1.0
+        },
+        "INT8-BnB": {
+          "diverged_reports": 123,
+          "flips_in_diverged_reports": 122,
+          "flips_in_identical_token_reports": 0,
+          "hazard_by_fp32_margin_quintile": [
+            {
+              "divergences": 105,
+              "quintile": 1,
+              "rate": 0.26515,
+              "steps": 396
+            },
+            {
+              "divergences": 10,
+              "quintile": 2,
+              "rate": 0.02525,
+              "steps": 396
+            },
+            {
+              "divergences": 5,
+              "quintile": 3,
+              "rate": 0.01266,
+              "steps": 395
+            },
+            {
+              "divergences": 2,
+              "quintile": 4,
+              "rate": 0.00504,
+              "steps": 397
+            },
+            {
+              "divergences": 1,
+              "quintile": 5,
+              "rate": 0.00254,
+              "steps": 394
+            }
+          ],
+          "margin_quintile_cuts": [
+            0.6769,
+            1.5341,
+            2.9518,
+            6.8428
+          ],
+          "median_fp32_margin_at_agreeing_steps": 2.3523,
+          "median_fp32_margin_at_divergence": 0.2029,
+          "median_quant_margin_at_divergence": 0.1875,
+          "reports": 134,
+          "share_divergences_in_lowest_margin_quintile": 0.8537
+        },
+        "NF4-BnB": {
+          "diverged_reports": 132,
+          "flips_in_diverged_reports": 191,
+          "flips_in_identical_token_reports": 0,
+          "hazard_by_fp32_margin_quintile": [
+            {
+              "divergences": 67,
+              "quintile": 1,
+              "rate": 0.51938,
+              "steps": 129
+            },
+            {
+              "divergences": 37,
+              "quintile": 2,
+              "rate": 0.28682,
+              "steps": 129
+            },
+            {
+              "divergences": 18,
+              "quintile": 3,
+              "rate": 0.13953,
+              "steps": 129
+            },
+            {
+              "divergences": 10,
+              "quintile": 4,
+              "rate": 0.07752,
+              "steps": 129
+            },
+            {
+              "divergences": 0,
+              "quintile": 5,
+              "rate": 0.0,
+              "steps": 128
+            }
+          ],
+          "margin_quintile_cuts": [
+            0.8685,
+            2.084,
+            3.6563,
+            8.8195
+          ],
+          "median_fp32_margin_at_agreeing_steps": 3.4634,
+          "median_fp32_margin_at_divergence": 0.8555,
+          "median_quant_margin_at_divergence": 0.625,
+          "reports": 134,
+          "share_divergences_in_lowest_margin_quintile": 0.5076
+        }
+      },
+      "reproduced_archived_text": {
+        "FP16": 134,
+        "FP32": 134,
+        "INT8-BnB": 134,
+        "NF4-BnB": 134
+      }
+    },
+    "pythia-1b": {
+      "checkpoint_hash_verified": true,
+      "comparisons": {
+        "FP16": {
+          "diverged_reports": 2,
+          "flips_in_diverged_reports": 0,
+          "flips_in_identical_token_reports": 0,
+          "hazard_by_fp32_margin_quintile": [
+            {
+              "divergences": 2,
+              "quintile": 1,
+              "rate": 0.00536,
+              "steps": 373
+            },
+            {
+              "divergences": 0,
+              "quintile": 2,
+              "rate": 0.0,
+              "steps": 372
+            },
+            {
+              "divergences": 0,
+              "quintile": 3,
+              "rate": 0.0,
+              "steps": 372
+            },
+            {
+              "divergences": 0,
+              "quintile": 4,
+              "rate": 0.0,
+              "steps": 372
+            },
+            {
+              "divergences": 0,
+              "quintile": 5,
+              "rate": 0.0,
+              "steps": 372
+            }
+          ],
+          "margin_quintile_cuts": [
+            1.7878,
+            3.8448,
+            6.4341,
+            10.2666
+          ],
+          "median_fp32_margin_at_agreeing_steps": 5.2266,
+          "median_fp32_margin_at_divergence": 0.0004,
+          "median_quant_margin_at_divergence": 0.0039,
+          "reports": 134,
+          "share_divergences_in_lowest_margin_quintile": 1.0
+        },
+        "INT8-BnB": {
+          "diverged_reports": 25,
+          "flips_in_diverged_reports": 18,
+          "flips_in_identical_token_reports": 0,
+          "hazard_by_fp32_margin_quintile": [
+            {
+              "divergences": 25,
+              "quintile": 1,
+              "rate": 0.0774,
+              "steps": 323
+            },
+            {
+              "divergences": 0,
+              "quintile": 2,
+              "rate": 0.0,
+              "steps": 322
+            },
+            {
+              "divergences": 0,
+              "quintile": 3,
+              "rate": 0.0,
+              "steps": 322
+            },
+            {
+              "divergences": 0,
+              "quintile": 4,
+              "rate": 0.0,
+              "steps": 322
+            },
+            {
+              "divergences": 0,
+              "quintile": 5,
+              "rate": 0.0,
+              "steps": 321
+            }
+          ],
+          "margin_quintile_cuts": [
+            1.8077,
+            3.9752,
+            6.6316,
+            10.4007
+          ],
+          "median_fp32_margin_at_agreeing_steps": 5.4464,
+          "median_fp32_margin_at_divergence": 0.126,
+          "median_quant_margin_at_divergence": 0.1022,
+          "reports": 134,
+          "share_divergences_in_lowest_margin_quintile": 1.0
+        },
+        "NF4-BnB": {
+          "diverged_reports": 50,
+          "flips_in_diverged_reports": 46,
+          "flips_in_identical_token_reports": 0,
+          "hazard_by_fp32_margin_quintile": [
+            {
+              "divergences": 49,
+              "quintile": 1,
+              "rate": 0.20588,
+              "steps": 238
+            },
+            {
+              "divergences": 1,
+              "quintile": 2,
+              "rate": 0.0042,
+              "steps": 238
+            },
+            {
+              "divergences": 0,
+              "quintile": 3,
+              "rate": 0.0,
+              "steps": 237
+            },
+            {
+              "divergences": 0,
+              "quintile": 4,
+              "rate": 0.0,
+              "steps": 238
+            },
+            {
+              "divergences": 0,
+              "quintile": 5,
+              "rate": 0.0,
+              "steps": 237
+            }
+          ],
+          "margin_quintile_cuts": [
+            2.12,
+            4.4173,
+            7.1286,
+            10.6221
+          ],
+          "median_fp32_margin_at_agreeing_steps": 6.0613,
+          "median_fp32_margin_at_divergence": 0.2715,
+          "median_quant_margin_at_divergence": 0.4486,
+          "reports": 134,
+          "share_divergences_in_lowest_margin_quintile": 0.98
+        }
+      },
+      "reproduced_archived_text": {
+        "FP16": 134,
+        "FP32": 134,
+        "INT8-BnB": 134,
+        "NF4-BnB": 134
+      }
+    }
+  },
+  "pooled_within_model_quintiles": {
+    "FP16": {
+      "diverged_reports": 60,
+      "flips_in_identical_token_reports": 0,
+      "hazard_by_fp32_margin_quintile": [
+        {
+          "divergences": 60,
+          "quintile": 1,
+          "steps": 1849
+        },
+        {
+          "divergences": 0,
+          "quintile": 2,
+          "steps": 1847
+        },
+        {
+          "divergences": 0,
+          "quintile": 3,
+          "steps": 1848
+        },
+        {
+          "divergences": 0,
+          "quintile": 4,
+          "steps": 1847
+        },
+        {
+          "divergences": 0,
+          "quintile": 5,
+          "steps": 1846
+        }
+      ],
+      "reports": 402
+    },
+    "INT8-BnB": {
+      "diverged_reports": 182,
+      "flips_in_identical_token_reports": 0,
+      "hazard_by_fp32_margin_quintile": [
+        {
+          "divergences": 163,
+          "quintile": 1,
+          "steps": 963
+        },
+        {
+          "divergences": 11,
+          "quintile": 2,
+          "steps": 961
+        },
+        {
+          "divergences": 5,
+          "quintile": 3,
+          "steps": 960
+        },
+        {
+          "divergences": 2,
+          "quintile": 4,
+          "steps": 962
+        },
+        {
+          "divergences": 1,
+          "quintile": 5,
+          "steps": 958
+        }
+      ],
+      "reports": 402
+    },
+    "NF4-BnB": {
+      "diverged_reports": 253,
+      "flips_in_identical_token_reports": 0,
+      "hazard_by_fp32_margin_quintile": [
+        {
+          "divergences": 177,
+          "quintile": 1,
+          "steps": 543
+        },
+        {
+          "divergences": 48,
+          "quintile": 2,
+          "steps": 542
+        },
+        {
+          "divergences": 18,
+          "quintile": 3,
+          "steps": 542
+        },
+        {
+          "divergences": 10,
+          "quintile": 4,
+          "steps": 542
+        },
+        {
+          "divergences": 0,
+          "quintile": 5,
+          "steps": 540
+        }
+      ],
+      "reports": 402
+    }
+  },
+  "provenance": {
+    "run_id": "full_seed42_corrected_20260911",
+    "script_hash": "1c66a89efd36eb1b1ea9a76c3750928da06aa9cb037a8e611a4a00805a7f0666"
+  }
+}

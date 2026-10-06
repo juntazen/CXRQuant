@@ -1,0 +1,8 @@
+{
+  "benchmark_hash": "7c7f91c47b2edca0aa5937627ecd4ecdf7c4f71a3733f434c7a76caeea0a4625",
+  "config_hash": "a1749e582b7dc70c8398ec5c2e0571abaf18de378bc0e0461b6fd685c36efdb9",
+  "manifest_hash": "a6885c09f4dc9778f06962c50d9c97432da51ff44a16d8d7360c9be47a60d1b2",
+  "metric_version": "2.1-null-denominator",
+  "prediction_provenance": "GPU run; see identity and checkpoints",
+  "run_id": "ablation_impression_only_seed42"
+}

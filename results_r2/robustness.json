@@ -1,0 +1,119 @@
+[
+ {
+  "analysis": "Primary specification, seed 42",
+  "runs": 6,
+  "nf4_min": 35.5,
+  "nf4_max": 79.4,
+  "strict": 6,
+  "non_decreasing": 6,
+  "note": ""
+ },
+ {
+  "analysis": "Five training seeds",
+  "runs": 30,
+  "nf4_min": 28.8,
+  "nf4_max": 84.6,
+  "strict": 28,
+  "non_decreasing": 30,
+  "note": ""
+ },
+ {
+  "analysis": "Uncertain mapped to negative",
+  "runs": 6,
+  "nf4_min": 32.4,
+  "nf4_max": 78.4,
+  "strict": 6,
+  "non_decreasing": 6,
+  "note": ""
+ },
+ {
+  "analysis": "CheXbert labels",
+  "runs": 6,
+  "nf4_min": 35.1,
+  "nf4_max": 74.8,
+  "strict": 6,
+  "non_decreasing": 6,
+  "note": ""
+ },
+ {
+  "analysis": "CheXpert labeller",
+  "runs": 6,
+  "nf4_min": 34.5,
+  "nf4_max": 76.9,
+  "strict": 6,
+  "non_decreasing": 6,
+  "note": ""
+ },
+ {
+  "analysis": "pyConTextNLP, nine categories",
+  "runs": 6,
+  "nf4_min": 32.4,
+  "nf4_max": 79.1,
+  "strict": 6,
+  "non_decreasing": 6,
+  "note": ""
+ },
+ {
+  "analysis": "Near-duplicate held-out reports removed",
+  "runs": 30,
+  "nf4_min": 28.8,
+  "nf4_max": 82.6,
+  "strict": 28,
+  "non_decreasing": 30,
+  "note": ""
+ },
+ {
+  "analysis": "Four low-agreement categories removed",
+  "runs": 30,
+  "nf4_min": 25.6,
+  "nf4_max": 84.2,
+  "strict": 28,
+  "non_decreasing": 29,
+  "note": ""
+ },
+ {
+  "analysis": "EOS exempt from repetition penalty",
+  "runs": 30,
+  "nf4_min": 28.8,
+  "nf4_max": 85.9,
+  "strict": 28,
+  "non_decreasing": 30,
+  "note": ""
+ },
+ {
+  "analysis": "Loss on IMPRESSION tokens only",
+  "runs": 6,
+  "nf4_min": 28.8,
+  "nf4_max": 71.4,
+  "strict": 6,
+  "non_decreasing": 6,
+  "note": ""
+ },
+ {
+  "analysis": "Mistral-7B-Instruct, LoRA",
+  "runs": 1,
+  "nf4_min": 23.6,
+  "nf4_max": 23.6,
+  "strict": 1,
+  "non_decreasing": 1,
+  "note": ""
+ },
+ {
+  "analysis": "CheXagent-8b, IU-XRAY radiographs",
+  "runs": 1,
+  "nf4_min": 39.3,
+  "nf4_max": 39.3,
+  "strict": 1,
+  "non_decreasing": 1,
+  "note": ""
+ },
+ {
+  "analysis": "CheXagent-8b, NIH ChestX-ray14",
+  "runs": 1,
+  "nf4_min": 56.1,
+  "nf4_max": 56.1,
+  "strict": 1,
+  "non_decreasing": 1,
+  "note": ""
+ }
+]

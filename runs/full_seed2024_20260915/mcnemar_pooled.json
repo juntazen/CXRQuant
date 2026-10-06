@@ -1,0 +1,139 @@
+{
+  "note": "Exploratory: categories nested within reports; no independent-pair clinical inference",
+  "provenance": {
+    "benchmark_hash": "b502a65b4764394c4e49855df0a525d6dcdc96927fd6633afb6e051b1d7e351f",
+    "config_hash": "130a7db277f48a93d21a3a857ab3b9685970ad6cbffbe5d5aafd82605db2d160",
+    "manifest_hash": "8347ffb28a91495c8349f731c0eb48545742d6fa039cf9d24ededc71d6e01c5c",
+    "metric_version": "2.1-null-denominator",
+    "prediction_provenance": "GPU run; see identity and checkpoints",
+    "run_id": "full_seed2024_20260915"
+  },
+  "rows": [
+    {
+      "b": 41,
+      "c": 39,
+      "config": "FP16",
+      "model": "distilgpt2",
+      "p": 0.9110721212260928
+    },
+    {
+      "b": 124,
+      "c": 91,
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": 0.028845836966671323
+    },
+    {
+      "b": 156,
+      "c": 107,
+      "config": "NF4-BnB",
+      "model": "distilgpt2",
+      "p": 0.003005528412181556
+    },
+    {
+      "b": 39,
+      "c": 30,
+      "config": "FP16",
+      "model": "gpt2",
+      "p": 0.33555761823401514
+    },
+    {
+      "b": 86,
+      "c": 96,
+      "config": "INT8-BnB",
+      "model": "gpt2",
+      "p": 0.5048025229491022
+    },
+    {
+      "b": 146,
+      "c": 90,
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": 0.00032385002736232756
+    },
+    {
+      "b": 15,
+      "c": 19,
+      "config": "FP16",
+      "model": "gpt2-medium",
+      "p": 0.6075913612730801
+    },
+    {
+      "b": 72,
+      "c": 64,
+      "config": "INT8-BnB",
+      "model": "gpt2-medium",
+      "p": 0.5485023614867376
+    },
+    {
+      "b": 83,
+      "c": 112,
+      "config": "NF4-BnB",
+      "model": "gpt2-medium",
+      "p": 0.04467251586059406
+    },
+    {
+      "b": 3,
+      "c": 0,
+      "config": "FP16",
+      "model": "biogpt",
+      "p": 0.25
+    },
+    {
+      "b": 11,
+      "c": 12,
+      "config": "INT8-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 22,
+      "c": 22,
+      "config": "NF4-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "c": 0,
+      "config": "FP16",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 8,
+      "c": 3,
+      "config": "INT8-BnB",
+      "model": "pythia-1b",
+      "p": 0.2265625
+    },
+    {
+      "b": 21,
+      "c": 21,
+      "config": "NF4-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "c": 0,
+      "config": "FP16",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 13,
+      "c": 5,
+      "config": "INT8-BnB",
+      "model": "biogpt-large",
+      "p": 0.09625244140625
+    },
+    {
+      "b": 18,
+      "c": 15,
+      "config": "NF4-BnB",
+      "model": "biogpt-large",
+      "p": 0.7283324808813632
+    }
+  ]
+}

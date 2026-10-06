@@ -1,0 +1,51 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+.venv/
+venv/
+env/
+
+# ── Tooling caches ───────────────────────────────────────────────────────────
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# ── Large regenerable artefacts (NOT committed; see docs/REPRODUCING.md) ─────
+# Fine-tuned checkpoints (~9 GB) are rebuilt by `make gpu`.
+/models/
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+# Raw IU-XRAY image archives — download from OpenI, do not redistribute here.
+*.tgz
+*.tar.gz
+NLMCXR*/
+data/ecgen-radiology/
+data/images/
+
+# ── Local, machine-specific or non-redistributable material ──────────────────
+results/extractor_comparison_local.json
+results/*_local.json
+*.log.local
+.env
+.DS_Store
+Thumbs.db
+
+# Third-party PDFs and any copyrighted material must never be committed.
+*.pdf.private
+sampel/
+
+# ── Release 2.3.0: rebuilt data and local outputs (not committed) ─────────────
+data/iuxray_paired.json
+data/iuxray_paired.rebuilt.json
+external/
+results_local/
+checkpoints/

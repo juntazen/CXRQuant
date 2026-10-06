@@ -1,0 +1,76 @@
+{
+  "task": "extractor comparison vs IU-XRAY MeSH silver standard",
+  "n_reports": 134,
+  "scorable_categories": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Consolidation",
+    "Edema",
+    "Fracture",
+    "Lung Lesion",
+    "Pleural Effusion",
+    "Pneumonia",
+    "Pneumothorax"
+  ],
+  "gt_positive_pairs": 40,
+  "results": [
+    {
+      "precision": 0.6415,
+      "recall": 0.85,
+      "f1": 0.7312,
+      "tp": 34,
+      "fp": 19,
+      "fn": 6,
+      "extractor": "CXRQuant NegEx (ours)",
+      "available": true,
+      "dependencies": "pure-Python stdlib only",
+      "runtime_ms_total": 233.7,
+      "runtime_ms_per_report": 1.744
+    },
+    {
+      "precision": 0.1171,
+      "recall": 0.975,
+      "f1": 0.2091,
+      "tp": 39,
+      "fp": 294,
+      "fn": 1,
+      "extractor": "Keyword (no negation)",
+      "available": true,
+      "dependencies": "stdlib (ablation)",
+      "runtime_ms_total": 1.5,
+      "runtime_ms_per_report": 0.011
+    },
+    {
+      "precision": 0.4507,
+      "recall": 0.8,
+      "f1": 0.5766,
+      "tp": 32,
+      "fp": 39,
+      "fn": 8,
+      "extractor": "Window-negation baseline",
+      "available": true,
+      "dependencies": "stdlib (simple \u00b16-tok)",
+      "runtime_ms_total": 12.1,
+      "runtime_ms_per_report": 0.09
+    },
+    {
+      "extractor": "medspaCy ConText",
+      "available": false,
+      "dependencies": "NOT installable: No module named 'medspacy'"
+    },
+    {
+      "precision": 0.8049,
+      "recall": 0.825,
+      "f1": 0.8148,
+      "tp": 33,
+      "fp": 8,
+      "fn": 7,
+      "extractor": "pyConTextNLP (NegEx)",
+      "available": true,
+      "dependencies": "pyConTextNLP + networkx",
+      "runtime_ms_total": 132.1,
+      "runtime_ms_per_report": 0.986
+    }
+  ],
+  "note": "Reference run from the authors' environment, with medspaCy/pyConTextNLP installation attempted. Re-running scripts/extractor_comparison.py without those optional packages reproduces the three stdlib rows exactly and reports the others as not installed; use `pip install -e '.[comparators]'` to reproduce every row."
+}

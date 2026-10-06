@@ -1,0 +1,65 @@
+{
+  "duration_s": 1258.7176542282104,
+  "exit_code": 0,
+  "identity": {
+    "code_hash": "1fc5aebae269ea6e1a8667b7f18d1d7baba8ee7c1fb2dd181f56fbb7ccda7554",
+    "config_hash": "130a7db277f48a93d21a3a857ab3b9685970ad6cbffbe5d5aafd82605db2d160",
+    "data_hash": "0597c49a73f1bffcc199cd3b3f27a7c984ef5337a3efa7ccdc053a7c2d02cf23",
+    "run_id": "full_seed2024_20260915"
+  },
+  "jobs": [
+    {
+      "command": [
+        "<local>/.venv/bin/python",
+        "-m",
+        "cxrquant.pipeline",
+        "--mode",
+        "full",
+        "--run-dir",
+        "<local>/fix/source/runs/full_seed2024_20260915",
+        "--worker-models",
+        "distilgpt2,gpt2-medium,pythia-1b"
+      ],
+      "device": "MIG-75de047f-10b5-51a4-b25e-af65e6219128",
+      "models": [
+        "distilgpt2",
+        "gpt2-medium",
+        "pythia-1b"
+      ],
+      "pid": 260882
+    },
+    {
+      "command": [
+        "<local>/.venv/bin/python",
+        "-m",
+        "cxrquant.pipeline",
+        "--mode",
+        "full",
+        "--run-dir",
+        "<local>/fix/source/runs/full_seed2024_20260915",
+        "--worker-models",
+        "gpt2,biogpt,biogpt-large"
+      ],
+      "device": "MIG-b229be93-e78c-586d-b229-0de04d9e3436",
+      "models": [
+        "gpt2",
+        "biogpt",
+        "biogpt-large"
+      ],
+      "pid": 260883
+    }
+  ],
+  "matrix": {
+    "comparisons": 18,
+    "configurations": 24,
+    "models": 6,
+    "predictions": 3216
+  },
+  "pid": 260818,
+  "started_at": 1789475214.4686224,
+  "status": "complete",
+  "worker_exit_codes": [
+    0,
+    0
+  ]
+}

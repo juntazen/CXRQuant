@@ -1,0 +1,8 @@
+{
+  "biogpt": 0.2975,
+  "biogpt-large": 0.3871,
+  "distilgpt2": 0.0753,
+  "gpt2": 0.1067,
+  "gpt2-medium": 0.1183,
+  "pythia-1b": 0.314
+}

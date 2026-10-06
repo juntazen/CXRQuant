@@ -1,0 +1,8 @@
+{
+  "benchmark_hash": "220f4e529edd7116db370cac7d16babb08cea95ca955c6b44a91f6ec4f0e2284",
+  "config_hash": "6e4084f827716cd546e675dd476f58ad90edea74d238f14d1b18d510ba19f768",
+  "manifest_hash": "9370c68f61b984d3e78c2a1cf7b34d49c1c4a384a2720e8b340b38a6c7276b5b",
+  "metric_version": "2.1-null-denominator",
+  "prediction_provenance": "GPU run; see identity and checkpoints",
+  "run_id": "full_seed42_corrected_20260911"
+}

@@ -1,0 +1,17 @@
+{
+  "hashes": {
+    "bootstrap_fnf_ci.json": "6b2e4ce2f70a8a79505ec89061ab1e9b22e03edf25576471dd3270dd7626425a",
+    "figures/fnf_matrix.png": "40698a11dfe8cd51f7600e834afe86008df4366040c70c5c798b6dee4248b9dd",
+    "mcnemar_pooled.json": "abb8f7a8f897caf13fdd610c9a5a2a45156a4e0ba67cda7b3e0a1eadbca759b1",
+    "mcnemar_results.json": "0471f997d73e10de60ce88d35a068f33f42e7265af5fb62f252b0dd48b290b5f",
+    "replay_status.json": "ed2db4ef55c63fdef80cdd33d187af37d10ded086783ec2af856fed1454672ec",
+    "tables/bootstrap.csv": "baad478772d21a89b1b2f5396bb3e633ff6c0ae60e59619b9fe8984e2a700df5",
+    "tables/mcnemar_pooled.csv": "5ce339e377a4d30891e9c2bb759acf6da8336c66c24eb37406f9a54b5b1649b5",
+    "tables/metrics.csv": "5de8211fb1bbca73c2456db56544d7d9956f782276e3957307582b6f07cb9304"
+  },
+  "note": "CPU scoring replay of fixed GPU predictions; not repeat training",
+  "replays_in_this_check": 2,
+  "run_id": "full_seed42_corrected_20260911",
+  "status": "passed",
+  "total_equivalent_snapshots": 3
+}

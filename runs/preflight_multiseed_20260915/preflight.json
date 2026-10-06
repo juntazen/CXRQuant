@@ -1,0 +1,15 @@
+{
+  "hardware": {
+    "cuda_runtime": "11.8",
+    "cuda_visible_devices": "MIG-75de047f-10b5-51a4-b25e-af65e6219128",
+    "free_total_bytes": [
+      36558733312,
+      42296475648
+    ],
+    "memory_bytes": 42296475648,
+    "name": "NVIDIA A100-SXM4-40GB MIG 7g.40gb",
+    "torch": "2.7.1+cu118"
+  },
+  "largest_model_forward_backward": true,
+  "status": "complete"
+}

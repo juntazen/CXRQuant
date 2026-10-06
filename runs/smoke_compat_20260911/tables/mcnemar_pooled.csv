@@ -1,0 +1,4 @@
+model,config,b,c,p
+distilgpt2,FP16,0,0,1.0
+distilgpt2,INT8-BnB,1,0,1.0
+distilgpt2,NF4-BnB,1,0,1.0

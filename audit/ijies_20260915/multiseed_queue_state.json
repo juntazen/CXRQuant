@@ -1,0 +1,94 @@
+{
+  "active_seed": null,
+  "aggregate": "<local>/fix/source/runs/multiseed_seed42-123-777-2024-31415_20260915",
+  "free_disk_gib": 793,
+  "launcher_devices": [
+    "MIG-75de047f-10b5-51a4-b25e-af65e6219128",
+    "MIG-b229be93-e78c-586d-b229-0de04d9e3436"
+  ],
+  "manuscript": "<local>/fix/manuscript/CXRQuant_IJIES_Revised_experiments-20260915_multiseed.docx",
+  "max_used_mib": 6144,
+  "mig_memory": [
+    {
+      "gpu": 0,
+      "total_mib": 40337,
+      "used_mib": 0
+    },
+    {
+      "gpu": 1,
+      "total_mib": 40337,
+      "used_mib": 5017
+    }
+  ],
+  "pid": 255573,
+  "preflight": "complete",
+  "seeds": {
+    "123": {
+      "duration_s": 1253.840039730072,
+      "error": null,
+      "exit_code": 0,
+      "matrix": {
+        "comparisons": 18,
+        "configurations": 24,
+        "models": 6,
+        "predictions": 3216
+      },
+      "run_dir": "<local>/fix/source/runs/full_seed123_20260915",
+      "started_unix": 1789472588.0760865,
+      "status": "complete"
+    },
+    "2024": {
+      "duration_s": 1259.4268236160278,
+      "error": null,
+      "exit_code": 0,
+      "matrix": {
+        "comparisons": 18,
+        "configurations": 24,
+        "models": 6,
+        "predictions": 3216
+      },
+      "run_dir": "<local>/fix/source/runs/full_seed2024_20260915",
+      "started_unix": 1789475214.418943,
+      "status": "complete"
+    },
+    "31415": {
+      "duration_s": 1271.3624505996704,
+      "error": null,
+      "exit_code": 0,
+      "matrix": {
+        "comparisons": 18,
+        "configurations": 24,
+        "models": 6,
+        "predictions": 3216
+      },
+      "run_dir": "<local>/fix/source/runs/full_seed31415_20260915",
+      "started_unix": 1789476505.1982765,
+      "status": "complete"
+    },
+    "777": {
+      "duration_s": 1309.844809293747,
+      "error": null,
+      "exit_code": 0,
+      "matrix": {
+        "comparisons": 18,
+        "configurations": 24,
+        "models": 6,
+        "predictions": 3216
+      },
+      "run_dir": "<local>/fix/source/runs/full_seed777_20260915",
+      "started_unix": 1789473873.2550569,
+      "status": "complete"
+    }
+  },
+  "seeds_requested": [
+    123,
+    777,
+    2024,
+    31415
+  ],
+  "started_at": "2026-09-15T18:42:26+0700",
+  "status": "complete",
+  "tag": "20260915",
+  "updated_at": "2026-09-15T20:09:46+0700",
+  "waiting_for": "seed 31415"
+}

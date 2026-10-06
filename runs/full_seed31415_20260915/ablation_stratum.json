@@ -1,0 +1,279 @@
+{
+  "analysis": "stratum ablation (re-aggregation of replayed tables; no training or generation)",
+  "floor_effect_diagnostics": {
+    "biogpt": {
+      "empty_outputs": 0,
+      "fp32_positive_category_pairs": 55,
+      "fp32_positive_pairs_per_report": 0.41,
+      "mean_words": 7.7,
+      "n_reports": 134,
+      "reached_max_new_tokens": 0
+    },
+    "biogpt-large": {
+      "empty_outputs": 0,
+      "fp32_positive_category_pairs": 59,
+      "fp32_positive_pairs_per_report": 0.44,
+      "mean_words": 8.5,
+      "n_reports": 134,
+      "reached_max_new_tokens": 0
+    },
+    "distilgpt2": {
+      "empty_outputs": 0,
+      "fp32_positive_category_pairs": 186,
+      "fp32_positive_pairs_per_report": 1.388,
+      "mean_words": 41.7,
+      "n_reports": 134,
+      "reached_max_new_tokens": 115
+    },
+    "gpt2": {
+      "empty_outputs": 0,
+      "fp32_positive_category_pairs": 207,
+      "fp32_positive_pairs_per_report": 1.545,
+      "mean_words": 40.5,
+      "n_reports": 134,
+      "reached_max_new_tokens": 115
+    },
+    "gpt2-medium": {
+      "empty_outputs": 0,
+      "fp32_positive_category_pairs": 152,
+      "fp32_positive_pairs_per_report": 1.134,
+      "mean_words": 41.0,
+      "n_reports": 134,
+      "reached_max_new_tokens": 108
+    },
+    "pythia-1b": {
+      "empty_outputs": 0,
+      "fp32_positive_category_pairs": 49,
+      "fp32_positive_pairs_per_report": 0.366,
+      "mean_words": 7.7,
+      "n_reports": 134,
+      "reached_max_new_tokens": 0
+    }
+  },
+  "nf4_fnf_range": {
+    "all": [
+      0.2881,
+      0.7039
+    ],
+    "degenerate": [
+      0.6774,
+      0.7039
+    ],
+    "functional": [
+      0.2881,
+      0.4694
+    ]
+  },
+  "note": "b_sum/c_sum are descriptive totals; no across-model pooled test is reported.",
+  "ordering_FP16_lt_INT8_lt_NF4": {
+    "all": {
+      "biogpt": true,
+      "biogpt-large": true,
+      "distilgpt2": true,
+      "gpt2": true,
+      "gpt2-medium": true,
+      "pythia-1b": false
+    },
+    "degenerate": {
+      "distilgpt2": true,
+      "gpt2": true,
+      "gpt2-medium": true
+    },
+    "functional": {
+      "biogpt": true,
+      "biogpt-large": true,
+      "pythia-1b": false
+    }
+  },
+  "provenance": {
+    "data_hash": "0597c49a73f1bffcc199cd3b3f27a7c984ef5337a3efa7ccdc053a7c2d02cf23",
+    "mcnemar_pooled_hash": "015b0e2508159504a47c42df2aca761efd676b5b2771bef0b73e3d3adb787607",
+    "metrics_hash": "fd472c3c96d1e9400d085be1f6f8abd5972cf05de614057146fab4bd192c1546",
+    "run_id": "full_seed31415_20260915",
+    "script_hash": "c5db9f04e1a84373b7893a30239f747cefae2a4fcaeee75d8b1dbb8715d36ee3"
+  },
+  "rows": [
+    {
+      "BLEU4_abs_delta_pp_max": 0.09,
+      "BLEU4_delta_pp_mean": -0.02,
+      "CE_micro_F1_delta_pp_mean": 0.43,
+      "FNF_max": 0.1787,
+      "FNF_mean": 0.0952,
+      "FNF_min": 0.0,
+      "FPF_mean": 0.0106,
+      "b_sum": 99,
+      "c_sum": 99,
+      "config": "FP16",
+      "model_set": "all",
+      "models": "biogpt|biogpt-large|distilgpt2|gpt2|gpt2-medium|pythia-1b",
+      "n_models": 6
+    },
+    {
+      "BLEU4_abs_delta_pp_max": 0.59,
+      "BLEU4_delta_pp_mean": -0.01,
+      "CE_micro_F1_delta_pp_mean": -0.18,
+      "FNF_max": 0.5855,
+      "FNF_mean": 0.3082,
+      "FNF_min": 0.0204,
+      "FPF_mean": 0.0344,
+      "b_sum": 304,
+      "c_sum": 324,
+      "config": "INT8-BnB",
+      "model_set": "all",
+      "models": "biogpt|biogpt-large|distilgpt2|gpt2|gpt2-medium|pythia-1b",
+      "n_models": 6
+    },
+    {
+      "BLEU4_abs_delta_pp_max": 1.7,
+      "BLEU4_delta_pp_mean": -0.27,
+      "CE_micro_F1_delta_pp_mean": -0.27,
+      "FNF_max": 0.7039,
+      "FNF_mean": 0.527,
+      "FNF_min": 0.2881,
+      "FPF_mean": 0.0453,
+      "b_sum": 435,
+      "c_sum": 429,
+      "config": "NF4-BnB",
+      "model_set": "all",
+      "models": "biogpt|biogpt-large|distilgpt2|gpt2|gpt2-medium|pythia-1b",
+      "n_models": 6
+    },
+    {
+      "BLEU4_abs_delta_pp_max": 0.09,
+      "BLEU4_delta_pp_mean": -0.03,
+      "CE_micro_F1_delta_pp_mean": 0.38,
+      "FNF_max": 0.1787,
+      "FNF_mean": 0.1779,
+      "FNF_min": 0.1774,
+      "FPF_mean": 0.0204,
+      "b_sum": 97,
+      "c_sum": 95,
+      "config": "FP16",
+      "model_set": "degenerate",
+      "models": "distilgpt2|gpt2|gpt2-medium",
+      "n_models": 3
+    },
+    {
+      "BLEU4_abs_delta_pp_max": 0.17,
+      "BLEU4_delta_pp_mean": 0.06,
+      "CE_micro_F1_delta_pp_mean": -1.89,
+      "FNF_max": 0.5855,
+      "FNF_mean": 0.5341,
+      "FNF_min": 0.4516,
+      "FPF_mean": 0.062,
+      "b_sum": 290,
+      "c_sum": 289,
+      "config": "INT8-BnB",
+      "model_set": "degenerate",
+      "models": "distilgpt2|gpt2|gpt2-medium",
+      "n_models": 3
+    },
+    {
+      "BLEU4_abs_delta_pp_max": 0.17,
+      "BLEU4_delta_pp_mean": -0.09,
+      "CE_micro_F1_delta_pp_mean": -1.78,
+      "FNF_max": 0.7039,
+      "FNF_mean": 0.6923,
+      "FNF_min": 0.6774,
+      "FPF_mean": 0.0779,
+      "b_sum": 377,
+      "c_sum": 365,
+      "config": "NF4-BnB",
+      "model_set": "degenerate",
+      "models": "distilgpt2|gpt2|gpt2-medium",
+      "n_models": 3
+    },
+    {
+      "BLEU4_abs_delta_pp_max": 0.08,
+      "BLEU4_delta_pp_mean": -0.0,
+      "CE_micro_F1_delta_pp_mean": 0.48,
+      "FNF_max": 0.0204,
+      "FNF_mean": 0.0124,
+      "FNF_min": 0.0,
+      "FPF_mean": 0.0008,
+      "b_sum": 2,
+      "c_sum": 4,
+      "config": "FP16",
+      "model_set": "functional",
+      "models": "biogpt|biogpt-large|pythia-1b",
+      "n_models": 3
+    },
+    {
+      "BLEU4_abs_delta_pp_max": 0.59,
+      "BLEU4_delta_pp_mean": -0.08,
+      "CE_micro_F1_delta_pp_mean": 1.53,
+      "FNF_max": 0.1356,
+      "FNF_mean": 0.0823,
+      "FNF_min": 0.0204,
+      "FPF_mean": 0.0069,
+      "b_sum": 14,
+      "c_sum": 35,
+      "config": "INT8-BnB",
+      "model_set": "functional",
+      "models": "biogpt|biogpt-large|pythia-1b",
+      "n_models": 3
+    },
+    {
+      "BLEU4_abs_delta_pp_max": 1.7,
+      "BLEU4_delta_pp_mean": -0.46,
+      "CE_micro_F1_delta_pp_mean": 1.25,
+      "FNF_max": 0.4694,
+      "FNF_mean": 0.3616,
+      "FNF_min": 0.2881,
+      "FPF_mean": 0.0127,
+      "b_sum": 58,
+      "c_sum": 64,
+      "config": "NF4-BnB",
+      "model_set": "functional",
+      "models": "biogpt|biogpt-large|pythia-1b",
+      "n_models": 3
+    }
+  ],
+  "strata": {
+    "degenerate": [
+      "distilgpt2",
+      "gpt2",
+      "gpt2-medium"
+    ],
+    "functional": [
+      "biogpt",
+      "pythia-1b",
+      "biogpt-large"
+    ]
+  },
+  "strata_source": {
+    "path": "<local>/fix/source/runs/full_seed42_corrected_20260911/ablation_stratum.json",
+    "sha256": "7d2426174c007b8e6d0567defb94f36290368650d64360a6b31d8d05df70e963",
+    "source": "reference"
+  },
+  "this_run_fp32_bleu4_classes": {
+    "biogpt": {
+      "class": "functional",
+      "fp32_bleu_4": 0.1613
+    },
+    "biogpt-large": {
+      "class": "between_thresholds",
+      "fp32_bleu_4": 0.1406
+    },
+    "distilgpt2": {
+      "class": "degenerate",
+      "fp32_bleu_4": 0.0078
+    },
+    "gpt2": {
+      "class": "degenerate",
+      "fp32_bleu_4": 0.0104
+    },
+    "gpt2-medium": {
+      "class": "degenerate",
+      "fp32_bleu_4": 0.0101
+    },
+    "pythia-1b": {
+      "class": "functional",
+      "fp32_bleu_4": 0.1848
+    }
+  },
+  "thresholds": {
+    "degenerate_fp32_bleu4_below": 0.02,
+    "functional_fp32_bleu4_above": 0.15
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "matrix": {
+    "comparisons": 18,
+    "configurations": 24,
+    "models": 6,
+    "predictions": 3216
+  },
+  "provenance": {
+    "benchmark_hash": "aced763e4288d60d9cd9d6b4f27fbbcb1b32a7c5ba75d25b075c44f56d561a5f",
+    "config_hash": "ebff029d6971b8b99170570550d0c6dc592ee0ab68253a160134d8c7c9d2541f",
+    "manifest_hash": "34c011c6ce8d0364806a7e97fcd4203d10df2592a0522d65356e26cd4ab45ebf",
+    "metric_version": "2.1-null-denominator",
+    "prediction_provenance": "ARCHIVED v1.0.1 ZIP predictions; CPU replay only; corrected GPU training pending",
+    "run_id": "archive_replay_20260910"
+  },
+  "status": "complete",
+  "validated_metrics": [
+    "FNF",
+    "FPF",
+    "CFPR",
+    "CFFR",
+    "CE-F1",
+    "BLEU-1/4",
+    "ROUGE-1/2/L"
+  ]
+}

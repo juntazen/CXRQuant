@@ -1,0 +1,5 @@
+{
+  "bootstrap_resamples": 2000,
+  "bootstrap_seed": 42,
+  "prediction_origin": "historical archive"
+}

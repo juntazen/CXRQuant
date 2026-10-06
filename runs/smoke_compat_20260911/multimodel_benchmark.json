@@ -1,0 +1,617 @@
+{
+  "hardware_preflight": {
+    "launcher_visible_devices": [
+      "MIG-b229be93-e78c-586d-b229-0de04d9e3436"
+    ],
+    "worker_preflight": "recorded per model after device isolation"
+  },
+  "identity": {
+    "code_hash": "f8ede1a7d946c862740bd0035a31092ce91f389885cb5675776247f7fa63465a",
+    "config_hash": "6f7cb613ff259a298ddc6947668b797cbde9d5d6e9d38e50474fee3b74db7ec1",
+    "data_hash": "0597c49a73f1bffcc199cd3b3f27a7c984ef5337a3efa7ccdc053a7c2d02cf23",
+    "run_id": "smoke_compat_20260911"
+  },
+  "models": [
+    {
+      "checkpoint_files": {
+        "config.json": "4c8ab82d5cadcfefc367dae0153496a94d86e5677deb6026c3fa31742597e4d5",
+        "generation_config.json": "b722360509010566179ef69ddc6fa1448ae1ccd170d93b6d39e468271ee07b8e",
+        "model.safetensors": "721fa38acb2ba5d1ebdeed4bad3dcb32c0beeb2b924ecf544fffaa3b0bb65a66",
+        "tokenizer.json": "1fe93b6152957cf9cfd6d89002467f789ce8b3f3e000b3a2edf27c808ddd0b9e",
+        "tokenizer_config.json": "2ec6e8751bff5617ea5f342d96c69b50fba71826c0b2b9449c34fb55253432f4",
+        "training_args.bin": "554ff7a2ee86559c3fdff2908d26de11586baa0386fd623dbd084eb931330936"
+      },
+      "checkpoint_hash": "6594c8bcf135202fddaf156555977ba9305fc7a49d54e0a64cec5a303f2ab13a",
+      "checkpoint_weight_bytes": 327657928,
+      "configs": [
+        {
+          "backend": {
+            "bnb_config": null,
+            "device_map": {},
+            "parameter_dtypes": [
+              "torch.float32"
+            ],
+            "quantized_modules": {},
+            "size_note": "Only the saved FP32 checkpoint is measured on disk; quantized disk compression is not reported."
+          },
+          "bleu_1": 0.0061,
+          "bleu_4": 0.0,
+          "ce_macro_f1": 0.0,
+          "ce_micro_f1": 0.0,
+          "checkpoint_hash": "6594c8bcf135202fddaf156555977ba9305fc7a49d54e0a64cec5a303f2ab13a",
+          "config": "FP32",
+          "efficiency": {
+            "amortized_latency_ms": 50.538480281829834,
+            "batch_timings": [
+              {
+                "latency_s": 0.303230881690979,
+                "n_reports": 6
+              }
+            ],
+            "generated_tokens": 384,
+            "peak_allocated_bytes": 420060160,
+            "peak_reserved_bytes": 465567744,
+            "reports_per_second": 19.786902859434246,
+            "tokens_per_second": 1266.3617830037917,
+            "total_generation_s": 0.303230881690979,
+            "warmup_new_tokens": 16,
+            "warmup_reports": 2
+          },
+          "rouge_1": 0.0303,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0061,
+          "status": "complete"
+        },
+        {
+          "CFFR": 0.0,
+          "CFPR": 1.0,
+          "FNF_rate": 0.0,
+          "FPF_rate": 0.0,
+          "backend": {
+            "bnb_config": null,
+            "device_map": {},
+            "parameter_dtypes": [
+              "torch.float16"
+            ],
+            "quantized_modules": {},
+            "size_note": "Only the saved FP32 checkpoint is measured on disk; quantized disk compression is not reported."
+          },
+          "bleu_1": 0.0061,
+          "bleu_4": 0.0,
+          "ce_macro_f1": 0.0,
+          "ce_micro_f1": 0.0,
+          "checkpoint_hash": "6594c8bcf135202fddaf156555977ba9305fc7a49d54e0a64cec5a303f2ab13a",
+          "config": "FP16",
+          "efficiency": {
+            "amortized_latency_ms": 50.93630729243159,
+            "batch_timings": [
+              {
+                "latency_s": 0.30561784375458956,
+                "n_reports": 6
+              }
+            ],
+            "generated_tokens": 384,
+            "peak_allocated_bytes": 219660288,
+            "peak_reserved_bytes": 266338304,
+            "reports_per_second": 19.63236153455093,
+            "tokens_per_second": 1256.4711382112596,
+            "total_generation_s": 0.30561784375458956,
+            "warmup_new_tokens": 16,
+            "warmup_reports": 2
+          },
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Cardiomegaly": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Consolidation": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Edema": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Opacity": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Support Devices": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            }
+          },
+          "rouge_1": 0.0303,
+          "rouge_2": 0.0,
+          "rouge_l": 0.006,
+          "safety_counts": {
+            "false_negative_flips": 0,
+            "false_positive_flips": 0,
+            "flips": 0,
+            "fp32_absent": 77,
+            "fp32_present": 1,
+            "preserved": 78,
+            "total_pairs": 78
+          },
+          "status": "complete"
+        },
+        {
+          "CFFR": 0.0128,
+          "CFPR": 0.9872,
+          "FNF_rate": 1.0,
+          "FPF_rate": 0.0,
+          "backend": {
+            "bnb_config": {
+              "_load_in_4bit": false,
+              "_load_in_8bit": true,
+              "bnb_4bit_compute_dtype": "float32",
+              "bnb_4bit_quant_storage": "uint8",
+              "bnb_4bit_quant_type": "fp4",
+              "bnb_4bit_use_double_quant": false,
+              "llm_int8_enable_fp32_cpu_offload": false,
+              "llm_int8_has_fp16_weight": false,
+              "llm_int8_skip_modules": null,
+              "llm_int8_threshold": 6.0,
+              "load_in_4bit": false,
+              "load_in_8bit": true,
+              "quant_method": "bitsandbytes"
+            },
+            "device_map": {},
+            "parameter_dtypes": [
+              "torch.float16",
+              "torch.int8"
+            ],
+            "quantized_modules": {
+              "transformer.h.0.attn.c_attn": "Linear8bitLt",
+              "transformer.h.0.attn.c_proj": "Linear8bitLt",
+              "transformer.h.0.mlp.c_fc": "Linear8bitLt",
+              "transformer.h.0.mlp.c_proj": "Linear8bitLt",
+              "transformer.h.1.attn.c_attn": "Linear8bitLt",
+              "transformer.h.1.attn.c_proj": "Linear8bitLt",
+              "transformer.h.1.mlp.c_fc": "Linear8bitLt",
+              "transformer.h.1.mlp.c_proj": "Linear8bitLt",
+              "transformer.h.2.attn.c_attn": "Linear8bitLt",
+              "transformer.h.2.attn.c_proj": "Linear8bitLt",
+              "transformer.h.2.mlp.c_fc": "Linear8bitLt",
+              "transformer.h.2.mlp.c_proj": "Linear8bitLt",
+              "transformer.h.3.attn.c_attn": "Linear8bitLt",
+              "transformer.h.3.attn.c_proj": "Linear8bitLt",
+              "transformer.h.3.mlp.c_fc": "Linear8bitLt",
+              "transformer.h.3.mlp.c_proj": "Linear8bitLt",
+              "transformer.h.4.attn.c_attn": "Linear8bitLt",
+              "transformer.h.4.attn.c_proj": "Linear8bitLt",
+              "transformer.h.4.mlp.c_fc": "Linear8bitLt",
+              "transformer.h.4.mlp.c_proj": "Linear8bitLt",
+              "transformer.h.5.attn.c_attn": "Linear8bitLt",
+              "transformer.h.5.attn.c_proj": "Linear8bitLt",
+              "transformer.h.5.mlp.c_fc": "Linear8bitLt",
+              "transformer.h.5.mlp.c_proj": "Linear8bitLt"
+            },
+            "size_note": "Only the saved FP32 checkpoint is measured on disk; quantized disk compression is not reported."
+          },
+          "bleu_1": 0.0061,
+          "bleu_4": 0.0,
+          "ce_macro_f1": 0.0,
+          "ce_micro_f1": 0.0,
+          "checkpoint_hash": "6594c8bcf135202fddaf156555977ba9305fc7a49d54e0a64cec5a303f2ab13a",
+          "config": "INT8-BnB",
+          "efficiency": {
+            "amortized_latency_ms": 129.04490514968833,
+            "batch_timings": [
+              {
+                "latency_s": 0.7742694308981299,
+                "n_reports": 6
+              }
+            ],
+            "generated_tokens": 384,
+            "peak_allocated_bytes": 178795520,
+            "peak_reserved_bytes": 226492416,
+            "reports_per_second": 7.7492404588931985,
+            "tokens_per_second": 495.9513893691647,
+            "total_generation_s": 0.7742694308981299,
+            "warmup_new_tokens": 16,
+            "warmup_reports": 2
+          },
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Cardiomegaly": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Consolidation": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Edema": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Opacity": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Support Devices": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            }
+          },
+          "rouge_1": 0.0429,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0061,
+          "safety_counts": {
+            "false_negative_flips": 1,
+            "false_positive_flips": 0,
+            "flips": 1,
+            "fp32_absent": 77,
+            "fp32_present": 1,
+            "preserved": 77,
+            "total_pairs": 78
+          },
+          "status": "complete"
+        },
+        {
+          "CFFR": 0.0128,
+          "CFPR": 0.9872,
+          "FNF_rate": 1.0,
+          "FPF_rate": 0.0,
+          "backend": {
+            "bnb_config": {
+              "_load_in_4bit": true,
+              "_load_in_8bit": false,
+              "bnb_4bit_compute_dtype": "float16",
+              "bnb_4bit_quant_storage": "uint8",
+              "bnb_4bit_quant_type": "nf4",
+              "bnb_4bit_use_double_quant": true,
+              "llm_int8_enable_fp32_cpu_offload": false,
+              "llm_int8_has_fp16_weight": false,
+              "llm_int8_skip_modules": null,
+              "llm_int8_threshold": 6.0,
+              "load_in_4bit": true,
+              "load_in_8bit": false,
+              "quant_method": "bitsandbytes"
+            },
+            "device_map": {},
+            "parameter_dtypes": [
+              "torch.float16",
+              "torch.uint8"
+            ],
+            "quantized_modules": {
+              "transformer.h.0.attn.c_attn": "Linear4bit",
+              "transformer.h.0.attn.c_proj": "Linear4bit",
+              "transformer.h.0.mlp.c_fc": "Linear4bit",
+              "transformer.h.0.mlp.c_proj": "Linear4bit",
+              "transformer.h.1.attn.c_attn": "Linear4bit",
+              "transformer.h.1.attn.c_proj": "Linear4bit",
+              "transformer.h.1.mlp.c_fc": "Linear4bit",
+              "transformer.h.1.mlp.c_proj": "Linear4bit",
+              "transformer.h.2.attn.c_attn": "Linear4bit",
+              "transformer.h.2.attn.c_proj": "Linear4bit",
+              "transformer.h.2.mlp.c_fc": "Linear4bit",
+              "transformer.h.2.mlp.c_proj": "Linear4bit",
+              "transformer.h.3.attn.c_attn": "Linear4bit",
+              "transformer.h.3.attn.c_proj": "Linear4bit",
+              "transformer.h.3.mlp.c_fc": "Linear4bit",
+              "transformer.h.3.mlp.c_proj": "Linear4bit",
+              "transformer.h.4.attn.c_attn": "Linear4bit",
+              "transformer.h.4.attn.c_proj": "Linear4bit",
+              "transformer.h.4.mlp.c_fc": "Linear4bit",
+              "transformer.h.4.mlp.c_proj": "Linear4bit",
+              "transformer.h.5.attn.c_attn": "Linear4bit",
+              "transformer.h.5.attn.c_proj": "Linear4bit",
+              "transformer.h.5.mlp.c_fc": "Linear4bit",
+              "transformer.h.5.mlp.c_proj": "Linear4bit"
+            },
+            "size_note": "Only the saved FP32 checkpoint is measured on disk; quantized disk compression is not reported."
+          },
+          "bleu_1": 0.0091,
+          "bleu_4": 0.0,
+          "ce_macro_f1": 0.0,
+          "ce_micro_f1": 0.0,
+          "checkpoint_hash": "6594c8bcf135202fddaf156555977ba9305fc7a49d54e0a64cec5a303f2ab13a",
+          "config": "NF4-BnB",
+          "efficiency": {
+            "amortized_latency_ms": 92.63895219191909,
+            "batch_timings": [
+              {
+                "latency_s": 0.5558337131515145,
+                "n_reports": 6
+              }
+            ],
+            "generated_tokens": 384,
+            "peak_allocated_bytes": 158675968,
+            "peak_reserved_bytes": 207618048,
+            "reports_per_second": 10.794595322368403,
+            "tokens_per_second": 690.8541006315778,
+            "total_generation_s": 0.5558337131515145,
+            "warmup_new_tokens": 16,
+            "warmup_reports": 2
+          },
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Cardiomegaly": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Consolidation": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Edema": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Opacity": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Support Devices": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            }
+          },
+          "rouge_1": 0.0846,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0091,
+          "safety_counts": {
+            "false_negative_flips": 1,
+            "false_positive_flips": 0,
+            "flips": 1,
+            "fp32_absent": 77,
+            "fp32_present": 1,
+            "preserved": 77,
+            "total_pairs": 78
+          },
+          "status": "complete"
+        }
+      ],
+      "family": "general",
+      "hardware": {
+        "cuda_runtime": "11.8",
+        "cuda_visible_devices": "MIG-b229be93-e78c-586d-b229-0de04d9e3436",
+        "free_total_bytes": [
+          41816293376,
+          42296475648
+        ],
+        "memory_bytes": 42296475648,
+        "name": "NVIDIA A100-SXM4-40GB MIG 7g.40gb",
+        "torch": "2.7.1+cu118"
+      },
+      "identity": {
+        "code_hash": "f8ede1a7d946c862740bd0035a31092ce91f389885cb5675776247f7fa63465a",
+        "config_hash": "6f7cb613ff259a298ddc6947668b797cbde9d5d6e9d38e50474fee3b74db7ec1",
+        "data_hash": "0597c49a73f1bffcc199cd3b3f27a7c984ef5337a3efa7ccdc053a7c2d02cf23",
+        "run_id": "smoke_compat_20260911"
+      },
+      "model": "distilgpt2",
+      "model_revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+      "n_test": 6,
+      "params_m": 81.912576,
+      "prediction_sample_ids": {
+        "FP16": [
+          "CXR1009",
+          "CXR1028",
+          "CXR1060",
+          "CXR1144",
+          "CXR1152",
+          "CXR1173"
+        ],
+        "FP32": [
+          "CXR1009",
+          "CXR1028",
+          "CXR1060",
+          "CXR1144",
+          "CXR1152",
+          "CXR1173"
+        ],
+        "INT8-BnB": [
+          "CXR1009",
+          "CXR1028",
+          "CXR1060",
+          "CXR1144",
+          "CXR1152",
+          "CXR1173"
+        ],
+        "NF4-BnB": [
+          "CXR1009",
+          "CXR1028",
+          "CXR1060",
+          "CXR1144",
+          "CXR1152",
+          "CXR1173"
+        ]
+      },
+      "predictions": {
+        "FP16": [
+          "A small number of patients have been admitted to the hospital for a period that has not yet begun, but there may be some complications associated with this condition in their care if they continue on an outpatient basis (e-mail me at [email protected].\nThe patient's symptoms include nausea, vomiting, headache, fatigue,",
+          "Aortic valve syndrome (ICT) can be seen in the upper extremities of a person with Ictal cancer or other serious disease that may cause an increased risk for myocardial infarction; it has been reported to occur at least once per year among patients who have had this condition before but never",
+          "A high-density lipoprotein (LDL) is a common cause of death in patients with coronary artery disease, and it can be caused by heart failure or stroke due to excessive blood pressure during exercise; however, there may also be other factors that contribute to this condition such as increased risk for cardiovascular diseases including hypertension",
+          "A study published this week found that the average adult male has a lower risk for lung cancer than female patients with an enlarged prostate (PVC) compared to men who have not had any other type of breast-cancer diagnosis at all; however, there is evidence from studies showing increased mortality among women without mammography due to",
+          "A large number of patients with chronic kidney failure have been treated for renal dysfunction and other conditions that may result from this condition (e-mail me at [email protected]].\nThe patient has anemia; he/she suffers severe fatigue syndrome in which his kidneys function as normal but not abnormal enough to cause him to",
+          "A small number of patients have been treated for this condition in recent years (see Table 1). The patient is not considered clinically significant at all but has no history of any type of heart attack; however, there are indications that these may be related to an increased risk of coronary artery disease [1].\nThe primary cause"
+        ],
+        "FP32": [
+          "A small number of patients have been admitted to the hospital for a period that has not yet begun, but there may be some complications associated with this condition in their care if they continue on an outpatient basis (e-mail me at [email protected].\nThe patient's symptoms include nausea, vomiting, headache, fatigue,",
+          "Aortic valve syndrome (ICT) can be seen in the upper extremities of a person with Ictal cancer or other serious disease that may cause an increased risk for myocardial infarction; it has been reported to occur at least once per year among patients who have had this condition before but never",
+          "A high-density lipoprotein (LDL) is a common cause of death in patients with coronary artery disease, and it can be caused by heart failure or stroke due to excessive blood pressure during exercise; however, there may also be other factors that contribute to this condition including increased risk for cardiovascular diseases such as diabetes",
+          "A study published this week found that the average adult male has a lower risk for lung cancer than female patients with an enlarged prostate (PVC) compared to men who have not had any other type of breast-cancer diagnosis at all; however, there is evidence from studies showing increased mortality among women without mammography due to",
+          "A large number of patients with chronic kidney failure have been treated for renal dysfunction and other conditions that may result from this condition (e-mail me at [email protected]].\nThe patient has anemia; he/she suffers severe hypertension in his left arm while on medication to prevent him from receiving treatment due not being",
+          "A small number of patients have been treated for this condition in recent years (see Table 1). The patient was not present at any time during treatment; however, there were no significant differences between these two conditions on either side [1].\nThe primary outcome is an increased risk of coronary artery disease by 20% compared against"
+        ],
+        "INT8-BnB": [
+          "A small number of patients have been diagnosed with a heart attack, but the majority do not require surgery to remove their hearts from circulation (see Figure 1).\nThe patient's blood pressure has increased significantly since they were first admitted into hospital in 2010; however, there was an increase over time due primarily to changes in cardiac",
+          "Aortic valve (CV) has been established to prevent the formation of a ventricular arrhythmia in patients with CVD or other chronic obstructive pulmonary disease who have had an elevated risk for coronary artery bypass surgery due not being able access to oxygen through their arteries.[1]\nThe presence/effect",
+          "A high-intensity pulse is required to produce a large amount of blood pressure, and this can be caused by an increase in heart rate or increased risk for stroke (see below).\nThe most common cause of death among patients with coronary artery disease was cardiovascular failure due not only to excessive chest pain but also from low levels",
+          "A study published this week found that the average adult male has a lower risk for lung cancer than his female counterparts (P < 0 .001).\nThe researchers also noted an increased incidence among women with chronic bronchial diseases such as COPD2-related asthma; men who have been diagnosed with CVD1 were",
+          "A large number of patients with chronic kidney failure have been diagnosed as having renal dysfunction and/and other conditions that cause death in their own right (e., cardiac arrest).\nThe primary causes for this condition include hypertension; diabetes; congestive pulmonary artery bypass syndrome [COPD], which affects more than 1 million people",
+          "A small number of patients have been treated for this condition in recent years (see Table 1). The patient was not present at any time during treatment due primarily because there were no significant differences between these two conditions; however, it is possible that some other factors may contribute to an increase in risk by increasing blood pressure as well"
+        ],
+        "NF4-BnB": [
+          "A small number of patients with a ventricular fibrillation (VAS) have been reported to be experiencing an increased risk for Vasciitis in their lungs, but there has not yet been any evidence that this increase can occur due either the lack thereof nor its association between vascular infusions/vacation",
+          "A small number of patients with a history of acute or chronic obstructive pulmonary disease have been reported to be at risk for the use of this drug in their treatment (see Table 1).\nThe presence/effect ratio between these two drugs has not yet become known; however, it should remain an open question whether there may",
+          "A small amount of blood is needed to help prevent this from happening in a person with heart failure, but it can be done by breathing slowly and gradually for several hours or more (see below).\nThe risk of an arrhythmia may increase if you have not been able do so before your first visit - see",
+          "A study published this week found that the average weight gain from a single exercise can be as high as 1 kg per day (1kg/m2) for an individual with less than one year to live at least 20 years after their first visit; however, it is not known if these results were due to any other",
+          "A small number of patients with anorexia nervosa have been reported to experience severe pain and/and hyperventilation in their bodies during this period (see Table 1).\nThe incidence rate for these cases has increased from 2% per year between 2000-2010; however, there was little evidence that they were associated",
+          "A small number of patients have been treated for this condition in recent years (see Table 1). The patient was not present at any time during treatment; however, there were no significant differences between these two groups on their own risk factors as well as other clinical outcomes such that they did NOT show signs of an increase over previous"
+        ]
+      },
+      "references": [
+        "No acute cardiopulmonary abnormality.",
+        "No acute preoperative findings.",
+        "No acute process.",
+        "No acute cardiopulmonary findings.",
+        "1. Cardiomegaly without acute cardiopulmonary abnormality.",
+        "Emphysematous changes without evidence of focal airspace disease or pulmonary edema."
+      ],
+      "resumed_from": null,
+      "sample_ids": [
+        "CXR1009",
+        "CXR1028",
+        "CXR1060",
+        "CXR1144",
+        "CXR1152",
+        "CXR1173"
+      ],
+      "status": "complete",
+      "token_nll_sum": 2257.29833984375,
+      "token_weighted_val_loss": 4.712522630153966,
+      "train_time_s_this_invocation": 0.9323977883905172,
+      "trainer_eval_loss": 4.6351094245910645,
+      "val_perplexity": 111.33265707950564,
+      "valid_target_tokens": 479
+    }
+  ],
+  "run_id": "smoke_compat_20260911"
+}

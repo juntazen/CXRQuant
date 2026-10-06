@@ -1,0 +1,1171 @@
+seed,model,precision,category,fp32_pos,fp32_neg,pos_to_neg,neg_to_pos,pos_to_pos,neg_to_neg
+42,distilgpt2,FP16,Enlarged Cardiomediastinum,3,131,1,3,2,128
+42,distilgpt2,FP16,Cardiomegaly,39,95,2,0,37,95
+42,distilgpt2,FP16,Lung Opacity,14,120,7,5,7,115
+42,distilgpt2,FP16,Lung Lesion,14,120,3,9,11,111
+42,distilgpt2,FP16,Edema,14,120,4,6,10,114
+42,distilgpt2,FP16,Consolidation,14,120,2,4,12,116
+42,distilgpt2,FP16,Pneumonia,25,109,8,5,17,104
+42,distilgpt2,FP16,Atelectasis,40,94,10,12,30,82
+42,distilgpt2,FP16,Pneumothorax,2,132,2,1,0,131
+42,distilgpt2,FP16,Pleural Effusion,4,130,1,2,3,128
+42,distilgpt2,FP16,Pleural Other,0,134,0,0,0,134
+42,distilgpt2,FP16,Fracture,8,126,1,0,7,126
+42,distilgpt2,FP16,Support Devices,8,126,2,6,6,120
+42,distilgpt2,INT8,Enlarged Cardiomediastinum,3,131,1,3,2,128
+42,distilgpt2,INT8,Cardiomegaly,39,95,10,6,29,89
+42,distilgpt2,INT8,Lung Opacity,14,120,13,5,1,115
+42,distilgpt2,INT8,Lung Lesion,14,120,7,7,7,113
+42,distilgpt2,INT8,Edema,14,120,9,7,5,113
+42,distilgpt2,INT8,Consolidation,14,120,8,5,6,115
+42,distilgpt2,INT8,Pneumonia,25,109,15,11,10,98
+42,distilgpt2,INT8,Atelectasis,40,94,26,18,14,76
+42,distilgpt2,INT8,Pneumothorax,2,132,2,1,0,131
+42,distilgpt2,INT8,Pleural Effusion,4,130,3,3,1,127
+42,distilgpt2,INT8,Pleural Other,0,134,0,1,0,133
+42,distilgpt2,INT8,Fracture,8,126,7,4,1,122
+42,distilgpt2,INT8,Support Devices,8,126,5,6,3,120
+42,distilgpt2,NF4,Enlarged Cardiomediastinum,3,131,2,5,1,126
+42,distilgpt2,NF4,Cardiomegaly,39,95,14,4,25,91
+42,distilgpt2,NF4,Lung Opacity,14,120,12,13,2,107
+42,distilgpt2,NF4,Lung Lesion,14,120,9,13,5,107
+42,distilgpt2,NF4,Edema,14,120,13,4,1,116
+42,distilgpt2,NF4,Consolidation,14,120,7,15,7,105
+42,distilgpt2,NF4,Pneumonia,25,109,19,11,6,98
+42,distilgpt2,NF4,Atelectasis,40,94,16,27,24,67
+42,distilgpt2,NF4,Pneumothorax,2,132,2,1,0,131
+42,distilgpt2,NF4,Pleural Effusion,4,130,3,9,1,121
+42,distilgpt2,NF4,Pleural Other,0,134,0,2,0,132
+42,distilgpt2,NF4,Fracture,8,126,8,4,0,122
+42,distilgpt2,NF4,Support Devices,8,126,7,11,1,115
+42,gpt2,FP16,Enlarged Cardiomediastinum,2,132,1,0,1,132
+42,gpt2,FP16,Cardiomegaly,30,104,4,3,26,101
+42,gpt2,FP16,Lung Opacity,16,118,3,3,13,115
+42,gpt2,FP16,Lung Lesion,18,116,8,5,10,111
+42,gpt2,FP16,Edema,13,121,2,5,11,116
+42,gpt2,FP16,Consolidation,27,107,4,2,23,105
+42,gpt2,FP16,Pneumonia,26,108,8,2,18,106
+42,gpt2,FP16,Atelectasis,37,97,11,8,26,89
+42,gpt2,FP16,Pneumothorax,0,134,0,1,0,133
+42,gpt2,FP16,Pleural Effusion,0,134,0,0,0,134
+42,gpt2,FP16,Pleural Other,2,132,0,0,2,132
+42,gpt2,FP16,Fracture,5,129,0,3,5,126
+42,gpt2,FP16,Support Devices,18,116,4,3,14,113
+42,gpt2,INT8,Enlarged Cardiomediastinum,2,132,1,0,1,132
+42,gpt2,INT8,Cardiomegaly,30,104,14,9,16,95
+42,gpt2,INT8,Lung Opacity,16,118,7,11,9,107
+42,gpt2,INT8,Lung Lesion,18,116,12,9,6,107
+42,gpt2,INT8,Edema,13,121,9,11,4,110
+42,gpt2,INT8,Consolidation,27,107,18,12,9,95
+42,gpt2,INT8,Pneumonia,26,108,17,8,9,100
+42,gpt2,INT8,Atelectasis,37,97,24,12,13,85
+42,gpt2,INT8,Pneumothorax,0,134,0,1,0,133
+42,gpt2,INT8,Pleural Effusion,0,134,0,1,0,133
+42,gpt2,INT8,Pleural Other,2,132,2,2,0,130
+42,gpt2,INT8,Fracture,5,129,4,3,1,126
+42,gpt2,INT8,Support Devices,18,116,10,9,8,107
+42,gpt2,NF4,Enlarged Cardiomediastinum,2,132,2,2,0,130
+42,gpt2,NF4,Cardiomegaly,30,104,17,12,13,92
+42,gpt2,NF4,Lung Opacity,16,118,12,9,4,109
+42,gpt2,NF4,Lung Lesion,18,116,14,11,4,105
+42,gpt2,NF4,Edema,13,121,11,9,2,112
+42,gpt2,NF4,Consolidation,27,107,24,17,3,90
+42,gpt2,NF4,Pneumonia,26,108,23,4,3,104
+42,gpt2,NF4,Atelectasis,37,97,29,12,8,85
+42,gpt2,NF4,Pneumothorax,0,134,0,3,0,131
+42,gpt2,NF4,Pleural Effusion,0,134,0,3,0,131
+42,gpt2,NF4,Pleural Other,2,132,2,1,0,131
+42,gpt2,NF4,Fracture,5,129,4,4,1,125
+42,gpt2,NF4,Support Devices,18,116,16,5,2,111
+42,gpt2-medium,FP16,Enlarged Cardiomediastinum,1,133,0,1,1,132
+42,gpt2-medium,FP16,Cardiomegaly,12,122,2,1,10,121
+42,gpt2-medium,FP16,Lung Opacity,7,127,1,0,6,127
+42,gpt2-medium,FP16,Lung Lesion,12,122,3,3,9,119
+42,gpt2-medium,FP16,Edema,8,126,3,2,5,124
+42,gpt2-medium,FP16,Consolidation,15,119,2,4,13,115
+42,gpt2-medium,FP16,Pneumonia,9,125,1,2,8,123
+42,gpt2-medium,FP16,Atelectasis,14,120,1,4,13,116
+42,gpt2-medium,FP16,Pneumothorax,1,133,0,0,1,133
+42,gpt2-medium,FP16,Pleural Effusion,4,130,1,1,3,129
+42,gpt2-medium,FP16,Pleural Other,1,133,1,0,0,133
+42,gpt2-medium,FP16,Fracture,6,128,4,1,2,127
+42,gpt2-medium,FP16,Support Devices,16,118,2,2,14,116
+42,gpt2-medium,INT8,Enlarged Cardiomediastinum,1,133,1,0,0,133
+42,gpt2-medium,INT8,Cardiomegaly,12,122,0,2,12,120
+42,gpt2-medium,INT8,Lung Opacity,7,127,4,8,3,119
+42,gpt2-medium,INT8,Lung Lesion,12,122,9,7,3,115
+42,gpt2-medium,INT8,Edema,8,126,5,5,3,121
+42,gpt2-medium,INT8,Consolidation,15,119,7,9,8,110
+42,gpt2-medium,INT8,Pneumonia,9,125,7,4,2,121
+42,gpt2-medium,INT8,Atelectasis,14,120,9,8,5,112
+42,gpt2-medium,INT8,Pneumothorax,1,133,1,1,0,132
+42,gpt2-medium,INT8,Pleural Effusion,4,130,3,4,1,126
+42,gpt2-medium,INT8,Pleural Other,1,133,1,1,0,132
+42,gpt2-medium,INT8,Fracture,6,128,6,3,0,125
+42,gpt2-medium,INT8,Support Devices,16,118,7,10,9,108
+42,gpt2-medium,NF4,Enlarged Cardiomediastinum,1,133,1,0,0,133
+42,gpt2-medium,NF4,Cardiomegaly,12,122,6,9,6,113
+42,gpt2-medium,NF4,Lung Opacity,7,127,5,10,2,117
+42,gpt2-medium,NF4,Lung Lesion,12,122,10,16,2,106
+42,gpt2-medium,NF4,Edema,8,126,6,8,2,118
+42,gpt2-medium,NF4,Consolidation,15,119,13,14,2,105
+42,gpt2-medium,NF4,Pneumonia,9,125,7,18,2,107
+42,gpt2-medium,NF4,Atelectasis,14,120,10,11,4,109
+42,gpt2-medium,NF4,Pneumothorax,1,133,1,2,0,131
+42,gpt2-medium,NF4,Pleural Effusion,4,130,3,0,1,130
+42,gpt2-medium,NF4,Pleural Other,1,133,1,2,0,131
+42,gpt2-medium,NF4,Fracture,6,128,6,10,0,118
+42,gpt2-medium,NF4,Support Devices,16,118,8,14,8,104
+42,biogpt,FP16,Enlarged Cardiomediastinum,0,134,0,0,0,134
+42,biogpt,FP16,Cardiomegaly,11,123,0,0,11,123
+42,biogpt,FP16,Lung Opacity,4,130,0,0,4,130
+42,biogpt,FP16,Lung Lesion,2,132,0,0,2,132
+42,biogpt,FP16,Edema,3,131,0,0,3,131
+42,biogpt,FP16,Consolidation,9,125,0,0,9,125
+42,biogpt,FP16,Pneumonia,3,131,0,0,3,131
+42,biogpt,FP16,Atelectasis,17,117,0,0,17,117
+42,biogpt,FP16,Pneumothorax,1,133,0,0,1,133
+42,biogpt,FP16,Pleural Effusion,8,126,0,0,8,126
+42,biogpt,FP16,Pleural Other,0,134,0,0,0,134
+42,biogpt,FP16,Fracture,0,134,0,0,0,134
+42,biogpt,FP16,Support Devices,6,128,0,0,6,128
+42,biogpt,INT8,Enlarged Cardiomediastinum,0,134,0,0,0,134
+42,biogpt,INT8,Cardiomegaly,11,123,0,0,11,123
+42,biogpt,INT8,Lung Opacity,4,130,3,0,1,130
+42,biogpt,INT8,Lung Lesion,2,132,0,0,2,132
+42,biogpt,INT8,Edema,3,131,3,1,0,130
+42,biogpt,INT8,Consolidation,9,125,0,0,9,125
+42,biogpt,INT8,Pneumonia,3,131,0,1,3,130
+42,biogpt,INT8,Atelectasis,17,117,4,2,13,115
+42,biogpt,INT8,Pneumothorax,1,133,0,0,1,133
+42,biogpt,INT8,Pleural Effusion,8,126,0,0,8,126
+42,biogpt,INT8,Pleural Other,0,134,0,0,0,134
+42,biogpt,INT8,Fracture,0,134,0,0,0,134
+42,biogpt,INT8,Support Devices,6,128,1,1,5,127
+42,biogpt,NF4,Enlarged Cardiomediastinum,0,134,0,1,0,133
+42,biogpt,NF4,Cardiomegaly,11,123,4,0,7,123
+42,biogpt,NF4,Lung Opacity,4,130,3,0,1,130
+42,biogpt,NF4,Lung Lesion,2,132,1,0,1,132
+42,biogpt,NF4,Edema,3,131,2,5,1,126
+42,biogpt,NF4,Consolidation,9,125,4,4,5,121
+42,biogpt,NF4,Pneumonia,3,131,1,0,2,131
+42,biogpt,NF4,Atelectasis,17,117,10,0,7,117
+42,biogpt,NF4,Pneumothorax,1,133,1,0,0,133
+42,biogpt,NF4,Pleural Effusion,8,126,5,2,3,124
+42,biogpt,NF4,Pleural Other,0,134,0,0,0,134
+42,biogpt,NF4,Fracture,0,134,0,0,0,134
+42,biogpt,NF4,Support Devices,6,128,2,1,4,127
+42,pythia-1b,FP16,Enlarged Cardiomediastinum,1,133,0,0,1,133
+42,pythia-1b,FP16,Cardiomegaly,22,112,0,0,22,112
+42,pythia-1b,FP16,Lung Opacity,6,128,0,0,6,128
+42,pythia-1b,FP16,Lung Lesion,2,132,0,0,2,132
+42,pythia-1b,FP16,Edema,4,130,0,0,4,130
+42,pythia-1b,FP16,Consolidation,8,126,0,0,8,126
+42,pythia-1b,FP16,Pneumonia,0,134,0,0,0,134
+42,pythia-1b,FP16,Atelectasis,9,125,0,0,9,125
+42,pythia-1b,FP16,Pneumothorax,0,134,0,0,0,134
+42,pythia-1b,FP16,Pleural Effusion,7,127,0,0,7,127
+42,pythia-1b,FP16,Pleural Other,1,133,0,0,1,133
+42,pythia-1b,FP16,Fracture,2,132,0,0,2,132
+42,pythia-1b,FP16,Support Devices,3,131,0,0,3,131
+42,pythia-1b,INT8,Enlarged Cardiomediastinum,1,133,0,0,1,133
+42,pythia-1b,INT8,Cardiomegaly,22,112,5,0,17,112
+42,pythia-1b,INT8,Lung Opacity,6,128,0,1,6,127
+42,pythia-1b,INT8,Lung Lesion,2,132,0,1,2,131
+42,pythia-1b,INT8,Edema,4,130,1,2,3,128
+42,pythia-1b,INT8,Consolidation,8,126,0,2,8,124
+42,pythia-1b,INT8,Pneumonia,0,134,0,0,0,134
+42,pythia-1b,INT8,Atelectasis,9,125,0,0,9,125
+42,pythia-1b,INT8,Pneumothorax,0,134,0,0,0,134
+42,pythia-1b,INT8,Pleural Effusion,7,127,1,0,6,127
+42,pythia-1b,INT8,Pleural Other,1,133,0,0,1,133
+42,pythia-1b,INT8,Fracture,2,132,2,1,0,131
+42,pythia-1b,INT8,Support Devices,3,131,1,1,2,130
+42,pythia-1b,NF4,Enlarged Cardiomediastinum,1,133,1,0,0,133
+42,pythia-1b,NF4,Cardiomegaly,22,112,7,1,15,111
+42,pythia-1b,NF4,Lung Opacity,6,128,3,5,3,123
+42,pythia-1b,NF4,Lung Lesion,2,132,1,3,1,129
+42,pythia-1b,NF4,Edema,4,130,3,0,1,130
+42,pythia-1b,NF4,Consolidation,8,126,1,2,7,124
+42,pythia-1b,NF4,Pneumonia,0,134,0,0,0,134
+42,pythia-1b,NF4,Atelectasis,9,125,4,3,5,122
+42,pythia-1b,NF4,Pneumothorax,0,134,0,0,0,134
+42,pythia-1b,NF4,Pleural Effusion,7,127,2,3,5,124
+42,pythia-1b,NF4,Pleural Other,1,133,1,0,0,133
+42,pythia-1b,NF4,Fracture,2,132,2,0,0,132
+42,pythia-1b,NF4,Support Devices,3,131,3,1,0,130
+42,biogpt-large,FP16,Enlarged Cardiomediastinum,0,134,0,0,0,134
+42,biogpt-large,FP16,Cardiomegaly,8,126,1,0,7,126
+42,biogpt-large,FP16,Lung Opacity,7,127,0,0,7,127
+42,biogpt-large,FP16,Lung Lesion,2,132,0,0,2,132
+42,biogpt-large,FP16,Edema,4,130,0,0,4,130
+42,biogpt-large,FP16,Consolidation,8,126,1,0,7,126
+42,biogpt-large,FP16,Pneumonia,4,130,0,0,4,130
+42,biogpt-large,FP16,Atelectasis,14,120,1,0,13,120
+42,biogpt-large,FP16,Pneumothorax,0,134,0,0,0,134
+42,biogpt-large,FP16,Pleural Effusion,9,125,0,0,9,125
+42,biogpt-large,FP16,Pleural Other,0,134,0,0,0,134
+42,biogpt-large,FP16,Fracture,0,134,0,0,0,134
+42,biogpt-large,FP16,Support Devices,6,128,0,0,6,128
+42,biogpt-large,INT8,Enlarged Cardiomediastinum,0,134,0,0,0,134
+42,biogpt-large,INT8,Cardiomegaly,8,126,3,0,5,126
+42,biogpt-large,INT8,Lung Opacity,7,127,1,0,6,127
+42,biogpt-large,INT8,Lung Lesion,2,132,0,2,2,130
+42,biogpt-large,INT8,Edema,4,130,0,0,4,130
+42,biogpt-large,INT8,Consolidation,8,126,1,1,7,125
+42,biogpt-large,INT8,Pneumonia,4,130,1,0,3,130
+42,biogpt-large,INT8,Atelectasis,14,120,1,0,13,120
+42,biogpt-large,INT8,Pneumothorax,0,134,0,0,0,134
+42,biogpt-large,INT8,Pleural Effusion,9,125,0,2,9,123
+42,biogpt-large,INT8,Pleural Other,0,134,0,0,0,134
+42,biogpt-large,INT8,Fracture,0,134,0,0,0,134
+42,biogpt-large,INT8,Support Devices,6,128,1,2,5,126
+42,biogpt-large,NF4,Enlarged Cardiomediastinum,0,134,0,0,0,134
+42,biogpt-large,NF4,Cardiomegaly,8,126,3,5,5,121
+42,biogpt-large,NF4,Lung Opacity,7,127,1,3,6,124
+42,biogpt-large,NF4,Lung Lesion,2,132,1,1,1,131
+42,biogpt-large,NF4,Edema,4,130,1,1,3,129
+42,biogpt-large,NF4,Consolidation,8,126,4,2,4,124
+42,biogpt-large,NF4,Pneumonia,4,130,2,1,2,129
+42,biogpt-large,NF4,Atelectasis,14,120,7,1,7,119
+42,biogpt-large,NF4,Pneumothorax,0,134,0,1,0,133
+42,biogpt-large,NF4,Pleural Effusion,9,125,1,2,8,123
+42,biogpt-large,NF4,Pleural Other,0,134,0,0,0,134
+42,biogpt-large,NF4,Fracture,0,134,0,2,0,132
+42,biogpt-large,NF4,Support Devices,6,128,2,3,4,125
+123,distilgpt2,FP16,Enlarged Cardiomediastinum,6,128,4,0,2,128
+123,distilgpt2,FP16,Cardiomegaly,40,94,1,4,39,90
+123,distilgpt2,FP16,Lung Opacity,12,122,4,5,8,117
+123,distilgpt2,FP16,Lung Lesion,10,124,4,6,6,118
+123,distilgpt2,FP16,Edema,9,125,0,8,9,117
+123,distilgpt2,FP16,Consolidation,15,119,4,4,11,115
+123,distilgpt2,FP16,Pneumonia,21,113,8,9,13,104
+123,distilgpt2,FP16,Atelectasis,52,82,11,12,41,70
+123,distilgpt2,FP16,Pneumothorax,2,132,0,3,2,129
+123,distilgpt2,FP16,Pleural Effusion,2,132,0,2,2,130
+123,distilgpt2,FP16,Pleural Other,1,133,0,0,1,133
+123,distilgpt2,FP16,Fracture,6,128,2,2,4,126
+123,distilgpt2,FP16,Support Devices,8,126,3,7,5,119
+123,distilgpt2,INT8,Enlarged Cardiomediastinum,6,128,5,0,1,128
+123,distilgpt2,INT8,Cardiomegaly,40,94,9,7,31,87
+123,distilgpt2,INT8,Lung Opacity,12,122,8,6,4,116
+123,distilgpt2,INT8,Lung Lesion,10,124,6,4,4,120
+123,distilgpt2,INT8,Edema,9,125,7,7,2,118
+123,distilgpt2,INT8,Consolidation,15,119,9,4,6,115
+123,distilgpt2,INT8,Pneumonia,21,113,14,15,7,98
+123,distilgpt2,INT8,Atelectasis,52,82,27,13,25,69
+123,distilgpt2,INT8,Pneumothorax,2,132,2,7,0,125
+123,distilgpt2,INT8,Pleural Effusion,2,132,2,4,0,128
+123,distilgpt2,INT8,Pleural Other,1,133,1,0,0,133
+123,distilgpt2,INT8,Fracture,6,128,4,5,2,123
+123,distilgpt2,INT8,Support Devices,8,126,5,5,3,121
+123,distilgpt2,NF4,Enlarged Cardiomediastinum,6,128,5,3,1,125
+123,distilgpt2,NF4,Cardiomegaly,40,94,14,8,26,86
+123,distilgpt2,NF4,Lung Opacity,12,122,9,8,3,114
+123,distilgpt2,NF4,Lung Lesion,10,124,9,14,1,110
+123,distilgpt2,NF4,Edema,9,125,9,8,0,117
+123,distilgpt2,NF4,Consolidation,15,119,10,8,5,111
+123,distilgpt2,NF4,Pneumonia,21,113,17,9,4,104
+123,distilgpt2,NF4,Atelectasis,52,82,36,22,16,60
+123,distilgpt2,NF4,Pneumothorax,2,132,2,5,0,127
+123,distilgpt2,NF4,Pleural Effusion,2,132,2,4,0,128
+123,distilgpt2,NF4,Pleural Other,1,133,1,2,0,131
+123,distilgpt2,NF4,Fracture,6,128,6,6,0,122
+123,distilgpt2,NF4,Support Devices,8,126,8,4,0,122
+123,gpt2,FP16,Enlarged Cardiomediastinum,0,134,0,0,0,134
+123,gpt2,FP16,Cardiomegaly,19,115,0,4,19,111
+123,gpt2,FP16,Lung Opacity,21,113,4,7,17,106
+123,gpt2,FP16,Lung Lesion,13,121,3,6,10,115
+123,gpt2,FP16,Edema,6,128,2,5,4,123
+123,gpt2,FP16,Consolidation,28,106,13,5,15,101
+123,gpt2,FP16,Pneumonia,22,112,8,8,14,104
+123,gpt2,FP16,Atelectasis,35,99,7,12,28,87
+123,gpt2,FP16,Pneumothorax,1,133,0,0,1,133
+123,gpt2,FP16,Pleural Effusion,4,130,0,0,4,130
+123,gpt2,FP16,Pleural Other,0,134,0,1,0,133
+123,gpt2,FP16,Fracture,1,133,1,4,0,129
+123,gpt2,FP16,Support Devices,25,109,10,4,15,105
+123,gpt2,INT8,Enlarged Cardiomediastinum,0,134,0,1,0,133
+123,gpt2,INT8,Cardiomegaly,19,115,3,6,16,109
+123,gpt2,INT8,Lung Opacity,21,113,7,6,14,107
+123,gpt2,INT8,Lung Lesion,13,121,11,10,2,111
+123,gpt2,INT8,Edema,6,128,2,10,4,118
+123,gpt2,INT8,Consolidation,28,106,16,11,12,95
+123,gpt2,INT8,Pneumonia,22,112,10,8,12,104
+123,gpt2,INT8,Atelectasis,35,99,10,23,25,76
+123,gpt2,INT8,Pneumothorax,1,133,1,1,0,132
+123,gpt2,INT8,Pleural Effusion,4,130,2,4,2,126
+123,gpt2,INT8,Pleural Other,0,134,0,1,0,133
+123,gpt2,INT8,Fracture,1,133,1,6,0,127
+123,gpt2,INT8,Support Devices,25,109,15,8,10,101
+123,gpt2,NF4,Enlarged Cardiomediastinum,0,134,0,2,0,132
+123,gpt2,NF4,Cardiomegaly,19,115,14,9,5,106
+123,gpt2,NF4,Lung Opacity,21,113,15,5,6,108
+123,gpt2,NF4,Lung Lesion,13,121,11,16,2,105
+123,gpt2,NF4,Edema,6,128,6,8,0,120
+123,gpt2,NF4,Consolidation,28,106,23,8,5,98
+123,gpt2,NF4,Pneumonia,22,112,20,11,2,101
+123,gpt2,NF4,Atelectasis,35,99,28,12,7,87
+123,gpt2,NF4,Pneumothorax,1,133,1,2,0,131
+123,gpt2,NF4,Pleural Effusion,4,130,4,1,0,129
+123,gpt2,NF4,Pleural Other,0,134,0,0,0,134
+123,gpt2,NF4,Fracture,1,133,1,4,0,129
+123,gpt2,NF4,Support Devices,25,109,25,3,0,106
+123,gpt2-medium,FP16,Enlarged Cardiomediastinum,1,133,1,0,0,133
+123,gpt2-medium,FP16,Cardiomegaly,17,117,2,1,15,116
+123,gpt2-medium,FP16,Lung Opacity,10,124,2,1,8,123
+123,gpt2-medium,FP16,Lung Lesion,8,126,3,1,5,125
+123,gpt2-medium,FP16,Edema,10,124,2,0,8,124
+123,gpt2-medium,FP16,Consolidation,24,110,5,1,19,109
+123,gpt2-medium,FP16,Pneumonia,11,123,2,1,9,122
+123,gpt2-medium,FP16,Atelectasis,22,112,5,3,17,109
+123,gpt2-medium,FP16,Pneumothorax,2,132,0,0,2,132
+123,gpt2-medium,FP16,Pleural Effusion,4,130,1,0,3,130
+123,gpt2-medium,FP16,Pleural Other,2,132,1,1,1,131
+123,gpt2-medium,FP16,Fracture,2,132,1,2,1,130
+123,gpt2-medium,FP16,Support Devices,15,119,5,1,10,118
+123,gpt2-medium,INT8,Enlarged Cardiomediastinum,1,133,1,0,0,133
+123,gpt2-medium,INT8,Cardiomegaly,17,117,7,1,10,116
+123,gpt2-medium,INT8,Lung Opacity,10,124,4,6,6,118
+123,gpt2-medium,INT8,Lung Lesion,8,126,8,12,0,114
+123,gpt2-medium,INT8,Edema,10,124,7,5,3,119
+123,gpt2-medium,INT8,Consolidation,24,110,14,11,10,99
+123,gpt2-medium,INT8,Pneumonia,11,123,6,11,5,112
+123,gpt2-medium,INT8,Atelectasis,22,112,14,8,8,104
+123,gpt2-medium,INT8,Pneumothorax,2,132,2,0,0,132
+123,gpt2-medium,INT8,Pleural Effusion,4,130,4,2,0,128
+123,gpt2-medium,INT8,Pleural Other,2,132,2,2,0,130
+123,gpt2-medium,INT8,Fracture,2,132,1,4,1,128
+123,gpt2-medium,INT8,Support Devices,15,119,10,8,5,111
+123,gpt2-medium,NF4,Enlarged Cardiomediastinum,1,133,1,2,0,131
+123,gpt2-medium,NF4,Cardiomegaly,17,117,6,11,11,106
+123,gpt2-medium,NF4,Lung Opacity,10,124,8,10,2,114
+123,gpt2-medium,NF4,Lung Lesion,8,126,6,5,2,121
+123,gpt2-medium,NF4,Edema,10,124,6,12,4,112
+123,gpt2-medium,NF4,Consolidation,24,110,18,17,6,93
+123,gpt2-medium,NF4,Pneumonia,11,123,8,7,3,116
+123,gpt2-medium,NF4,Atelectasis,22,112,16,11,6,101
+123,gpt2-medium,NF4,Pneumothorax,2,132,2,3,0,129
+123,gpt2-medium,NF4,Pleural Effusion,4,130,4,6,0,124
+123,gpt2-medium,NF4,Pleural Other,2,132,2,1,0,131
+123,gpt2-medium,NF4,Fracture,2,132,2,3,0,129
+123,gpt2-medium,NF4,Support Devices,15,119,11,20,4,99
+123,biogpt,FP16,Enlarged Cardiomediastinum,0,134,0,0,0,134
+123,biogpt,FP16,Cardiomegaly,12,122,0,0,12,122
+123,biogpt,FP16,Lung Opacity,3,131,0,0,3,131
+123,biogpt,FP16,Lung Lesion,1,133,0,0,1,133
+123,biogpt,FP16,Edema,5,129,0,0,5,129
+123,biogpt,FP16,Consolidation,8,126,0,0,8,126
+123,biogpt,FP16,Pneumonia,3,131,0,0,3,131
+123,biogpt,FP16,Atelectasis,13,121,0,0,13,121
+123,biogpt,FP16,Pneumothorax,1,133,0,0,1,133
+123,biogpt,FP16,Pleural Effusion,7,127,0,0,7,127
+123,biogpt,FP16,Pleural Other,0,134,0,0,0,134
+123,biogpt,FP16,Fracture,0,134,0,0,0,134
+123,biogpt,FP16,Support Devices,4,130,0,0,4,130
+123,biogpt,INT8,Enlarged Cardiomediastinum,0,134,0,0,0,134
+123,biogpt,INT8,Cardiomegaly,12,122,2,1,10,121
+123,biogpt,INT8,Lung Opacity,3,131,2,0,1,131
+123,biogpt,INT8,Lung Lesion,1,133,0,0,1,133
+123,biogpt,INT8,Edema,5,129,1,0,4,129
+123,biogpt,INT8,Consolidation,8,126,0,3,8,123
+123,biogpt,INT8,Pneumonia,3,131,0,1,3,130
+123,biogpt,INT8,Atelectasis,13,121,2,6,11,115
+123,biogpt,INT8,Pneumothorax,1,133,0,0,1,133
+123,biogpt,INT8,Pleural Effusion,7,127,0,0,7,127
+123,biogpt,INT8,Pleural Other,0,134,0,0,0,134
+123,biogpt,INT8,Fracture,0,134,0,0,0,134
+123,biogpt,INT8,Support Devices,4,130,1,0,3,130
+123,biogpt,NF4,Enlarged Cardiomediastinum,0,134,0,0,0,134
+123,biogpt,NF4,Cardiomegaly,12,122,4,0,8,122
+123,biogpt,NF4,Lung Opacity,3,131,0,2,3,129
+123,biogpt,NF4,Lung Lesion,1,133,1,1,0,132
+123,biogpt,NF4,Edema,5,129,1,0,4,129
+123,biogpt,NF4,Consolidation,8,126,2,2,6,124
+123,biogpt,NF4,Pneumonia,3,131,2,0,1,131
+123,biogpt,NF4,Atelectasis,13,121,6,1,7,120
+123,biogpt,NF4,Pneumothorax,1,133,0,0,1,133
+123,biogpt,NF4,Pleural Effusion,7,127,2,0,5,127
+123,biogpt,NF4,Pleural Other,0,134,0,0,0,134
+123,biogpt,NF4,Fracture,0,134,0,2,0,132
+123,biogpt,NF4,Support Devices,4,130,2,3,2,127
+123,pythia-1b,FP16,Enlarged Cardiomediastinum,1,133,0,0,1,133
+123,pythia-1b,FP16,Cardiomegaly,15,119,0,0,15,119
+123,pythia-1b,FP16,Lung Opacity,9,125,0,0,9,125
+123,pythia-1b,FP16,Lung Lesion,1,133,0,0,1,133
+123,pythia-1b,FP16,Edema,4,130,0,0,4,130
+123,pythia-1b,FP16,Consolidation,11,123,0,0,11,123
+123,pythia-1b,FP16,Pneumonia,1,133,0,0,1,133
+123,pythia-1b,FP16,Atelectasis,13,121,0,0,13,121
+123,pythia-1b,FP16,Pneumothorax,0,134,0,0,0,134
+123,pythia-1b,FP16,Pleural Effusion,10,124,0,0,10,124
+123,pythia-1b,FP16,Pleural Other,1,133,0,0,1,133
+123,pythia-1b,FP16,Fracture,1,133,0,0,1,133
+123,pythia-1b,FP16,Support Devices,3,131,0,0,3,131
+123,pythia-1b,INT8,Enlarged Cardiomediastinum,1,133,0,0,1,133
+123,pythia-1b,INT8,Cardiomegaly,15,119,0,0,15,119
+123,pythia-1b,INT8,Lung Opacity,9,125,1,2,8,123
+123,pythia-1b,INT8,Lung Lesion,1,133,0,1,1,132
+123,pythia-1b,INT8,Edema,4,130,2,0,2,130
+123,pythia-1b,INT8,Consolidation,11,123,1,3,10,120
+123,pythia-1b,INT8,Pneumonia,1,133,0,0,1,133
+123,pythia-1b,INT8,Atelectasis,13,121,3,1,10,120
+123,pythia-1b,INT8,Pneumothorax,0,134,0,0,0,134
+123,pythia-1b,INT8,Pleural Effusion,10,124,1,4,9,120
+123,pythia-1b,INT8,Pleural Other,1,133,1,0,0,133
+123,pythia-1b,INT8,Fracture,1,133,0,0,1,133
+123,pythia-1b,INT8,Support Devices,3,131,0,1,3,130
+123,pythia-1b,NF4,Enlarged Cardiomediastinum,1,133,0,0,1,133
+123,pythia-1b,NF4,Cardiomegaly,15,119,5,2,10,117
+123,pythia-1b,NF4,Lung Opacity,9,125,5,3,4,122
+123,pythia-1b,NF4,Lung Lesion,1,133,0,2,1,131
+123,pythia-1b,NF4,Edema,4,130,3,1,1,129
+123,pythia-1b,NF4,Consolidation,11,123,6,2,5,121
+123,pythia-1b,NF4,Pneumonia,1,133,1,0,0,133
+123,pythia-1b,NF4,Atelectasis,13,121,5,5,8,116
+123,pythia-1b,NF4,Pneumothorax,0,134,0,0,0,134
+123,pythia-1b,NF4,Pleural Effusion,10,124,4,1,6,123
+123,pythia-1b,NF4,Pleural Other,1,133,1,1,0,132
+123,pythia-1b,NF4,Fracture,1,133,1,1,0,132
+123,pythia-1b,NF4,Support Devices,3,131,1,2,2,129
+123,biogpt-large,FP16,Enlarged Cardiomediastinum,0,134,0,0,0,134
+123,biogpt-large,FP16,Cardiomegaly,5,129,0,0,5,129
+123,biogpt-large,FP16,Lung Opacity,7,127,0,0,7,127
+123,biogpt-large,FP16,Lung Lesion,3,131,0,0,3,131
+123,biogpt-large,FP16,Edema,5,129,0,0,5,129
+123,biogpt-large,FP16,Consolidation,8,126,0,0,8,126
+123,biogpt-large,FP16,Pneumonia,6,128,0,0,6,128
+123,biogpt-large,FP16,Atelectasis,12,122,0,0,12,122
+123,biogpt-large,FP16,Pneumothorax,0,134,0,0,0,134
+123,biogpt-large,FP16,Pleural Effusion,6,128,0,0,6,128
+123,biogpt-large,FP16,Pleural Other,0,134,0,0,0,134
+123,biogpt-large,FP16,Fracture,0,134,0,0,0,134
+123,biogpt-large,FP16,Support Devices,6,128,0,0,6,128
+123,biogpt-large,INT8,Enlarged Cardiomediastinum,0,134,0,1,0,133
+123,biogpt-large,INT8,Cardiomegaly,5,129,0,1,5,128
+123,biogpt-large,INT8,Lung Opacity,7,127,3,1,4,126
+123,biogpt-large,INT8,Lung Lesion,3,131,1,0,2,131
+123,biogpt-large,INT8,Edema,5,129,2,1,3,128
+123,biogpt-large,INT8,Consolidation,8,126,3,1,5,125
+123,biogpt-large,INT8,Pneumonia,6,128,2,1,4,127
+123,biogpt-large,INT8,Atelectasis,12,122,4,1,8,121
+123,biogpt-large,INT8,Pneumothorax,0,134,0,1,0,133
+123,biogpt-large,INT8,Pleural Effusion,6,128,1,2,5,126
+123,biogpt-large,INT8,Pleural Other,0,134,0,0,0,134
+123,biogpt-large,INT8,Fracture,0,134,0,0,0,134
+123,biogpt-large,INT8,Support Devices,6,128,2,1,4,127
+123,biogpt-large,NF4,Enlarged Cardiomediastinum,0,134,0,0,0,134
+123,biogpt-large,NF4,Cardiomegaly,5,129,1,2,4,127
+123,biogpt-large,NF4,Lung Opacity,7,127,4,3,3,124
+123,biogpt-large,NF4,Lung Lesion,3,131,1,1,2,130
+123,biogpt-large,NF4,Edema,5,129,3,1,2,128
+123,biogpt-large,NF4,Consolidation,8,126,3,2,5,124
+123,biogpt-large,NF4,Pneumonia,6,128,4,2,2,126
+123,biogpt-large,NF4,Atelectasis,12,122,2,3,10,119
+123,biogpt-large,NF4,Pneumothorax,0,134,0,1,0,133
+123,biogpt-large,NF4,Pleural Effusion,6,128,1,2,5,126
+123,biogpt-large,NF4,Pleural Other,0,134,0,0,0,134
+123,biogpt-large,NF4,Fracture,0,134,0,0,0,134
+123,biogpt-large,NF4,Support Devices,6,128,2,4,4,124
+777,distilgpt2,FP16,Enlarged Cardiomediastinum,5,129,0,1,5,128
+777,distilgpt2,FP16,Cardiomegaly,37,97,1,4,36,93
+777,distilgpt2,FP16,Lung Opacity,15,119,4,4,11,115
+777,distilgpt2,FP16,Lung Lesion,11,123,3,5,8,118
+777,distilgpt2,FP16,Edema,9,125,4,0,5,125
+777,distilgpt2,FP16,Consolidation,13,121,6,7,7,114
+777,distilgpt2,FP16,Pneumonia,24,110,4,3,20,107
+777,distilgpt2,FP16,Atelectasis,39,95,7,11,32,84
+777,distilgpt2,FP16,Pneumothorax,1,133,0,0,1,133
+777,distilgpt2,FP16,Pleural Effusion,4,130,2,0,2,130
+777,distilgpt2,FP16,Pleural Other,1,133,0,1,1,132
+777,distilgpt2,FP16,Fracture,5,129,1,3,4,126
+777,distilgpt2,FP16,Support Devices,11,123,5,1,6,122
+777,distilgpt2,INT8,Enlarged Cardiomediastinum,5,129,2,2,3,127
+777,distilgpt2,INT8,Cardiomegaly,37,97,8,2,29,95
+777,distilgpt2,INT8,Lung Opacity,15,119,11,12,4,107
+777,distilgpt2,INT8,Lung Lesion,11,123,10,9,1,114
+777,distilgpt2,INT8,Edema,9,125,3,17,6,108
+777,distilgpt2,INT8,Consolidation,13,121,9,9,4,112
+777,distilgpt2,INT8,Pneumonia,24,110,15,19,9,91
+777,distilgpt2,INT8,Atelectasis,39,95,18,22,21,73
+777,distilgpt2,INT8,Pneumothorax,1,133,1,2,0,131
+777,distilgpt2,INT8,Pleural Effusion,4,130,4,4,0,126
+777,distilgpt2,INT8,Pleural Other,1,133,0,2,1,131
+777,distilgpt2,INT8,Fracture,5,129,3,5,2,124
+777,distilgpt2,INT8,Support Devices,11,123,8,10,3,113
+777,distilgpt2,NF4,Enlarged Cardiomediastinum,5,129,4,5,1,124
+777,distilgpt2,NF4,Cardiomegaly,37,97,15,8,22,89
+777,distilgpt2,NF4,Lung Opacity,15,119,12,13,3,106
+777,distilgpt2,NF4,Lung Lesion,11,123,9,13,2,110
+777,distilgpt2,NF4,Edema,9,125,8,7,1,118
+777,distilgpt2,NF4,Consolidation,13,121,10,24,3,97
+777,distilgpt2,NF4,Pneumonia,24,110,19,21,5,89
+777,distilgpt2,NF4,Atelectasis,39,95,23,29,16,66
+777,distilgpt2,NF4,Pneumothorax,1,133,0,2,1,131
+777,distilgpt2,NF4,Pleural Effusion,4,130,4,4,0,126
+777,distilgpt2,NF4,Pleural Other,1,133,1,2,0,131
+777,distilgpt2,NF4,Fracture,5,129,5,10,0,119
+777,distilgpt2,NF4,Support Devices,11,123,10,9,1,114
+777,gpt2,FP16,Enlarged Cardiomediastinum,1,133,0,0,1,133
+777,gpt2,FP16,Cardiomegaly,30,104,2,4,28,100
+777,gpt2,FP16,Lung Opacity,18,116,3,5,15,111
+777,gpt2,FP16,Lung Lesion,11,123,3,3,8,120
+777,gpt2,FP16,Edema,12,122,2,3,10,119
+777,gpt2,FP16,Consolidation,20,114,2,2,18,112
+777,gpt2,FP16,Pneumonia,24,110,7,8,17,102
+777,gpt2,FP16,Atelectasis,33,101,3,4,30,97
+777,gpt2,FP16,Pneumothorax,1,133,0,0,1,133
+777,gpt2,FP16,Pleural Effusion,4,130,2,1,2,129
+777,gpt2,FP16,Pleural Other,0,134,0,1,0,133
+777,gpt2,FP16,Fracture,4,130,1,2,3,128
+777,gpt2,FP16,Support Devices,25,109,8,1,17,108
+777,gpt2,INT8,Enlarged Cardiomediastinum,1,133,1,0,0,133
+777,gpt2,INT8,Cardiomegaly,30,104,11,8,19,96
+777,gpt2,INT8,Lung Opacity,18,116,8,7,10,109
+777,gpt2,INT8,Lung Lesion,11,123,8,18,3,105
+777,gpt2,INT8,Edema,12,122,7,8,5,114
+777,gpt2,INT8,Consolidation,20,114,9,13,11,101
+777,gpt2,INT8,Pneumonia,24,110,12,7,12,103
+777,gpt2,INT8,Atelectasis,33,101,18,15,15,86
+777,gpt2,INT8,Pneumothorax,1,133,1,1,0,132
+777,gpt2,INT8,Pleural Effusion,4,130,3,2,1,128
+777,gpt2,INT8,Pleural Other,0,134,0,1,0,133
+777,gpt2,INT8,Fracture,4,130,3,5,1,125
+777,gpt2,INT8,Support Devices,25,109,17,16,8,93
+777,gpt2,NF4,Enlarged Cardiomediastinum,1,133,1,2,0,131
+777,gpt2,NF4,Cardiomegaly,30,104,16,5,14,99
+777,gpt2,NF4,Lung Opacity,18,116,10,9,8,107
+777,gpt2,NF4,Lung Lesion,11,123,8,12,3,111
+777,gpt2,NF4,Edema,12,122,12,5,0,117
+777,gpt2,NF4,Consolidation,20,114,13,7,7,107
+777,gpt2,NF4,Pneumonia,24,110,17,4,7,106
+777,gpt2,NF4,Atelectasis,33,101,23,21,10,80
+777,gpt2,NF4,Pneumothorax,1,133,1,1,0,132
+777,gpt2,NF4,Pleural Effusion,4,130,4,2,0,128
+777,gpt2,NF4,Pleural Other,0,134,0,0,0,134
+777,gpt2,NF4,Fracture,4,130,3,5,1,125
+777,gpt2,NF4,Support Devices,25,109,22,5,3,104
+777,gpt2-medium,FP16,Enlarged Cardiomediastinum,0,134,0,0,0,134
+777,gpt2-medium,FP16,Cardiomegaly,17,117,1,4,16,113
+777,gpt2-medium,FP16,Lung Opacity,9,125,1,3,8,122
+777,gpt2-medium,FP16,Lung Lesion,7,127,3,2,4,125
+777,gpt2-medium,FP16,Edema,4,130,1,1,3,129
+777,gpt2-medium,FP16,Consolidation,15,119,0,2,15,117
+777,gpt2-medium,FP16,Pneumonia,9,125,2,0,7,125
+777,gpt2-medium,FP16,Atelectasis,19,115,1,3,18,112
+777,gpt2-medium,FP16,Pneumothorax,1,133,0,0,1,133
+777,gpt2-medium,FP16,Pleural Effusion,1,133,0,0,1,133
+777,gpt2-medium,FP16,Pleural Other,0,134,0,0,0,134
+777,gpt2-medium,FP16,Fracture,6,128,2,0,4,128
+777,gpt2-medium,FP16,Support Devices,19,115,3,0,16,115
+777,gpt2-medium,INT8,Enlarged Cardiomediastinum,0,134,0,1,0,133
+777,gpt2-medium,INT8,Cardiomegaly,17,117,8,10,9,107
+777,gpt2-medium,INT8,Lung Opacity,9,125,4,7,5,118
+777,gpt2-medium,INT8,Lung Lesion,7,127,5,5,2,122
+777,gpt2-medium,INT8,Edema,4,130,3,4,1,126
+777,gpt2-medium,INT8,Consolidation,15,119,6,8,9,111
+777,gpt2-medium,INT8,Pneumonia,9,125,8,4,1,121
+777,gpt2-medium,INT8,Atelectasis,19,115,7,10,12,105
+777,gpt2-medium,INT8,Pneumothorax,1,133,0,0,1,133
+777,gpt2-medium,INT8,Pleural Effusion,1,133,1,1,0,132
+777,gpt2-medium,INT8,Pleural Other,0,134,0,2,0,132
+777,gpt2-medium,INT8,Fracture,6,128,4,4,2,124
+777,gpt2-medium,INT8,Support Devices,19,115,10,11,9,104
+777,gpt2-medium,NF4,Enlarged Cardiomediastinum,0,134,0,0,0,134
+777,gpt2-medium,NF4,Cardiomegaly,17,117,8,7,9,110
+777,gpt2-medium,NF4,Lung Opacity,9,125,6,10,3,115
+777,gpt2-medium,NF4,Lung Lesion,7,127,7,7,0,120
+777,gpt2-medium,NF4,Edema,4,130,4,10,0,120
+777,gpt2-medium,NF4,Consolidation,15,119,9,15,6,104
+777,gpt2-medium,NF4,Pneumonia,9,125,6,16,3,109
+777,gpt2-medium,NF4,Atelectasis,19,115,7,11,12,104
+777,gpt2-medium,NF4,Pneumothorax,1,133,1,1,0,132
+777,gpt2-medium,NF4,Pleural Effusion,1,133,1,2,0,131
+777,gpt2-medium,NF4,Pleural Other,0,134,0,2,0,132
+777,gpt2-medium,NF4,Fracture,6,128,6,4,0,124
+777,gpt2-medium,NF4,Support Devices,19,115,10,13,9,102
+777,biogpt,FP16,Enlarged Cardiomediastinum,0,134,0,0,0,134
+777,biogpt,FP16,Cardiomegaly,12,122,0,0,12,122
+777,biogpt,FP16,Lung Opacity,6,128,0,0,6,128
+777,biogpt,FP16,Lung Lesion,2,132,0,0,2,132
+777,biogpt,FP16,Edema,2,132,0,0,2,132
+777,biogpt,FP16,Consolidation,8,126,0,0,8,126
+777,biogpt,FP16,Pneumonia,3,131,0,0,3,131
+777,biogpt,FP16,Atelectasis,11,123,0,0,11,123
+777,biogpt,FP16,Pneumothorax,2,132,0,0,2,132
+777,biogpt,FP16,Pleural Effusion,9,125,0,0,9,125
+777,biogpt,FP16,Pleural Other,1,133,0,0,1,133
+777,biogpt,FP16,Fracture,0,134,0,0,0,134
+777,biogpt,FP16,Support Devices,3,131,0,0,3,131
+777,biogpt,INT8,Enlarged Cardiomediastinum,0,134,0,0,0,134
+777,biogpt,INT8,Cardiomegaly,12,122,1,0,11,122
+777,biogpt,INT8,Lung Opacity,6,128,1,0,5,128
+777,biogpt,INT8,Lung Lesion,2,132,0,0,2,132
+777,biogpt,INT8,Edema,2,132,1,0,1,132
+777,biogpt,INT8,Consolidation,8,126,1,1,7,125
+777,biogpt,INT8,Pneumonia,3,131,1,1,2,130
+777,biogpt,INT8,Atelectasis,11,123,1,0,10,123
+777,biogpt,INT8,Pneumothorax,2,132,0,0,2,132
+777,biogpt,INT8,Pleural Effusion,9,125,2,0,7,125
+777,biogpt,INT8,Pleural Other,1,133,0,0,1,133
+777,biogpt,INT8,Fracture,0,134,0,0,0,134
+777,biogpt,INT8,Support Devices,3,131,0,0,3,131
+777,biogpt,NF4,Enlarged Cardiomediastinum,0,134,0,1,0,133
+777,biogpt,NF4,Cardiomegaly,12,122,3,2,9,120
+777,biogpt,NF4,Lung Opacity,6,128,3,2,3,126
+777,biogpt,NF4,Lung Lesion,2,132,2,2,0,130
+777,biogpt,NF4,Edema,2,132,1,2,1,130
+777,biogpt,NF4,Consolidation,8,126,4,2,4,124
+777,biogpt,NF4,Pneumonia,3,131,2,3,1,128
+777,biogpt,NF4,Atelectasis,11,123,5,7,6,116
+777,biogpt,NF4,Pneumothorax,2,132,0,3,2,129
+777,biogpt,NF4,Pleural Effusion,9,125,3,4,6,121
+777,biogpt,NF4,Pleural Other,1,133,1,0,0,133
+777,biogpt,NF4,Fracture,0,134,0,0,0,134
+777,biogpt,NF4,Support Devices,3,131,0,2,3,129
+777,pythia-1b,FP16,Enlarged Cardiomediastinum,1,133,0,0,1,133
+777,pythia-1b,FP16,Cardiomegaly,11,123,0,0,11,123
+777,pythia-1b,FP16,Lung Opacity,3,131,0,0,3,131
+777,pythia-1b,FP16,Lung Lesion,1,133,0,0,1,133
+777,pythia-1b,FP16,Edema,3,131,0,0,3,131
+777,pythia-1b,FP16,Consolidation,9,125,1,0,8,125
+777,pythia-1b,FP16,Pneumonia,4,130,0,0,4,130
+777,pythia-1b,FP16,Atelectasis,12,122,1,0,11,122
+777,pythia-1b,FP16,Pneumothorax,0,134,0,0,0,134
+777,pythia-1b,FP16,Pleural Effusion,11,123,0,0,11,123
+777,pythia-1b,FP16,Pleural Other,1,133,0,0,1,133
+777,pythia-1b,FP16,Fracture,1,133,0,0,1,133
+777,pythia-1b,FP16,Support Devices,1,133,0,0,1,133
+777,pythia-1b,INT8,Enlarged Cardiomediastinum,1,133,0,0,1,133
+777,pythia-1b,INT8,Cardiomegaly,11,123,0,0,11,123
+777,pythia-1b,INT8,Lung Opacity,3,131,1,1,2,130
+777,pythia-1b,INT8,Lung Lesion,1,133,0,1,1,132
+777,pythia-1b,INT8,Edema,3,131,2,0,1,131
+777,pythia-1b,INT8,Consolidation,9,125,1,3,8,122
+777,pythia-1b,INT8,Pneumonia,4,130,1,0,3,130
+777,pythia-1b,INT8,Atelectasis,12,122,2,3,10,119
+777,pythia-1b,INT8,Pneumothorax,0,134,0,0,0,134
+777,pythia-1b,INT8,Pleural Effusion,11,123,1,1,10,122
+777,pythia-1b,INT8,Pleural Other,1,133,1,0,0,133
+777,pythia-1b,INT8,Fracture,1,133,1,0,0,133
+777,pythia-1b,INT8,Support Devices,1,133,0,4,1,129
+777,pythia-1b,NF4,Enlarged Cardiomediastinum,1,133,1,0,0,133
+777,pythia-1b,NF4,Cardiomegaly,11,123,3,0,8,123
+777,pythia-1b,NF4,Lung Opacity,3,131,2,3,1,128
+777,pythia-1b,NF4,Lung Lesion,1,133,0,0,1,133
+777,pythia-1b,NF4,Edema,3,131,2,2,1,129
+777,pythia-1b,NF4,Consolidation,9,125,4,3,5,122
+777,pythia-1b,NF4,Pneumonia,4,130,4,0,0,130
+777,pythia-1b,NF4,Atelectasis,12,122,5,3,7,119
+777,pythia-1b,NF4,Pneumothorax,0,134,0,0,0,134
+777,pythia-1b,NF4,Pleural Effusion,11,123,3,2,8,121
+777,pythia-1b,NF4,Pleural Other,1,133,1,1,0,132
+777,pythia-1b,NF4,Fracture,1,133,0,1,1,132
+777,pythia-1b,NF4,Support Devices,1,133,0,3,1,130
+777,biogpt-large,FP16,Enlarged Cardiomediastinum,0,134,0,0,0,134
+777,biogpt-large,FP16,Cardiomegaly,8,126,0,0,8,126
+777,biogpt-large,FP16,Lung Opacity,8,126,1,0,7,126
+777,biogpt-large,FP16,Lung Lesion,1,133,0,0,1,133
+777,biogpt-large,FP16,Edema,3,131,0,0,3,131
+777,biogpt-large,FP16,Consolidation,8,126,0,1,8,125
+777,biogpt-large,FP16,Pneumonia,6,128,1,1,5,127
+777,biogpt-large,FP16,Atelectasis,9,125,1,0,8,125
+777,biogpt-large,FP16,Pneumothorax,1,133,0,0,1,133
+777,biogpt-large,FP16,Pleural Effusion,7,127,0,0,7,127
+777,biogpt-large,FP16,Pleural Other,0,134,0,0,0,134
+777,biogpt-large,FP16,Fracture,2,132,0,0,2,132
+777,biogpt-large,FP16,Support Devices,8,126,1,0,7,126
+777,biogpt-large,INT8,Enlarged Cardiomediastinum,0,134,0,0,0,134
+777,biogpt-large,INT8,Cardiomegaly,8,126,1,1,7,125
+777,biogpt-large,INT8,Lung Opacity,8,126,4,2,4,124
+777,biogpt-large,INT8,Lung Lesion,1,133,0,0,1,133
+777,biogpt-large,INT8,Edema,3,131,2,2,1,129
+777,biogpt-large,INT8,Consolidation,8,126,0,0,8,126
+777,biogpt-large,INT8,Pneumonia,6,128,2,1,4,127
+777,biogpt-large,INT8,Atelectasis,9,125,4,3,5,122
+777,biogpt-large,INT8,Pneumothorax,1,133,0,0,1,133
+777,biogpt-large,INT8,Pleural Effusion,7,127,2,0,5,127
+777,biogpt-large,INT8,Pleural Other,0,134,0,0,0,134
+777,biogpt-large,INT8,Fracture,2,132,1,0,1,132
+777,biogpt-large,INT8,Support Devices,8,126,4,1,4,125
+777,biogpt-large,NF4,Enlarged Cardiomediastinum,0,134,0,0,0,134
+777,biogpt-large,NF4,Cardiomegaly,8,126,2,2,6,124
+777,biogpt-large,NF4,Lung Opacity,8,126,4,2,4,124
+777,biogpt-large,NF4,Lung Lesion,1,133,0,1,1,132
+777,biogpt-large,NF4,Edema,3,131,1,1,2,130
+777,biogpt-large,NF4,Consolidation,8,126,3,3,5,123
+777,biogpt-large,NF4,Pneumonia,6,128,3,1,3,127
+777,biogpt-large,NF4,Atelectasis,9,125,4,3,5,122
+777,biogpt-large,NF4,Pneumothorax,1,133,0,0,1,133
+777,biogpt-large,NF4,Pleural Effusion,7,127,0,2,7,125
+777,biogpt-large,NF4,Pleural Other,0,134,0,0,0,134
+777,biogpt-large,NF4,Fracture,2,132,1,0,1,132
+777,biogpt-large,NF4,Support Devices,8,126,2,4,6,122
+2024,distilgpt2,FP16,Enlarged Cardiomediastinum,6,128,0,1,6,127
+2024,distilgpt2,FP16,Cardiomegaly,43,91,1,5,42,86
+2024,distilgpt2,FP16,Lung Opacity,21,113,2,7,19,106
+2024,distilgpt2,FP16,Lung Lesion,17,117,4,2,13,115
+2024,distilgpt2,FP16,Edema,13,121,4,1,9,120
+2024,distilgpt2,FP16,Consolidation,27,107,8,4,19,103
+2024,distilgpt2,FP16,Pneumonia,21,113,10,5,11,108
+2024,distilgpt2,FP16,Atelectasis,52,82,7,7,45,75
+2024,distilgpt2,FP16,Pneumothorax,1,133,1,0,0,133
+2024,distilgpt2,FP16,Pleural Effusion,5,129,2,0,3,129
+2024,distilgpt2,FP16,Pleural Other,1,133,1,0,0,133
+2024,distilgpt2,FP16,Fracture,3,131,0,1,3,130
+2024,distilgpt2,FP16,Support Devices,16,118,1,6,15,112
+2024,distilgpt2,INT8,Enlarged Cardiomediastinum,6,128,4,1,2,127
+2024,distilgpt2,INT8,Cardiomegaly,43,91,13,6,30,85
+2024,distilgpt2,INT8,Lung Opacity,21,113,12,9,9,104
+2024,distilgpt2,INT8,Lung Lesion,17,117,11,12,6,105
+2024,distilgpt2,INT8,Edema,13,121,12,10,1,111
+2024,distilgpt2,INT8,Consolidation,27,107,17,9,10,98
+2024,distilgpt2,INT8,Pneumonia,21,113,17,14,4,99
+2024,distilgpt2,INT8,Atelectasis,52,82,23,17,29,65
+2024,distilgpt2,INT8,Pneumothorax,1,133,1,0,0,133
+2024,distilgpt2,INT8,Pleural Effusion,5,129,4,2,1,127
+2024,distilgpt2,INT8,Pleural Other,1,133,0,0,1,133
+2024,distilgpt2,INT8,Fracture,3,131,0,5,3,126
+2024,distilgpt2,INT8,Support Devices,16,118,10,6,6,112
+2024,distilgpt2,NF4,Enlarged Cardiomediastinum,6,128,5,2,1,126
+2024,distilgpt2,NF4,Cardiomegaly,43,91,20,7,23,84
+2024,distilgpt2,NF4,Lung Opacity,21,113,19,5,2,108
+2024,distilgpt2,NF4,Lung Lesion,17,117,12,12,5,105
+2024,distilgpt2,NF4,Edema,13,121,11,14,2,107
+2024,distilgpt2,NF4,Consolidation,27,107,21,17,6,90
+2024,distilgpt2,NF4,Pneumonia,21,113,17,10,4,103
+2024,distilgpt2,NF4,Atelectasis,52,82,27,23,25,59
+2024,distilgpt2,NF4,Pneumothorax,1,133,1,1,0,132
+2024,distilgpt2,NF4,Pleural Effusion,5,129,4,4,1,125
+2024,distilgpt2,NF4,Pleural Other,1,133,0,1,1,132
+2024,distilgpt2,NF4,Fracture,3,131,3,6,0,125
+2024,distilgpt2,NF4,Support Devices,16,118,16,5,0,113
+2024,gpt2,FP16,Enlarged Cardiomediastinum,1,133,0,1,1,132
+2024,gpt2,FP16,Cardiomegaly,27,107,3,1,24,106
+2024,gpt2,FP16,Lung Opacity,14,120,3,7,11,113
+2024,gpt2,FP16,Lung Lesion,19,115,8,5,11,110
+2024,gpt2,FP16,Edema,13,121,5,1,8,120
+2024,gpt2,FP16,Consolidation,32,102,6,1,26,101
+2024,gpt2,FP16,Pneumonia,14,120,4,4,10,116
+2024,gpt2,FP16,Atelectasis,32,102,2,5,30,97
+2024,gpt2,FP16,Pneumothorax,2,132,0,0,2,132
+2024,gpt2,FP16,Pleural Effusion,1,133,1,2,0,131
+2024,gpt2,FP16,Pleural Other,1,133,1,0,0,133
+2024,gpt2,FP16,Fracture,2,132,1,1,1,131
+2024,gpt2,FP16,Support Devices,15,119,5,2,10,117
+2024,gpt2,INT8,Enlarged Cardiomediastinum,1,133,1,0,0,133
+2024,gpt2,INT8,Cardiomegaly,27,107,9,10,18,97
+2024,gpt2,INT8,Lung Opacity,14,120,9,10,5,110
+2024,gpt2,INT8,Lung Lesion,19,115,12,8,7,107
+2024,gpt2,INT8,Edema,13,121,9,10,4,111
+2024,gpt2,INT8,Consolidation,32,102,15,13,17,89
+2024,gpt2,INT8,Pneumonia,14,120,4,13,10,107
+2024,gpt2,INT8,Atelectasis,32,102,15,20,17,82
+2024,gpt2,INT8,Pneumothorax,2,132,1,1,1,131
+2024,gpt2,INT8,Pleural Effusion,1,133,1,1,0,132
+2024,gpt2,INT8,Pleural Other,1,133,1,0,0,133
+2024,gpt2,INT8,Fracture,2,132,2,5,0,127
+2024,gpt2,INT8,Support Devices,15,119,7,5,8,114
+2024,gpt2,NF4,Enlarged Cardiomediastinum,1,133,1,2,0,131
+2024,gpt2,NF4,Cardiomegaly,27,107,20,6,7,101
+2024,gpt2,NF4,Lung Opacity,14,120,12,11,2,109
+2024,gpt2,NF4,Lung Lesion,19,115,17,20,2,95
+2024,gpt2,NF4,Edema,13,121,11,8,2,113
+2024,gpt2,NF4,Consolidation,32,102,27,14,5,88
+2024,gpt2,NF4,Pneumonia,14,120,12,7,2,113
+2024,gpt2,NF4,Atelectasis,32,102,25,12,7,90
+2024,gpt2,NF4,Pneumothorax,2,132,2,0,0,132
+2024,gpt2,NF4,Pleural Effusion,1,133,1,1,0,132
+2024,gpt2,NF4,Pleural Other,1,133,1,1,0,132
+2024,gpt2,NF4,Fracture,2,132,2,3,0,129
+2024,gpt2,NF4,Support Devices,15,119,15,5,0,114
+2024,gpt2-medium,FP16,Enlarged Cardiomediastinum,1,133,0,0,1,133
+2024,gpt2-medium,FP16,Cardiomegaly,19,115,0,2,19,113
+2024,gpt2-medium,FP16,Lung Opacity,14,120,2,5,12,115
+2024,gpt2-medium,FP16,Lung Lesion,14,120,1,4,13,116
+2024,gpt2-medium,FP16,Edema,13,121,2,1,11,120
+2024,gpt2-medium,FP16,Consolidation,14,120,1,1,13,119
+2024,gpt2-medium,FP16,Pneumonia,5,129,3,0,2,129
+2024,gpt2-medium,FP16,Atelectasis,22,112,1,2,21,110
+2024,gpt2-medium,FP16,Pneumothorax,2,132,1,0,1,132
+2024,gpt2-medium,FP16,Pleural Effusion,0,134,0,1,0,133
+2024,gpt2-medium,FP16,Pleural Other,2,132,1,1,1,131
+2024,gpt2-medium,FP16,Fracture,5,129,2,0,3,129
+2024,gpt2-medium,FP16,Support Devices,16,118,1,2,15,116
+2024,gpt2-medium,INT8,Enlarged Cardiomediastinum,1,133,0,0,1,133
+2024,gpt2-medium,INT8,Cardiomegaly,19,115,7,2,12,113
+2024,gpt2-medium,INT8,Lung Opacity,14,120,8,3,6,117
+2024,gpt2-medium,INT8,Lung Lesion,14,120,11,8,3,112
+2024,gpt2-medium,INT8,Edema,13,121,9,7,4,114
+2024,gpt2-medium,INT8,Consolidation,14,120,6,14,8,106
+2024,gpt2-medium,INT8,Pneumonia,5,129,2,5,3,124
+2024,gpt2-medium,INT8,Atelectasis,22,112,11,10,11,102
+2024,gpt2-medium,INT8,Pneumothorax,2,132,2,0,0,132
+2024,gpt2-medium,INT8,Pleural Effusion,0,134,0,3,0,131
+2024,gpt2-medium,INT8,Pleural Other,2,132,2,0,0,132
+2024,gpt2-medium,INT8,Fracture,5,129,4,6,1,123
+2024,gpt2-medium,INT8,Support Devices,16,118,10,6,6,112
+2024,gpt2-medium,NF4,Enlarged Cardiomediastinum,1,133,1,0,0,133
+2024,gpt2-medium,NF4,Cardiomegaly,19,115,10,10,9,105
+2024,gpt2-medium,NF4,Lung Opacity,14,120,11,12,3,108
+2024,gpt2-medium,NF4,Lung Lesion,14,120,13,8,1,112
+2024,gpt2-medium,NF4,Edema,13,121,8,10,5,111
+2024,gpt2-medium,NF4,Consolidation,14,120,7,14,7,106
+2024,gpt2-medium,NF4,Pneumonia,5,129,5,16,0,113
+2024,gpt2-medium,NF4,Atelectasis,22,112,11,16,11,96
+2024,gpt2-medium,NF4,Pneumothorax,2,132,2,1,0,131
+2024,gpt2-medium,NF4,Pleural Effusion,0,134,0,6,0,128
+2024,gpt2-medium,NF4,Pleural Other,2,132,1,1,1,131
+2024,gpt2-medium,NF4,Fracture,5,129,5,6,0,123
+2024,gpt2-medium,NF4,Support Devices,16,118,9,12,7,106
+2024,biogpt,FP16,Enlarged Cardiomediastinum,0,134,0,0,0,134
+2024,biogpt,FP16,Cardiomegaly,9,125,0,0,9,125
+2024,biogpt,FP16,Lung Opacity,7,127,0,0,7,127
+2024,biogpt,FP16,Lung Lesion,2,132,1,0,1,132
+2024,biogpt,FP16,Edema,2,132,0,0,2,132
+2024,biogpt,FP16,Consolidation,9,125,1,0,8,125
+2024,biogpt,FP16,Pneumonia,0,134,0,0,0,134
+2024,biogpt,FP16,Atelectasis,17,117,1,0,16,117
+2024,biogpt,FP16,Pneumothorax,1,133,0,0,1,133
+2024,biogpt,FP16,Pleural Effusion,6,128,0,0,6,128
+2024,biogpt,FP16,Pleural Other,0,134,0,0,0,134
+2024,biogpt,FP16,Fracture,0,134,0,0,0,134
+2024,biogpt,FP16,Support Devices,5,129,0,0,5,129
+2024,biogpt,INT8,Enlarged Cardiomediastinum,0,134,0,0,0,134
+2024,biogpt,INT8,Cardiomegaly,9,125,1,1,8,124
+2024,biogpt,INT8,Lung Opacity,7,127,1,3,6,124
+2024,biogpt,INT8,Lung Lesion,2,132,1,0,1,132
+2024,biogpt,INT8,Edema,2,132,0,0,2,132
+2024,biogpt,INT8,Consolidation,9,125,3,2,6,123
+2024,biogpt,INT8,Pneumonia,0,134,0,1,0,133
+2024,biogpt,INT8,Atelectasis,17,117,2,3,15,114
+2024,biogpt,INT8,Pneumothorax,1,133,1,1,0,132
+2024,biogpt,INT8,Pleural Effusion,6,128,2,0,4,128
+2024,biogpt,INT8,Pleural Other,0,134,0,1,0,133
+2024,biogpt,INT8,Fracture,0,134,0,0,0,134
+2024,biogpt,INT8,Support Devices,5,129,0,0,5,129
+2024,biogpt,NF4,Enlarged Cardiomediastinum,0,134,0,0,0,134
+2024,biogpt,NF4,Cardiomegaly,9,125,1,2,8,123
+2024,biogpt,NF4,Lung Opacity,7,127,4,3,3,124
+2024,biogpt,NF4,Lung Lesion,2,132,2,1,0,131
+2024,biogpt,NF4,Edema,2,132,0,2,2,130
+2024,biogpt,NF4,Consolidation,9,125,4,5,5,120
+2024,biogpt,NF4,Pneumonia,0,134,0,0,0,134
+2024,biogpt,NF4,Atelectasis,17,117,6,4,11,113
+2024,biogpt,NF4,Pneumothorax,1,133,1,1,0,132
+2024,biogpt,NF4,Pleural Effusion,6,128,3,1,3,127
+2024,biogpt,NF4,Pleural Other,0,134,0,1,0,133
+2024,biogpt,NF4,Fracture,0,134,0,0,0,134
+2024,biogpt,NF4,Support Devices,5,129,1,2,4,127
+2024,pythia-1b,FP16,Enlarged Cardiomediastinum,1,133,0,0,1,133
+2024,pythia-1b,FP16,Cardiomegaly,17,117,0,0,17,117
+2024,pythia-1b,FP16,Lung Opacity,9,125,0,0,9,125
+2024,pythia-1b,FP16,Lung Lesion,1,133,0,0,1,133
+2024,pythia-1b,FP16,Edema,3,131,0,0,3,131
+2024,pythia-1b,FP16,Consolidation,9,125,0,0,9,125
+2024,pythia-1b,FP16,Pneumonia,3,131,0,0,3,131
+2024,pythia-1b,FP16,Atelectasis,9,125,0,0,9,125
+2024,pythia-1b,FP16,Pneumothorax,0,134,0,0,0,134
+2024,pythia-1b,FP16,Pleural Effusion,5,129,0,0,5,129
+2024,pythia-1b,FP16,Pleural Other,1,133,0,0,1,133
+2024,pythia-1b,FP16,Fracture,0,134,0,0,0,134
+2024,pythia-1b,FP16,Support Devices,4,130,0,0,4,130
+2024,pythia-1b,INT8,Enlarged Cardiomediastinum,1,133,0,0,1,133
+2024,pythia-1b,INT8,Cardiomegaly,17,117,1,2,16,115
+2024,pythia-1b,INT8,Lung Opacity,9,125,2,1,7,124
+2024,pythia-1b,INT8,Lung Lesion,1,133,0,0,1,133
+2024,pythia-1b,INT8,Edema,3,131,2,0,1,131
+2024,pythia-1b,INT8,Consolidation,9,125,1,0,8,125
+2024,pythia-1b,INT8,Pneumonia,3,131,1,0,2,131
+2024,pythia-1b,INT8,Atelectasis,9,125,1,0,8,125
+2024,pythia-1b,INT8,Pneumothorax,0,134,0,0,0,134
+2024,pythia-1b,INT8,Pleural Effusion,5,129,0,0,5,129
+2024,pythia-1b,INT8,Pleural Other,1,133,0,0,1,133
+2024,pythia-1b,INT8,Fracture,0,134,0,0,0,134
+2024,pythia-1b,INT8,Support Devices,4,130,0,0,4,130
+2024,pythia-1b,NF4,Enlarged Cardiomediastinum,1,133,0,0,1,133
+2024,pythia-1b,NF4,Cardiomegaly,17,117,5,4,12,113
+2024,pythia-1b,NF4,Lung Opacity,9,125,3,2,6,123
+2024,pythia-1b,NF4,Lung Lesion,1,133,1,0,0,133
+2024,pythia-1b,NF4,Edema,3,131,3,2,0,129
+2024,pythia-1b,NF4,Consolidation,9,125,2,1,7,124
+2024,pythia-1b,NF4,Pneumonia,3,131,2,2,1,129
+2024,pythia-1b,NF4,Atelectasis,9,125,2,5,7,120
+2024,pythia-1b,NF4,Pneumothorax,0,134,0,1,0,133
+2024,pythia-1b,NF4,Pleural Effusion,5,129,2,0,3,129
+2024,pythia-1b,NF4,Pleural Other,1,133,1,1,0,132
+2024,pythia-1b,NF4,Fracture,0,134,0,0,0,134
+2024,pythia-1b,NF4,Support Devices,4,130,0,3,4,127
+2024,biogpt-large,FP16,Enlarged Cardiomediastinum,0,134,0,0,0,134
+2024,biogpt-large,FP16,Cardiomegaly,10,124,0,0,10,124
+2024,biogpt-large,FP16,Lung Opacity,4,130,0,0,4,130
+2024,biogpt-large,FP16,Lung Lesion,1,133,0,0,1,133
+2024,biogpt-large,FP16,Edema,3,131,0,0,3,131
+2024,biogpt-large,FP16,Consolidation,8,126,0,0,8,126
+2024,biogpt-large,FP16,Pneumonia,5,129,0,0,5,129
+2024,biogpt-large,FP16,Atelectasis,11,123,0,0,11,123
+2024,biogpt-large,FP16,Pneumothorax,1,133,0,0,1,133
+2024,biogpt-large,FP16,Pleural Effusion,8,126,0,0,8,126
+2024,biogpt-large,FP16,Pleural Other,1,133,0,0,1,133
+2024,biogpt-large,FP16,Fracture,0,134,0,0,0,134
+2024,biogpt-large,FP16,Support Devices,4,130,0,0,4,130
+2024,biogpt-large,INT8,Enlarged Cardiomediastinum,0,134,0,0,0,134
+2024,biogpt-large,INT8,Cardiomegaly,10,124,1,0,9,124
+2024,biogpt-large,INT8,Lung Opacity,4,130,1,0,3,130
+2024,biogpt-large,INT8,Lung Lesion,1,133,0,0,1,133
+2024,biogpt-large,INT8,Edema,3,131,1,3,2,128
+2024,biogpt-large,INT8,Consolidation,8,126,2,0,6,126
+2024,biogpt-large,INT8,Pneumonia,5,129,2,0,3,129
+2024,biogpt-large,INT8,Atelectasis,11,123,4,1,7,122
+2024,biogpt-large,INT8,Pneumothorax,1,133,0,0,1,133
+2024,biogpt-large,INT8,Pleural Effusion,8,126,0,0,8,126
+2024,biogpt-large,INT8,Pleural Other,1,133,1,0,0,133
+2024,biogpt-large,INT8,Fracture,0,134,0,0,0,134
+2024,biogpt-large,INT8,Support Devices,4,130,1,1,3,129
+2024,biogpt-large,NF4,Enlarged Cardiomediastinum,0,134,0,0,0,134
+2024,biogpt-large,NF4,Cardiomegaly,10,124,2,0,8,124
+2024,biogpt-large,NF4,Lung Opacity,4,130,2,0,2,130
+2024,biogpt-large,NF4,Lung Lesion,1,133,1,0,0,133
+2024,biogpt-large,NF4,Edema,3,131,3,1,0,130
+2024,biogpt-large,NF4,Consolidation,8,126,2,1,6,125
+2024,biogpt-large,NF4,Pneumonia,5,129,1,2,4,127
+2024,biogpt-large,NF4,Atelectasis,11,123,5,3,6,120
+2024,biogpt-large,NF4,Pneumothorax,1,133,1,1,0,132
+2024,biogpt-large,NF4,Pleural Effusion,8,126,1,1,7,125
+2024,biogpt-large,NF4,Pleural Other,1,133,0,1,1,132
+2024,biogpt-large,NF4,Fracture,0,134,0,2,0,132
+2024,biogpt-large,NF4,Support Devices,4,130,0,3,4,127
+31415,distilgpt2,FP16,Enlarged Cardiomediastinum,1,133,0,1,1,132
+31415,distilgpt2,FP16,Cardiomegaly,32,102,0,2,32,100
+31415,distilgpt2,FP16,Lung Opacity,21,113,2,3,19,110
+31415,distilgpt2,FP16,Lung Lesion,14,120,6,4,8,116
+31415,distilgpt2,FP16,Edema,19,115,2,2,17,113
+31415,distilgpt2,FP16,Consolidation,16,118,5,4,11,114
+31415,distilgpt2,FP16,Pneumonia,19,115,6,3,13,112
+31415,distilgpt2,FP16,Atelectasis,43,91,7,6,36,85
+31415,distilgpt2,FP16,Pneumothorax,2,132,2,0,0,132
+31415,distilgpt2,FP16,Pleural Effusion,1,133,1,0,0,133
+31415,distilgpt2,FP16,Pleural Other,2,132,0,0,2,132
+31415,distilgpt2,FP16,Fracture,6,128,2,2,4,126
+31415,distilgpt2,FP16,Support Devices,10,124,0,2,10,122
+31415,distilgpt2,INT8,Enlarged Cardiomediastinum,1,133,1,2,0,131
+31415,distilgpt2,INT8,Cardiomegaly,32,102,3,5,29,97
+31415,distilgpt2,INT8,Lung Opacity,21,113,11,8,10,105
+31415,distilgpt2,INT8,Lung Lesion,14,120,10,9,4,111
+31415,distilgpt2,INT8,Edema,19,115,9,12,10,103
+31415,distilgpt2,INT8,Consolidation,16,118,10,11,6,107
+31415,distilgpt2,INT8,Pneumonia,19,115,8,16,11,99
+31415,distilgpt2,INT8,Atelectasis,43,91,19,18,24,73
+31415,distilgpt2,INT8,Pneumothorax,2,132,2,0,0,132
+31415,distilgpt2,INT8,Pleural Effusion,1,133,1,4,0,129
+31415,distilgpt2,INT8,Pleural Other,2,132,1,0,1,132
+31415,distilgpt2,INT8,Fracture,6,128,5,8,1,120
+31415,distilgpt2,INT8,Support Devices,10,124,4,10,6,114
+31415,distilgpt2,NF4,Enlarged Cardiomediastinum,1,133,0,5,1,128
+31415,distilgpt2,NF4,Cardiomegaly,32,102,11,8,21,94
+31415,distilgpt2,NF4,Lung Opacity,21,113,17,11,4,102
+31415,distilgpt2,NF4,Lung Lesion,14,120,9,9,5,111
+31415,distilgpt2,NF4,Edema,19,115,18,7,1,108
+31415,distilgpt2,NF4,Consolidation,16,118,12,14,4,104
+31415,distilgpt2,NF4,Pneumonia,19,115,14,10,5,105
+31415,distilgpt2,NF4,Atelectasis,43,91,27,18,16,73
+31415,distilgpt2,NF4,Pneumothorax,2,132,2,1,0,131
+31415,distilgpt2,NF4,Pleural Effusion,1,133,1,3,0,130
+31415,distilgpt2,NF4,Pleural Other,2,132,2,3,0,129
+31415,distilgpt2,NF4,Fracture,6,128,5,10,1,118
+31415,distilgpt2,NF4,Support Devices,10,124,8,10,2,114
+31415,gpt2,FP16,Enlarged Cardiomediastinum,0,134,0,0,0,134
+31415,gpt2,FP16,Cardiomegaly,19,115,2,3,17,112
+31415,gpt2,FP16,Lung Opacity,24,110,3,5,21,105
+31415,gpt2,FP16,Lung Lesion,19,115,9,7,10,108
+31415,gpt2,FP16,Edema,12,122,2,4,10,118
+31415,gpt2,FP16,Consolidation,33,101,5,4,28,97
+31415,gpt2,FP16,Pneumonia,19,115,5,5,14,110
+31415,gpt2,FP16,Atelectasis,44,90,4,7,40,83
+31415,gpt2,FP16,Pneumothorax,1,133,0,2,1,131
+31415,gpt2,FP16,Pleural Effusion,3,131,0,2,3,129
+31415,gpt2,FP16,Pleural Other,1,133,0,0,1,133
+31415,gpt2,FP16,Fracture,4,130,0,3,4,127
+31415,gpt2,FP16,Support Devices,28,106,7,1,21,105
+31415,gpt2,INT8,Enlarged Cardiomediastinum,0,134,0,0,0,134
+31415,gpt2,INT8,Cardiomegaly,19,115,8,4,11,111
+31415,gpt2,INT8,Lung Opacity,24,110,9,12,15,98
+31415,gpt2,INT8,Lung Lesion,19,115,16,15,3,100
+31415,gpt2,INT8,Edema,12,122,9,14,3,108
+31415,gpt2,INT8,Consolidation,33,101,17,13,16,88
+31415,gpt2,INT8,Pneumonia,19,115,13,17,6,98
+31415,gpt2,INT8,Atelectasis,44,90,21,19,23,71
+31415,gpt2,INT8,Pneumothorax,1,133,1,2,0,131
+31415,gpt2,INT8,Pleural Effusion,3,131,2,1,1,130
+31415,gpt2,INT8,Pleural Other,1,133,1,0,0,133
+31415,gpt2,INT8,Fracture,4,130,4,13,0,117
+31415,gpt2,INT8,Support Devices,28,106,16,8,12,98
+31415,gpt2,NF4,Enlarged Cardiomediastinum,0,134,0,3,0,131
+31415,gpt2,NF4,Cardiomegaly,19,115,5,9,14,106
+31415,gpt2,NF4,Lung Opacity,24,110,17,10,7,100
+31415,gpt2,NF4,Lung Lesion,19,115,15,19,4,96
+31415,gpt2,NF4,Edema,12,122,10,15,2,107
+31415,gpt2,NF4,Consolidation,33,101,22,14,11,87
+31415,gpt2,NF4,Pneumonia,19,115,15,18,4,97
+31415,gpt2,NF4,Atelectasis,44,90,32,15,12,75
+31415,gpt2,NF4,Pneumothorax,1,133,0,4,1,129
+31415,gpt2,NF4,Pleural Effusion,3,131,1,1,2,130
+31415,gpt2,NF4,Pleural Other,1,133,1,0,0,133
+31415,gpt2,NF4,Fracture,4,130,4,4,0,126
+31415,gpt2,NF4,Support Devices,28,106,22,5,6,101
+31415,gpt2-medium,FP16,Enlarged Cardiomediastinum,1,133,1,0,0,133
+31415,gpt2-medium,FP16,Cardiomegaly,13,121,1,2,12,119
+31415,gpt2-medium,FP16,Lung Opacity,10,124,1,2,9,122
+31415,gpt2-medium,FP16,Lung Lesion,15,119,4,1,11,118
+31415,gpt2-medium,FP16,Edema,8,126,2,0,6,126
+31415,gpt2-medium,FP16,Consolidation,31,103,4,3,27,100
+31415,gpt2-medium,FP16,Pneumonia,11,123,1,3,10,120
+31415,gpt2-medium,FP16,Atelectasis,30,104,7,4,23,100
+31415,gpt2-medium,FP16,Pneumothorax,0,134,0,0,0,134
+31415,gpt2-medium,FP16,Pleural Effusion,1,133,0,0,1,133
+31415,gpt2-medium,FP16,Pleural Other,0,134,0,0,0,134
+31415,gpt2-medium,FP16,Fracture,11,123,1,2,10,121
+31415,gpt2-medium,FP16,Support Devices,21,113,5,6,16,107
+31415,gpt2-medium,INT8,Enlarged Cardiomediastinum,1,133,1,0,0,133
+31415,gpt2-medium,INT8,Cardiomegaly,13,121,3,6,10,115
+31415,gpt2-medium,INT8,Lung Opacity,10,124,7,3,3,121
+31415,gpt2-medium,INT8,Lung Lesion,15,119,11,4,4,115
+31415,gpt2-medium,INT8,Edema,8,126,4,4,4,122
+31415,gpt2-medium,INT8,Consolidation,31,103,17,13,14,90
+31415,gpt2-medium,INT8,Pneumonia,11,123,7,8,4,115
+31415,gpt2-medium,INT8,Atelectasis,30,104,16,13,14,91
+31415,gpt2-medium,INT8,Pneumothorax,0,134,0,1,0,133
+31415,gpt2-medium,INT8,Pleural Effusion,1,133,1,5,0,128
+31415,gpt2-medium,INT8,Pleural Other,0,134,0,3,0,131
+31415,gpt2-medium,INT8,Fracture,11,123,10,3,1,120
+31415,gpt2-medium,INT8,Support Devices,21,113,12,5,9,108
+31415,gpt2-medium,NF4,Enlarged Cardiomediastinum,1,133,1,0,0,133
+31415,gpt2-medium,NF4,Cardiomegaly,13,121,7,10,6,111
+31415,gpt2-medium,NF4,Lung Opacity,10,124,6,9,4,115
+31415,gpt2-medium,NF4,Lung Lesion,15,119,12,12,3,107
+31415,gpt2-medium,NF4,Edema,8,126,8,14,0,112
+31415,gpt2-medium,NF4,Consolidation,31,103,21,23,10,80
+31415,gpt2-medium,NF4,Pneumonia,11,123,8,22,3,101
+31415,gpt2-medium,NF4,Atelectasis,30,104,18,16,12,88
+31415,gpt2-medium,NF4,Pneumothorax,0,134,0,3,0,131
+31415,gpt2-medium,NF4,Pleural Effusion,1,133,1,6,0,127
+31415,gpt2-medium,NF4,Pleural Other,0,134,0,2,0,132
+31415,gpt2-medium,NF4,Fracture,11,123,10,5,1,118
+31415,gpt2-medium,NF4,Support Devices,21,113,15,17,6,96
+31415,biogpt,FP16,Enlarged Cardiomediastinum,0,134,0,0,0,134
+31415,biogpt,FP16,Cardiomegaly,10,124,0,0,10,124
+31415,biogpt,FP16,Lung Opacity,5,129,0,0,5,129
+31415,biogpt,FP16,Lung Lesion,1,133,0,0,1,133
+31415,biogpt,FP16,Edema,0,134,0,0,0,134
+31415,biogpt,FP16,Consolidation,10,124,0,0,10,124
+31415,biogpt,FP16,Pneumonia,4,130,0,0,4,130
+31415,biogpt,FP16,Atelectasis,10,124,0,0,10,124
+31415,biogpt,FP16,Pneumothorax,1,133,0,0,1,133
+31415,biogpt,FP16,Pleural Effusion,8,126,0,0,8,126
+31415,biogpt,FP16,Pleural Other,0,134,0,0,0,134
+31415,biogpt,FP16,Fracture,1,133,0,0,1,133
+31415,biogpt,FP16,Support Devices,5,129,0,0,5,129
+31415,biogpt,INT8,Enlarged Cardiomediastinum,0,134,0,1,0,133
+31415,biogpt,INT8,Cardiomegaly,10,124,1,1,9,123
+31415,biogpt,INT8,Lung Opacity,5,129,0,1,5,128
+31415,biogpt,INT8,Lung Lesion,1,133,0,0,1,133
+31415,biogpt,INT8,Edema,0,134,0,3,0,131
+31415,biogpt,INT8,Consolidation,10,124,0,3,10,121
+31415,biogpt,INT8,Pneumonia,4,130,1,2,3,128
+31415,biogpt,INT8,Atelectasis,10,124,2,2,8,122
+31415,biogpt,INT8,Pneumothorax,1,133,0,0,1,133
+31415,biogpt,INT8,Pleural Effusion,8,126,0,3,8,123
+31415,biogpt,INT8,Pleural Other,0,134,0,0,0,134
+31415,biogpt,INT8,Fracture,1,133,1,0,0,133
+31415,biogpt,INT8,Support Devices,5,129,0,1,5,128
+31415,biogpt,NF4,Enlarged Cardiomediastinum,0,134,0,0,0,134
+31415,biogpt,NF4,Cardiomegaly,10,124,2,3,8,121
+31415,biogpt,NF4,Lung Opacity,5,129,2,2,3,127
+31415,biogpt,NF4,Lung Lesion,1,133,0,0,1,133
+31415,biogpt,NF4,Edema,0,134,0,4,0,130
+31415,biogpt,NF4,Consolidation,10,124,3,2,7,122
+31415,biogpt,NF4,Pneumonia,4,130,2,3,2,127
+31415,biogpt,NF4,Atelectasis,10,124,4,3,6,121
+31415,biogpt,NF4,Pneumothorax,1,133,0,1,1,132
+31415,biogpt,NF4,Pleural Effusion,8,126,3,1,5,125
+31415,biogpt,NF4,Pleural Other,0,134,0,1,0,133
+31415,biogpt,NF4,Fracture,1,133,1,0,0,133
+31415,biogpt,NF4,Support Devices,5,129,1,0,4,129
+31415,pythia-1b,FP16,Enlarged Cardiomediastinum,0,134,0,0,0,134
+31415,pythia-1b,FP16,Cardiomegaly,12,122,0,1,12,121
+31415,pythia-1b,FP16,Lung Opacity,7,127,0,1,7,126
+31415,pythia-1b,FP16,Lung Lesion,0,134,0,0,0,134
+31415,pythia-1b,FP16,Edema,4,130,0,0,4,130
+31415,pythia-1b,FP16,Consolidation,4,130,0,0,4,130
+31415,pythia-1b,FP16,Pneumonia,1,133,0,1,1,132
+31415,pythia-1b,FP16,Atelectasis,9,125,1,0,8,125
+31415,pythia-1b,FP16,Pneumothorax,1,133,0,0,1,133
+31415,pythia-1b,FP16,Pleural Effusion,6,128,0,1,6,127
+31415,pythia-1b,FP16,Pleural Other,1,133,0,0,1,133
+31415,pythia-1b,FP16,Fracture,0,134,0,0,0,134
+31415,pythia-1b,FP16,Support Devices,4,130,0,0,4,130
+31415,pythia-1b,INT8,Enlarged Cardiomediastinum,0,134,0,0,0,134
+31415,pythia-1b,INT8,Cardiomegaly,12,122,1,1,11,121
+31415,pythia-1b,INT8,Lung Opacity,7,127,0,1,7,126
+31415,pythia-1b,INT8,Lung Lesion,0,134,0,1,0,133
+31415,pythia-1b,INT8,Edema,4,130,0,0,4,130
+31415,pythia-1b,INT8,Consolidation,4,130,0,0,4,130
+31415,pythia-1b,INT8,Pneumonia,1,133,0,0,1,133
+31415,pythia-1b,INT8,Atelectasis,9,125,0,1,9,124
+31415,pythia-1b,INT8,Pneumothorax,1,133,0,0,1,133
+31415,pythia-1b,INT8,Pleural Effusion,6,128,0,1,6,127
+31415,pythia-1b,INT8,Pleural Other,1,133,0,0,1,133
+31415,pythia-1b,INT8,Fracture,0,134,0,1,0,133
+31415,pythia-1b,INT8,Support Devices,4,130,0,0,4,130
+31415,pythia-1b,NF4,Enlarged Cardiomediastinum,0,134,0,0,0,134
+31415,pythia-1b,NF4,Cardiomegaly,12,122,5,5,7,117
+31415,pythia-1b,NF4,Lung Opacity,7,127,3,3,4,124
+31415,pythia-1b,NF4,Lung Lesion,0,134,0,2,0,132
+31415,pythia-1b,NF4,Edema,4,130,2,4,2,126
+31415,pythia-1b,NF4,Consolidation,4,130,2,4,2,126
+31415,pythia-1b,NF4,Pneumonia,1,133,1,0,0,133
+31415,pythia-1b,NF4,Atelectasis,9,125,2,3,7,122
+31415,pythia-1b,NF4,Pneumothorax,1,133,1,0,0,133
+31415,pythia-1b,NF4,Pleural Effusion,6,128,4,3,2,125
+31415,pythia-1b,NF4,Pleural Other,1,133,1,0,0,133
+31415,pythia-1b,NF4,Fracture,0,134,0,1,0,133
+31415,pythia-1b,NF4,Support Devices,4,130,2,1,2,129
+31415,biogpt-large,FP16,Enlarged Cardiomediastinum,1,133,0,0,1,133
+31415,biogpt-large,FP16,Cardiomegaly,10,124,0,0,10,124
+31415,biogpt-large,FP16,Lung Opacity,5,129,0,0,5,129
+31415,biogpt-large,FP16,Lung Lesion,3,131,1,0,2,131
+31415,biogpt-large,FP16,Edema,3,131,0,0,3,131
+31415,biogpt-large,FP16,Consolidation,7,127,0,0,7,127
+31415,biogpt-large,FP16,Pneumonia,2,132,0,0,2,132
+31415,biogpt-large,FP16,Atelectasis,12,122,0,0,12,122
+31415,biogpt-large,FP16,Pneumothorax,1,133,0,0,1,133
+31415,biogpt-large,FP16,Pleural Effusion,8,126,0,0,8,126
+31415,biogpt-large,FP16,Pleural Other,0,134,0,0,0,134
+31415,biogpt-large,FP16,Fracture,0,134,0,0,0,134
+31415,biogpt-large,FP16,Support Devices,7,127,0,0,7,127
+31415,biogpt-large,INT8,Enlarged Cardiomediastinum,1,133,1,0,0,133
+31415,biogpt-large,INT8,Cardiomegaly,10,124,0,0,10,124
+31415,biogpt-large,INT8,Lung Opacity,5,129,1,1,4,128
+31415,biogpt-large,INT8,Lung Lesion,3,131,0,1,3,130
+31415,biogpt-large,INT8,Edema,3,131,2,2,1,129
+31415,biogpt-large,INT8,Consolidation,7,127,1,0,6,127
+31415,biogpt-large,INT8,Pneumonia,2,132,0,2,2,130
+31415,biogpt-large,INT8,Atelectasis,12,122,1,2,11,120
+31415,biogpt-large,INT8,Pneumothorax,1,133,0,0,1,133
+31415,biogpt-large,INT8,Pleural Effusion,8,126,1,0,7,126
+31415,biogpt-large,INT8,Pleural Other,0,134,0,0,0,134
+31415,biogpt-large,INT8,Fracture,0,134,0,1,0,133
+31415,biogpt-large,INT8,Support Devices,7,127,1,3,6,124
+31415,biogpt-large,NF4,Enlarged Cardiomediastinum,1,133,1,1,0,132
+31415,biogpt-large,NF4,Cardiomegaly,10,124,1,1,9,123
+31415,biogpt-large,NF4,Lung Opacity,5,129,2,1,3,128
+31415,biogpt-large,NF4,Lung Lesion,3,131,0,2,3,129
+31415,biogpt-large,NF4,Edema,3,131,2,1,1,130
+31415,biogpt-large,NF4,Consolidation,7,127,1,0,6,127
+31415,biogpt-large,NF4,Pneumonia,2,132,0,3,2,129
+31415,biogpt-large,NF4,Atelectasis,12,122,3,2,9,120
+31415,biogpt-large,NF4,Pneumothorax,1,133,1,1,0,132
+31415,biogpt-large,NF4,Pleural Effusion,8,126,3,2,5,124
+31415,biogpt-large,NF4,Pleural Other,0,134,0,0,0,134
+31415,biogpt-large,NF4,Fracture,0,134,0,0,0,134
+31415,biogpt-large,NF4,Support Devices,7,127,3,4,4,123

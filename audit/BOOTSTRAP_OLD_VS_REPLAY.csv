@@ -1,0 +1,13 @@
+model,metric,old,replayed_archived,delta,interpretation
+distilgpt2,ci95_low,0.5608,0.5563184663536777,-0.004481533646322311,CPU resampling stream/policy change; not retraining
+distilgpt2,ci95_high,0.7424,0.7518143398426113,0.009414339842611308,CPU resampling stream/policy change; not retraining
+gpt2,ci95_low,0.7019,0.6918584740363173,-0.010041525963682685,CPU resampling stream/policy change; not retraining
+gpt2,ci95_high,0.85,0.8491757354603287,-0.0008242645396713266,CPU resampling stream/policy change; not retraining
+gpt2-medium,ci95_low,0.6428,0.647724567099567,0.004924567099567012,CPU resampling stream/policy change; not retraining
+gpt2-medium,ci95_high,0.8175,0.82354302832244,0.0060430283224399695,CPU resampling stream/policy change; not retraining
+biogpt,ci95_low,0.3333,0.3278617863199548,-0.005438213680045212,CPU resampling stream/policy change; not retraining
+biogpt,ci95_high,0.5833,0.5818249660786974,-0.0014750339213026598,CPU resampling stream/policy change; not retraining
+pythia-1b,ci95_low,0.2456,0.246140350877193,0.0005403508771929799,CPU resampling stream/policy change; not retraining
+pythia-1b,ci95_high,0.5763,0.5802568697729987,0.003956869772998695,CPU resampling stream/policy change; not retraining
+biogpt-large,ci95_low,0.2976,0.29727227227227226,-0.0003277277277277113,CPU resampling stream/policy change; not retraining
+biogpt-large,ci95_high,0.551,0.5468823702830188,-0.004117629716981264,CPU resampling stream/policy change; not retraining

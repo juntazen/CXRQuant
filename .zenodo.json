@@ -1,0 +1,58 @@
+{
+ "title": "CXRQuant: Finding-Level Stability Auditing of Reduced-Precision Inference for Radiology Impression Generation",
+ "upload_type": "software",
+ "description": "<p>CXRQuant is a paired audit that re-executes one trained source checkpoint of a radiology report generator under FP32, FP16, BitsAndBytes INT8 and NF4 and reports lexical similarity, FP32-relative finding stability (false-negative and false-positive flip rates, FNF/FPF), reference-based category agreement and measured efficiency as separate axes.</p><p>Release 2.3.0 accompanies the second-round revision of the IJIES article (paper ID 20266214). It contains the training, inference, evaluation and replay code; configurations and seeds; corpus and partition identifiers with a script that rebuilds the corpus from the official OpenI release; the archived predictions, references and metric outputs of six models x four precisions x five training seeds; the decoding-corrected and impression-only-loss reruns; report-level, GEE and mixed-effects statistics; a randomised fresh-process efficiency re-measurement; a LoRA-fine-tuned Mistral-7B audit; and CheXagent-8b audits on IU-XRAY and NIH ChestX-ray14. Every reported number can be re-derived on a CPU in minutes; GPU instructions reproduce the training and generation. Fine-tuned checkpoint weights are not included (hashes are).</p><p>FP32 is a model-relative baseline, not clinical ground truth. IU-XRAY/OpenI text remains under CC BY-NC-ND 4.0 (see DATA_NOTICE.md).</p>",
+ "creators": [
+  {
+   "name": "Zeniarja, Junta",
+   "affiliation": "Research Center for Intelligent Distributed Surveillance and Security, Universitas Dian Nuswantoro, Indonesia; Faculty of Computer Science, Universitas Dian Nuswantoro, Semarang, Indonesia"
+  },
+  {
+   "name": "Shidik, Guruh Fajar",
+   "affiliation": "Research Center for Intelligent Distributed Surveillance and Security, Universitas Dian Nuswantoro, Indonesia; Faculty of Computer Science, Universitas Dian Nuswantoro, Semarang, Indonesia"
+  },
+  {
+   "name": "Suhartanto, Heru",
+   "affiliation": "Faculty of Computer Science, Universitas Indonesia, Depok, Indonesia"
+  },
+  {
+   "name": "Marjuni, Aris",
+   "affiliation": "Research Center for Intelligent Distributed Surveillance and Security, Universitas Dian Nuswantoro, Indonesia; Faculty of Computer Science, Universitas Dian Nuswantoro, Semarang, Indonesia"
+  },
+  {
+   "name": "Alomoush, Ashraf",
+   "affiliation": "Department of Data Science and Artificial Intelligence, Isra University, Amman, Jordan; Faculty of Prince al Hussein bin Abdullah II for IT, The Hashemite University, Zarqa, Jordan"
+  }
+ ],
+ "license": "MIT",
+ "access_right": "open",
+ "version": "2.3.0",
+ "language": "eng",
+ "keywords": [
+  "chest X-ray",
+  "radiology report generation",
+  "quantization",
+  "reduced-precision inference",
+  "finding-level evaluation",
+  "FNF",
+  "NF4",
+  "INT8",
+  "BitsAndBytes",
+  "CheXagent",
+  "NIH ChestX-ray14",
+  "reproducibility",
+  "mixed-effects model",
+  "Model quantization",
+  "Clinical natural language processing",
+  "Reproducible benchmarking"
+ ],
+ "related_identifiers": [
+  {
+   "identifier": "https://github.com/juntazen/CXRQuant/tree/v2.3.0",
+   "relation": "isSupplementTo",
+   "resource_type": "software",
+   "scheme": "url"
+  }
+ ],
+ "notes": "Software licence MIT. Data licences: IU-XRAY/OpenI CC BY-NC-ND 4.0 (identifiers and rebuild script provided); NIH ChestX-ray14 identifiers only. Add the IJIES article DOI as 'isSupplementTo' after publication. Funding: This work was supported by Kemdiktisaintek (the Directorate General of Higher Education, Research, and Technology, Ministry of Education, Culture, Research, and Technology, Republic of Indonesia) under Main Contract No. 127/C3/DT.05.00/PL/2025 and derivative contracts No. 028/LL6/PL/AL.04/2025 and No. 118/F.9-05/UDN-09/2025."
+}

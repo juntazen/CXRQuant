@@ -1,0 +1,731 @@
+{
+ "seed": 20260926,
+ "checkpoints": "<local>/runs/full_seed42_corrected_20260911/checkpoints",
+ "archive": "runs/full_seed42_corrected_20260911",
+ "jobs": {
+  "MIG-b229be93-e78c-586d-b229-0de04d9e3436": [
+   {
+    "model": "gpt2-medium",
+    "config": "INT8-BnB",
+    "rep": 2
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "FP16",
+    "rep": 4
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "INT8-BnB",
+    "rep": 0
+   },
+   {
+    "model": "biogpt-large",
+    "config": "NF4-BnB",
+    "rep": 5
+   },
+   {
+    "model": "biogpt",
+    "config": "INT8-BnB",
+    "rep": 3
+   },
+   {
+    "model": "biogpt",
+    "config": "FP32",
+    "rep": 3
+   },
+   {
+    "model": "gpt2",
+    "config": "FP32",
+    "rep": 3
+   },
+   {
+    "model": "pythia-1b",
+    "config": "NF4-BnB",
+    "rep": 4
+   },
+   {
+    "model": "distilgpt2",
+    "config": "INT8-BnB",
+    "rep": 4
+   },
+   {
+    "model": "distilgpt2",
+    "config": "FP16",
+    "rep": 0
+   },
+   {
+    "model": "gpt2",
+    "config": "INT8-BnB",
+    "rep": 5
+   },
+   {
+    "model": "pythia-1b",
+    "config": "NF4-BnB",
+    "rep": 0
+   },
+   {
+    "model": "biogpt",
+    "config": "INT8-BnB",
+    "rep": 1
+   },
+   {
+    "model": "pythia-1b",
+    "config": "INT8-BnB",
+    "rep": 4
+   },
+   {
+    "model": "distilgpt2",
+    "config": "FP32",
+    "rep": 2
+   },
+   {
+    "model": "distilgpt2",
+    "config": "FP32",
+    "rep": 4
+   },
+   {
+    "model": "biogpt",
+    "config": "FP16",
+    "rep": 5
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "FP32",
+    "rep": 4
+   },
+   {
+    "model": "gpt2",
+    "config": "FP16",
+    "rep": 1
+   },
+   {
+    "model": "pythia-1b",
+    "config": "FP32",
+    "rep": 2
+   },
+   {
+    "model": "pythia-1b",
+    "config": "NF4-BnB",
+    "rep": 2
+   },
+   {
+    "model": "biogpt",
+    "config": "FP16",
+    "rep": 3
+   },
+   {
+    "model": "biogpt-large",
+    "config": "FP32",
+    "rep": 5
+   },
+   {
+    "model": "biogpt-large",
+    "config": "INT8-BnB",
+    "rep": 5
+   },
+   {
+    "model": "biogpt-large",
+    "config": "FP16",
+    "rep": 5
+   },
+   {
+    "model": "distilgpt2",
+    "config": "FP16",
+    "rep": 2
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "NF4-BnB",
+    "rep": 4
+   },
+   {
+    "model": "biogpt",
+    "config": "INT8-BnB",
+    "rep": 5
+   },
+   {
+    "model": "pythia-1b",
+    "config": "FP16",
+    "rep": 4
+   },
+   {
+    "model": "biogpt",
+    "config": "FP16",
+    "rep": 1
+   },
+   {
+    "model": "biogpt",
+    "config": "NF4-BnB",
+    "rep": 3
+   },
+   {
+    "model": "gpt2",
+    "config": "FP16",
+    "rep": 5
+   },
+   {
+    "model": "distilgpt2",
+    "config": "NF4-BnB",
+    "rep": 2
+   },
+   {
+    "model": "distilgpt2",
+    "config": "FP32",
+    "rep": 0
+   },
+   {
+    "model": "biogpt-large",
+    "config": "FP16",
+    "rep": 1
+   },
+   {
+    "model": "gpt2",
+    "config": "FP32",
+    "rep": 5
+   },
+   {
+    "model": "biogpt",
+    "config": "FP32",
+    "rep": 1
+   },
+   {
+    "model": "biogpt-large",
+    "config": "INT8-BnB",
+    "rep": 1
+   },
+   {
+    "model": "biogpt-large",
+    "config": "FP32",
+    "rep": 1
+   },
+   {
+    "model": "pythia-1b",
+    "config": "FP16",
+    "rep": 2
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "NF4-BnB",
+    "rep": 0
+   },
+   {
+    "model": "distilgpt2",
+    "config": "NF4-BnB",
+    "rep": 4
+   },
+   {
+    "model": "pythia-1b",
+    "config": "INT8-BnB",
+    "rep": 0
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "FP32",
+    "rep": 2
+   },
+   {
+    "model": "gpt2",
+    "config": "INT8-BnB",
+    "rep": 3
+   },
+   {
+    "model": "gpt2",
+    "config": "FP16",
+    "rep": 3
+   },
+   {
+    "model": "gpt2",
+    "config": "FP32",
+    "rep": 1
+   },
+   {
+    "model": "gpt2",
+    "config": "NF4-BnB",
+    "rep": 3
+   },
+   {
+    "model": "pythia-1b",
+    "config": "INT8-BnB",
+    "rep": 2
+   },
+   {
+    "model": "biogpt-large",
+    "config": "FP16",
+    "rep": 3
+   },
+   {
+    "model": "biogpt",
+    "config": "NF4-BnB",
+    "rep": 1
+   },
+   {
+    "model": "biogpt-large",
+    "config": "INT8-BnB",
+    "rep": 3
+   },
+   {
+    "model": "distilgpt2",
+    "config": "NF4-BnB",
+    "rep": 0
+   },
+   {
+    "model": "pythia-1b",
+    "config": "FP32",
+    "rep": 4
+   },
+   {
+    "model": "distilgpt2",
+    "config": "INT8-BnB",
+    "rep": 2
+   },
+   {
+    "model": "gpt2",
+    "config": "NF4-BnB",
+    "rep": 5
+   },
+   {
+    "model": "biogpt-large",
+    "config": "FP32",
+    "rep": 3
+   },
+   {
+    "model": "pythia-1b",
+    "config": "FP32",
+    "rep": 0
+   },
+   {
+    "model": "biogpt",
+    "config": "NF4-BnB",
+    "rep": 5
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "INT8-BnB",
+    "rep": 4
+   },
+   {
+    "model": "gpt2",
+    "config": "NF4-BnB",
+    "rep": 1
+   },
+   {
+    "model": "distilgpt2",
+    "config": "FP16",
+    "rep": 4
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "NF4-BnB",
+    "rep": 2
+   },
+   {
+    "model": "biogpt-large",
+    "config": "NF4-BnB",
+    "rep": 3
+   },
+   {
+    "model": "gpt2",
+    "config": "INT8-BnB",
+    "rep": 1
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "FP32",
+    "rep": 0
+   },
+   {
+    "model": "biogpt-large",
+    "config": "NF4-BnB",
+    "rep": 1
+   },
+   {
+    "model": "biogpt",
+    "config": "FP32",
+    "rep": 5
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "FP16",
+    "rep": 2
+   },
+   {
+    "model": "distilgpt2",
+    "config": "INT8-BnB",
+    "rep": 0
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "FP16",
+    "rep": 0
+   },
+   {
+    "model": "pythia-1b",
+    "config": "FP16",
+    "rep": 0
+   }
+  ],
+  "MIG-75de047f-10b5-51a4-b25e-af65e6219128": [
+   {
+    "model": "distilgpt2",
+    "config": "NF4-BnB",
+    "rep": 5
+   },
+   {
+    "model": "biogpt",
+    "config": "INT8-BnB",
+    "rep": 0
+   },
+   {
+    "model": "distilgpt2",
+    "config": "FP32",
+    "rep": 1
+   },
+   {
+    "model": "pythia-1b",
+    "config": "FP16",
+    "rep": 1
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "INT8-BnB",
+    "rep": 3
+   },
+   {
+    "model": "distilgpt2",
+    "config": "FP16",
+    "rep": 3
+   },
+   {
+    "model": "gpt2",
+    "config": "NF4-BnB",
+    "rep": 0
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "FP16",
+    "rep": 1
+   },
+   {
+    "model": "biogpt-large",
+    "config": "NF4-BnB",
+    "rep": 0
+   },
+   {
+    "model": "pythia-1b",
+    "config": "FP32",
+    "rep": 1
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "FP32",
+    "rep": 3
+   },
+   {
+    "model": "distilgpt2",
+    "config": "FP16",
+    "rep": 5
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "NF4-BnB",
+    "rep": 5
+   },
+   {
+    "model": "biogpt-large",
+    "config": "NF4-BnB",
+    "rep": 4
+   },
+   {
+    "model": "biogpt-large",
+    "config": "FP32",
+    "rep": 4
+   },
+   {
+    "model": "gpt2",
+    "config": "FP16",
+    "rep": 4
+   },
+   {
+    "model": "distilgpt2",
+    "config": "INT8-BnB",
+    "rep": 1
+   },
+   {
+    "model": "distilgpt2",
+    "config": "INT8-BnB",
+    "rep": 3
+   },
+   {
+    "model": "pythia-1b",
+    "config": "INT8-BnB",
+    "rep": 3
+   },
+   {
+    "model": "pythia-1b",
+    "config": "NF4-BnB",
+    "rep": 1
+   },
+   {
+    "model": "pythia-1b",
+    "config": "FP16",
+    "rep": 3
+   },
+   {
+    "model": "biogpt",
+    "config": "FP32",
+    "rep": 4
+   },
+   {
+    "model": "biogpt",
+    "config": "FP16",
+    "rep": 0
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "FP16",
+    "rep": 5
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "FP32",
+    "rep": 5
+   },
+   {
+    "model": "distilgpt2",
+    "config": "INT8-BnB",
+    "rep": 5
+   },
+   {
+    "model": "gpt2",
+    "config": "FP16",
+    "rep": 0
+   },
+   {
+    "model": "biogpt",
+    "config": "INT8-BnB",
+    "rep": 2
+   },
+   {
+    "model": "pythia-1b",
+    "config": "NF4-BnB",
+    "rep": 3
+   },
+   {
+    "model": "biogpt",
+    "config": "NF4-BnB",
+    "rep": 4
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "INT8-BnB",
+    "rep": 1
+   },
+   {
+    "model": "gpt2",
+    "config": "FP32",
+    "rep": 0
+   },
+   {
+    "model": "biogpt-large",
+    "config": "FP16",
+    "rep": 4
+   },
+   {
+    "model": "pythia-1b",
+    "config": "NF4-BnB",
+    "rep": 5
+   },
+   {
+    "model": "biogpt-large",
+    "config": "INT8-BnB",
+    "rep": 0
+   },
+   {
+    "model": "distilgpt2",
+    "config": "NF4-BnB",
+    "rep": 3
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "NF4-BnB",
+    "rep": 3
+   },
+   {
+    "model": "gpt2",
+    "config": "INT8-BnB",
+    "rep": 4
+   },
+   {
+    "model": "biogpt",
+    "config": "FP16",
+    "rep": 4
+   },
+   {
+    "model": "biogpt-large",
+    "config": "NF4-BnB",
+    "rep": 2
+   },
+   {
+    "model": "biogpt-large",
+    "config": "FP32",
+    "rep": 2
+   },
+   {
+    "model": "biogpt-large",
+    "config": "INT8-BnB",
+    "rep": 2
+   },
+   {
+    "model": "distilgpt2",
+    "config": "FP32",
+    "rep": 3
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "NF4-BnB",
+    "rep": 1
+   },
+   {
+    "model": "pythia-1b",
+    "config": "FP32",
+    "rep": 5
+   },
+   {
+    "model": "gpt2",
+    "config": "FP32",
+    "rep": 2
+   },
+   {
+    "model": "biogpt-large",
+    "config": "INT8-BnB",
+    "rep": 4
+   },
+   {
+    "model": "gpt2",
+    "config": "INT8-BnB",
+    "rep": 2
+   },
+   {
+    "model": "biogpt",
+    "config": "NF4-BnB",
+    "rep": 2
+   },
+   {
+    "model": "distilgpt2",
+    "config": "FP32",
+    "rep": 5
+   },
+   {
+    "model": "gpt2",
+    "config": "NF4-BnB",
+    "rep": 2
+   },
+   {
+    "model": "biogpt-large",
+    "config": "FP16",
+    "rep": 0
+   },
+   {
+    "model": "pythia-1b",
+    "config": "INT8-BnB",
+    "rep": 1
+   },
+   {
+    "model": "gpt2",
+    "config": "INT8-BnB",
+    "rep": 0
+   },
+   {
+    "model": "biogpt-large",
+    "config": "FP32",
+    "rep": 0
+   },
+   {
+    "model": "gpt2",
+    "config": "FP32",
+    "rep": 4
+   },
+   {
+    "model": "pythia-1b",
+    "config": "INT8-BnB",
+    "rep": 5
+   },
+   {
+    "model": "gpt2",
+    "config": "FP16",
+    "rep": 2
+   },
+   {
+    "model": "biogpt",
+    "config": "FP16",
+    "rep": 2
+   },
+   {
+    "model": "biogpt-large",
+    "config": "FP16",
+    "rep": 2
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "FP16",
+    "rep": 3
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "INT8-BnB",
+    "rep": 5
+   },
+   {
+    "model": "gpt2",
+    "config": "NF4-BnB",
+    "rep": 4
+   },
+   {
+    "model": "biogpt",
+    "config": "FP32",
+    "rep": 2
+   },
+   {
+    "model": "biogpt",
+    "config": "NF4-BnB",
+    "rep": 0
+   },
+   {
+    "model": "distilgpt2",
+    "config": "NF4-BnB",
+    "rep": 1
+   },
+   {
+    "model": "pythia-1b",
+    "config": "FP16",
+    "rep": 5
+   },
+   {
+    "model": "pythia-1b",
+    "config": "FP32",
+    "rep": 3
+   },
+   {
+    "model": "gpt2-medium",
+    "config": "FP32",
+    "rep": 1
+   },
+   {
+    "model": "distilgpt2",
+    "config": "FP16",
+    "rep": 1
+   },
+   {
+    "model": "biogpt",
+    "config": "FP32",
+    "rep": 0
+   },
+   {
+    "model": "biogpt",
+    "config": "INT8-BnB",
+    "rep": 4
+   }
+  ]
+ }
+}

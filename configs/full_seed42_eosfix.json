@@ -1,0 +1,99 @@
+{
+  "adam_beta1": 0.9,
+  "adam_beta2": 0.999,
+  "adam_epsilon": 1e-08,
+  "bootstrap_resamples": 2000,
+  "bootstrap_seed": 42,
+  "configs": [
+    "FP32",
+    "FP16",
+    "INT8-BnB",
+    "NF4-BnB"
+  ],
+  "data_seed": 42,
+  "decoding_note": "revision: EOS exempt from repetition penalty (EOS doubles as pad for GPT-2 tokenizers)",
+  "do_sample": false,
+  "generation_batch_size": 8,
+  "generation_input_limit": 224,
+  "historical_defaults_note": "Unspecified historical Trainer defaults lack an exact version lock; values here are explicit prospective settings, not asserted historical values.",
+  "learning_rate": 5e-05,
+  "max_grad_norm": 1.0,
+  "max_new_tokens": 64,
+  "models": [
+    {
+      "accumulation": 2,
+      "epochs": 20,
+      "family": "general",
+      "gradient_checkpointing": false,
+      "hf_id": "distilgpt2",
+      "microbatch": 8,
+      "name": "distilgpt2",
+      "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa"
+    },
+    {
+      "accumulation": 2,
+      "epochs": 20,
+      "family": "general",
+      "gradient_checkpointing": false,
+      "hf_id": "gpt2",
+      "microbatch": 8,
+      "name": "gpt2",
+      "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e"
+    },
+    {
+      "accumulation": 2,
+      "epochs": 18,
+      "family": "general",
+      "gradient_checkpointing": false,
+      "hf_id": "gpt2-medium",
+      "microbatch": 8,
+      "name": "gpt2-medium",
+      "revision": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da"
+    },
+    {
+      "accumulation": 2,
+      "epochs": 18,
+      "family": "biomedical",
+      "gradient_checkpointing": false,
+      "hf_id": "microsoft/biogpt",
+      "microbatch": 8,
+      "name": "biogpt",
+      "revision": "eb0d815e95434dc9e3b78f464e52b899bee7d923"
+    },
+    {
+      "accumulation": 4,
+      "epochs": 12,
+      "family": "general",
+      "gradient_checkpointing": true,
+      "hf_id": "EleutherAI/pythia-1b",
+      "microbatch": 4,
+      "name": "pythia-1b",
+      "revision": "f73d7dcc545c8bd326d8559c8ef84ffe92fea6b2"
+    },
+    {
+      "accumulation": 4,
+      "epochs": 12,
+      "family": "biomedical",
+      "gradient_checkpointing": true,
+      "hf_id": "microsoft/BioGPT-Large",
+      "microbatch": 4,
+      "name": "biogpt-large",
+      "revision": "c6a5136a91c5e3150d9f05ab9d33927a3210a22e"
+    }
+  ],
+  "num_beams": 1,
+  "objective": "causal LM FINDINGS + IMPRESSION, padding ignored",
+  "optimizer": "adamw_torch",
+  "repetition_penalty": 1.3,
+  "repetition_penalty_exempt_eos": true,
+  "scheduler": "linear",
+  "schema_version": 1,
+  "split_seed": 42,
+  "train_token_limit": 256,
+  "training_precision": "fp16_autocast_fp32_weights",
+  "training_seed": 42,
+  "warmup_new_tokens": 16,
+  "warmup_reports": 2,
+  "warmup_steps": 30,
+  "weight_decay": 0.01
+}

@@ -1,0 +1,34 @@
+{
+  "note": "Exploratory: categories nested within reports; no independent-pair clinical inference",
+  "provenance": {
+    "benchmark_hash": "222c9cc9a8d27a5d42038b162c51b711d5110ffd5e7aa33b770b57d0e59dc4a6",
+    "config_hash": "6f7cb613ff259a298ddc6947668b797cbde9d5d6e9d38e50474fee3b74db7ec1",
+    "manifest_hash": "bf4f957822bd0020ca2bfeb1b166952121f0a243ae2a433a6287e568fec66154",
+    "metric_version": "2.1-null-denominator",
+    "prediction_provenance": "GPU run; see identity and checkpoints",
+    "run_id": "smoke_compat_20260911"
+  },
+  "rows": [
+    {
+      "b": 0,
+      "c": 0,
+      "config": "FP16",
+      "model": "distilgpt2",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "c": 0,
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "c": 0,
+      "config": "NF4-BnB",
+      "model": "distilgpt2",
+      "p": 1.0
+    }
+  ]
+}

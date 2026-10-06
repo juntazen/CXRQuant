@@ -1,0 +1,170 @@
+<local-root>/miniconda3/lib/python3.13/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.7.1+cu118).
+
+Loading weights:   0%|                                                                                     | 0/76 [00:00<?, ?it/s]
+Loading weights: 100%|██████████████████████████████████████████████████████████████████████████| 76/76 [00:00<00:00, 1336.64it/s]
+distilgpt2 FP32 reproduced 134 / 134
+
+Loading weights:   0%|                                                                                     | 0/76 [00:00<?, ?it/s]
+Loading weights: 100%|██████████████████████████████████████████████████████████████████████████| 76/76 [00:00<00:00, 1066.42it/s]
+distilgpt2 FP16 reproduced 134 / 134
+<local-root>/miniconda3/lib/python3.13/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+Loading weights:   0%|                                                                                     | 0/76 [00:00<?, ?it/s]
+Loading weights:  29%|█████████████████████▋                                                     | 22/76 [00:00<00:00, 206.85it/s]
+Loading weights:  76%|█████████████████████████████████████████████████████████▏                 | 58/76 [00:00<00:00, 281.32it/s]
+Loading weights: 100%|███████████████████████████████████████████████████████████████████████████| 76/76 [00:00<00:00, 263.80it/s]
+distilgpt2 INT8-BnB reproduced 134 / 134
+
+Loading weights:   0%|                                                                                     | 0/76 [00:00<?, ?it/s]
+Loading weights:  63%|███████████████████████████████████████████████▎                           | 48/76 [00:00<00:00, 476.05it/s]
+Loading weights: 100%|███████████████████████████████████████████████████████████████████████████| 76/76 [00:00<00:00, 387.70it/s]
+distilgpt2 NF4-BnB reproduced 134 / 134
+
+Loading weights:   0%|                                                                                    | 0/148 [00:00<?, ?it/s]
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████| 148/148 [00:00<00:00, 2294.91it/s]
+gpt2 FP32 reproduced 134 / 134
+
+Loading weights:   0%|                                                                                    | 0/148 [00:00<?, ?it/s]
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████| 148/148 [00:00<00:00, 1812.24it/s]
+gpt2 FP16 reproduced 134 / 134
+
+Loading weights:   0%|                                                                                    | 0/148 [00:00<?, ?it/s]
+Loading weights:  23%|█████████████████                                                         | 34/148 [00:00<00:00, 326.30it/s]
+Loading weights:  54%|████████████████████████████████████████                                  | 80/148 [00:00<00:00, 403.23it/s]
+Loading weights:  88%|████████████████████████████████████████████████████████████████         | 130/148 [00:00<00:00, 437.39it/s]
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████████| 148/148 [00:00<00:00, 391.74it/s]
+gpt2 INT8-BnB reproduced 134 / 134
+
+Loading weights:   0%|                                                                                    | 0/148 [00:00<?, ?it/s]
+Loading weights:  65%|████████████████████████████████████████████████                          | 96/148 [00:00<00:00, 942.61it/s]
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████████| 148/148 [00:00<00:00, 928.62it/s]
+gpt2 NF4-BnB reproduced 134 / 134
+
+Loading weights:   0%|                                                                                    | 0/388 [00:00<?, ?it/s]
+Loading weights:  43%|██████████████████████████████▉                                         | 167/388 [00:00<00:00, 1658.68it/s]
+Loading weights:  86%|█████████████████████████████████████████████████████████████▊          | 333/388 [00:00<00:00, 1561.83it/s]
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████| 388/388 [00:00<00:00, 1586.53it/s]
+biogpt FP32 reproduced 134 / 134
+
+Loading weights:   0%|                                                                                    | 0/388 [00:00<?, ?it/s]
+Loading weights:  51%|████████████████████████████████████▋                                   | 198/388 [00:00<00:00, 1964.97it/s]
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████| 388/388 [00:00<00:00, 2040.32it/s]
+biogpt FP16 reproduced 134 / 134
+
+Loading weights:   0%|                                                                                    | 0/388 [00:00<?, ?it/s]
+Loading weights:  10%|███████▏                                                                  | 38/388 [00:00<00:00, 371.24it/s]
+Loading weights:  23%|████████████████▊                                                         | 88/388 [00:00<00:00, 437.80it/s]
+Loading weights:  34%|████████████████████████▊                                                | 132/388 [00:00<00:00, 425.22it/s]
+Loading weights:  57%|█████████████████████████████████████████▍                               | 220/388 [00:00<00:00, 591.35it/s]
+Loading weights:  77%|████████████████████████████████████████████████████████▍                | 300/388 [00:00<00:00, 664.02it/s]
+Loading weights:  97%|██████████████████████████████████████████████████████████████████████▋  | 376/388 [00:00<00:00, 684.22it/s]
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████████| 388/388 [00:00<00:00, 615.92it/s]
+biogpt INT8-BnB reproduced 134 / 134
+
+Loading weights:   0%|                                                                                    | 0/388 [00:00<?, ?it/s]
+Loading weights:  12%|█████████▏                                                                | 48/388 [00:00<00:00, 473.78it/s]
+Loading weights:  37%|██████████████████████████▉                                              | 143/388 [00:00<00:00, 752.16it/s]
+Loading weights:  74%|█████████████████████████████████████████████████████▍                  | 288/388 [00:00<00:00, 1067.23it/s]
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████| 388/388 [00:00<00:00, 1028.37it/s]
+biogpt NF4-BnB reproduced 134 / 134
+{
+ "FP16": {
+  "diverged_reports": 154,
+  "reports": 402,
+  "flips_in_identical_token_reports": 0,
+  "hazard_by_fp32_margin_quintile": [
+   {
+    "quintile": 1,
+    "steps": 2305,
+    "divergences": 154
+   },
+   {
+    "quintile": 2,
+    "steps": 2303,
+    "divergences": 0
+   },
+   {
+    "quintile": 3,
+    "steps": 2302,
+    "divergences": 0
+   },
+   {
+    "quintile": 4,
+    "steps": 2303,
+    "divergences": 0
+   },
+   {
+    "quintile": 5,
+    "steps": 2300,
+    "divergences": 0
+   }
+  ]
+ },
+ "INT8-BnB": {
+  "diverged_reports": 266,
+  "reports": 402,
+  "flips_in_identical_token_reports": 0,
+  "hazard_by_fp32_margin_quintile": [
+   {
+    "quintile": 1,
+    "steps": 1026,
+    "divergences": 246
+   },
+   {
+    "quintile": 2,
+    "steps": 1024,
+    "divergences": 17
+   },
+   {
+    "quintile": 3,
+    "steps": 1024,
+    "divergences": 3
+   },
+   {
+    "quintile": 4,
+    "steps": 1024,
+    "divergences": 0
+   },
+   {
+    "quintile": 5,
+    "steps": 1023,
+    "divergences": 0
+   }
+  ]
+ },
+ "NF4-BnB": {
+  "diverged_reports": 325,
+  "reports": 402,
+  "flips_in_identical_token_reports": 0,
+  "hazard_by_fp32_margin_quintile": [
+   {
+    "quintile": 1,
+    "steps": 478,
+    "divergences": 221
+   },
+   {
+    "quintile": 2,
+    "steps": 477,
+    "divergences": 81
+   },
+   {
+    "quintile": 3,
+    "steps": 476,
+    "divergences": 18
+   },
+   {
+    "quintile": 4,
+    "steps": 477,
+    "divergences": 5
+   },
+   {
+    "quintile": 5,
+    "steps": 474,
+    "divergences": 0
+   }
+  ]
+ }
+}

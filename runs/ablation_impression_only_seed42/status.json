@@ -1,0 +1,65 @@
+{
+  "duration_s": 1318.985439300537,
+  "exit_code": 0,
+  "identity": {
+    "code_hash": "971d3c60b55a44091d4efbfbf241c9e6cebe52103a9d6c750d702ff53ffbd1b7",
+    "config_hash": "a1749e582b7dc70c8398ec5c2e0571abaf18de378bc0e0461b6fd685c36efdb9",
+    "data_hash": "0597c49a73f1bffcc199cd3b3f27a7c984ef5337a3efa7ccdc053a7c2d02cf23",
+    "run_id": "ablation_impression_only_seed42"
+  },
+  "jobs": [
+    {
+      "command": [
+        "<local>/.venv/bin/python",
+        "-m",
+        "cxrquant.pipeline",
+        "--mode",
+        "full",
+        "--run-dir",
+        "<local>/fix/revisi/code/runs/ablation_impression_only_seed42",
+        "--worker-models",
+        "distilgpt2,gpt2-medium,pythia-1b"
+      ],
+      "device": "MIG-b229be93-e78c-586d-b229-0de04d9e3436",
+      "models": [
+        "distilgpt2",
+        "gpt2-medium",
+        "pythia-1b"
+      ],
+      "pid": 520620
+    },
+    {
+      "command": [
+        "<local>/.venv/bin/python",
+        "-m",
+        "cxrquant.pipeline",
+        "--mode",
+        "full",
+        "--run-dir",
+        "<local>/fix/revisi/code/runs/ablation_impression_only_seed42",
+        "--worker-models",
+        "gpt2,biogpt,biogpt-large"
+      ],
+      "device": "MIG-75de047f-10b5-51a4-b25e-af65e6219128",
+      "models": [
+        "gpt2",
+        "biogpt",
+        "biogpt-large"
+      ],
+      "pid": 520621
+    }
+  ],
+  "matrix": {
+    "comparisons": 18,
+    "configurations": 24,
+    "models": 6,
+    "predictions": 3216
+  },
+  "pid": 520556,
+  "started_at": 1790394698.531114,
+  "status": "complete",
+  "worker_exit_codes": [
+    0,
+    0
+  ]
+}

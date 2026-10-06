@@ -1,0 +1,68 @@
+{
+  "configs": [
+    "FP32",
+    "FP16",
+    "INT8-BnB",
+    "NF4-BnB"
+  ],
+  "mode": "smoke",
+  "models": [
+    "distilgpt2"
+  ],
+  "references": [
+    "No acute cardiopulmonary abnormality.",
+    "No acute preoperative findings.",
+    "No acute process.",
+    "No acute cardiopulmonary findings.",
+    "1. Cardiomegaly without acute cardiopulmonary abnormality.",
+    "Emphysematous changes without evidence of focal airspace disease or pulmonary edema."
+  ],
+  "rounding_digits": 4,
+  "run_id": "smoke_compat_20260911",
+  "sample_ids": [
+    "CXR1009",
+    "CXR1028",
+    "CXR1060",
+    "CXR1144",
+    "CXR1152",
+    "CXR1173"
+  ],
+  "split_ids": {
+    "test": [
+      "CXR1009",
+      "CXR1028",
+      "CXR1060",
+      "CXR1144",
+      "CXR1152",
+      "CXR1173"
+    ],
+    "train": [
+      "CXR1007",
+      "CXR1015",
+      "CXR1022",
+      "CXR1032",
+      "CXR1034",
+      "CXR1036",
+      "CXR1050",
+      "CXR1055",
+      "CXR1059",
+      "CXR1070",
+      "CXR1072",
+      "CXR1078",
+      "CXR1087",
+      "CXR1091",
+      "CXR1099",
+      "CXR110"
+    ],
+    "val": [
+      "CXR1024",
+      "CXR1057",
+      "CXR1076",
+      "CXR1322",
+      "CXR1376",
+      "CXR1415",
+      "CXR1419",
+      "CXR151"
+    ]
+  }
+}

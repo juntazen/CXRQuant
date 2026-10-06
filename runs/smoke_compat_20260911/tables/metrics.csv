@@ -1,0 +1,5 @@
+model,config,FNF_rate,FPF_rate,CFPR,CFFR,ce_micro_f1,ce_macro_f1,bleu_1,bleu_4,rouge_1,rouge_2,rouge_l
+distilgpt2,FP32,,,,,0.0,0.0,0.0061,0.0,0.0303,0.0,0.0061
+distilgpt2,FP16,0.0,0.0,1.0,0.0,0.0,0.0,0.0061,0.0,0.0303,0.0,0.006
+distilgpt2,INT8-BnB,1.0,0.0,0.9872,0.0128,0.0,0.0,0.0061,0.0,0.0429,0.0,0.0061
+distilgpt2,NF4-BnB,1.0,0.0,0.9872,0.0128,0.0,0.0,0.0091,0.0,0.0846,0.0,0.0091

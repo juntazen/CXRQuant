@@ -1,0 +1,21 @@
+{
+ "model": "StanfordAIMI/CheXagent-8b",
+ "precision": "NF4-BnB",
+ "prompt": "Write the findings section of the radiology report for this chest X-ray.",
+ "n_requested": 300,
+ "source": "nih",
+ "missing_images": [],
+ "quantized_module_types": [
+  "Linear4bit"
+ ],
+ "n_quantized_modules": 481,
+ "torch": "2.7.1+cu118",
+ "gpu": "NVIDIA A100-SXM4-40GB MIG 7g.40gb",
+ "device": "MIG-75de047f-10b5-51a4-b25e-af65e6219128",
+ "generation": {
+  "num_beams": 1,
+  "do_sample": false,
+  "max_new_tokens": 128
+ },
+ "peak_alloc_mib": 5188.02001953125
+}

@@ -1,0 +1,44 @@
+<local-root>/miniconda3/lib/python3.13/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.7.1+cu118).
+
+Loading weights:   0%|                                                             | 0/76 [00:00<?, ?it/s]
+Loading weights: 100%|██████████████████████████████████████████████████| 76/76 [00:00<00:00, 3088.23it/s]
+[RANK 0] Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+
+  0%|                                                                               | 0/1 [00:00<?, ?it/s][transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+
+100%|███████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.10it/s]
+
+Writing model shards:   0%|                                                         | 0/1 [00:00<?, ?it/s][A
+
+Writing model shards: 100%|█████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.43it/s][A
+Writing model shards: 100%|█████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.43it/s]
+
+                                                                                                          
+
+100%|███████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.10it/s]
+100%|███████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.34it/s]
+{'train_runtime': '0.7444', 'train_samples_per_second': '21.49', 'train_steps_per_second': '1.343', 'train_loss': '4.854', 'epoch': '1'}
+
+  0%|                                                                               | 0/1 [00:00<?, ?it/s]
+100%|█████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 3165.51it/s]
+
+Writing model shards:   0%|                                                         | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|█████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.52it/s]
+Writing model shards: 100%|█████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.52it/s]
+
+Loading weights:   0%|                                                             | 0/76 [00:00<?, ?it/s]
+Loading weights: 100%|██████████████████████████████████████████████████| 76/76 [00:00<00:00, 1616.23it/s]
+
+Loading weights:   0%|                                                             | 0/76 [00:00<?, ?it/s]
+Loading weights: 100%|██████████████████████████████████████████████████| 76/76 [00:00<00:00, 1617.45it/s]
+<local-root>/miniconda3/lib/python3.13/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+Loading weights:   0%|                                                             | 0/76 [00:00<?, ?it/s]
+Loading weights:  68%|██████████████████████████████████▉                | 52/76 [00:00<00:00, 515.70it/s]
+Loading weights: 100%|███████████████████████████████████████████████████| 76/76 [00:00<00:00, 457.95it/s]
+
+Loading weights:   0%|                                                             | 0/76 [00:00<?, ?it/s]
+Loading weights: 100%|██████████████████████████████████████████████████| 76/76 [00:00<00:00, 1139.56it/s]

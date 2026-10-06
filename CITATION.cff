@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use CXRQuant, please cite the IJIES article and this software release."
+title: "CXRQuant: Finding-Level Stability Auditing of Reduced-Precision Inference for Radiology Impression Generation"
+version: "2.3.0"
+license: MIT
+type: software
+repository-code: "https://github.com/juntazen/CXRQuant"
+abstract: >-
+  CXRQuant re-executes one trained source checkpoint under FP32, FP16, BitsAndBytes INT8 and NF4 and reports lexical
+  similarity, FP32-relative finding stability (false-negative and false-positive flip rates), reference agreement and
+  efficiency separately. Release 2.3.0 accompanies the second-round revision of the IJIES article: five training
+  seeds, decoding-corrected and impression-only-loss reruns, hierarchical statistics, a randomised efficiency
+  re-measurement, a LoRA-fine-tuned 7B model and CheXagent-8b on IU-XRAY and NIH ChestX-ray14, with deterministic CPU
+  verification of every reported number. FP32 agreement is not clinical correctness.
+keywords:
+  - Model quantization
+  - Clinical natural language processing
+  - Reproducible benchmarking
+  - chest X-ray
+  - radiology report generation
+  - quantization
+  - reduced-precision inference
+  - finding-level evaluation
+  - reproducibility
+authors:
+  - family-names: Zeniarja
+    given-names: Junta
+    affiliation: "Research Center for Intelligent Distributed Surveillance and Security, Universitas Dian Nuswantoro, Indonesia; Faculty of Computer Science, Universitas Dian Nuswantoro, Semarang, Indonesia"
+  - family-names: Shidik
+    given-names: Guruh Fajar
+    affiliation: "Research Center for Intelligent Distributed Surveillance and Security, Universitas Dian Nuswantoro, Indonesia; Faculty of Computer Science, Universitas Dian Nuswantoro, Semarang, Indonesia"
+  - family-names: Suhartanto
+    given-names: Heru
+    affiliation: "Faculty of Computer Science, Universitas Indonesia, Depok, Indonesia"
+  - family-names: Marjuni
+    given-names: Aris
+    affiliation: "Research Center for Intelligent Distributed Surveillance and Security, Universitas Dian Nuswantoro, Indonesia; Faculty of Computer Science, Universitas Dian Nuswantoro, Semarang, Indonesia"
+  - family-names: Alomoush
+    given-names: Ashraf
+    affiliation: "Department of Data Science and Artificial Intelligence, Isra University, Amman, Jordan; Faculty of Prince al Hussein bin Abdullah II for IT, The Hashemite University, Zarqa, Jordan"

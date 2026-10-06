@@ -1,0 +1,22 @@
+{
+ "base": "mistralai/Mistral-7B-Instruct-v0.2",
+ "seed": 42,
+ "epochs": 3,
+ "lr": 0.0002,
+ "lora_rank": 16,
+ "lora_alpha": 32,
+ "target_modules": [
+  "down_proj",
+  "gate_proj",
+  "k_proj",
+  "o_proj",
+  "q_proj",
+  "up_proj",
+  "v_proj"
+ ],
+ "loss": "IMPRESSION tokens and EOS only",
+ "batch": 16,
+ "train_time_s": 228.82759642601013,
+ "val_perplexity": 3.7845827229932048,
+ "saved_dtype": "float32 (LoRA merged)"
+}

@@ -1,0 +1,136 @@
+{
+  "provenance": {
+    "benchmark_hash": "222c9cc9a8d27a5d42038b162c51b711d5110ffd5e7aa33b770b57d0e59dc4a6",
+    "config_hash": "6f7cb613ff259a298ddc6947668b797cbde9d5d6e9d38e50474fee3b74db7ec1",
+    "manifest_hash": "bf4f957822bd0020ca2bfeb1b166952121f0a243ae2a433a6287e568fec66154",
+    "metric_version": "2.1-null-denominator",
+    "prediction_provenance": "GPU run; see identity and checkpoints",
+    "run_id": "smoke_compat_20260911"
+  },
+  "resamples": 2000,
+  "rows": [
+    {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "config": "FP16",
+      "metric": "FNF_rate",
+      "model": "distilgpt2",
+      "n_reports": 6,
+      "point": 0.0,
+      "undefined_resamples": 686
+    },
+    {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "config": "FP16",
+      "metric": "FPF_rate",
+      "model": "distilgpt2",
+      "n_reports": 6,
+      "point": 0.0,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 1.0,
+      "ci95_low": 1.0,
+      "config": "FP16",
+      "metric": "CFPR",
+      "model": "distilgpt2",
+      "n_reports": 6,
+      "point": 1.0,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "config": "FP16",
+      "metric": "CFFR",
+      "model": "distilgpt2",
+      "n_reports": 6,
+      "point": 0.0,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 1.0,
+      "ci95_low": 1.0,
+      "config": "INT8-BnB",
+      "metric": "FNF_rate",
+      "model": "distilgpt2",
+      "n_reports": 6,
+      "point": 1.0,
+      "undefined_resamples": 670
+    },
+    {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "config": "INT8-BnB",
+      "metric": "FPF_rate",
+      "model": "distilgpt2",
+      "n_reports": 6,
+      "point": 0.0,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 1.0,
+      "ci95_low": 0.9615384615384616,
+      "config": "INT8-BnB",
+      "metric": "CFPR",
+      "model": "distilgpt2",
+      "n_reports": 6,
+      "point": 0.9871794871794872,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.038461538461538436,
+      "ci95_low": 0.0,
+      "config": "INT8-BnB",
+      "metric": "CFFR",
+      "model": "distilgpt2",
+      "n_reports": 6,
+      "point": 0.012820512820512775,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 1.0,
+      "ci95_low": 1.0,
+      "config": "NF4-BnB",
+      "metric": "FNF_rate",
+      "model": "distilgpt2",
+      "n_reports": 6,
+      "point": 1.0,
+      "undefined_resamples": 709
+    },
+    {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "config": "NF4-BnB",
+      "metric": "FPF_rate",
+      "model": "distilgpt2",
+      "n_reports": 6,
+      "point": 0.0,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 1.0,
+      "ci95_low": 0.9615384615384616,
+      "config": "NF4-BnB",
+      "metric": "CFPR",
+      "model": "distilgpt2",
+      "n_reports": 6,
+      "point": 0.9871794871794872,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.038461538461538436,
+      "ci95_low": 0.0,
+      "config": "NF4-BnB",
+      "metric": "CFFR",
+      "model": "distilgpt2",
+      "n_reports": 6,
+      "point": 0.012820512820512775,
+      "undefined_resamples": 0
+    }
+  ],
+  "seed": 42,
+  "undefined_policy": "null point; exclude zero-denominator resamples and report count",
+  "unit": "report"
+}

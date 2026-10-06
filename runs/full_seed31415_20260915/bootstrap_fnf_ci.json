@@ -1,0 +1,736 @@
+{
+  "provenance": {
+    "benchmark_hash": "9f09e36cc0b0719deb9972175d794c215e9ea265433a13a8285d0bf7b156df62",
+    "config_hash": "523ba405e4321554913c2adca2c53646406666d8012f6669ffa666f0d607b322",
+    "manifest_hash": "106115f6bc48651f3821cc1d7521853ca0457b0a1bbf9cd1c9675b6348b0fa63",
+    "metric_version": "2.1-null-denominator",
+    "prediction_provenance": "GPU run; see identity and checkpoints",
+    "run_id": "full_seed31415_20260915"
+  },
+  "resamples": 2000,
+  "rows": [
+    {
+      "ci95_high": 0.25,
+      "ci95_low": 0.10958155550565161,
+      "config": "FP16",
+      "metric": "FNF_rate",
+      "model": "distilgpt2",
+      "n_reports": 134,
+      "point": 0.1774193548387097,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.02679826249871676,
+      "ci95_low": 0.011568123393316195,
+      "config": "FP16",
+      "metric": "FPF_rate",
+      "model": "distilgpt2",
+      "n_reports": 134,
+      "point": 0.018637532133676093,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.9753157290470723,
+      "ci95_low": 0.9529276693455798,
+      "config": "FP16",
+      "metric": "CFPR",
+      "model": "distilgpt2",
+      "n_reports": 134,
+      "point": 0.9644087256027555,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.04707233065442018,
+      "ci95_low": 0.02468427095292769,
+      "config": "FP16",
+      "metric": "CFFR",
+      "model": "distilgpt2",
+      "n_reports": 134,
+      "point": 0.03559127439724452,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.5394090909090908,
+      "ci95_low": 0.3668202933271006,
+      "config": "INT8-BnB",
+      "metric": "FNF_rate",
+      "model": "distilgpt2",
+      "n_reports": 134,
+      "point": 0.45161290322580644,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.08055402873656646,
+      "ci95_low": 0.05276451100150523,
+      "config": "INT8-BnB",
+      "metric": "FPF_rate",
+      "model": "distilgpt2",
+      "n_reports": 134,
+      "point": 0.06619537275064268,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.9098737083811711,
+      "ci95_low": 0.8748564867967853,
+      "config": "INT8-BnB",
+      "metric": "CFPR",
+      "model": "distilgpt2",
+      "n_reports": 134,
+      "point": 0.8926521239954076,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.1251435132032147,
+      "ci95_low": 0.0901262916188289,
+      "config": "INT8-BnB",
+      "metric": "CFFR",
+      "model": "distilgpt2",
+      "n_reports": 134,
+      "point": 0.10734787600459239,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.75,
+      "ci95_low": 0.606785788060318,
+      "config": "NF4-BnB",
+      "metric": "FNF_rate",
+      "model": "distilgpt2",
+      "n_reports": 134,
+      "point": 0.6774193548387096,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.08285163776493257,
+      "ci95_low": 0.05741607975195581,
+      "config": "NF4-BnB",
+      "metric": "FPF_rate",
+      "model": "distilgpt2",
+      "n_reports": 134,
+      "point": 0.07005141388174807,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.881171067738232,
+      "ci95_low": 0.8484500574052812,
+      "config": "NF4-BnB",
+      "metric": "CFPR",
+      "model": "distilgpt2",
+      "n_reports": 134,
+      "point": 0.865097588978186,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.15154994259471877,
+      "ci95_low": 0.11882893226176805,
+      "config": "NF4-BnB",
+      "metric": "CFFR",
+      "model": "distilgpt2",
+      "n_reports": 134,
+      "point": 0.134902411021814,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.2412198354409409,
+      "ci95_low": 0.12272031539888682,
+      "config": "FP16",
+      "metric": "FNF_rate",
+      "model": "gpt2",
+      "n_reports": 134,
+      "point": 0.178743961352657,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.038910505836575876,
+      "ci95_low": 0.017805088837139656,
+      "config": "FP16",
+      "metric": "FPF_rate",
+      "model": "gpt2",
+      "n_reports": 134,
+      "point": 0.028013029315960912,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.9672789896670494,
+      "ci95_low": 0.9402985074626866,
+      "config": "FP16",
+      "metric": "CFPR",
+      "model": "gpt2",
+      "n_reports": 134,
+      "point": 0.9540757749712974,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.05970149253731338,
+      "ci95_low": 0.032721010332950606,
+      "config": "FP16",
+      "metric": "CFFR",
+      "model": "gpt2",
+      "n_reports": 134,
+      "point": 0.04592422502870264,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.645523615950445,
+      "ci95_low": 0.48499621212121213,
+      "config": "INT8-BnB",
+      "metric": "FNF_rate",
+      "model": "gpt2",
+      "n_reports": 134,
+      "point": 0.5652173913043478,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.09258191236905518,
+      "ci95_low": 0.06192675193993037,
+      "config": "INT8-BnB",
+      "metric": "FPF_rate",
+      "model": "gpt2",
+      "n_reports": 134,
+      "point": 0.07687296416938111,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.8840413318025259,
+      "ci95_low": 0.8455797933409873,
+      "config": "INT8-BnB",
+      "metric": "CFPR",
+      "model": "gpt2",
+      "n_reports": 134,
+      "point": 0.865097588978186,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.15442020665901268,
+      "ci95_low": 0.11595866819747414,
+      "config": "INT8-BnB",
+      "metric": "CFFR",
+      "model": "gpt2",
+      "n_reports": 134,
+      "point": 0.134902411021814,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.7700668449197859,
+      "ci95_low": 0.6206816730523628,
+      "config": "NF4-BnB",
+      "metric": "FNF_rate",
+      "model": "gpt2",
+      "n_reports": 134,
+      "point": 0.6956521739130435,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.09377057955517003,
+      "ci95_low": 0.061131842373629494,
+      "config": "NF4-BnB",
+      "metric": "FPF_rate",
+      "model": "gpt2",
+      "n_reports": 134,
+      "point": 0.0762214983713355,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.8719862227324914,
+      "ci95_low": 0.8283582089552238,
+      "config": "NF4-BnB",
+      "metric": "CFPR",
+      "model": "gpt2",
+      "n_reports": 134,
+      "point": 0.8501722158438576,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.17164179104477617,
+      "ci95_low": 0.12801377726750862,
+      "config": "NF4-BnB",
+      "metric": "CFFR",
+      "model": "gpt2",
+      "n_reports": 134,
+      "point": 0.1498277841561424,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.27168819053193816,
+      "ci95_low": 0.09722222222222222,
+      "config": "FP16",
+      "metric": "FNF_rate",
+      "model": "gpt2-medium",
+      "n_reports": 134,
+      "point": 0.17763157894736842,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.022056983733812513,
+      "ci95_low": 0.008094393381783485,
+      "config": "FP16",
+      "metric": "FPF_rate",
+      "model": "gpt2-medium",
+      "n_reports": 134,
+      "point": 0.014465408805031447,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.9822043628013777,
+      "ci95_low": 0.9586681974741676,
+      "config": "FP16",
+      "metric": "CFPR",
+      "model": "gpt2-medium",
+      "n_reports": 134,
+      "point": 0.9712973593570609,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.04133180252583235,
+      "ci95_low": 0.017795637198622316,
+      "config": "FP16",
+      "metric": "CFFR",
+      "model": "gpt2-medium",
+      "n_reports": 134,
+      "point": 0.028702640642939148,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.6805555555555556,
+      "ci95_low": 0.4939641683617587,
+      "config": "INT8-BnB",
+      "metric": "FNF_rate",
+      "model": "gpt2-medium",
+      "n_reports": 134,
+      "point": 0.5855263157894737,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.05465874046901714,
+      "ci95_low": 0.032277970600244996,
+      "config": "INT8-BnB",
+      "metric": "FPF_rate",
+      "model": "gpt2-medium",
+      "n_reports": 134,
+      "point": 0.042767295597484274,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.925947187141217,
+      "ci95_low": 0.8915040183696901,
+      "config": "INT8-BnB",
+      "metric": "CFPR",
+      "model": "gpt2-medium",
+      "n_reports": 134,
+      "point": 0.9098737083811711,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.10849598163030993,
+      "ci95_low": 0.07405281285878296,
+      "config": "INT8-BnB",
+      "metric": "CFFR",
+      "model": "gpt2-medium",
+      "n_reports": 134,
+      "point": 0.0901262916188289,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.7801418439716312,
+      "ci95_low": 0.6232851895969824,
+      "config": "NF4-BnB",
+      "metric": "FNF_rate",
+      "model": "gpt2-medium",
+      "n_reports": 134,
+      "point": 0.7039473684210527,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.10516537455662366,
+      "ci95_low": 0.07027227693819305,
+      "config": "NF4-BnB",
+      "metric": "FPF_rate",
+      "model": "gpt2-medium",
+      "n_reports": 134,
+      "point": 0.08742138364779874,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.8794489092996556,
+      "ci95_low": 0.8381171067738232,
+      "config": "NF4-BnB",
+      "metric": "CFPR",
+      "model": "gpt2-medium",
+      "n_reports": 134,
+      "point": 0.8587830080367393,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.16188289322617677,
+      "ci95_low": 0.12055109070034442,
+      "config": "NF4-BnB",
+      "metric": "CFFR",
+      "model": "gpt2-medium",
+      "n_reports": 134,
+      "point": 0.14121699196326065,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "config": "FP16",
+      "metric": "FNF_rate",
+      "model": "biogpt",
+      "n_reports": 134,
+      "point": 0.0,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "config": "FP16",
+      "metric": "FPF_rate",
+      "model": "biogpt",
+      "n_reports": 134,
+      "point": 0.0,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 1.0,
+      "ci95_low": 1.0,
+      "config": "FP16",
+      "metric": "CFPR",
+      "model": "biogpt",
+      "n_reports": 134,
+      "point": 1.0,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "config": "FP16",
+      "metric": "CFFR",
+      "model": "biogpt",
+      "n_reports": 134,
+      "point": 0.0,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.1628025628856193,
+      "ci95_low": 0.022222222222222223,
+      "config": "INT8-BnB",
+      "metric": "FNF_rate",
+      "model": "biogpt",
+      "n_reports": 134,
+      "point": 0.09090909090909091,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.01829125378348746,
+      "ci95_low": 0.0035272332982256645,
+      "config": "INT8-BnB",
+      "metric": "FPF_rate",
+      "model": "biogpt",
+      "n_reports": 134,
+      "point": 0.01007705986959099,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.994833524684271,
+      "ci95_low": 0.9787456946039036,
+      "config": "INT8-BnB",
+      "metric": "CFPR",
+      "model": "biogpt",
+      "n_reports": 134,
+      "point": 0.9873708381171068,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.021254305396096407,
+      "ci95_low": 0.005166475315729002,
+      "config": "INT8-BnB",
+      "metric": "CFFR",
+      "model": "biogpt",
+      "n_reports": 134,
+      "point": 0.012629161882893203,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.4762175324675323,
+      "ci95_low": 0.17857142857142858,
+      "config": "NF4-BnB",
+      "metric": "FNF_rate",
+      "model": "biogpt",
+      "n_reports": 134,
+      "point": 0.32727272727272727,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.017921414752970967,
+      "ci95_low": 0.006493410719074436,
+      "config": "NF4-BnB",
+      "metric": "FPF_rate",
+      "model": "biogpt",
+      "n_reports": 134,
+      "point": 0.011855364552459988,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.986796785304248,
+      "ci95_low": 0.9684270952927669,
+      "config": "NF4-BnB",
+      "metric": "CFPR",
+      "model": "biogpt",
+      "n_reports": 134,
+      "point": 0.9781859931113662,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.03157290470723306,
+      "ci95_low": 0.01320321469575203,
+      "config": "NF4-BnB",
+      "metric": "CFFR",
+      "model": "biogpt",
+      "n_reports": 134,
+      "point": 0.021814006888633775,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.06666666666666667,
+      "ci95_low": 0.0,
+      "config": "FP16",
+      "metric": "FNF_rate",
+      "model": "pythia-1b",
+      "n_reports": 134,
+      "point": 0.02040816326530612,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.005931286101988447,
+      "ci95_low": 0.0,
+      "config": "FP16",
+      "metric": "FPF_rate",
+      "model": "pythia-1b",
+      "n_reports": 134,
+      "point": 0.002362669816893089,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 1.0,
+      "ci95_low": 0.9925373134328358,
+      "config": "FP16",
+      "metric": "CFPR",
+      "model": "pythia-1b",
+      "n_reports": 134,
+      "point": 0.9971297359357061,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.007462686567164201,
+      "ci95_low": 0.0,
+      "config": "FP16",
+      "metric": "CFFR",
+      "model": "pythia-1b",
+      "n_reports": 134,
+      "point": 0.002870264064293915,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.07020676691729306,
+      "ci95_low": 0.0,
+      "config": "INT8-BnB",
+      "metric": "FNF_rate",
+      "model": "pythia-1b",
+      "n_reports": 134,
+      "point": 0.02040816326530612,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.007647396790183367,
+      "ci95_low": 0.0005871990604815032,
+      "config": "INT8-BnB",
+      "metric": "FPF_rate",
+      "model": "pythia-1b",
+      "n_reports": 134,
+      "point": 0.0035440047253396337,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.9994259471871412,
+      "ci95_low": 0.9919632606199771,
+      "config": "INT8-BnB",
+      "metric": "CFPR",
+      "model": "pythia-1b",
+      "n_reports": 134,
+      "point": 0.9959816303099885,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.008036739380022917,
+      "ci95_low": 0.0005740528128588274,
+      "config": "INT8-BnB",
+      "metric": "CFFR",
+      "model": "pythia-1b",
+      "n_reports": 134,
+      "point": 0.0040183696900114585,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.6111111111111112,
+      "ci95_low": 0.3260743174924166,
+      "config": "NF4-BnB",
+      "metric": "FNF_rate",
+      "model": "pythia-1b",
+      "n_reports": 134,
+      "point": 0.46938775510204084,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.023710729104919975,
+      "ci95_low": 0.008239899044947766,
+      "config": "NF4-BnB",
+      "metric": "FPF_rate",
+      "model": "pythia-1b",
+      "n_reports": 134,
+      "point": 0.01535735380980508,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.9822043628013777,
+      "ci95_low": 0.960390355912744,
+      "config": "NF4-BnB",
+      "metric": "CFPR",
+      "model": "pythia-1b",
+      "n_reports": 134,
+      "point": 0.9718714121699197,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.03960964408725598,
+      "ci95_low": 0.017795637198622316,
+      "config": "NF4-BnB",
+      "metric": "CFFR",
+      "model": "pythia-1b",
+      "n_reports": 134,
+      "point": 0.02812858783008032,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.05358349420849414,
+      "ci95_low": 0.0,
+      "config": "FP16",
+      "metric": "FNF_rate",
+      "model": "biogpt-large",
+      "n_reports": 134,
+      "point": 0.01694915254237288,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "config": "FP16",
+      "metric": "FPF_rate",
+      "model": "biogpt-large",
+      "n_reports": 134,
+      "point": 0.0,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 1.0,
+      "ci95_low": 0.9982778415614236,
+      "config": "FP16",
+      "metric": "CFPR",
+      "model": "biogpt-large",
+      "n_reports": 134,
+      "point": 0.9994259471871412,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.001722158438576371,
+      "ci95_low": 0.0,
+      "config": "FP16",
+      "metric": "CFFR",
+      "model": "biogpt-large",
+      "n_reports": 134,
+      "point": 0.0005740528128588274,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.22641509433962265,
+      "ci95_low": 0.041645408163265306,
+      "config": "INT8-BnB",
+      "metric": "FNF_rate",
+      "model": "biogpt-large",
+      "n_reports": 134,
+      "point": 0.13559322033898305,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.012113061371161592,
+      "ci95_low": 0.0029515938606847697,
+      "config": "INT8-BnB",
+      "metric": "FPF_rate",
+      "model": "biogpt-large",
+      "n_reports": 134,
+      "point": 0.0071301247771836,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.994833524684271,
+      "ci95_low": 0.981630309988519,
+      "config": "INT8-BnB",
+      "metric": "CFPR",
+      "model": "biogpt-large",
+      "n_reports": 134,
+      "point": 0.9885189437428243,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.018369690011481032,
+      "ci95_low": 0.005166475315729002,
+      "config": "INT8-BnB",
+      "metric": "CFFR",
+      "model": "biogpt-large",
+      "n_reports": 134,
+      "point": 0.01148105625717566,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.41334482758620683,
+      "ci95_low": 0.16666666666666666,
+      "config": "NF4-BnB",
+      "metric": "FNF_rate",
+      "model": "biogpt-large",
+      "n_reports": 134,
+      "point": 0.288135593220339,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.018018559750369728,
+      "ci95_low": 0.004725269897368914,
+      "config": "NF4-BnB",
+      "metric": "FPF_rate",
+      "model": "biogpt-large",
+      "n_reports": 134,
+      "point": 0.0106951871657754,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.9896670493685419,
+      "ci95_low": 0.9690011481056258,
+      "config": "NF4-BnB",
+      "metric": "CFPR",
+      "model": "biogpt-large",
+      "n_reports": 134,
+      "point": 0.9799081515499426,
+      "undefined_resamples": 0
+    },
+    {
+      "ci95_high": 0.030998851894374235,
+      "ci95_low": 0.010332950631458115,
+      "config": "NF4-BnB",
+      "metric": "CFFR",
+      "model": "biogpt-large",
+      "n_reports": 134,
+      "point": 0.020091848450057403,
+      "undefined_resamples": 0
+    }
+  ],
+  "seed": 42,
+  "undefined_policy": "null point; exclude zero-denominator resamples and report count",
+  "unit": "report"
+}

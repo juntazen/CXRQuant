@@ -1,0 +1,26 @@
+{
+  "matrix": {
+    "comparisons": 18,
+    "configurations": 24,
+    "models": 6,
+    "predictions": 3216
+  },
+  "provenance": {
+    "benchmark_hash": "477590ae0c67c22a68d6bee0fc7e1df049cca182d7641f3ca69ee4405448775a",
+    "config_hash": "fefe99dc0b2e25f9d81ea784268e4687671a1f15b81c86929509e9ba95b237c3",
+    "manifest_hash": "09c670d6c7be0db028da43d42248ec655fd46ff24d7638752fc9ea9c1a25ac8f",
+    "metric_version": "2.1-null-denominator",
+    "prediction_provenance": "GPU run; see identity and checkpoints",
+    "run_id": "full_seed777_20260915"
+  },
+  "status": "complete",
+  "validated_metrics": [
+    "FNF",
+    "FPF",
+    "CFPR",
+    "CFFR",
+    "CE-F1",
+    "BLEU-1/4",
+    "ROUGE-1/2/L"
+  ]
+}

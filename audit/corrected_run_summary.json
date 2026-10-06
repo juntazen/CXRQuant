@@ -1,0 +1,94 @@
+{
+  "artifacts": {
+    "benchmark": "<local>/runs/full_seed42_corrected_20260911/multimodel_benchmark.json",
+    "bootstrap": "<local>/runs/full_seed42_corrected_20260911/bootstrap_fnf_ci.json",
+    "mcnemar": "<local>/runs/full_seed42_corrected_20260911/mcnemar_results.json"
+  },
+  "best_ce_micro_f1": {
+    "config": "NF4-BnB",
+    "model": "biogpt-large",
+    "value": 0.4746
+  },
+  "best_fp32_ce_micro_f1": {
+    "model": "biogpt",
+    "value": 0.3833
+  },
+  "fp16_fnf_range": [
+    0.0,
+    0.2324
+  ],
+  "int8_fnf_range": [
+    0.129,
+    0.6082
+  ],
+  "nf4_bleu4_absolute_delta_range": [
+    0.0017000000000000001,
+    0.006500000000000006
+  ],
+  "nf4_ce_improved_models": [
+    "distilgpt2",
+    "pythia-1b",
+    "biogpt-large"
+  ],
+  "nf4_fnf_range": [
+    0.3548,
+    0.7938
+  ],
+  "pooled_mcnemar_bonferroni_significant": [
+    {
+      "b": "154",
+      "c": "92",
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": "9.296528871089407e-05"
+    }
+  ],
+  "pooled_mcnemar_bonferroni_threshold": 0.002777777777777778,
+  "pooled_mcnemar_p_lt_0_05": [
+    {
+      "b": "106",
+      "c": "77",
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": "0.03817818299726714"
+    },
+    {
+      "b": "118",
+      "c": "88",
+      "config": "INT8-BnB",
+      "model": "gpt2",
+      "p": "0.043066998477872445"
+    },
+    {
+      "b": "154",
+      "c": "92",
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": "9.296528871089407e-05"
+    },
+    {
+      "b": "77",
+      "c": "114",
+      "config": "NF4-BnB",
+      "model": "gpt2-medium",
+      "p": "0.009013932917080617"
+    },
+    {
+      "b": "33",
+      "c": "13",
+      "config": "NF4-BnB",
+      "model": "biogpt",
+      "p": "0.004533861582189047"
+    }
+  ],
+  "repeat_training": false,
+  "run_id": "full_seed42_corrected_20260911",
+  "status": "complete",
+  "training_seed_count": 1,
+  "validation": {
+    "comparisons": 18,
+    "configurations": 24,
+    "models": 6,
+    "predictions": 3216
+  }
+}

@@ -1,0 +1,4088 @@
+{
+ "source": "https://huggingface.co/datasets/alkzar90/NIH-Chest-X-ray-dataset/resolve/main/data/images/images_001.zip",
+ "seed": 20260926,
+ "n": 400,
+ "patients_in_archive": 1335,
+ "images": [
+  {
+   "image": "00000942_000.png",
+   "patient": "942",
+   "view": "PA",
+   "labels": [
+    "Hernia",
+    "Mass"
+   ],
+   "age": "47",
+   "sex": "F"
+  },
+  {
+   "image": "00000723_002.png",
+   "patient": "723",
+   "view": "PA",
+   "labels": [
+    "Fibrosis",
+    "Infiltration"
+   ],
+   "age": "40",
+   "sex": "M"
+  },
+  {
+   "image": "00000864_000.png",
+   "patient": "864",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "70",
+   "sex": "M"
+  },
+  {
+   "image": "00000024_000.png",
+   "patient": "24",
+   "view": "PA",
+   "labels": [
+    "Fibrosis"
+   ],
+   "age": "52",
+   "sex": "M"
+  },
+  {
+   "image": "00001110_000.png",
+   "patient": "1110",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "21",
+   "sex": "M"
+  },
+  {
+   "image": "00000365_000.png",
+   "patient": "365",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "52",
+   "sex": "F"
+  },
+  {
+   "image": "00000848_000.png",
+   "patient": "848",
+   "view": "PA",
+   "labels": [
+    "Effusion"
+   ],
+   "age": "48",
+   "sex": "M"
+  },
+  {
+   "image": "00001056_000.png",
+   "patient": "1056",
+   "view": "PA",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "68",
+   "sex": "F"
+  },
+  {
+   "image": "00000889_000.png",
+   "patient": "889",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "50",
+   "sex": "F"
+  },
+  {
+   "image": "00000224_000.png",
+   "patient": "224",
+   "view": "PA",
+   "labels": [
+    "Fibrosis"
+   ],
+   "age": "31",
+   "sex": "F"
+  },
+  {
+   "image": "00000410_001.png",
+   "patient": "410",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "60",
+   "sex": "F"
+  },
+  {
+   "image": "00000869_006.png",
+   "patient": "869",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "68",
+   "sex": "F"
+  },
+  {
+   "image": "00001218_000.png",
+   "patient": "1218",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "23",
+   "sex": "F"
+  },
+  {
+   "image": "00000178_000.png",
+   "patient": "178",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "47",
+   "sex": "M"
+  },
+  {
+   "image": "00000099_000.png",
+   "patient": "99",
+   "view": "PA",
+   "labels": [
+    "Atelectasis",
+    "Effusion"
+   ],
+   "age": "54",
+   "sex": "F"
+  },
+  {
+   "image": "00001220_000.png",
+   "patient": "1220",
+   "view": "PA",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "11",
+   "sex": "M"
+  },
+  {
+   "image": "00000827_000.png",
+   "patient": "827",
+   "view": "AP",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "28",
+   "sex": "M"
+  },
+  {
+   "image": "00000522_000.png",
+   "patient": "522",
+   "view": "AP",
+   "labels": [
+    "Atelectasis",
+    "Infiltration"
+   ],
+   "age": "17",
+   "sex": "M"
+  },
+  {
+   "image": "00001181_000.png",
+   "patient": "1181",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "17",
+   "sex": "F"
+  },
+  {
+   "image": "00000523_000.png",
+   "patient": "523",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "57",
+   "sex": "F"
+  },
+  {
+   "image": "00000829_000.png",
+   "patient": "829",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "40",
+   "sex": "F"
+  },
+  {
+   "image": "00000745_000.png",
+   "patient": "745",
+   "view": "PA",
+   "labels": [
+    "Effusion"
+   ],
+   "age": "79",
+   "sex": "M"
+  },
+  {
+   "image": "00000453_000.png",
+   "patient": "453",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "63",
+   "sex": "M"
+  },
+  {
+   "image": "00001077_000.png",
+   "patient": "1077",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "77",
+   "sex": "F"
+  },
+  {
+   "image": "00000245_000.png",
+   "patient": "245",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "25",
+   "sex": "M"
+  },
+  {
+   "image": "00001070_000.png",
+   "patient": "1070",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "83",
+   "sex": "M"
+  },
+  {
+   "image": "00000777_000.png",
+   "patient": "777",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "19",
+   "sex": "M"
+  },
+  {
+   "image": "00000057_003.png",
+   "patient": "57",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "61",
+   "sex": "M"
+  },
+  {
+   "image": "00000597_000.png",
+   "patient": "597",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "61",
+   "sex": "F"
+  },
+  {
+   "image": "00001285_000.png",
+   "patient": "1285",
+   "view": "PA",
+   "labels": [
+    "Nodule",
+    "Pleural_Thickening"
+   ],
+   "age": "31",
+   "sex": "M"
+  },
+  {
+   "image": "00000488_000.png",
+   "patient": "488",
+   "view": "AP",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "35",
+   "sex": "F"
+  },
+  {
+   "image": "00000095_000.png",
+   "patient": "95",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "50",
+   "sex": "F"
+  },
+  {
+   "image": "00001101_005.png",
+   "patient": "1101",
+   "view": "AP",
+   "labels": [
+    "Edema"
+   ],
+   "age": "36",
+   "sex": "F"
+  },
+  {
+   "image": "00000180_000.png",
+   "patient": "180",
+   "view": "PA",
+   "labels": [
+    "Effusion",
+    "Pleural_Thickening"
+   ],
+   "age": "62",
+   "sex": "M"
+  },
+  {
+   "image": "00000966_000.png",
+   "patient": "966",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "47",
+   "sex": "M"
+  },
+  {
+   "image": "00000382_000.png",
+   "patient": "382",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "68",
+   "sex": "F"
+  },
+  {
+   "image": "00001084_000.png",
+   "patient": "1084",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "45",
+   "sex": "M"
+  },
+  {
+   "image": "00000075_000.png",
+   "patient": "75",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "61",
+   "sex": "F"
+  },
+  {
+   "image": "00001172_000.png",
+   "patient": "1172",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "46",
+   "sex": "M"
+  },
+  {
+   "image": "00000716_001.png",
+   "patient": "716",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "30",
+   "sex": "F"
+  },
+  {
+   "image": "00001333_000.png",
+   "patient": "1333",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "47",
+   "sex": "M"
+  },
+  {
+   "image": "00000100_000.png",
+   "patient": "100",
+   "view": "PA",
+   "labels": [
+    "Atelectasis",
+    "Effusion",
+    "Infiltration"
+   ],
+   "age": "60",
+   "sex": "M"
+  },
+  {
+   "image": "00000409_000.png",
+   "patient": "409",
+   "view": "PA",
+   "labels": [
+    "Effusion"
+   ],
+   "age": "65",
+   "sex": "F"
+  },
+  {
+   "image": "00000948_000.png",
+   "patient": "948",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "72",
+   "sex": "M"
+  },
+  {
+   "image": "00000628_002.png",
+   "patient": "628",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "28",
+   "sex": "F"
+  },
+  {
+   "image": "00000890_000.png",
+   "patient": "890",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "30",
+   "sex": "M"
+  },
+  {
+   "image": "00000156_000.png",
+   "patient": "156",
+   "view": "AP",
+   "labels": [
+    "Cardiomegaly",
+    "Infiltration"
+   ],
+   "age": "81",
+   "sex": "M"
+  },
+  {
+   "image": "00000738_000.png",
+   "patient": "738",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "25",
+   "sex": "F"
+  },
+  {
+   "image": "00000626_000.png",
+   "patient": "626",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "46",
+   "sex": "M"
+  },
+  {
+   "image": "00000084_000.png",
+   "patient": "84",
+   "view": "PA",
+   "labels": [
+    "Effusion"
+   ],
+   "age": "57",
+   "sex": "F"
+  },
+  {
+   "image": "00001263_000.png",
+   "patient": "1263",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "64",
+   "sex": "F"
+  },
+  {
+   "image": "00000495_000.png",
+   "patient": "495",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "68",
+   "sex": "M"
+  },
+  {
+   "image": "00000816_000.png",
+   "patient": "816",
+   "view": "PA",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "61",
+   "sex": "M"
+  },
+  {
+   "image": "00001318_001.png",
+   "patient": "1318",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "54",
+   "sex": "F"
+  },
+  {
+   "image": "00001248_018.png",
+   "patient": "1248",
+   "view": "PA",
+   "labels": [
+    "Mass"
+   ],
+   "age": "33",
+   "sex": "F"
+  },
+  {
+   "image": "00001106_000.png",
+   "patient": "1106",
+   "view": "PA",
+   "labels": [
+    "Edema",
+    "Fibrosis"
+   ],
+   "age": "68",
+   "sex": "F"
+  },
+  {
+   "image": "00001089_000.png",
+   "patient": "1089",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "30",
+   "sex": "M"
+  },
+  {
+   "image": "00000218_000.png",
+   "patient": "218",
+   "view": "PA",
+   "labels": [
+    "Infiltration",
+    "Pneumonia"
+   ],
+   "age": "33",
+   "sex": "M"
+  },
+  {
+   "image": "00000293_000.png",
+   "patient": "293",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "82",
+   "sex": "F"
+  },
+  {
+   "image": "00000027_000.png",
+   "patient": "27",
+   "view": "PA",
+   "labels": [
+    "Emphysema"
+   ],
+   "age": "73",
+   "sex": "M"
+  },
+  {
+   "image": "00000275_004.png",
+   "patient": "275",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "55",
+   "sex": "F"
+  },
+  {
+   "image": "00001055_002.png",
+   "patient": "1055",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "13",
+   "sex": "F"
+  },
+  {
+   "image": "00000426_000.png",
+   "patient": "426",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "49",
+   "sex": "M"
+  },
+  {
+   "image": "00000164_000.png",
+   "patient": "164",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "69",
+   "sex": "M"
+  },
+  {
+   "image": "00000990_000.png",
+   "patient": "990",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "71",
+   "sex": "M"
+  },
+  {
+   "image": "00000672_000.png",
+   "patient": "672",
+   "view": "PA",
+   "labels": [
+    "Fibrosis"
+   ],
+   "age": "53",
+   "sex": "F"
+  },
+  {
+   "image": "00000074_000.png",
+   "patient": "74",
+   "view": "PA",
+   "labels": [
+    "Effusion"
+   ],
+   "age": "76",
+   "sex": "M"
+  },
+  {
+   "image": "00000682_000.png",
+   "patient": "682",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "62",
+   "sex": "F"
+  },
+  {
+   "image": "00000840_000.png",
+   "patient": "840",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "71",
+   "sex": "M"
+  },
+  {
+   "image": "00000134_000.png",
+   "patient": "134",
+   "view": "AP",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "76",
+   "sex": "F"
+  },
+  {
+   "image": "00001115_000.png",
+   "patient": "1115",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "80",
+   "sex": "M"
+  },
+  {
+   "image": "00001328_000.png",
+   "patient": "1328",
+   "view": "PA",
+   "labels": [
+    "Hernia",
+    "Infiltration"
+   ],
+   "age": "57",
+   "sex": "F"
+  },
+  {
+   "image": "00000498_002.png",
+   "patient": "498",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "62",
+   "sex": "M"
+  },
+  {
+   "image": "00000332_000.png",
+   "patient": "332",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "53",
+   "sex": "F"
+  },
+  {
+   "image": "00000902_003.png",
+   "patient": "902",
+   "view": "PA",
+   "labels": [
+    "Atelectasis",
+    "Infiltration"
+   ],
+   "age": "53",
+   "sex": "M"
+  },
+  {
+   "image": "00001196_000.png",
+   "patient": "1196",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "13",
+   "sex": "M"
+  },
+  {
+   "image": "00000982_000.png",
+   "patient": "982",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "62",
+   "sex": "F"
+  },
+  {
+   "image": "00001185_000.png",
+   "patient": "1185",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "57",
+   "sex": "M"
+  },
+  {
+   "image": "00001209_000.png",
+   "patient": "1209",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "45",
+   "sex": "M"
+  },
+  {
+   "image": "00000635_000.png",
+   "patient": "635",
+   "view": "PA",
+   "labels": [
+    "Fibrosis",
+    "Infiltration"
+   ],
+   "age": "48",
+   "sex": "F"
+  },
+  {
+   "image": "00001011_001.png",
+   "patient": "1011",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "47",
+   "sex": "M"
+  },
+  {
+   "image": "00000606_000.png",
+   "patient": "606",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "24",
+   "sex": "F"
+  },
+  {
+   "image": "00000785_000.png",
+   "patient": "785",
+   "view": "PA",
+   "labels": [
+    "Atelectasis",
+    "Infiltration"
+   ],
+   "age": "38",
+   "sex": "F"
+  },
+  {
+   "image": "00001082_005.png",
+   "patient": "1082",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "18",
+   "sex": "M"
+  },
+  {
+   "image": "00001232_000.png",
+   "patient": "1232",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly",
+    "Effusion"
+   ],
+   "age": "60",
+   "sex": "F"
+  },
+  {
+   "image": "00000013_022.png",
+   "patient": "13",
+   "view": "PA",
+   "labels": [
+    "Infiltration",
+    "Mass"
+   ],
+   "age": "56",
+   "sex": "M"
+  },
+  {
+   "image": "00000112_000.png",
+   "patient": "112",
+   "view": "PA",
+   "labels": [
+    "Atelectasis",
+    "Effusion",
+    "Mass"
+   ],
+   "age": "49",
+   "sex": "M"
+  },
+  {
+   "image": "00000321_000.png",
+   "patient": "321",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "71",
+   "sex": "F"
+  },
+  {
+   "image": "00000793_000.png",
+   "patient": "793",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "29",
+   "sex": "F"
+  },
+  {
+   "image": "00000939_000.png",
+   "patient": "939",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "44",
+   "sex": "F"
+  },
+  {
+   "image": "00001332_000.png",
+   "patient": "1332",
+   "view": "AP",
+   "labels": [
+    "Consolidation",
+    "Nodule"
+   ],
+   "age": "13",
+   "sex": "M"
+  },
+  {
+   "image": "00000461_000.png",
+   "patient": "461",
+   "view": "PA",
+   "labels": [
+    "Fibrosis"
+   ],
+   "age": "81",
+   "sex": "F"
+  },
+  {
+   "image": "00000305_000.png",
+   "patient": "305",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "78",
+   "sex": "M"
+  },
+  {
+   "image": "00001080_000.png",
+   "patient": "1080",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "50",
+   "sex": "M"
+  },
+  {
+   "image": "00000661_001.png",
+   "patient": "661",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly",
+    "Infiltration"
+   ],
+   "age": "52",
+   "sex": "M"
+  },
+  {
+   "image": "00000274_000.png",
+   "patient": "274",
+   "view": "PA",
+   "labels": [
+    "Fibrosis"
+   ],
+   "age": "49",
+   "sex": "F"
+  },
+  {
+   "image": "00001259_000.png",
+   "patient": "1259",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "17",
+   "sex": "M"
+  },
+  {
+   "image": "00001301_000.png",
+   "patient": "1301",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "55",
+   "sex": "F"
+  },
+  {
+   "image": "00000132_000.png",
+   "patient": "132",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "58",
+   "sex": "F"
+  },
+  {
+   "image": "00000558_000.png",
+   "patient": "558",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "49",
+   "sex": "F"
+  },
+  {
+   "image": "00000139_000.png",
+   "patient": "139",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "58",
+   "sex": "F"
+  },
+  {
+   "image": "00000255_000.png",
+   "patient": "255",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "52",
+   "sex": "F"
+  },
+  {
+   "image": "00000541_002.png",
+   "patient": "541",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "47",
+   "sex": "F"
+  },
+  {
+   "image": "00000896_000.png",
+   "patient": "896",
+   "view": "PA",
+   "labels": [
+    "Pleural_Thickening"
+   ],
+   "age": "80",
+   "sex": "M"
+  },
+  {
+   "image": "00000727_000.png",
+   "patient": "727",
+   "view": "PA",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "49",
+   "sex": "F"
+  },
+  {
+   "image": "00001184_000.png",
+   "patient": "1184",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "59",
+   "sex": "F"
+  },
+  {
+   "image": "00000961_000.png",
+   "patient": "961",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly",
+    "Infiltration"
+   ],
+   "age": "60",
+   "sex": "F"
+  },
+  {
+   "image": "00001074_000.png",
+   "patient": "1074",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "11",
+   "sex": "F"
+  },
+  {
+   "image": "00001193_000.png",
+   "patient": "1193",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "51",
+   "sex": "F"
+  },
+  {
+   "image": "00000446_000.png",
+   "patient": "446",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "66",
+   "sex": "M"
+  },
+  {
+   "image": "00000999_000.png",
+   "patient": "999",
+   "view": "PA",
+   "labels": [
+    "Atelectasis",
+    "Nodule"
+   ],
+   "age": "48",
+   "sex": "M"
+  },
+  {
+   "image": "00001065_000.png",
+   "patient": "1065",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "52",
+   "sex": "F"
+  },
+  {
+   "image": "00000294_000.png",
+   "patient": "294",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "59",
+   "sex": "F"
+  },
+  {
+   "image": "00001276_000.png",
+   "patient": "1276",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "23",
+   "sex": "M"
+  },
+  {
+   "image": "00000742_000.png",
+   "patient": "742",
+   "view": "PA",
+   "labels": [
+    "Effusion"
+   ],
+   "age": "67",
+   "sex": "M"
+  },
+  {
+   "image": "00000317_000.png",
+   "patient": "317",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "22",
+   "sex": "F"
+  },
+  {
+   "image": "00000418_000.png",
+   "patient": "418",
+   "view": "AP",
+   "labels": [
+    "Atelectasis",
+    "Mass"
+   ],
+   "age": "36",
+   "sex": "M"
+  },
+  {
+   "image": "00000795_000.png",
+   "patient": "795",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "24",
+   "sex": "F"
+  },
+  {
+   "image": "00001180_000.png",
+   "patient": "1180",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "68",
+   "sex": "F"
+  },
+  {
+   "image": "00000421_000.png",
+   "patient": "421",
+   "view": "AP",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "71",
+   "sex": "M"
+  },
+  {
+   "image": "00001241_000.png",
+   "patient": "1241",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "50",
+   "sex": "M"
+  },
+  {
+   "image": "00001081_000.png",
+   "patient": "1081",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "67",
+   "sex": "F"
+  },
+  {
+   "image": "00000189_000.png",
+   "patient": "189",
+   "view": "PA",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "54",
+   "sex": "M"
+  },
+  {
+   "image": "00000751_000.png",
+   "patient": "751",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "57",
+   "sex": "F"
+  },
+  {
+   "image": "00000400_000.png",
+   "patient": "400",
+   "view": "PA",
+   "labels": [
+    "Mass"
+   ],
+   "age": "60",
+   "sex": "M"
+  },
+  {
+   "image": "00000988_000.png",
+   "patient": "988",
+   "view": "PA",
+   "labels": [
+    "Emphysema"
+   ],
+   "age": "60",
+   "sex": "M"
+  },
+  {
+   "image": "00000204_001.png",
+   "patient": "204",
+   "view": "PA",
+   "labels": [
+    "Fibrosis",
+    "Nodule"
+   ],
+   "age": "27",
+   "sex": "M"
+  },
+  {
+   "image": "00000546_000.png",
+   "patient": "546",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "38",
+   "sex": "F"
+  },
+  {
+   "image": "00000788_001.png",
+   "patient": "788",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "23",
+   "sex": "F"
+  },
+  {
+   "image": "00001293_000.png",
+   "patient": "1293",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "45",
+   "sex": "F"
+  },
+  {
+   "image": "00000680_000.png",
+   "patient": "680",
+   "view": "PA",
+   "labels": [
+    "Fibrosis"
+   ],
+   "age": "50",
+   "sex": "F"
+  },
+  {
+   "image": "00001211_000.png",
+   "patient": "1211",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "40",
+   "sex": "M"
+  },
+  {
+   "image": "00001308_000.png",
+   "patient": "1308",
+   "view": "PA",
+   "labels": [
+    "Pleural_Thickening"
+   ],
+   "age": "12",
+   "sex": "M"
+  },
+  {
+   "image": "00000883_000.png",
+   "patient": "883",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "67",
+   "sex": "F"
+  },
+  {
+   "image": "00000150_000.png",
+   "patient": "150",
+   "view": "PA",
+   "labels": [
+    "Effusion"
+   ],
+   "age": "54",
+   "sex": "F"
+  },
+  {
+   "image": "00000063_000.png",
+   "patient": "63",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "62",
+   "sex": "M"
+  },
+  {
+   "image": "00000442_003.png",
+   "patient": "442",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "45",
+   "sex": "F"
+  },
+  {
+   "image": "00000154_000.png",
+   "patient": "154",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "54",
+   "sex": "F"
+  },
+  {
+   "image": "00000127_000.png",
+   "patient": "127",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "56",
+   "sex": "F"
+  },
+  {
+   "image": "00001316_000.png",
+   "patient": "1316",
+   "view": "PA",
+   "labels": [
+    "Fibrosis"
+   ],
+   "age": "82",
+   "sex": "F"
+  },
+  {
+   "image": "00000123_000.png",
+   "patient": "123",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly",
+    "Emphysema"
+   ],
+   "age": "50",
+   "sex": "M"
+  },
+  {
+   "image": "00001040_000.png",
+   "patient": "1040",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "68",
+   "sex": "F"
+  },
+  {
+   "image": "00000383_000.png",
+   "patient": "383",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "66",
+   "sex": "F"
+  },
+  {
+   "image": "00000450_007.png",
+   "patient": "450",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "61",
+   "sex": "F"
+  },
+  {
+   "image": "00000912_000.png",
+   "patient": "912",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "31",
+   "sex": "M"
+  },
+  {
+   "image": "00001119_000.png",
+   "patient": "1119",
+   "view": "PA",
+   "labels": [
+    "Mass"
+   ],
+   "age": "56",
+   "sex": "M"
+  },
+  {
+   "image": "00000072_000.png",
+   "patient": "72",
+   "view": "PA",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "67",
+   "sex": "F"
+  },
+  {
+   "image": "00000915_000.png",
+   "patient": "915",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "21",
+   "sex": "F"
+  },
+  {
+   "image": "00001029_002.png",
+   "patient": "1029",
+   "view": "AP",
+   "labels": [
+    "Pneumothorax"
+   ],
+   "age": "14",
+   "sex": "M"
+  },
+  {
+   "image": "00000782_000.png",
+   "patient": "782",
+   "view": "PA",
+   "labels": [
+    "Consolidation",
+    "Fibrosis",
+    "Nodule"
+   ],
+   "age": "81",
+   "sex": "M"
+  },
+  {
+   "image": "00000314_000.png",
+   "patient": "314",
+   "view": "PA",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "63",
+   "sex": "M"
+  },
+  {
+   "image": "00000735_000.png",
+   "patient": "735",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "67",
+   "sex": "M"
+  },
+  {
+   "image": "00000071_000.png",
+   "patient": "71",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "69",
+   "sex": "F"
+  },
+  {
+   "image": "00000643_000.png",
+   "patient": "643",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "40",
+   "sex": "F"
+  },
+  {
+   "image": "00000591_000.png",
+   "patient": "591",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "62",
+   "sex": "M"
+  },
+  {
+   "image": "00000665_000.png",
+   "patient": "665",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "58",
+   "sex": "M"
+  },
+  {
+   "image": "00000118_000.png",
+   "patient": "118",
+   "view": "AP",
+   "labels": [
+    "Emphysema"
+   ],
+   "age": "73",
+   "sex": "M"
+  },
+  {
+   "image": "00000404_000.png",
+   "patient": "404",
+   "view": "AP",
+   "labels": [
+    "Atelectasis",
+    "Consolidation",
+    "Effusion",
+    "Mass",
+    "Pleural_Thickening"
+   ],
+   "age": "72",
+   "sex": "M"
+  },
+  {
+   "image": "00000282_000.png",
+   "patient": "282",
+   "view": "PA",
+   "labels": [
+    "Consolidation",
+    "Effusion",
+    "Infiltration",
+    "Nodule"
+   ],
+   "age": "65",
+   "sex": "F"
+  },
+  {
+   "image": "00000372_000.png",
+   "patient": "372",
+   "view": "AP",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "78",
+   "sex": "M"
+  },
+  {
+   "image": "00001033_000.png",
+   "patient": "1033",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "63",
+   "sex": "M"
+  },
+  {
+   "image": "00000460_000.png",
+   "patient": "460",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "40",
+   "sex": "M"
+  },
+  {
+   "image": "00000820_000.png",
+   "patient": "820",
+   "view": "AP",
+   "labels": [
+    "Consolidation",
+    "Infiltration",
+    "Nodule"
+   ],
+   "age": "41",
+   "sex": "M"
+  },
+  {
+   "image": "00000897_000.png",
+   "patient": "897",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly",
+    "Effusion"
+   ],
+   "age": "52",
+   "sex": "M"
+  },
+  {
+   "image": "00000631_000.png",
+   "patient": "631",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "24",
+   "sex": "M"
+  },
+  {
+   "image": "00000953_000.png",
+   "patient": "953",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "66",
+   "sex": "M"
+  },
+  {
+   "image": "00000959_000.png",
+   "patient": "959",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "41",
+   "sex": "M"
+  },
+  {
+   "image": "00000980_000.png",
+   "patient": "980",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "38",
+   "sex": "M"
+  },
+  {
+   "image": "00000530_000.png",
+   "patient": "530",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "44",
+   "sex": "F"
+  },
+  {
+   "image": "00000925_000.png",
+   "patient": "925",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "48",
+   "sex": "F"
+  },
+  {
+   "image": "00001268_000.png",
+   "patient": "1268",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "60",
+   "sex": "M"
+  },
+  {
+   "image": "00000911_000.png",
+   "patient": "911",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "14",
+   "sex": "M"
+  },
+  {
+   "image": "00000448_000.png",
+   "patient": "448",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "48",
+   "sex": "M"
+  },
+  {
+   "image": "00000386_000.png",
+   "patient": "386",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "42",
+   "sex": "M"
+  },
+  {
+   "image": "00000219_000.png",
+   "patient": "219",
+   "view": "PA",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "77",
+   "sex": "M"
+  },
+  {
+   "image": "00001227_000.png",
+   "patient": "1227",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "52",
+   "sex": "M"
+  },
+  {
+   "image": "00000656_000.png",
+   "patient": "656",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "27",
+   "sex": "F"
+  },
+  {
+   "image": "00000297_000.png",
+   "patient": "297",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "49",
+   "sex": "M"
+  },
+  {
+   "image": "00000374_000.png",
+   "patient": "374",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "74",
+   "sex": "M"
+  },
+  {
+   "image": "00000485_000.png",
+   "patient": "485",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "71",
+   "sex": "F"
+  },
+  {
+   "image": "00000165_000.png",
+   "patient": "165",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "76",
+   "sex": "M"
+  },
+  {
+   "image": "00000025_000.png",
+   "patient": "25",
+   "view": "PA",
+   "labels": [
+    "Effusion"
+   ],
+   "age": "71",
+   "sex": "M"
+  },
+  {
+   "image": "00001016_000.png",
+   "patient": "1016",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "45",
+   "sex": "F"
+  },
+  {
+   "image": "00000337_000.png",
+   "patient": "337",
+   "view": "PA",
+   "labels": [
+    "Atelectasis",
+    "Effusion",
+    "Mass"
+   ],
+   "age": "74",
+   "sex": "M"
+  },
+  {
+   "image": "00000578_000.png",
+   "patient": "578",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "41",
+   "sex": "M"
+  },
+  {
+   "image": "00000331_000.png",
+   "patient": "331",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "60",
+   "sex": "F"
+  },
+  {
+   "image": "00000441_000.png",
+   "patient": "441",
+   "view": "PA",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "49",
+   "sex": "M"
+  },
+  {
+   "image": "00000608_000.png",
+   "patient": "608",
+   "view": "PA",
+   "labels": [
+    "Atelectasis",
+    "Nodule",
+    "Pleural_Thickening"
+   ],
+   "age": "79",
+   "sex": "F"
+  },
+  {
+   "image": "00001214_000.png",
+   "patient": "1214",
+   "view": "PA",
+   "labels": [
+    "Mass"
+   ],
+   "age": "66",
+   "sex": "F"
+  },
+  {
+   "image": "00000451_000.png",
+   "patient": "451",
+   "view": "PA",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "87",
+   "sex": "F"
+  },
+  {
+   "image": "00000554_000.png",
+   "patient": "554",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "55",
+   "sex": "F"
+  },
+  {
+   "image": "00000119_001.png",
+   "patient": "119",
+   "view": "AP",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "56",
+   "sex": "M"
+  },
+  {
+   "image": "00000287_000.png",
+   "patient": "287",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "36",
+   "sex": "F"
+  },
+  {
+   "image": "00000010_000.png",
+   "patient": "10",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "84",
+   "sex": "F"
+  },
+  {
+   "image": "00000079_000.png",
+   "patient": "79",
+   "view": "PA",
+   "labels": [
+    "Mass"
+   ],
+   "age": "62",
+   "sex": "M"
+  },
+  {
+   "image": "00000157_000.png",
+   "patient": "157",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "39",
+   "sex": "F"
+  },
+  {
+   "image": "00000470_000.png",
+   "patient": "470",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "57",
+   "sex": "F"
+  },
+  {
+   "image": "00000941_000.png",
+   "patient": "941",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "44",
+   "sex": "M"
+  },
+  {
+   "image": "00000322_000.png",
+   "patient": "322",
+   "view": "PA",
+   "labels": [
+    "Pleural_Thickening"
+   ],
+   "age": "32",
+   "sex": "M"
+  },
+  {
+   "image": "00000866_000.png",
+   "patient": "866",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "52",
+   "sex": "M"
+  },
+  {
+   "image": "00000370_003.png",
+   "patient": "370",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "54",
+   "sex": "F"
+  },
+  {
+   "image": "00000399_000.png",
+   "patient": "399",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "34",
+   "sex": "F"
+  },
+  {
+   "image": "00000225_000.png",
+   "patient": "225",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "63",
+   "sex": "F"
+  },
+  {
+   "image": "00001197_000.png",
+   "patient": "1197",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "50",
+   "sex": "M"
+  },
+  {
+   "image": "00000131_002.png",
+   "patient": "131",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly",
+    "Emphysema"
+   ],
+   "age": "54",
+   "sex": "M"
+  },
+  {
+   "image": "00001138_000.png",
+   "patient": "1138",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "51",
+   "sex": "F"
+  },
+  {
+   "image": "00000076_000.png",
+   "patient": "76",
+   "view": "PA",
+   "labels": [
+    "Effusion"
+   ],
+   "age": "80",
+   "sex": "M"
+  },
+  {
+   "image": "00000986_000.png",
+   "patient": "986",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "29",
+   "sex": "F"
+  },
+  {
+   "image": "00000956_000.png",
+   "patient": "956",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "54",
+   "sex": "M"
+  },
+  {
+   "image": "00000662_003.png",
+   "patient": "662",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "48",
+   "sex": "F"
+  },
+  {
+   "image": "00000233_000.png",
+   "patient": "233",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "65",
+   "sex": "F"
+  },
+  {
+   "image": "00000030_000.png",
+   "patient": "30",
+   "view": "PA",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "74",
+   "sex": "M"
+  },
+  {
+   "image": "00000192_000.png",
+   "patient": "192",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "87",
+   "sex": "M"
+  },
+  {
+   "image": "00000692_000.png",
+   "patient": "692",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "45",
+   "sex": "F"
+  },
+  {
+   "image": "00000493_000.png",
+   "patient": "493",
+   "view": "AP",
+   "labels": [
+    "Pneumothorax"
+   ],
+   "age": "35",
+   "sex": "F"
+  },
+  {
+   "image": "00001013_000.png",
+   "patient": "1013",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "22",
+   "sex": "F"
+  },
+  {
+   "image": "00000212_000.png",
+   "patient": "212",
+   "view": "PA",
+   "labels": [
+    "Edema",
+    "Effusion"
+   ],
+   "age": "31",
+   "sex": "M"
+  },
+  {
+   "image": "00000532_000.png",
+   "patient": "532",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "61",
+   "sex": "F"
+  },
+  {
+   "image": "00000581_000.png",
+   "patient": "581",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "49",
+   "sex": "F"
+  },
+  {
+   "image": "00000856_000.png",
+   "patient": "856",
+   "view": "AP",
+   "labels": [
+    "Effusion"
+   ],
+   "age": "66",
+   "sex": "M"
+  },
+  {
+   "image": "00001066_000.png",
+   "patient": "1066",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "40",
+   "sex": "F"
+  },
+  {
+   "image": "00000406_000.png",
+   "patient": "406",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "51",
+   "sex": "M"
+  },
+  {
+   "image": "00000965_000.png",
+   "patient": "965",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "31",
+   "sex": "F"
+  },
+  {
+   "image": "00000464_000.png",
+   "patient": "464",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "73",
+   "sex": "F"
+  },
+  {
+   "image": "00000087_000.png",
+   "patient": "87",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "71",
+   "sex": "F"
+  },
+  {
+   "image": "00000001_000.png",
+   "patient": "1",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "57",
+   "sex": "M"
+  },
+  {
+   "image": "00000562_000.png",
+   "patient": "562",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "46",
+   "sex": "M"
+  },
+  {
+   "image": "00000148_000.png",
+   "patient": "148",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "59",
+   "sex": "M"
+  },
+  {
+   "image": "00001249_000.png",
+   "patient": "1249",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "40",
+   "sex": "M"
+  },
+  {
+   "image": "00000847_000.png",
+   "patient": "847",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "39",
+   "sex": "M"
+  },
+  {
+   "image": "00000892_000.png",
+   "patient": "892",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "45",
+   "sex": "M"
+  },
+  {
+   "image": "00001022_000.png",
+   "patient": "1022",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "49",
+   "sex": "M"
+  },
+  {
+   "image": "00000033_000.png",
+   "patient": "33",
+   "view": "PA",
+   "labels": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Fibrosis"
+   ],
+   "age": "72",
+   "sex": "F"
+  },
+  {
+   "image": "00000835_000.png",
+   "patient": "835",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "67",
+   "sex": "F"
+  },
+  {
+   "image": "00000914_000.png",
+   "patient": "914",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "64",
+   "sex": "M"
+  },
+  {
+   "image": "00000403_000.png",
+   "patient": "403",
+   "view": "PA",
+   "labels": [
+    "Fibrosis"
+   ],
+   "age": "70",
+   "sex": "F"
+  },
+  {
+   "image": "00001199_000.png",
+   "patient": "1199",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "49",
+   "sex": "M"
+  },
+  {
+   "image": "00000528_000.png",
+   "patient": "528",
+   "view": "PA",
+   "labels": [
+    "Mass",
+    "Pleural_Thickening"
+   ],
+   "age": "51",
+   "sex": "F"
+  },
+  {
+   "image": "00001073_000.png",
+   "patient": "1073",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "35",
+   "sex": "M"
+  },
+  {
+   "image": "00001042_000.png",
+   "patient": "1042",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "58",
+   "sex": "M"
+  },
+  {
+   "image": "00000012_000.png",
+   "patient": "12",
+   "view": "PA",
+   "labels": [
+    "Effusion",
+    "Mass"
+   ],
+   "age": "76",
+   "sex": "M"
+  },
+  {
+   "image": "00000102_000.png",
+   "patient": "102",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "60",
+   "sex": "F"
+  },
+  {
+   "image": "00000553_000.png",
+   "patient": "553",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "41",
+   "sex": "M"
+  },
+  {
+   "image": "00000250_000.png",
+   "patient": "250",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "49",
+   "sex": "M"
+  },
+  {
+   "image": "00000920_000.png",
+   "patient": "920",
+   "view": "AP",
+   "labels": [
+    "Atelectasis",
+    "Consolidation",
+    "Pneumothorax"
+   ],
+   "age": "44",
+   "sex": "M"
+  },
+  {
+   "image": "00000559_000.png",
+   "patient": "559",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "61",
+   "sex": "M"
+  },
+  {
+   "image": "00000258_000.png",
+   "patient": "258",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "39",
+   "sex": "F"
+  },
+  {
+   "image": "00001313_000.png",
+   "patient": "1313",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "63",
+   "sex": "F"
+  },
+  {
+   "image": "00000586_000.png",
+   "patient": "586",
+   "view": "PA",
+   "labels": [
+    "Fibrosis"
+   ],
+   "age": "63",
+   "sex": "F"
+  },
+  {
+   "image": "00000748_000.png",
+   "patient": "748",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "23",
+   "sex": "F"
+  },
+  {
+   "image": "00001121_000.png",
+   "patient": "1121",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "52",
+   "sex": "M"
+  },
+  {
+   "image": "00000561_002.png",
+   "patient": "561",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "58",
+   "sex": "M"
+  },
+  {
+   "image": "00000029_000.png",
+   "patient": "29",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "59",
+   "sex": "F"
+  },
+  {
+   "image": "00000208_000.png",
+   "patient": "208",
+   "view": "PA",
+   "labels": [
+    "Atelectasis",
+    "Effusion",
+    "Pleural_Thickening"
+   ],
+   "age": "40",
+   "sex": "M"
+  },
+  {
+   "image": "00000786_000.png",
+   "patient": "786",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "62",
+   "sex": "M"
+  },
+  {
+   "image": "00001097_000.png",
+   "patient": "1097",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly",
+    "Mass"
+   ],
+   "age": "81",
+   "sex": "F"
+  },
+  {
+   "image": "00000424_000.png",
+   "patient": "424",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "63",
+   "sex": "M"
+  },
+  {
+   "image": "00001229_000.png",
+   "patient": "1229",
+   "view": "PA",
+   "labels": [
+    "Fibrosis"
+   ],
+   "age": "66",
+   "sex": "M"
+  },
+  {
+   "image": "00000954_004.png",
+   "patient": "954",
+   "view": "PA",
+   "labels": [
+    "Fibrosis",
+    "Nodule"
+   ],
+   "age": "52",
+   "sex": "F"
+  },
+  {
+   "image": "00000211_000.png",
+   "patient": "211",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "55",
+   "sex": "F"
+  },
+  {
+   "image": "00001164_000.png",
+   "patient": "1164",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "23",
+   "sex": "F"
+  },
+  {
+   "image": "00001004_000.png",
+   "patient": "1004",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "66",
+   "sex": "M"
+  },
+  {
+   "image": "00000153_000.png",
+   "patient": "153",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "55",
+   "sex": "M"
+  },
+  {
+   "image": "00000173_000.png",
+   "patient": "173",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "67",
+   "sex": "F"
+  },
+  {
+   "image": "00001299_000.png",
+   "patient": "1299",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "52",
+   "sex": "M"
+  },
+  {
+   "image": "00000300_000.png",
+   "patient": "300",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "62",
+   "sex": "F"
+  },
+  {
+   "image": "00000584_000.png",
+   "patient": "584",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "55",
+   "sex": "M"
+  },
+  {
+   "image": "00000145_000.png",
+   "patient": "145",
+   "view": "PA",
+   "labels": [
+    "Fibrosis",
+    "Infiltration"
+   ],
+   "age": "67",
+   "sex": "F"
+  },
+  {
+   "image": "00000086_001.png",
+   "patient": "86",
+   "view": "PA",
+   "labels": [
+    "Emphysema"
+   ],
+   "age": "62",
+   "sex": "M"
+  },
+  {
+   "image": "00001167_000.png",
+   "patient": "1167",
+   "view": "PA",
+   "labels": [
+    "Consolidation",
+    "Fibrosis",
+    "Infiltration",
+    "Nodule"
+   ],
+   "age": "51",
+   "sex": "F"
+  },
+  {
+   "image": "00000349_000.png",
+   "patient": "349",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "56",
+   "sex": "M"
+  },
+  {
+   "image": "00000289_003.png",
+   "patient": "289",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "66",
+   "sex": "F"
+  },
+  {
+   "image": "00001000_001.png",
+   "patient": "1000",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "34",
+   "sex": "F"
+  },
+  {
+   "image": "00000564_000.png",
+   "patient": "564",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "16",
+   "sex": "M"
+  },
+  {
+   "image": "00000491_019.png",
+   "patient": "491",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "25",
+   "sex": "M"
+  },
+  {
+   "image": "00000402_000.png",
+   "patient": "402",
+   "view": "PA",
+   "labels": [
+    "Fibrosis"
+   ],
+   "age": "58",
+   "sex": "M"
+  },
+  {
+   "image": "00000744_000.png",
+   "patient": "744",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "68",
+   "sex": "M"
+  },
+  {
+   "image": "00000292_000.png",
+   "patient": "292",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "58",
+   "sex": "F"
+  },
+  {
+   "image": "00000968_000.png",
+   "patient": "968",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly",
+    "Emphysema"
+   ],
+   "age": "68",
+   "sex": "F"
+  },
+  {
+   "image": "00000416_000.png",
+   "patient": "416",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "66",
+   "sex": "F"
+  },
+  {
+   "image": "00000917_000.png",
+   "patient": "917",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "15",
+   "sex": "M"
+  },
+  {
+   "image": "00000392_000.png",
+   "patient": "392",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "62",
+   "sex": "F"
+  },
+  {
+   "image": "00001281_000.png",
+   "patient": "1281",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "42",
+   "sex": "M"
+  },
+  {
+   "image": "00000236_000.png",
+   "patient": "236",
+   "view": "PA",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "30",
+   "sex": "M"
+  },
+  {
+   "image": "00000014_000.png",
+   "patient": "14",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "60",
+   "sex": "F"
+  },
+  {
+   "image": "00000261_000.png",
+   "patient": "261",
+   "view": "PA",
+   "labels": [
+    "Effusion",
+    "Infiltration"
+   ],
+   "age": "39",
+   "sex": "F"
+  },
+  {
+   "image": "00000101_000.png",
+   "patient": "101",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "33",
+   "sex": "M"
+  },
+  {
+   "image": "00000620_000.png",
+   "patient": "620",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "49",
+   "sex": "F"
+  },
+  {
+   "image": "00000865_003.png",
+   "patient": "865",
+   "view": "PA",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "39",
+   "sex": "M"
+  },
+  {
+   "image": "00001014_000.png",
+   "patient": "1014",
+   "view": "PA",
+   "labels": [
+    "Mass"
+   ],
+   "age": "50",
+   "sex": "F"
+  },
+  {
+   "image": "00000319_000.png",
+   "patient": "319",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "61",
+   "sex": "M"
+  },
+  {
+   "image": "00000557_000.png",
+   "patient": "557",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "58",
+   "sex": "F"
+  },
+  {
+   "image": "00000719_000.png",
+   "patient": "719",
+   "view": "PA",
+   "labels": [
+    "Emphysema"
+   ],
+   "age": "75",
+   "sex": "M"
+  },
+  {
+   "image": "00001200_000.png",
+   "patient": "1200",
+   "view": "AP",
+   "labels": [
+    "Atelectasis",
+    "Pneumonia"
+   ],
+   "age": "21",
+   "sex": "M"
+  },
+  {
+   "image": "00000481_000.png",
+   "patient": "481",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "55",
+   "sex": "M"
+  },
+  {
+   "image": "00000572_000.png",
+   "patient": "572",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "58",
+   "sex": "M"
+  },
+  {
+   "image": "00000179_000.png",
+   "patient": "179",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "62",
+   "sex": "M"
+  },
+  {
+   "image": "00000026_000.png",
+   "patient": "26",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "68",
+   "sex": "M"
+  },
+  {
+   "image": "00000017_000.png",
+   "patient": "17",
+   "view": "PA",
+   "labels": [
+    "Effusion",
+    "Infiltration",
+    "Nodule"
+   ],
+   "age": "77",
+   "sex": "M"
+  },
+  {
+   "image": "00000494_001.png",
+   "patient": "494",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "61",
+   "sex": "F"
+  },
+  {
+   "image": "00001012_000.png",
+   "patient": "1012",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "52",
+   "sex": "F"
+  },
+  {
+   "image": "00001187_000.png",
+   "patient": "1187",
+   "view": "AP",
+   "labels": [
+    "Infiltration",
+    "Pleural_Thickening"
+   ],
+   "age": "66",
+   "sex": "F"
+  },
+  {
+   "image": "00000701_000.png",
+   "patient": "701",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "56",
+   "sex": "M"
+  },
+  {
+   "image": "00000508_000.png",
+   "patient": "508",
+   "view": "AP",
+   "labels": [
+    "Consolidation",
+    "Fibrosis"
+   ],
+   "age": "21",
+   "sex": "M"
+  },
+  {
+   "image": "00000021_000.png",
+   "patient": "21",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "77",
+   "sex": "M"
+  },
+  {
+   "image": "00001048_000.png",
+   "patient": "1048",
+   "view": "PA",
+   "labels": [
+    "Fibrosis"
+   ],
+   "age": "74",
+   "sex": "M"
+  },
+  {
+   "image": "00001317_000.png",
+   "patient": "1317",
+   "view": "PA",
+   "labels": [
+    "Infiltration",
+    "Pneumonia"
+   ],
+   "age": "48",
+   "sex": "M"
+  },
+  {
+   "image": "00001176_000.png",
+   "patient": "1176",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "52",
+   "sex": "M"
+  },
+  {
+   "image": "00000842_000.png",
+   "patient": "842",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "38",
+   "sex": "M"
+  },
+  {
+   "image": "00000351_000.png",
+   "patient": "351",
+   "view": "PA",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "65",
+   "sex": "F"
+  },
+  {
+   "image": "00000931_000.png",
+   "patient": "931",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "60",
+   "sex": "F"
+  },
+  {
+   "image": "00001321_000.png",
+   "patient": "1321",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "45",
+   "sex": "F"
+  },
+  {
+   "image": "00000710_000.png",
+   "patient": "710",
+   "view": "PA",
+   "labels": [
+    "Infiltration",
+    "Mass"
+   ],
+   "age": "55",
+   "sex": "F"
+  },
+  {
+   "image": "00000632_000.png",
+   "patient": "632",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "42",
+   "sex": "M"
+  },
+  {
+   "image": "00000045_000.png",
+   "patient": "45",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "70",
+   "sex": "F"
+  },
+  {
+   "image": "00001058_000.png",
+   "patient": "1058",
+   "view": "PA",
+   "labels": [
+    "Atelectasis",
+    "Effusion"
+   ],
+   "age": "76",
+   "sex": "M"
+  },
+  {
+   "image": "00000378_000.png",
+   "patient": "378",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "60",
+   "sex": "M"
+  },
+  {
+   "image": "00001122_000.png",
+   "patient": "1122",
+   "view": "AP",
+   "labels": [
+    "Consolidation",
+    "Infiltration"
+   ],
+   "age": "16",
+   "sex": "M"
+  },
+  {
+   "image": "00000020_001.png",
+   "patient": "20",
+   "view": "PA",
+   "labels": [
+    "Fibrosis",
+    "Infiltration"
+   ],
+   "age": "47",
+   "sex": "M"
+  },
+  {
+   "image": "00000815_000.png",
+   "patient": "815",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "18",
+   "sex": "F"
+  },
+  {
+   "image": "00000779_000.png",
+   "patient": "779",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "34",
+   "sex": "M"
+  },
+  {
+   "image": "00001324_000.png",
+   "patient": "1324",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "54",
+   "sex": "M"
+  },
+  {
+   "image": "00000447_000.png",
+   "patient": "447",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "57",
+   "sex": "F"
+  },
+  {
+   "image": "00000750_000.png",
+   "patient": "750",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "23",
+   "sex": "M"
+  },
+  {
+   "image": "00001053_000.png",
+   "patient": "1053",
+   "view": "PA",
+   "labels": [
+    "Consolidation",
+    "Infiltration",
+    "Pleural_Thickening"
+   ],
+   "age": "20",
+   "sex": "M"
+  },
+  {
+   "image": "00000434_000.png",
+   "patient": "434",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "50",
+   "sex": "F"
+  },
+  {
+   "image": "00000722_000.png",
+   "patient": "722",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "29",
+   "sex": "M"
+  },
+  {
+   "image": "00001201_000.png",
+   "patient": "1201",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "43",
+   "sex": "M"
+  },
+  {
+   "image": "00000458_000.png",
+   "patient": "458",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "51",
+   "sex": "F"
+  },
+  {
+   "image": "00001162_000.png",
+   "patient": "1162",
+   "view": "AP",
+   "labels": [
+    "Pneumonia"
+   ],
+   "age": "81",
+   "sex": "M"
+  },
+  {
+   "image": "00000571_002.png",
+   "patient": "571",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "47",
+   "sex": "M"
+  },
+  {
+   "image": "00000114_000.png",
+   "patient": "114",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "65",
+   "sex": "M"
+  },
+  {
+   "image": "00000595_000.png",
+   "patient": "595",
+   "view": "PA",
+   "labels": [
+    "Pleural_Thickening"
+   ],
+   "age": "69",
+   "sex": "F"
+  },
+  {
+   "image": "00000594_000.png",
+   "patient": "594",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "67",
+   "sex": "M"
+  },
+  {
+   "image": "00000873_000.png",
+   "patient": "873",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "69",
+   "sex": "M"
+  },
+  {
+   "image": "00000350_000.png",
+   "patient": "350",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "57",
+   "sex": "M"
+  },
+  {
+   "image": "00000227_000.png",
+   "patient": "227",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "43",
+   "sex": "M"
+  },
+  {
+   "image": "00000243_000.png",
+   "patient": "243",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "67",
+   "sex": "M"
+  },
+  {
+   "image": "00000085_000.png",
+   "patient": "85",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "62",
+   "sex": "M"
+  },
+  {
+   "image": "00000655_000.png",
+   "patient": "655",
+   "view": "AP",
+   "labels": [
+    "Atelectasis",
+    "Infiltration"
+   ],
+   "age": "50",
+   "sex": "M"
+  },
+  {
+   "image": "00000329_000.png",
+   "patient": "329",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "78",
+   "sex": "M"
+  },
+  {
+   "image": "00001154_001.png",
+   "patient": "1154",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "55",
+   "sex": "F"
+  },
+  {
+   "image": "00000159_000.png",
+   "patient": "159",
+   "view": "PA",
+   "labels": [
+    "Fibrosis"
+   ],
+   "age": "51",
+   "sex": "M"
+  },
+  {
+   "image": "00000016_000.png",
+   "patient": "16",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "71",
+   "sex": "M"
+  },
+  {
+   "image": "00000483_000.png",
+   "patient": "483",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "50",
+   "sex": "M"
+  },
+  {
+   "image": "00001319_000.png",
+   "patient": "1319",
+   "view": "PA",
+   "labels": [
+    "Pleural_Thickening"
+   ],
+   "age": "17",
+   "sex": "M"
+  },
+  {
+   "image": "00001072_000.png",
+   "patient": "1072",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "11",
+   "sex": "M"
+  },
+  {
+   "image": "00000707_000.png",
+   "patient": "707",
+   "view": "AP",
+   "labels": [
+    "Emphysema",
+    "Infiltration",
+    "Nodule"
+   ],
+   "age": "44",
+   "sex": "M"
+  },
+  {
+   "image": "00000639_000.png",
+   "patient": "639",
+   "view": "PA",
+   "labels": [
+    "Pleural_Thickening"
+   ],
+   "age": "67",
+   "sex": "M"
+  },
+  {
+   "image": "00000008_000.png",
+   "patient": "8",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly"
+   ],
+   "age": "68",
+   "sex": "F"
+  },
+  {
+   "image": "00000800_000.png",
+   "patient": "800",
+   "view": "PA",
+   "labels": [
+    "Atelectasis",
+    "Cardiomegaly"
+   ],
+   "age": "49",
+   "sex": "F"
+  },
+  {
+   "image": "00000405_000.png",
+   "patient": "405",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "44",
+   "sex": "M"
+  },
+  {
+   "image": "00000078_000.png",
+   "patient": "78",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "73",
+   "sex": "F"
+  },
+  {
+   "image": "00001179_000.png",
+   "patient": "1179",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "9",
+   "sex": "F"
+  },
+  {
+   "image": "00000347_000.png",
+   "patient": "347",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "55",
+   "sex": "F"
+  },
+  {
+   "image": "00001140_002.png",
+   "patient": "1140",
+   "view": "PA",
+   "labels": [
+    "Pleural_Thickening"
+   ],
+   "age": "36",
+   "sex": "M"
+  },
+  {
+   "image": "00000456_000.png",
+   "patient": "456",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "54",
+   "sex": "M"
+  },
+  {
+   "image": "00000221_000.png",
+   "patient": "221",
+   "view": "PA",
+   "labels": [
+    "Cardiomegaly",
+    "Infiltration"
+   ],
+   "age": "72",
+   "sex": "M"
+  },
+  {
+   "image": "00001192_001.png",
+   "patient": "1192",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "49",
+   "sex": "M"
+  },
+  {
+   "image": "00000009_000.png",
+   "patient": "9",
+   "view": "PA",
+   "labels": [
+    "Emphysema"
+   ],
+   "age": "72",
+   "sex": "M"
+  },
+  {
+   "image": "00001027_000.png",
+   "patient": "1027",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "73",
+   "sex": "M"
+  },
+  {
+   "image": "00000721_000.png",
+   "patient": "721",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "28",
+   "sex": "M"
+  },
+  {
+   "image": "00000241_000.png",
+   "patient": "241",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "52",
+   "sex": "F"
+  },
+  {
+   "image": "00000696_000.png",
+   "patient": "696",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "18",
+   "sex": "F"
+  },
+  {
+   "image": "00001235_000.png",
+   "patient": "1235",
+   "view": "PA",
+   "labels": [
+    "Effusion",
+    "Pleural_Thickening"
+   ],
+   "age": "34",
+   "sex": "F"
+  },
+  {
+   "image": "00001148_000.png",
+   "patient": "1148",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "14",
+   "sex": "F"
+  },
+  {
+   "image": "00000713_000.png",
+   "patient": "713",
+   "view": "PA",
+   "labels": [
+    "Fibrosis"
+   ],
+   "age": "41",
+   "sex": "M"
+  },
+  {
+   "image": "00000028_000.png",
+   "patient": "28",
+   "view": "PA",
+   "labels": [
+    "Pleural_Thickening"
+   ],
+   "age": "63",
+   "sex": "M"
+  },
+  {
+   "image": "00000207_000.png",
+   "patient": "207",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "83",
+   "sex": "F"
+  },
+  {
+   "image": "00000849_000.png",
+   "patient": "849",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "53",
+   "sex": "F"
+  },
+  {
+   "image": "00001024_000.png",
+   "patient": "1024",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "23",
+   "sex": "M"
+  },
+  {
+   "image": "00000062_000.png",
+   "patient": "62",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "68",
+   "sex": "F"
+  },
+  {
+   "image": "00000387_000.png",
+   "patient": "387",
+   "view": "PA",
+   "labels": [
+    "Fibrosis"
+   ],
+   "age": "67",
+   "sex": "F"
+  },
+  {
+   "image": "00000809_001.png",
+   "patient": "809",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "39",
+   "sex": "M"
+  },
+  {
+   "image": "00000832_001.png",
+   "patient": "832",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "18",
+   "sex": "M"
+  },
+  {
+   "image": "00000472_000.png",
+   "patient": "472",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "41",
+   "sex": "F"
+  },
+  {
+   "image": "00000065_000.png",
+   "patient": "65",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "46",
+   "sex": "M"
+  },
+  {
+   "image": "00000462_000.png",
+   "patient": "462",
+   "view": "AP",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "49",
+   "sex": "F"
+  },
+  {
+   "image": "00000772_001.png",
+   "patient": "772",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "45",
+   "sex": "F"
+  },
+  {
+   "image": "00001320_001.png",
+   "patient": "1320",
+   "view": "PA",
+   "labels": [
+    "Nodule"
+   ],
+   "age": "47",
+   "sex": "F"
+  },
+  {
+   "image": "00000641_000.png",
+   "patient": "641",
+   "view": "AP",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "60",
+   "sex": "M"
+  },
+  {
+   "image": "00001163_000.png",
+   "patient": "1163",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "55",
+   "sex": "F"
+  },
+  {
+   "image": "00000687_000.png",
+   "patient": "687",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "66",
+   "sex": "M"
+  },
+  {
+   "image": "00000262_000.png",
+   "patient": "262",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "42",
+   "sex": "F"
+  },
+  {
+   "image": "00000985_000.png",
+   "patient": "985",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "63",
+   "sex": "M"
+  },
+  {
+   "image": "00000621_004.png",
+   "patient": "621",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "63",
+   "sex": "F"
+  },
+  {
+   "image": "00000993_000.png",
+   "patient": "993",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "47",
+   "sex": "F"
+  },
+  {
+   "image": "00001236_000.png",
+   "patient": "1236",
+   "view": "PA",
+   "labels": [
+    "Atelectasis"
+   ],
+   "age": "51",
+   "sex": "F"
+  },
+  {
+   "image": "00000281_000.png",
+   "patient": "281",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "65",
+   "sex": "F"
+  },
+  {
+   "image": "00001145_003.png",
+   "patient": "1145",
+   "view": "PA",
+   "labels": [
+    "Mass"
+   ],
+   "age": "27",
+   "sex": "M"
+  },
+  {
+   "image": "00001046_000.png",
+   "patient": "1046",
+   "view": "PA",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "58",
+   "sex": "M"
+  },
+  {
+   "image": "00001111_000.png",
+   "patient": "1111",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "45",
+   "sex": "F"
+  },
+  {
+   "image": "00000768_000.png",
+   "patient": "768",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "54",
+   "sex": "M"
+  },
+  {
+   "image": "00000413_000.png",
+   "patient": "413",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "42",
+   "sex": "M"
+  },
+  {
+   "image": "00001079_000.png",
+   "patient": "1079",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "16",
+   "sex": "M"
+  },
+  {
+   "image": "00001183_001.png",
+   "patient": "1183",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "52",
+   "sex": "F"
+  },
+  {
+   "image": "00000104_000.png",
+   "patient": "104",
+   "view": "PA",
+   "labels": [
+    "Pleural_Thickening"
+   ],
+   "age": "68",
+   "sex": "F"
+  },
+  {
+   "image": "00000978_000.png",
+   "patient": "978",
+   "view": "AP",
+   "labels": [
+    "Infiltration"
+   ],
+   "age": "72",
+   "sex": "M"
+  },
+  {
+   "image": "00001026_000.png",
+   "patient": "1026",
+   "view": "PA",
+   "labels": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Effusion"
+   ],
+   "age": "48",
+   "sex": "M"
+  },
+  {
+   "image": "00001215_000.png",
+   "patient": "1215",
+   "view": "PA",
+   "labels": [
+    "No Finding"
+   ],
+   "age": "35",
+   "sex": "M"
+  }
+ ]
+}

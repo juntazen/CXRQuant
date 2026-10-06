@@ -1,0 +1,93 @@
+{
+  "checkpoint_count": 6,
+  "models": {
+    "biogpt": {
+      "checkpoint_files": {
+        "config.json": "aec43a3cfaf87746a5b191041aff8e4367b24fbade9ab745f7a563e64404cd00",
+        "generation_config.json": "1b2886663f0e829b0997fe696c5bd4af4a28c614e2be0f7fcb4c4850c3b98a1e",
+        "merges.txt": "c862222cfb7556b1747ea7c800b2e5fc9cdf82735bc8d5d6a6f0f812ee2decbe",
+        "model.safetensors": "476363f95c0006805eb6764c450f57a89e197bbf77794f1e4d9119727187ce4a",
+        "tokenizer_config.json": "f05a2b1a158185e87b83aa4d78e50980827a032691b1c4946305a7dd75dbbfe7",
+        "training_args.bin": "35899536668c4ad5f39bbf6187525ef3595828df15a59e8fdd18638612ca17c8",
+        "vocab.json": "fafe844c728f16b813825c7b74add51cd068c4d540525da35ee187b7453e4e47"
+      },
+      "checkpoint_hash": "da6facf2510b3d573952f5b1c0de040f5bb323acf73134368f36764985f0201f",
+      "checkpoint_weight_bytes": 1387095576,
+      "model_revision": "eb0d815e95434dc9e3b78f464e52b899bee7d923",
+      "params_m": 346.763264
+    },
+    "biogpt-large": {
+      "checkpoint_files": {
+        "config.json": "e11ba0d9af9f604f2fa3241b61037ff5d40ec855f662c8936478abe97afa56d4",
+        "generation_config.json": "7902e8c4bb24f7c29de3e8223a7df562d084041dae878efb5aae729e6373aaa1",
+        "merges.txt": "9fbee5a9688af88827609ff8843267d7225a1237e09b778cb8d1aff2a1009858",
+        "model.safetensors": "e1160ab661805a7bc833c835c774d6ea9f1c94e1f33456a06dffa1af5345fc93",
+        "tokenizer_config.json": "1c7e9dc29d91172d126a0125b7eec7ac92baf242182d338ddeac69781fc3caa4",
+        "training_args.bin": "dbe760a9789a26e056db643573cf9f292e09f0eb44f78dbfc1280f1a22830b47",
+        "vocab.json": "8c2a672d4cb94f9eb06c31666fac1743a5f8d6c07598edae46bff6a4e6059fa0"
+      },
+      "checkpoint_hash": "f3b3c308c558366319bcfbefe0ffa9703db73ac63204a8d2031818aeeb7ee802",
+      "checkpoint_weight_bytes": 6284840840,
+      "model_revision": "c6a5136a91c5e3150d9f05ab9d33927a3210a22e",
+      "params_m": 1571.1888
+    },
+    "distilgpt2": {
+      "checkpoint_files": {
+        "config.json": "4c8ab82d5cadcfefc367dae0153496a94d86e5677deb6026c3fa31742597e4d5",
+        "generation_config.json": "b722360509010566179ef69ddc6fa1448ae1ccd170d93b6d39e468271ee07b8e",
+        "model.safetensors": "6faffccc1efd80f9ae71f5e3f6a5ad61d8a969c2998ed93b7396304fd1f503d9",
+        "tokenizer.json": "1fe93b6152957cf9cfd6d89002467f789ce8b3f3e000b3a2edf27c808ddd0b9e",
+        "tokenizer_config.json": "2ec6e8751bff5617ea5f342d96c69b50fba71826c0b2b9449c34fb55253432f4",
+        "training_args.bin": "9ea0b3496f1c0ad86697b8ce5d988df24ede81baf4f9330342f5ad3e1d82d42b"
+      },
+      "checkpoint_hash": "a14073562a7683aef96f62048c77d5ad5feaf92f972ac876abc2bd3b060f2f80",
+      "checkpoint_weight_bytes": 327657928,
+      "model_revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+      "params_m": 81.912576
+    },
+    "gpt2": {
+      "checkpoint_files": {
+        "config.json": "0092d7573e5efb072eadf3236ac1efc7b765d7f93ea41aa6bff4ed874625157f",
+        "generation_config.json": "b722360509010566179ef69ddc6fa1448ae1ccd170d93b6d39e468271ee07b8e",
+        "model.safetensors": "b230b030792aa5af61c21d7403c4947538e7efedcda1462f7e7ea499e88e559f",
+        "tokenizer.json": "1fe93b6152957cf9cfd6d89002467f789ce8b3f3e000b3a2edf27c808ddd0b9e",
+        "tokenizer_config.json": "2ec6e8751bff5617ea5f342d96c69b50fba71826c0b2b9449c34fb55253432f4",
+        "training_args.bin": "d7d19f606dcc8f583d94aec7eb20acf41c722dc27e7d5d6c2811fbda55eff753"
+      },
+      "checkpoint_hash": "169259d014c46cb9b7847a09578baccce32ef334e180e4abe80cb65e9f540bfd",
+      "checkpoint_weight_bytes": 497774208,
+      "model_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+      "params_m": 124.439808
+    },
+    "gpt2-medium": {
+      "checkpoint_files": {
+        "config.json": "47e4fbf3483d3de3da07d4162bdddc7a1cee4e473d7e0de69446571f303721c0",
+        "generation_config.json": "b722360509010566179ef69ddc6fa1448ae1ccd170d93b6d39e468271ee07b8e",
+        "model.safetensors": "bb504702e70598b0d8b16462ecaebd0dea145675fd0f92d4e11fde4835068c61",
+        "tokenizer.json": "1fe93b6152957cf9cfd6d89002467f789ce8b3f3e000b3a2edf27c808ddd0b9e",
+        "tokenizer_config.json": "2ec6e8751bff5617ea5f342d96c69b50fba71826c0b2b9449c34fb55253432f4",
+        "training_args.bin": "39da963c7c8aa547a553d131ec807ecf19190d93340ab09a36e088e1e0ca40cf"
+      },
+      "checkpoint_hash": "8b70d26b291289eb2643a451e7388fb002c4b5d432b3ff72a9206c65abc50838",
+      "checkpoint_weight_bytes": 1419322880,
+      "model_revision": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+      "params_m": 354.823168
+    },
+    "pythia-1b": {
+      "checkpoint_files": {
+        "config.json": "37ed3ea560a62dc6becfb9fa5f7669d0977637badd357facc456517116c24409",
+        "generation_config.json": "d77ecb9699d0ca21f11f527bbd5aa9bd7d658465bd1860cb2512b1fd5d8c96ad",
+        "model.safetensors": "0ad06382c64d8700aa1c53676c4814dc5d8435d341d7167ae7557d10a98304ae",
+        "tokenizer.json": "9e286b858bb00093fa93f50982798afd9f6b31c28e4d7c2d08adcd68d83a2695",
+        "tokenizer_config.json": "f6013726b45b541b3c2d0d8a9fb2e1aa7011aad7985b02b42ce8d154136bed26",
+        "training_args.bin": "08a0dd4d3c1ae6c8d1ece7c27fbc124bd9b30f9c85163d0af92772f31cd6d19b"
+      },
+      "checkpoint_hash": "6822867b1535f1980a741d3b54646708d4dadd4144aa51cf4222e75aa9c33cfd",
+      "checkpoint_weight_bytes": 4047149576,
+      "model_revision": "f73d7dcc545c8bd326d8559c8ef84ffe92fea6b2",
+      "params_m": 1011.781632
+    }
+  },
+  "run_id": "full_seed42_corrected_20260911",
+  "status": "weights_excluded_from_release"
+}

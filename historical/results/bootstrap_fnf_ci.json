@@ -1,0 +1,66 @@
+{
+  "metric": "NF4 FNF_rate",
+  "n_boot": 2000,
+  "models": [
+    {
+      "model": "distilgpt2",
+      "params_m": 81.9,
+      "family": "general",
+      "nf4_fnf_point": 0.6538,
+      "ci95_low": 0.5608,
+      "ci95_high": 0.7424,
+      "n_test": 134,
+      "total_present_findings": 130
+    },
+    {
+      "model": "gpt2",
+      "params_m": 124.4,
+      "family": "general",
+      "nf4_fnf_point": 0.7751,
+      "ci95_low": 0.7019,
+      "ci95_high": 0.85,
+      "n_test": 134,
+      "total_present_findings": 169
+    },
+    {
+      "model": "gpt2-medium",
+      "params_m": 354.8,
+      "family": "general",
+      "nf4_fnf_point": 0.7345,
+      "ci95_low": 0.6428,
+      "ci95_high": 0.8175,
+      "n_test": 134,
+      "total_present_findings": 113
+    },
+    {
+      "model": "biogpt",
+      "params_m": 346.8,
+      "family": "biomedical",
+      "nf4_fnf_point": 0.4615,
+      "ci95_low": 0.3333,
+      "ci95_high": 0.5833,
+      "n_test": 134,
+      "total_present_findings": 65
+    },
+    {
+      "model": "pythia-1b",
+      "params_m": 1011.8,
+      "family": "general",
+      "nf4_fnf_point": 0.4154,
+      "ci95_low": 0.2456,
+      "ci95_high": 0.5763,
+      "n_test": 134,
+      "total_present_findings": 65
+    },
+    {
+      "model": "biogpt-large",
+      "params_m": 1571.2,
+      "family": "biomedical",
+      "nf4_fnf_point": 0.4118,
+      "ci95_low": 0.2976,
+      "ci95_high": 0.551,
+      "n_test": 134,
+      "total_present_findings": 68
+    }
+  ]
+}

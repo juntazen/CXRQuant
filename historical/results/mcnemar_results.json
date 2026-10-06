@@ -1,0 +1,1381 @@
+{
+  "alpha": 0.05,
+  "test": "McNemar exact two-sided (b=FNF, c=FPF) vs FP32",
+  "note": "small N=134; raw p reported, Bonferroni threshold also given",
+  "models": [
+    {
+      "model": "distilgpt2",
+      "params_m": 81.9,
+      "family": "general",
+      "quant": {
+        "INT8-BnB": {
+          "bonferroni_threshold": 0.00385,
+          "n_categories_sig_raw": 0,
+          "n_categories_sig_bonferroni": 0,
+          "per_category": {
+            "Enlarged Cardiomediastinum": {
+              "b_FNF": 3,
+              "c_FPF": 2,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Cardiomegaly": {
+              "b_FNF": 6,
+              "c_FPF": 5,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Opacity": {
+              "b_FNF": 10,
+              "c_FPF": 3,
+              "p": 0.09229,
+              "chi2_cc": 2.769,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Lesion": {
+              "b_FNF": 4,
+              "c_FPF": 8,
+              "p": 0.3877,
+              "chi2_cc": 0.75,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Edema": {
+              "b_FNF": 2,
+              "c_FPF": 5,
+              "p": 0.45312,
+              "chi2_cc": 0.571,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Consolidation": {
+              "b_FNF": 8,
+              "c_FPF": 7,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumonia": {
+              "b_FNF": 7,
+              "c_FPF": 7,
+              "p": 1.0,
+              "chi2_cc": 0.071,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Atelectasis": {
+              "b_FNF": 13,
+              "c_FPF": 10,
+              "p": 0.67764,
+              "chi2_cc": 0.174,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumothorax": {
+              "b_FNF": 2,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Effusion": {
+              "b_FNF": 0,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Other": {
+              "b_FNF": 1,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Fracture": {
+              "b_FNF": 3,
+              "c_FPF": 4,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Support Devices": {
+              "b_FNF": 7,
+              "c_FPF": 5,
+              "p": 0.77441,
+              "chi2_cc": 0.083,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            }
+          }
+        },
+        "NF4-BnB": {
+          "bonferroni_threshold": 0.00385,
+          "n_categories_sig_raw": 1,
+          "n_categories_sig_bonferroni": 0,
+          "per_category": {
+            "Enlarged Cardiomediastinum": {
+              "b_FNF": 4,
+              "c_FPF": 5,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Cardiomegaly": {
+              "b_FNF": 13,
+              "c_FPF": 3,
+              "p": 0.02127,
+              "chi2_cc": 5.062,
+              "sig_raw": true,
+              "sig_bonferroni": false
+            },
+            "Lung Opacity": {
+              "b_FNF": 10,
+              "c_FPF": 6,
+              "p": 0.4545,
+              "chi2_cc": 0.562,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Lesion": {
+              "b_FNF": 8,
+              "c_FPF": 5,
+              "p": 0.58105,
+              "chi2_cc": 0.308,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Edema": {
+              "b_FNF": 5,
+              "c_FPF": 1,
+              "p": 0.21875,
+              "chi2_cc": 1.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Consolidation": {
+              "b_FNF": 7,
+              "c_FPF": 9,
+              "p": 0.80362,
+              "chi2_cc": 0.062,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumonia": {
+              "b_FNF": 9,
+              "c_FPF": 7,
+              "p": 0.80362,
+              "chi2_cc": 0.062,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Atelectasis": {
+              "b_FNF": 17,
+              "c_FPF": 19,
+              "p": 0.86794,
+              "chi2_cc": 0.028,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumothorax": {
+              "b_FNF": 1,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Effusion": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Other": {
+              "b_FNF": 1,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Fracture": {
+              "b_FNF": 3,
+              "c_FPF": 6,
+              "p": 0.50781,
+              "chi2_cc": 0.444,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Support Devices": {
+              "b_FNF": 7,
+              "c_FPF": 10,
+              "p": 0.62906,
+              "chi2_cc": 0.235,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt2",
+      "params_m": 124.4,
+      "family": "general",
+      "quant": {
+        "INT8-BnB": {
+          "bonferroni_threshold": 0.00385,
+          "n_categories_sig_raw": 0,
+          "n_categories_sig_bonferroni": 0,
+          "per_category": {
+            "Enlarged Cardiomediastinum": {
+              "b_FNF": 0,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Cardiomegaly": {
+              "b_FNF": 6,
+              "c_FPF": 8,
+              "p": 0.79053,
+              "chi2_cc": 0.071,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Opacity": {
+              "b_FNF": 10,
+              "c_FPF": 13,
+              "p": 0.67764,
+              "chi2_cc": 0.174,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Lesion": {
+              "b_FNF": 11,
+              "c_FPF": 4,
+              "p": 0.11847,
+              "chi2_cc": 2.4,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Edema": {
+              "b_FNF": 8,
+              "c_FPF": 7,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Consolidation": {
+              "b_FNF": 12,
+              "c_FPF": 10,
+              "p": 0.83181,
+              "chi2_cc": 0.045,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumonia": {
+              "b_FNF": 7,
+              "c_FPF": 9,
+              "p": 0.80362,
+              "chi2_cc": 0.062,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Atelectasis": {
+              "b_FNF": 14,
+              "c_FPF": 9,
+              "p": 0.40487,
+              "chi2_cc": 0.696,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumothorax": {
+              "b_FNF": 0,
+              "c_FPF": 2,
+              "p": 0.5,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Effusion": {
+              "b_FNF": 2,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Other": {
+              "b_FNF": 3,
+              "c_FPF": 1,
+              "p": 0.625,
+              "chi2_cc": 0.25,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Fracture": {
+              "b_FNF": 8,
+              "c_FPF": 6,
+              "p": 0.79053,
+              "chi2_cc": 0.071,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Support Devices": {
+              "b_FNF": 10,
+              "c_FPF": 8,
+              "p": 0.81453,
+              "chi2_cc": 0.056,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            }
+          }
+        },
+        "NF4-BnB": {
+          "bonferroni_threshold": 0.00385,
+          "n_categories_sig_raw": 3,
+          "n_categories_sig_bonferroni": 0,
+          "per_category": {
+            "Enlarged Cardiomediastinum": {
+              "b_FNF": 1,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Cardiomegaly": {
+              "b_FNF": 14,
+              "c_FPF": 11,
+              "p": 0.69004,
+              "chi2_cc": 0.16,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Opacity": {
+              "b_FNF": 8,
+              "c_FPF": 3,
+              "p": 0.22656,
+              "chi2_cc": 1.455,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Lesion": {
+              "b_FNF": 11,
+              "c_FPF": 9,
+              "p": 0.8238,
+              "chi2_cc": 0.05,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Edema": {
+              "b_FNF": 10,
+              "c_FPF": 8,
+              "p": 0.81453,
+              "chi2_cc": 0.056,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Consolidation": {
+              "b_FNF": 18,
+              "c_FPF": 6,
+              "p": 0.02266,
+              "chi2_cc": 5.042,
+              "sig_raw": true,
+              "sig_bonferroni": false
+            },
+            "Pneumonia": {
+              "b_FNF": 14,
+              "c_FPF": 3,
+              "p": 0.01273,
+              "chi2_cc": 5.882,
+              "sig_raw": true,
+              "sig_bonferroni": false
+            },
+            "Atelectasis": {
+              "b_FNF": 22,
+              "c_FPF": 10,
+              "p": 0.0501,
+              "chi2_cc": 3.781,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumothorax": {
+              "b_FNF": 0,
+              "c_FPF": 2,
+              "p": 0.5,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Effusion": {
+              "b_FNF": 2,
+              "c_FPF": 0,
+              "p": 0.5,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Other": {
+              "b_FNF": 3,
+              "c_FPF": 1,
+              "p": 0.625,
+              "chi2_cc": 0.25,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Fracture": {
+              "b_FNF": 10,
+              "c_FPF": 3,
+              "p": 0.09229,
+              "chi2_cc": 2.769,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Support Devices": {
+              "b_FNF": 18,
+              "c_FPF": 5,
+              "p": 0.01062,
+              "chi2_cc": 6.261,
+              "sig_raw": true,
+              "sig_bonferroni": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt2-medium",
+      "params_m": 354.8,
+      "family": "general",
+      "quant": {
+        "INT8-BnB": {
+          "bonferroni_threshold": 0.00385,
+          "n_categories_sig_raw": 0,
+          "n_categories_sig_bonferroni": 0,
+          "per_category": {
+            "Enlarged Cardiomediastinum": {
+              "b_FNF": 1,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Cardiomegaly": {
+              "b_FNF": 8,
+              "c_FPF": 7,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Opacity": {
+              "b_FNF": 4,
+              "c_FPF": 8,
+              "p": 0.3877,
+              "chi2_cc": 0.75,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Lesion": {
+              "b_FNF": 6,
+              "c_FPF": 4,
+              "p": 0.75391,
+              "chi2_cc": 0.1,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Edema": {
+              "b_FNF": 4,
+              "c_FPF": 5,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Consolidation": {
+              "b_FNF": 10,
+              "c_FPF": 12,
+              "p": 0.83181,
+              "chi2_cc": 0.045,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumonia": {
+              "b_FNF": 13,
+              "c_FPF": 5,
+              "p": 0.09625,
+              "chi2_cc": 2.722,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Atelectasis": {
+              "b_FNF": 12,
+              "c_FPF": 13,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumothorax": {
+              "b_FNF": 1,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Effusion": {
+              "b_FNF": 3,
+              "c_FPF": 4,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Other": {
+              "b_FNF": 1,
+              "c_FPF": 3,
+              "p": 0.625,
+              "chi2_cc": 0.25,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Fracture": {
+              "b_FNF": 5,
+              "c_FPF": 10,
+              "p": 0.30176,
+              "chi2_cc": 1.067,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Support Devices": {
+              "b_FNF": 2,
+              "c_FPF": 8,
+              "p": 0.10938,
+              "chi2_cc": 2.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            }
+          }
+        },
+        "NF4-BnB": {
+          "bonferroni_threshold": 0.00385,
+          "n_categories_sig_raw": 1,
+          "n_categories_sig_bonferroni": 0,
+          "per_category": {
+            "Enlarged Cardiomediastinum": {
+              "b_FNF": 1,
+              "c_FPF": 2,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Cardiomegaly": {
+              "b_FNF": 10,
+              "c_FPF": 8,
+              "p": 0.81453,
+              "chi2_cc": 0.056,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Opacity": {
+              "b_FNF": 6,
+              "c_FPF": 6,
+              "p": 1.0,
+              "chi2_cc": 0.083,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Lesion": {
+              "b_FNF": 7,
+              "c_FPF": 7,
+              "p": 1.0,
+              "chi2_cc": 0.071,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Edema": {
+              "b_FNF": 7,
+              "c_FPF": 5,
+              "p": 0.77441,
+              "chi2_cc": 0.083,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Consolidation": {
+              "b_FNF": 16,
+              "c_FPF": 7,
+              "p": 0.09314,
+              "chi2_cc": 2.783,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumonia": {
+              "b_FNF": 10,
+              "c_FPF": 12,
+              "p": 0.83181,
+              "chi2_cc": 0.045,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Atelectasis": {
+              "b_FNF": 13,
+              "c_FPF": 12,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumothorax": {
+              "b_FNF": 1,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Effusion": {
+              "b_FNF": 3,
+              "c_FPF": 3,
+              "p": 1.0,
+              "chi2_cc": 0.167,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Other": {
+              "b_FNF": 1,
+              "c_FPF": 2,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Fracture": {
+              "b_FNF": 6,
+              "c_FPF": 2,
+              "p": 0.28906,
+              "chi2_cc": 1.125,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Support Devices": {
+              "b_FNF": 2,
+              "c_FPF": 13,
+              "p": 0.00739,
+              "chi2_cc": 6.667,
+              "sig_raw": true,
+              "sig_bonferroni": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "model": "biogpt",
+      "params_m": 346.8,
+      "family": "biomedical",
+      "quant": {
+        "INT8-BnB": {
+          "bonferroni_threshold": 0.00385,
+          "n_categories_sig_raw": 0,
+          "n_categories_sig_bonferroni": 0,
+          "per_category": {
+            "Enlarged Cardiomediastinum": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Cardiomegaly": {
+              "b_FNF": 1,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Opacity": {
+              "b_FNF": 0,
+              "c_FPF": 2,
+              "p": 0.5,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Lesion": {
+              "b_FNF": 1,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Edema": {
+              "b_FNF": 1,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Consolidation": {
+              "b_FNF": 1,
+              "c_FPF": 2,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumonia": {
+              "b_FNF": 0,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Atelectasis": {
+              "b_FNF": 0,
+              "c_FPF": 4,
+              "p": 0.125,
+              "chi2_cc": 2.25,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumothorax": {
+              "b_FNF": 1,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Effusion": {
+              "b_FNF": 3,
+              "c_FPF": 2,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Other": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Fracture": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Support Devices": {
+              "b_FNF": 1,
+              "c_FPF": 4,
+              "p": 0.375,
+              "chi2_cc": 0.8,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            }
+          }
+        },
+        "NF4-BnB": {
+          "bonferroni_threshold": 0.00385,
+          "n_categories_sig_raw": 0,
+          "n_categories_sig_bonferroni": 0,
+          "per_category": {
+            "Enlarged Cardiomediastinum": {
+              "b_FNF": 0,
+              "c_FPF": 2,
+              "p": 0.5,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Cardiomegaly": {
+              "b_FNF": 4,
+              "c_FPF": 1,
+              "p": 0.375,
+              "chi2_cc": 0.8,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Opacity": {
+              "b_FNF": 1,
+              "c_FPF": 5,
+              "p": 0.21875,
+              "chi2_cc": 1.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Lesion": {
+              "b_FNF": 1,
+              "c_FPF": 2,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Edema": {
+              "b_FNF": 5,
+              "c_FPF": 2,
+              "p": 0.45312,
+              "chi2_cc": 0.571,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Consolidation": {
+              "b_FNF": 5,
+              "c_FPF": 2,
+              "p": 0.45312,
+              "chi2_cc": 0.571,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumonia": {
+              "b_FNF": 1,
+              "c_FPF": 2,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Atelectasis": {
+              "b_FNF": 4,
+              "c_FPF": 6,
+              "p": 0.75391,
+              "chi2_cc": 0.1,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumothorax": {
+              "b_FNF": 2,
+              "c_FPF": 0,
+              "p": 0.5,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Effusion": {
+              "b_FNF": 2,
+              "c_FPF": 3,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Other": {
+              "b_FNF": 3,
+              "c_FPF": 0,
+              "p": 0.25,
+              "chi2_cc": 1.333,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Fracture": {
+              "b_FNF": 1,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Support Devices": {
+              "b_FNF": 1,
+              "c_FPF": 2,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "model": "pythia-1b",
+      "params_m": 1011.8,
+      "family": "general",
+      "quant": {
+        "INT8-BnB": {
+          "bonferroni_threshold": 0.00385,
+          "n_categories_sig_raw": 0,
+          "n_categories_sig_bonferroni": 0,
+          "per_category": {
+            "Enlarged Cardiomediastinum": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Cardiomegaly": {
+              "b_FNF": 1,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Opacity": {
+              "b_FNF": 2,
+              "c_FPF": 0,
+              "p": 0.5,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Lesion": {
+              "b_FNF": 2,
+              "c_FPF": 0,
+              "p": 0.5,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Edema": {
+              "b_FNF": 1,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Consolidation": {
+              "b_FNF": 6,
+              "c_FPF": 2,
+              "p": 0.28906,
+              "chi2_cc": 1.125,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumonia": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Atelectasis": {
+              "b_FNF": 3,
+              "c_FPF": 2,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumothorax": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Effusion": {
+              "b_FNF": 1,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Other": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Fracture": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Support Devices": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            }
+          }
+        },
+        "NF4-BnB": {
+          "bonferroni_threshold": 0.00385,
+          "n_categories_sig_raw": 0,
+          "n_categories_sig_bonferroni": 0,
+          "per_category": {
+            "Enlarged Cardiomediastinum": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Cardiomegaly": {
+              "b_FNF": 7,
+              "c_FPF": 2,
+              "p": 0.17969,
+              "chi2_cc": 1.778,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Opacity": {
+              "b_FNF": 3,
+              "c_FPF": 2,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Lesion": {
+              "b_FNF": 2,
+              "c_FPF": 0,
+              "p": 0.5,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Edema": {
+              "b_FNF": 1,
+              "c_FPF": 6,
+              "p": 0.125,
+              "chi2_cc": 2.286,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Consolidation": {
+              "b_FNF": 6,
+              "c_FPF": 2,
+              "p": 0.28906,
+              "chi2_cc": 1.125,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumonia": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Atelectasis": {
+              "b_FNF": 5,
+              "c_FPF": 3,
+              "p": 0.72656,
+              "chi2_cc": 0.125,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumothorax": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Effusion": {
+              "b_FNF": 2,
+              "c_FPF": 0,
+              "p": 0.5,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Other": {
+              "b_FNF": 1,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Fracture": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Support Devices": {
+              "b_FNF": 0,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "model": "biogpt-large",
+      "params_m": 1571.2,
+      "family": "biomedical",
+      "quant": {
+        "INT8-BnB": {
+          "bonferroni_threshold": 0.00385,
+          "n_categories_sig_raw": 0,
+          "n_categories_sig_bonferroni": 0,
+          "per_category": {
+            "Enlarged Cardiomediastinum": {
+              "b_FNF": 2,
+              "c_FPF": 0,
+              "p": 0.5,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Cardiomegaly": {
+              "b_FNF": 2,
+              "c_FPF": 3,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Opacity": {
+              "b_FNF": 1,
+              "c_FPF": 3,
+              "p": 0.625,
+              "chi2_cc": 0.25,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Lesion": {
+              "b_FNF": 0,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Edema": {
+              "b_FNF": 0,
+              "c_FPF": 2,
+              "p": 0.5,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Consolidation": {
+              "b_FNF": 3,
+              "c_FPF": 4,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumonia": {
+              "b_FNF": 3,
+              "c_FPF": 2,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Atelectasis": {
+              "b_FNF": 2,
+              "c_FPF": 7,
+              "p": 0.17969,
+              "chi2_cc": 1.778,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumothorax": {
+              "b_FNF": 1,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Effusion": {
+              "b_FNF": 2,
+              "c_FPF": 3,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Other": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Fracture": {
+              "b_FNF": 0,
+              "c_FPF": 3,
+              "p": 0.25,
+              "chi2_cc": 1.333,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Support Devices": {
+              "b_FNF": 0,
+              "c_FPF": 3,
+              "p": 0.25,
+              "chi2_cc": 1.333,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            }
+          }
+        },
+        "NF4-BnB": {
+          "bonferroni_threshold": 0.00385,
+          "n_categories_sig_raw": 1,
+          "n_categories_sig_bonferroni": 0,
+          "per_category": {
+            "Enlarged Cardiomediastinum": {
+              "b_FNF": 1,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Cardiomegaly": {
+              "b_FNF": 5,
+              "c_FPF": 2,
+              "p": 0.45312,
+              "chi2_cc": 0.571,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Opacity": {
+              "b_FNF": 3,
+              "c_FPF": 2,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Lung Lesion": {
+              "b_FNF": 1,
+              "c_FPF": 1,
+              "p": 1.0,
+              "chi2_cc": 0.5,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Edema": {
+              "b_FNF": 1,
+              "c_FPF": 2,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Consolidation": {
+              "b_FNF": 4,
+              "c_FPF": 5,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumonia": {
+              "b_FNF": 4,
+              "c_FPF": 3,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Atelectasis": {
+              "b_FNF": 7,
+              "c_FPF": 5,
+              "p": 0.77441,
+              "chi2_cc": 0.083,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pneumothorax": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Effusion": {
+              "b_FNF": 1,
+              "c_FPF": 2,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Pleural Other": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Fracture": {
+              "b_FNF": 0,
+              "c_FPF": 0,
+              "p": 1.0,
+              "chi2_cc": 0.0,
+              "sig_raw": false,
+              "sig_bonferroni": false
+            },
+            "Support Devices": {
+              "b_FNF": 1,
+              "c_FPF": 8,
+              "p": 0.03906,
+              "chi2_cc": 4.0,
+              "sig_raw": true,
+              "sig_bonferroni": false
+            }
+          }
+        }
+      }
+    }
+  ]
+}

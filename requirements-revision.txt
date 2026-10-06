@@ -1,0 +1,6 @@
+# Extra CPU dependencies for the second-round revision analyses (hierarchical models, robustness table)
+scipy==1.17.1
+pandas==3.0.3
+statsmodels==0.15.0
+patsy==1.0.3
+openpyxl==3.1.5

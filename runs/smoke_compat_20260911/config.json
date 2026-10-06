@@ -1,0 +1,50 @@
+{
+  "adam_beta1": 0.9,
+  "adam_beta2": 0.999,
+  "adam_epsilon": 1e-08,
+  "bootstrap_resamples": 2000,
+  "bootstrap_seed": 42,
+  "configs": [
+    "FP32",
+    "FP16",
+    "INT8-BnB",
+    "NF4-BnB"
+  ],
+  "data_seed": 42,
+  "do_sample": false,
+  "generation_batch_size": 8,
+  "generation_input_limit": 224,
+  "historical_defaults_note": "Unspecified historical Trainer defaults lack an exact version lock; values here are explicit prospective settings, not asserted historical values.",
+  "learning_rate": 5e-05,
+  "max_grad_norm": 1.0,
+  "max_new_tokens": 64,
+  "models": [
+    {
+      "accumulation": 2,
+      "epochs": 1,
+      "family": "general",
+      "gradient_checkpointing": false,
+      "hf_id": "distilgpt2",
+      "microbatch": 8,
+      "name": "distilgpt2",
+      "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa"
+    }
+  ],
+  "num_beams": 1,
+  "objective": "causal LM FINDINGS + IMPRESSION, padding ignored",
+  "optimizer": "adamw_torch",
+  "repetition_penalty": 1.3,
+  "scheduler": "linear",
+  "schema_version": 1,
+  "split_seed": 42,
+  "test_n": 6,
+  "train_n": 16,
+  "train_token_limit": 256,
+  "training_precision": "fp16_autocast_fp32_weights",
+  "training_seed": 42,
+  "val_n": 8,
+  "warmup_new_tokens": 16,
+  "warmup_reports": 2,
+  "warmup_steps": 30,
+  "weight_decay": 0.01
+}

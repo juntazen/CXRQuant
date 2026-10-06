@@ -1,0 +1,6806 @@
+{
+  "analysis": "uncertain-policy sensitivity (re-scoring of stored predictions only)",
+  "categories": 13,
+  "detail": [
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.033,
+          "micro_f1": 0.0438,
+          "micro_precision": 0.0323,
+          "micro_recall": 0.0682,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.1333,
+              "precision": 0.1,
+              "recall": 0.2,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.0455,
+              "precision": 0.0256,
+              "recall": 0.2,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.25,
+              "precision": 0.25,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.0328,
+          "micro_f1": 0.0513,
+          "micro_precision": 0.0337,
+          "micro_recall": 0.1071,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.04,
+              "precision": 0.0233,
+              "recall": 0.1429,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.087,
+              "precision": 0.05,
+              "recall": 0.3333,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.3,
+              "precision": 0.2143,
+              "recall": 0.5,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "FP16",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0178,
+          "CFPR": 0.9822,
+          "FNF_rate": 0.1837,
+          "FPF_rate": 0.0079,
+          "counts": {
+            "false_negative_flips": 18,
+            "false_positive_flips": 13,
+            "flips": 31,
+            "fp32_absent": 1644,
+            "fp32_present": 98,
+            "preserved": 1711,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 3,
+              "fpf": 2,
+              "present": 11
+            },
+            "Cardiomegaly": {
+              "fnf": 2,
+              "fpf": 4,
+              "present": 37
+            },
+            "Consolidation": {
+              "fnf": 3,
+              "fpf": 1,
+              "present": 6
+            },
+            "Edema": {
+              "fnf": 5,
+              "fpf": 0,
+              "present": 8
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 5
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 2
+            },
+            "Lung Lesion": {
+              "fnf": 2,
+              "fpf": 1,
+              "present": 6
+            },
+            "Lung Opacity": {
+              "fnf": 0,
+              "fpf": 3,
+              "present": 5
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 2
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pneumonia": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 6
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 3,
+              "fpf": 1,
+              "present": 8
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.0442,
+          "CFPR": 0.9558,
+          "FNF_rate": 0.2114,
+          "FPF_rate": 0.0255,
+          "counts": {
+            "false_negative_flips": 37,
+            "false_positive_flips": 40,
+            "flips": 77,
+            "fp32_absent": 1567,
+            "fp32_present": 175,
+            "preserved": 1665,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 7,
+              "fpf": 11,
+              "present": 39
+            },
+            "Cardiomegaly": {
+              "fnf": 1,
+              "fpf": 4,
+              "present": 37
+            },
+            "Consolidation": {
+              "fnf": 6,
+              "fpf": 7,
+              "present": 13
+            },
+            "Edema": {
+              "fnf": 4,
+              "fpf": 0,
+              "present": 9
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 5
+            },
+            "Fracture": {
+              "fnf": 1,
+              "fpf": 3,
+              "present": 5
+            },
+            "Lung Lesion": {
+              "fnf": 3,
+              "fpf": 5,
+              "present": 11
+            },
+            "Lung Opacity": {
+              "fnf": 4,
+              "fpf": 4,
+              "present": 15
+            },
+            "Pleural Effusion": {
+              "fnf": 2,
+              "fpf": 0,
+              "present": 4
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 1
+            },
+            "Pneumonia": {
+              "fnf": 4,
+              "fpf": 3,
+              "present": 24
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 5,
+              "fpf": 1,
+              "present": 11
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "distilgpt2"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "micro_precision": 0.0,
+          "micro_recall": 0.0,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.0193,
+          "micro_f1": 0.0394,
+          "micro_precision": 0.0253,
+          "micro_recall": 0.0893,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.12,
+              "precision": 0.0698,
+              "recall": 0.4286,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.0541,
+              "precision": 0.0323,
+              "recall": 0.1667,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.0769,
+              "precision": 0.0625,
+              "recall": 0.1,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "INT8-BnB",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0528,
+          "CFPR": 0.9472,
+          "FNF_rate": 0.4592,
+          "FPF_rate": 0.0286,
+          "counts": {
+            "false_negative_flips": 45,
+            "false_positive_flips": 47,
+            "flips": 92,
+            "fp32_absent": 1644,
+            "fp32_present": 98,
+            "preserved": 1650,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 4,
+              "fpf": 5,
+              "present": 11
+            },
+            "Cardiomegaly": {
+              "fnf": 8,
+              "fpf": 1,
+              "present": 37
+            },
+            "Consolidation": {
+              "fnf": 6,
+              "fpf": 3,
+              "present": 6
+            },
+            "Edema": {
+              "fnf": 4,
+              "fpf": 9,
+              "present": 8
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 2,
+              "fpf": 2,
+              "present": 5
+            },
+            "Fracture": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 2
+            },
+            "Lung Lesion": {
+              "fnf": 5,
+              "fpf": 4,
+              "present": 6
+            },
+            "Lung Opacity": {
+              "fnf": 2,
+              "fpf": 6,
+              "present": 5
+            },
+            "Pleural Effusion": {
+              "fnf": 2,
+              "fpf": 2,
+              "present": 2
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 2,
+              "present": 1
+            },
+            "Pneumonia": {
+              "fnf": 3,
+              "fpf": 5,
+              "present": 6
+            },
+            "Pneumothorax": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 7,
+              "fpf": 6,
+              "present": 8
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.1188,
+          "CFPR": 0.8812,
+          "FNF_rate": 0.5257,
+          "FPF_rate": 0.0734,
+          "counts": {
+            "false_negative_flips": 92,
+            "false_positive_flips": 115,
+            "flips": 207,
+            "fp32_absent": 1567,
+            "fp32_present": 175,
+            "preserved": 1535,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 18,
+              "fpf": 22,
+              "present": 39
+            },
+            "Cardiomegaly": {
+              "fnf": 8,
+              "fpf": 2,
+              "present": 37
+            },
+            "Consolidation": {
+              "fnf": 9,
+              "fpf": 9,
+              "present": 13
+            },
+            "Edema": {
+              "fnf": 3,
+              "fpf": 17,
+              "present": 9
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 2,
+              "fpf": 2,
+              "present": 5
+            },
+            "Fracture": {
+              "fnf": 3,
+              "fpf": 5,
+              "present": 5
+            },
+            "Lung Lesion": {
+              "fnf": 10,
+              "fpf": 9,
+              "present": 11
+            },
+            "Lung Opacity": {
+              "fnf": 11,
+              "fpf": 12,
+              "present": 15
+            },
+            "Pleural Effusion": {
+              "fnf": 4,
+              "fpf": 4,
+              "present": 4
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 2,
+              "present": 1
+            },
+            "Pneumonia": {
+              "fnf": 15,
+              "fpf": 19,
+              "present": 24
+            },
+            "Pneumothorax": {
+              "fnf": 1,
+              "fpf": 2,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 8,
+              "fpf": 10,
+              "present": 11
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "distilgpt2"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.0423,
+          "micro_f1": 0.0458,
+          "micro_precision": 0.0345,
+          "micro_recall": 0.0682,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.4444,
+              "precision": 0.4,
+              "recall": 0.5,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.1053,
+              "precision": 0.1,
+              "recall": 0.1111,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.0313,
+          "micro_f1": 0.0543,
+          "micro_precision": 0.0347,
+          "micro_recall": 0.125,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.0769,
+              "precision": 0.0444,
+              "recall": 0.2857,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.0556,
+              "precision": 0.0333,
+              "recall": 0.1667,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.1212,
+              "precision": 0.0741,
+              "recall": 0.3333,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.1538,
+              "precision": 0.125,
+              "recall": 0.2,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "NF4-BnB",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0741,
+          "CFPR": 0.9259,
+          "FNF_rate": 0.7143,
+          "FPF_rate": 0.0359,
+          "counts": {
+            "false_negative_flips": 70,
+            "false_positive_flips": 59,
+            "flips": 129,
+            "fp32_absent": 1644,
+            "fp32_present": 98,
+            "preserved": 1613,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 11,
+              "fpf": 9,
+              "present": 11
+            },
+            "Cardiomegaly": {
+              "fnf": 15,
+              "fpf": 8,
+              "present": 37
+            },
+            "Consolidation": {
+              "fnf": 5,
+              "fpf": 4,
+              "present": 6
+            },
+            "Edema": {
+              "fnf": 7,
+              "fpf": 3,
+              "present": 8
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 4,
+              "fpf": 4,
+              "present": 5
+            },
+            "Fracture": {
+              "fnf": 2,
+              "fpf": 2,
+              "present": 2
+            },
+            "Lung Lesion": {
+              "fnf": 6,
+              "fpf": 7,
+              "present": 6
+            },
+            "Lung Opacity": {
+              "fnf": 3,
+              "fpf": 8,
+              "present": 5
+            },
+            "Pleural Effusion": {
+              "fnf": 2,
+              "fpf": 1,
+              "present": 2
+            },
+            "Pleural Other": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pneumonia": {
+              "fnf": 6,
+              "fpf": 7,
+              "present": 6
+            },
+            "Pneumothorax": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 7,
+              "fpf": 6,
+              "present": 8
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.1533,
+          "CFPR": 0.8467,
+          "FNF_rate": 0.6857,
+          "FPF_rate": 0.0938,
+          "counts": {
+            "false_negative_flips": 120,
+            "false_positive_flips": 147,
+            "flips": 267,
+            "fp32_absent": 1567,
+            "fp32_present": 175,
+            "preserved": 1475,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 23,
+              "fpf": 29,
+              "present": 39
+            },
+            "Cardiomegaly": {
+              "fnf": 15,
+              "fpf": 8,
+              "present": 37
+            },
+            "Consolidation": {
+              "fnf": 10,
+              "fpf": 24,
+              "present": 13
+            },
+            "Edema": {
+              "fnf": 8,
+              "fpf": 7,
+              "present": 9
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 4,
+              "fpf": 5,
+              "present": 5
+            },
+            "Fracture": {
+              "fnf": 5,
+              "fpf": 10,
+              "present": 5
+            },
+            "Lung Lesion": {
+              "fnf": 9,
+              "fpf": 13,
+              "present": 11
+            },
+            "Lung Opacity": {
+              "fnf": 12,
+              "fpf": 13,
+              "present": 15
+            },
+            "Pleural Effusion": {
+              "fnf": 4,
+              "fpf": 4,
+              "present": 4
+            },
+            "Pleural Other": {
+              "fnf": 1,
+              "fpf": 2,
+              "present": 1
+            },
+            "Pneumonia": {
+              "fnf": 19,
+              "fpf": 21,
+              "present": 24
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 2,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 10,
+              "fpf": 9,
+              "present": 11
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "distilgpt2"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.028,
+          "micro_f1": 0.0602,
+          "micro_precision": 0.0449,
+          "micro_recall": 0.0909,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.3636,
+              "precision": 0.3077,
+              "recall": 0.4444,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.0557,
+          "micro_f1": 0.0917,
+          "micro_precision": 0.0598,
+          "micro_recall": 0.1964,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.0976,
+              "precision": 0.0588,
+              "recall": 0.2857,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.0526,
+              "precision": 0.0312,
+              "recall": 0.1667,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.3077,
+              "precision": 0.2,
+              "recall": 0.6667,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.2667,
+              "precision": 0.2,
+              "recall": 0.4,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "FP16",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0184,
+          "CFPR": 0.9816,
+          "FNF_rate": 0.2178,
+          "FPF_rate": 0.0061,
+          "counts": {
+            "false_negative_flips": 22,
+            "false_positive_flips": 10,
+            "flips": 32,
+            "fp32_absent": 1641,
+            "fp32_present": 101,
+            "preserved": 1710,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 2,
+              "fpf": 2,
+              "present": 3
+            },
+            "Cardiomegaly": {
+              "fnf": 2,
+              "fpf": 2,
+              "present": 30
+            },
+            "Consolidation": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 6
+            },
+            "Edema": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Fracture": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 2
+            },
+            "Lung Lesion": {
+              "fnf": 2,
+              "fpf": 0,
+              "present": 8
+            },
+            "Lung Opacity": {
+              "fnf": 3,
+              "fpf": 2,
+              "present": 14
+            },
+            "Pleural Effusion": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 3
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 4,
+              "fpf": 2,
+              "present": 8
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 6,
+              "fpf": 1,
+              "present": 19
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.0385,
+          "CFPR": 0.9615,
+          "FNF_rate": 0.1803,
+          "FPF_rate": 0.0218,
+          "counts": {
+            "false_negative_flips": 33,
+            "false_positive_flips": 34,
+            "flips": 67,
+            "fp32_absent": 1559,
+            "fp32_present": 183,
+            "preserved": 1675,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 3,
+              "fpf": 4,
+              "present": 33
+            },
+            "Cardiomegaly": {
+              "fnf": 2,
+              "fpf": 4,
+              "present": 30
+            },
+            "Consolidation": {
+              "fnf": 2,
+              "fpf": 2,
+              "present": 20
+            },
+            "Edema": {
+              "fnf": 2,
+              "fpf": 3,
+              "present": 12
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Fracture": {
+              "fnf": 1,
+              "fpf": 2,
+              "present": 4
+            },
+            "Lung Lesion": {
+              "fnf": 3,
+              "fpf": 3,
+              "present": 11
+            },
+            "Lung Opacity": {
+              "fnf": 3,
+              "fpf": 5,
+              "present": 18
+            },
+            "Pleural Effusion": {
+              "fnf": 2,
+              "fpf": 1,
+              "present": 4
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 7,
+              "fpf": 8,
+              "present": 24
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 8,
+              "fpf": 1,
+              "present": 25
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "gpt2"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.0198,
+          "micro_f1": 0.0292,
+          "micro_precision": 0.0215,
+          "micro_recall": 0.0455,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.1667,
+              "precision": 0.125,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.0909,
+              "precision": 0.0769,
+              "recall": 0.1111,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.0514,
+          "micro_f1": 0.0826,
+          "micro_precision": 0.0538,
+          "micro_recall": 0.1786,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.1081,
+              "precision": 0.0667,
+              "recall": 0.2857,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.0606,
+              "precision": 0.037,
+              "recall": 0.1667,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.2,
+              "precision": 0.125,
+              "recall": 0.5,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.2222,
+              "precision": 0.1765,
+              "recall": 0.3,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.0769,
+              "precision": 0.0417,
+              "recall": 0.5,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "INT8-BnB",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0631,
+          "CFPR": 0.9369,
+          "FNF_rate": 0.5842,
+          "FPF_rate": 0.0311,
+          "counts": {
+            "false_negative_flips": 59,
+            "false_positive_flips": 51,
+            "flips": 110,
+            "fp32_absent": 1641,
+            "fp32_present": 101,
+            "preserved": 1632,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 2,
+              "fpf": 3,
+              "present": 3
+            },
+            "Cardiomegaly": {
+              "fnf": 12,
+              "fpf": 7,
+              "present": 30
+            },
+            "Consolidation": {
+              "fnf": 3,
+              "fpf": 5,
+              "present": 6
+            },
+            "Edema": {
+              "fnf": 3,
+              "fpf": 2,
+              "present": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Fracture": {
+              "fnf": 2,
+              "fpf": 2,
+              "present": 2
+            },
+            "Lung Lesion": {
+              "fnf": 5,
+              "fpf": 7,
+              "present": 8
+            },
+            "Lung Opacity": {
+              "fnf": 9,
+              "fpf": 8,
+              "present": 14
+            },
+            "Pleural Effusion": {
+              "fnf": 2,
+              "fpf": 0,
+              "present": 3
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 5,
+              "fpf": 4,
+              "present": 8
+            },
+            "Pneumothorax": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 14,
+              "fpf": 13,
+              "present": 19
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.1142,
+          "CFPR": 0.8858,
+          "FNF_rate": 0.5355,
+          "FPF_rate": 0.0648,
+          "counts": {
+            "false_negative_flips": 98,
+            "false_positive_flips": 101,
+            "flips": 199,
+            "fp32_absent": 1559,
+            "fp32_present": 183,
+            "preserved": 1543,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 18,
+              "fpf": 15,
+              "present": 33
+            },
+            "Cardiomegaly": {
+              "fnf": 11,
+              "fpf": 8,
+              "present": 30
+            },
+            "Consolidation": {
+              "fnf": 9,
+              "fpf": 13,
+              "present": 20
+            },
+            "Edema": {
+              "fnf": 7,
+              "fpf": 8,
+              "present": 12
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Fracture": {
+              "fnf": 3,
+              "fpf": 5,
+              "present": 4
+            },
+            "Lung Lesion": {
+              "fnf": 8,
+              "fpf": 18,
+              "present": 11
+            },
+            "Lung Opacity": {
+              "fnf": 8,
+              "fpf": 7,
+              "present": 18
+            },
+            "Pleural Effusion": {
+              "fnf": 3,
+              "fpf": 2,
+              "present": 4
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 12,
+              "fpf": 7,
+              "present": 24
+            },
+            "Pneumothorax": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 17,
+              "fpf": 16,
+              "present": 25
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "gpt2"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.0591,
+          "micro_f1": 0.1176,
+          "micro_precision": 0.1034,
+          "micro_recall": 0.1364,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.087,
+              "precision": 0.0556,
+              "recall": 0.2,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.3333,
+              "precision": 0.5,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.3478,
+              "precision": 0.2857,
+              "recall": 0.4444,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.0821,
+          "micro_f1": 0.1497,
+          "micro_precision": 0.1069,
+          "micro_recall": 0.25,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.2105,
+              "precision": 0.129,
+              "recall": 0.5714,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.16,
+              "precision": 0.1053,
+              "recall": 0.3333,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.4,
+              "precision": 0.2857,
+              "recall": 0.6667,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.2963,
+              "precision": 0.2353,
+              "recall": 0.4,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "NF4-BnB",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0614,
+          "CFPR": 0.9386,
+          "FNF_rate": 0.7426,
+          "FPF_rate": 0.0195,
+          "counts": {
+            "false_negative_flips": 75,
+            "false_positive_flips": 32,
+            "flips": 107,
+            "fp32_absent": 1641,
+            "fp32_present": 101,
+            "preserved": 1635,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 3,
+              "fpf": 1,
+              "present": 3
+            },
+            "Cardiomegaly": {
+              "fnf": 16,
+              "fpf": 4,
+              "present": 30
+            },
+            "Consolidation": {
+              "fnf": 5,
+              "fpf": 1,
+              "present": 6
+            },
+            "Edema": {
+              "fnf": 6,
+              "fpf": 1,
+              "present": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 1,
+              "fpf": 2,
+              "present": 1
+            },
+            "Fracture": {
+              "fnf": 2,
+              "fpf": 0,
+              "present": 2
+            },
+            "Lung Lesion": {
+              "fnf": 6,
+              "fpf": 6,
+              "present": 8
+            },
+            "Lung Opacity": {
+              "fnf": 9,
+              "fpf": 9,
+              "present": 14
+            },
+            "Pleural Effusion": {
+              "fnf": 3,
+              "fpf": 1,
+              "present": 3
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 7,
+              "fpf": 3,
+              "present": 8
+            },
+            "Pneumothorax": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 16,
+              "fpf": 4,
+              "present": 19
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.1194,
+          "CFPR": 0.8806,
+          "FNF_rate": 0.7104,
+          "FPF_rate": 0.05,
+          "counts": {
+            "false_negative_flips": 130,
+            "false_positive_flips": 78,
+            "flips": 208,
+            "fp32_absent": 1559,
+            "fp32_present": 183,
+            "preserved": 1534,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 23,
+              "fpf": 21,
+              "present": 33
+            },
+            "Cardiomegaly": {
+              "fnf": 16,
+              "fpf": 5,
+              "present": 30
+            },
+            "Consolidation": {
+              "fnf": 13,
+              "fpf": 7,
+              "present": 20
+            },
+            "Edema": {
+              "fnf": 12,
+              "fpf": 5,
+              "present": 12
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 1,
+              "fpf": 2,
+              "present": 1
+            },
+            "Fracture": {
+              "fnf": 3,
+              "fpf": 5,
+              "present": 4
+            },
+            "Lung Lesion": {
+              "fnf": 8,
+              "fpf": 12,
+              "present": 11
+            },
+            "Lung Opacity": {
+              "fnf": 10,
+              "fpf": 9,
+              "present": 18
+            },
+            "Pleural Effusion": {
+              "fnf": 4,
+              "fpf": 2,
+              "present": 4
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 17,
+              "fpf": 4,
+              "present": 24
+            },
+            "Pneumothorax": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 22,
+              "fpf": 5,
+              "present": 25
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "gpt2"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.0474,
+          "micro_f1": 0.0909,
+          "micro_precision": 0.0758,
+          "micro_recall": 0.1136,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.1667,
+              "precision": 0.1053,
+              "recall": 0.4,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.25,
+              "precision": 0.25,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.2,
+              "precision": 0.1818,
+              "recall": 0.2222,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.0736,
+          "micro_f1": 0.122,
+          "micro_precision": 0.0926,
+          "micro_recall": 0.1786,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.2857,
+              "precision": 0.1905,
+              "recall": 0.5714,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.2308,
+              "precision": 0.15,
+              "recall": 0.5,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.25,
+              "precision": 0.25,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.1905,
+              "precision": 0.1818,
+              "recall": 0.2,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "FP16",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0103,
+          "CFPR": 0.9897,
+          "FNF_rate": 0.0862,
+          "FPF_rate": 0.0077,
+          "counts": {
+            "false_negative_flips": 5,
+            "false_positive_flips": 13,
+            "flips": 18,
+            "fp32_absent": 1684,
+            "fp32_present": 58,
+            "preserved": 1724,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 0,
+              "fpf": 2,
+              "present": 2
+            },
+            "Cardiomegaly": {
+              "fnf": 1,
+              "fpf": 4,
+              "present": 16
+            },
+            "Consolidation": {
+              "fnf": 1,
+              "fpf": 2,
+              "present": 3
+            },
+            "Edema": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 1
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 5
+            },
+            "Lung Lesion": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 5
+            },
+            "Lung Opacity": {
+              "fnf": 0,
+              "fpf": 3,
+              "present": 8
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 2
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 15
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.0166,
+          "CFPR": 0.9834,
+          "FNF_rate": 0.1308,
+          "FPF_rate": 0.0092,
+          "counts": {
+            "false_negative_flips": 14,
+            "false_positive_flips": 15,
+            "flips": 29,
+            "fp32_absent": 1635,
+            "fp32_present": 107,
+            "preserved": 1713,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 1,
+              "fpf": 3,
+              "present": 19
+            },
+            "Cardiomegaly": {
+              "fnf": 1,
+              "fpf": 4,
+              "present": 17
+            },
+            "Consolidation": {
+              "fnf": 0,
+              "fpf": 2,
+              "present": 15
+            },
+            "Edema": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 2,
+              "fpf": 0,
+              "present": 6
+            },
+            "Lung Lesion": {
+              "fnf": 3,
+              "fpf": 2,
+              "present": 7
+            },
+            "Lung Opacity": {
+              "fnf": 1,
+              "fpf": 3,
+              "present": 9
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 2,
+              "fpf": 0,
+              "present": 9
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 3,
+              "fpf": 0,
+              "present": 19
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "gpt2-medium"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.0321,
+          "micro_f1": 0.0678,
+          "micro_precision": 0.0541,
+          "micro_recall": 0.0909,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.0833,
+              "precision": 0.0526,
+              "recall": 0.2,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.3333,
+              "precision": 0.3333,
+              "recall": 0.3333,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.0969,
+          "micro_f1": 0.1264,
+          "micro_precision": 0.0932,
+          "micro_recall": 0.1964,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.2069,
+              "precision": 0.1364,
+              "recall": 0.4286,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.16,
+              "precision": 0.1053,
+              "recall": 0.3333,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.087,
+              "precision": 0.0588,
+              "recall": 0.1667,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.2,
+              "precision": 0.1667,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.2727,
+              "precision": 0.25,
+              "recall": 0.3,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.3333,
+              "precision": 0.2,
+              "recall": 1.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "INT8-BnB",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0459,
+          "CFPR": 0.9541,
+          "FNF_rate": 0.5517,
+          "FPF_rate": 0.0285,
+          "counts": {
+            "false_negative_flips": 32,
+            "false_positive_flips": 48,
+            "flips": 80,
+            "fp32_absent": 1684,
+            "fp32_present": 58,
+            "preserved": 1662,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 1,
+              "fpf": 3,
+              "present": 2
+            },
+            "Cardiomegaly": {
+              "fnf": 7,
+              "fpf": 10,
+              "present": 16
+            },
+            "Consolidation": {
+              "fnf": 1,
+              "fpf": 3,
+              "present": 3
+            },
+            "Edema": {
+              "fnf": 1,
+              "fpf": 3,
+              "present": 1
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 4,
+              "fpf": 2,
+              "present": 5
+            },
+            "Lung Lesion": {
+              "fnf": 3,
+              "fpf": 4,
+              "present": 5
+            },
+            "Lung Opacity": {
+              "fnf": 4,
+              "fpf": 5,
+              "present": 8
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 0
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 2,
+              "fpf": 3,
+              "present": 2
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 9,
+              "fpf": 12,
+              "present": 15
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.0706,
+          "CFPR": 0.9294,
+          "FNF_rate": 0.5234,
+          "FPF_rate": 0.041,
+          "counts": {
+            "false_negative_flips": 56,
+            "false_positive_flips": 67,
+            "flips": 123,
+            "fp32_absent": 1635,
+            "fp32_present": 107,
+            "preserved": 1619,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 7,
+              "fpf": 10,
+              "present": 19
+            },
+            "Cardiomegaly": {
+              "fnf": 8,
+              "fpf": 10,
+              "present": 17
+            },
+            "Consolidation": {
+              "fnf": 6,
+              "fpf": 8,
+              "present": 15
+            },
+            "Edema": {
+              "fnf": 3,
+              "fpf": 4,
+              "present": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 4,
+              "fpf": 4,
+              "present": 6
+            },
+            "Lung Lesion": {
+              "fnf": 5,
+              "fpf": 5,
+              "present": 7
+            },
+            "Lung Opacity": {
+              "fnf": 4,
+              "fpf": 7,
+              "present": 9
+            },
+            "Pleural Effusion": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 1
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 2,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 8,
+              "fpf": 4,
+              "present": 9
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 10,
+              "fpf": 11,
+              "present": 19
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "gpt2-medium"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.0406,
+          "micro_f1": 0.0893,
+          "micro_precision": 0.0735,
+          "micro_recall": 0.1136,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.2,
+              "precision": 0.1333,
+              "recall": 0.4,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.2222,
+              "precision": 0.2222,
+              "recall": 0.2222,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.1053,
+              "precision": 0.0588,
+              "recall": 0.5,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.0874,
+          "micro_f1": 0.1429,
+          "micro_precision": 0.1,
+          "micro_recall": 0.25,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.2667,
+              "precision": 0.1739,
+              "recall": 0.5714,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.3636,
+              "precision": 0.25,
+              "recall": 0.6667,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.1481,
+              "precision": 0.0952,
+              "recall": 0.3333,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.1739,
+              "precision": 0.1538,
+              "recall": 0.2,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.1,
+              "precision": 0.0526,
+              "recall": 1.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.0833,
+              "precision": 0.0455,
+              "recall": 0.5,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "NF4-BnB",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0471,
+          "CFPR": 0.9529,
+          "FNF_rate": 0.6207,
+          "FPF_rate": 0.0273,
+          "counts": {
+            "false_negative_flips": 36,
+            "false_positive_flips": 46,
+            "flips": 82,
+            "fp32_absent": 1684,
+            "fp32_present": 58,
+            "preserved": 1660,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 0,
+              "fpf": 4,
+              "present": 2
+            },
+            "Cardiomegaly": {
+              "fnf": 7,
+              "fpf": 6,
+              "present": 16
+            },
+            "Consolidation": {
+              "fnf": 3,
+              "fpf": 4,
+              "present": 3
+            },
+            "Edema": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 5,
+              "fpf": 2,
+              "present": 5
+            },
+            "Lung Lesion": {
+              "fnf": 5,
+              "fpf": 3,
+              "present": 5
+            },
+            "Lung Opacity": {
+              "fnf": 6,
+              "fpf": 7,
+              "present": 8
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 0
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 1,
+              "fpf": 8,
+              "present": 2
+            },
+            "Pneumothorax": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 7,
+              "fpf": 9,
+              "present": 15
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.0936,
+          "CFPR": 0.9064,
+          "FNF_rate": 0.6075,
+          "FPF_rate": 0.0599,
+          "counts": {
+            "false_negative_flips": 65,
+            "false_positive_flips": 98,
+            "flips": 163,
+            "fp32_absent": 1635,
+            "fp32_present": 107,
+            "preserved": 1579,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 7,
+              "fpf": 11,
+              "present": 19
+            },
+            "Cardiomegaly": {
+              "fnf": 8,
+              "fpf": 7,
+              "present": 17
+            },
+            "Consolidation": {
+              "fnf": 9,
+              "fpf": 15,
+              "present": 15
+            },
+            "Edema": {
+              "fnf": 4,
+              "fpf": 10,
+              "present": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 6,
+              "fpf": 4,
+              "present": 6
+            },
+            "Lung Lesion": {
+              "fnf": 7,
+              "fpf": 7,
+              "present": 7
+            },
+            "Lung Opacity": {
+              "fnf": 6,
+              "fpf": 10,
+              "present": 9
+            },
+            "Pleural Effusion": {
+              "fnf": 1,
+              "fpf": 2,
+              "present": 1
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 2,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 6,
+              "fpf": 16,
+              "present": 9
+            },
+            "Pneumothorax": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 10,
+              "fpf": 13,
+              "present": 19
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "gpt2-medium"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.0814,
+          "micro_f1": 0.175,
+          "micro_precision": 0.1944,
+          "micro_recall": 0.1591,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.2222,
+              "precision": 0.25,
+              "recall": 0.2,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.375,
+              "precision": 0.2727,
+              "recall": 0.6,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.4615,
+              "precision": 0.5,
+              "recall": 0.4286,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.1377,
+          "micro_f1": 0.2609,
+          "micro_precision": 0.2542,
+          "micro_recall": 0.2679,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.2222,
+              "precision": 0.1818,
+              "recall": 0.2857,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.4444,
+              "precision": 0.3333,
+              "recall": 0.6667,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.2857,
+              "precision": 0.25,
+              "recall": 0.3333,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.25,
+              "precision": 0.3333,
+              "recall": 0.2,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.5882,
+              "precision": 0.5556,
+              "recall": 0.625,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "FP16",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0,
+          "CFPR": 1.0,
+          "FNF_rate": 0.0,
+          "FPF_rate": 0.0,
+          "counts": {
+            "false_negative_flips": 0,
+            "false_positive_flips": 0,
+            "flips": 0,
+            "fp32_absent": 1706,
+            "fp32_present": 36,
+            "preserved": 1742,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 4
+            },
+            "Cardiomegaly": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 11
+            },
+            "Consolidation": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 3
+            },
+            "Edema": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 2
+            },
+            "Lung Opacity": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 3
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 6
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pneumonia": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 2
+            },
+            "Support Devices": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 3
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.0,
+          "CFPR": 1.0,
+          "FNF_rate": 0.0,
+          "FPF_rate": 0.0,
+          "counts": {
+            "false_negative_flips": 0,
+            "false_positive_flips": 0,
+            "flips": 0,
+            "fp32_absent": 1683,
+            "fp32_present": 59,
+            "preserved": 1742,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 11
+            },
+            "Cardiomegaly": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 12
+            },
+            "Consolidation": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 8
+            },
+            "Edema": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 2
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 2
+            },
+            "Lung Opacity": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 6
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 9
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pneumonia": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 3
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 2
+            },
+            "Support Devices": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 3
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "biogpt"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.0898,
+          "micro_f1": 0.1842,
+          "micro_precision": 0.2188,
+          "micro_recall": 0.1591,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.2222,
+              "precision": 0.25,
+              "recall": 0.2,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.4,
+              "precision": 0.3,
+              "recall": 0.6,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.5455,
+              "precision": 0.75,
+              "recall": 0.4286,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.1481,
+          "micro_f1": 0.2752,
+          "micro_precision": 0.283,
+          "micro_recall": 0.2679,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.2353,
+              "precision": 0.2,
+              "recall": 0.2857,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.4706,
+              "precision": 0.3636,
+              "recall": 0.6667,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.2857,
+              "precision": 0.25,
+              "recall": 0.3333,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.2667,
+              "precision": 0.4,
+              "recall": 0.2,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.6667,
+              "precision": 0.7143,
+              "recall": 0.625,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "INT8-BnB",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0057,
+          "CFPR": 0.9943,
+          "FNF_rate": 0.1944,
+          "FPF_rate": 0.0018,
+          "counts": {
+            "false_negative_flips": 7,
+            "false_positive_flips": 3,
+            "flips": 10,
+            "fp32_absent": 1706,
+            "fp32_present": 36,
+            "preserved": 1732,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 4
+            },
+            "Cardiomegaly": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 11
+            },
+            "Consolidation": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 3
+            },
+            "Edema": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 2
+            },
+            "Lung Opacity": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 3
+            },
+            "Pleural Effusion": {
+              "fnf": 2,
+              "fpf": 0,
+              "present": 6
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pneumonia": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 0
+            },
+            "Pneumothorax": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 2
+            },
+            "Support Devices": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 3
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.0057,
+          "CFPR": 0.9943,
+          "FNF_rate": 0.1356,
+          "FPF_rate": 0.0012,
+          "counts": {
+            "false_negative_flips": 8,
+            "false_positive_flips": 2,
+            "flips": 10,
+            "fp32_absent": 1683,
+            "fp32_present": 59,
+            "preserved": 1732,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 11
+            },
+            "Cardiomegaly": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 12
+            },
+            "Consolidation": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 8
+            },
+            "Edema": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 2
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 2
+            },
+            "Lung Opacity": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 6
+            },
+            "Pleural Effusion": {
+              "fnf": 2,
+              "fpf": 0,
+              "present": 9
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pneumonia": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 3
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 2
+            },
+            "Support Devices": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 3
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "biogpt"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.096,
+          "micro_f1": 0.2022,
+          "micro_precision": 0.2,
+          "micro_recall": 0.2045,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.1333,
+              "precision": 0.1,
+              "recall": 0.2,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.4,
+              "precision": 0.3,
+              "recall": 0.6,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.1818,
+              "precision": 0.5,
+              "recall": 0.1111,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.5333,
+              "precision": 0.5,
+              "recall": 0.5714,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.163,
+          "micro_f1": 0.2645,
+          "micro_precision": 0.2462,
+          "micro_recall": 0.2857,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.2,
+              "precision": 0.1538,
+              "recall": 0.2857,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.3529,
+              "precision": 0.2727,
+              "recall": 0.5,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.1667,
+              "precision": 0.1667,
+              "recall": 0.1667,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.4444,
+              "precision": 0.6667,
+              "recall": 0.3333,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.4,
+              "precision": 0.6,
+              "recall": 0.3,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.5556,
+              "precision": 0.5,
+              "recall": 0.625,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "NF4-BnB",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0201,
+          "CFPR": 0.9799,
+          "FNF_rate": 0.3611,
+          "FPF_rate": 0.0129,
+          "counts": {
+            "false_negative_flips": 13,
+            "false_positive_flips": 22,
+            "flips": 35,
+            "fp32_absent": 1706,
+            "fp32_present": 36,
+            "preserved": 1707,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 0,
+              "fpf": 6,
+              "present": 4
+            },
+            "Cardiomegaly": {
+              "fnf": 3,
+              "fpf": 2,
+              "present": 11
+            },
+            "Consolidation": {
+              "fnf": 2,
+              "fpf": 2,
+              "present": 3
+            },
+            "Edema": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Lesion": {
+              "fnf": 2,
+              "fpf": 1,
+              "present": 2
+            },
+            "Lung Opacity": {
+              "fnf": 2,
+              "fpf": 1,
+              "present": 3
+            },
+            "Pleural Effusion": {
+              "fnf": 1,
+              "fpf": 3,
+              "present": 6
+            },
+            "Pleural Other": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pneumonia": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 0
+            },
+            "Pneumothorax": {
+              "fnf": 1,
+              "fpf": 3,
+              "present": 2
+            },
+            "Support Devices": {
+              "fnf": 0,
+              "fpf": 2,
+              "present": 3
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.031,
+          "CFPR": 0.969,
+          "FNF_rate": 0.4068,
+          "FPF_rate": 0.0178,
+          "counts": {
+            "false_negative_flips": 24,
+            "false_positive_flips": 30,
+            "flips": 54,
+            "fp32_absent": 1683,
+            "fp32_present": 59,
+            "preserved": 1688,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 5,
+              "fpf": 7,
+              "present": 11
+            },
+            "Cardiomegaly": {
+              "fnf": 3,
+              "fpf": 2,
+              "present": 12
+            },
+            "Consolidation": {
+              "fnf": 4,
+              "fpf": 2,
+              "present": 8
+            },
+            "Edema": {
+              "fnf": 1,
+              "fpf": 2,
+              "present": 2
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Lesion": {
+              "fnf": 2,
+              "fpf": 2,
+              "present": 2
+            },
+            "Lung Opacity": {
+              "fnf": 3,
+              "fpf": 2,
+              "present": 6
+            },
+            "Pleural Effusion": {
+              "fnf": 3,
+              "fpf": 4,
+              "present": 9
+            },
+            "Pleural Other": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pneumonia": {
+              "fnf": 2,
+              "fpf": 3,
+              "present": 3
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 3,
+              "present": 2
+            },
+            "Support Devices": {
+              "fnf": 0,
+              "fpf": 2,
+              "present": 3
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "biogpt"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.1017,
+          "micro_f1": 0.2169,
+          "micro_precision": 0.2308,
+          "micro_recall": 0.2045,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.2667,
+              "precision": 0.2,
+              "recall": 0.4,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.1818,
+              "precision": 0.1429,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.2857,
+              "precision": 0.3333,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.5882,
+              "precision": 0.5,
+              "recall": 0.7143,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.1627,
+          "micro_f1": 0.25,
+          "micro_precision": 0.25,
+          "micro_recall": 0.25,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.1111,
+              "precision": 0.0909,
+              "recall": 0.1429,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.3529,
+              "precision": 0.2727,
+              "recall": 0.5,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.1429,
+              "precision": 0.125,
+              "recall": 0.1667,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.2222,
+              "precision": 0.3333,
+              "recall": 0.1667,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.5,
+              "precision": 1.0,
+              "recall": 0.3333,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.1538,
+              "precision": 0.3333,
+              "recall": 0.1,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.6316,
+              "precision": 0.5455,
+              "recall": 0.75,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "FP16",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0,
+          "CFPR": 1.0,
+          "FNF_rate": 0.0,
+          "FPF_rate": 0.0,
+          "counts": {
+            "false_negative_flips": 0,
+            "false_positive_flips": 0,
+            "flips": 0,
+            "fp32_absent": 1703,
+            "fp32_present": 39,
+            "preserved": 1742,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 5
+            },
+            "Cardiomegaly": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 10
+            },
+            "Consolidation": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 7
+            },
+            "Edema": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 3
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Opacity": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 10
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 2
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Support Devices": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.0011,
+          "CFPR": 0.9989,
+          "FNF_rate": 0.0345,
+          "FPF_rate": 0.0,
+          "counts": {
+            "false_negative_flips": 2,
+            "false_positive_flips": 0,
+            "flips": 2,
+            "fp32_absent": 1684,
+            "fp32_present": 58,
+            "preserved": 1740,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 12
+            },
+            "Cardiomegaly": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 11
+            },
+            "Consolidation": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 9
+            },
+            "Edema": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 3
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Lung Opacity": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 3
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 11
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pneumonia": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 4
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Support Devices": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "pythia-1b"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.0915,
+          "micro_f1": 0.2,
+          "micro_precision": 0.1957,
+          "micro_recall": 0.2045,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.1667,
+              "precision": 0.1429,
+              "recall": 0.2,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.2667,
+              "precision": 0.2,
+              "recall": 0.4,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.2857,
+              "precision": 0.2,
+              "recall": 0.5,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.4706,
+              "precision": 0.4,
+              "recall": 0.5714,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.1437,
+          "micro_f1": 0.2393,
+          "micro_precision": 0.2295,
+          "micro_recall": 0.25,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.2,
+              "precision": 0.1538,
+              "recall": 0.2857,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.3529,
+              "precision": 0.2727,
+              "recall": 0.5,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.2353,
+              "precision": 0.1818,
+              "recall": 0.3333,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.4,
+              "precision": 0.5,
+              "recall": 0.3333,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.1538,
+              "precision": 0.3333,
+              "recall": 0.1,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.5263,
+              "precision": 0.4545,
+              "recall": 0.625,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "INT8-BnB",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0086,
+          "CFPR": 0.9914,
+          "FNF_rate": 0.1026,
+          "FPF_rate": 0.0065,
+          "counts": {
+            "false_negative_flips": 4,
+            "false_positive_flips": 11,
+            "flips": 15,
+            "fp32_absent": 1703,
+            "fp32_present": 39,
+            "preserved": 1727,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 0,
+              "fpf": 2,
+              "present": 5
+            },
+            "Cardiomegaly": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 10
+            },
+            "Consolidation": {
+              "fnf": 0,
+              "fpf": 3,
+              "present": 7
+            },
+            "Edema": {
+              "fnf": 2,
+              "fpf": 0,
+              "present": 3
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Opacity": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pleural Effusion": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 10
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 2
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Support Devices": {
+              "fnf": 0,
+              "fpf": 4,
+              "present": 0
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.0132,
+          "CFPR": 0.9868,
+          "FNF_rate": 0.1724,
+          "FPF_rate": 0.0077,
+          "counts": {
+            "false_negative_flips": 10,
+            "false_positive_flips": 13,
+            "flips": 23,
+            "fp32_absent": 1684,
+            "fp32_present": 58,
+            "preserved": 1719,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 2,
+              "fpf": 3,
+              "present": 12
+            },
+            "Cardiomegaly": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 11
+            },
+            "Consolidation": {
+              "fnf": 1,
+              "fpf": 3,
+              "present": 9
+            },
+            "Edema": {
+              "fnf": 2,
+              "fpf": 0,
+              "present": 3
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Fracture": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 1
+            },
+            "Lung Opacity": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 3
+            },
+            "Pleural Effusion": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 11
+            },
+            "Pleural Other": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Pneumonia": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 4
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Support Devices": {
+              "fnf": 0,
+              "fpf": 4,
+              "present": 1
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "pythia-1b"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.1224,
+          "micro_f1": 0.2308,
+          "micro_precision": 0.2647,
+          "micro_recall": 0.2045,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.3077,
+              "precision": 0.25,
+              "recall": 0.4,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.25,
+              "precision": 0.25,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.3333,
+              "precision": 0.5,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.2,
+              "precision": 1.0,
+              "recall": 0.1111,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.5,
+              "precision": 0.4444,
+              "recall": 0.5714,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.1933,
+          "micro_f1": 0.2991,
+          "micro_precision": 0.3137,
+          "micro_recall": 0.2857,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.2353,
+              "precision": 0.2,
+              "recall": 0.2857,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.2857,
+              "precision": 0.25,
+              "recall": 0.3333,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.2857,
+              "precision": 0.25,
+              "recall": 0.3333,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.2222,
+              "precision": 0.3333,
+              "recall": 0.1667,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.5,
+              "precision": 1.0,
+              "recall": 0.3333,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.4286,
+              "precision": 0.75,
+              "recall": 0.3,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.5556,
+              "precision": 0.5,
+              "recall": 0.625,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "NF4-BnB",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0189,
+          "CFPR": 0.9811,
+          "FNF_rate": 0.4872,
+          "FPF_rate": 0.0082,
+          "counts": {
+            "false_negative_flips": 19,
+            "false_positive_flips": 14,
+            "flips": 33,
+            "fp32_absent": 1703,
+            "fp32_present": 39,
+            "preserved": 1709,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 2,
+              "fpf": 2,
+              "present": 5
+            },
+            "Cardiomegaly": {
+              "fnf": 3,
+              "fpf": 1,
+              "present": 10
+            },
+            "Consolidation": {
+              "fnf": 5,
+              "fpf": 2,
+              "present": 7
+            },
+            "Edema": {
+              "fnf": 2,
+              "fpf": 1,
+              "present": 3
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 0
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Lung Opacity": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 1
+            },
+            "Pleural Effusion": {
+              "fnf": 3,
+              "fpf": 2,
+              "present": 10
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 2,
+              "fpf": 0,
+              "present": 2
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Support Devices": {
+              "fnf": 0,
+              "fpf": 4,
+              "present": 0
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.0247,
+          "CFPR": 0.9753,
+          "FNF_rate": 0.431,
+          "FPF_rate": 0.0107,
+          "counts": {
+            "false_negative_flips": 25,
+            "false_positive_flips": 18,
+            "flips": 43,
+            "fp32_absent": 1684,
+            "fp32_present": 58,
+            "preserved": 1699,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 5,
+              "fpf": 3,
+              "present": 12
+            },
+            "Cardiomegaly": {
+              "fnf": 3,
+              "fpf": 0,
+              "present": 11
+            },
+            "Consolidation": {
+              "fnf": 4,
+              "fpf": 3,
+              "present": 9
+            },
+            "Edema": {
+              "fnf": 2,
+              "fpf": 2,
+              "present": 3
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 1
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Lung Opacity": {
+              "fnf": 2,
+              "fpf": 3,
+              "present": 3
+            },
+            "Pleural Effusion": {
+              "fnf": 3,
+              "fpf": 2,
+              "present": 11
+            },
+            "Pleural Other": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 1
+            },
+            "Pneumonia": {
+              "fnf": 4,
+              "fpf": 0,
+              "present": 4
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Support Devices": {
+              "fnf": 0,
+              "fpf": 3,
+              "present": 1
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "pythia-1b"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.2206,
+          "micro_f1": 0.3294,
+          "micro_precision": 0.3415,
+          "micro_recall": 0.3182,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.3077,
+              "precision": 0.25,
+              "recall": 0.4,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.5455,
+              "precision": 0.4286,
+              "recall": 0.75,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.5714,
+              "precision": 0.6667,
+              "recall": 0.5,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.4,
+              "precision": 1.0,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.1538,
+              "precision": 0.25,
+              "recall": 0.1111,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.6667,
+              "precision": 0.8,
+              "recall": 0.5714,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.2222,
+              "precision": 0.1429,
+              "recall": 0.5,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.2487,
+          "micro_f1": 0.3652,
+          "micro_precision": 0.3559,
+          "micro_recall": 0.375,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.1333,
+              "precision": 0.125,
+              "recall": 0.1429,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.4286,
+              "precision": 0.375,
+              "recall": 0.5,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.4,
+              "precision": 0.3333,
+              "recall": 0.5,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.4444,
+              "precision": 0.6667,
+              "recall": 0.3333,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.3333,
+              "precision": 0.5,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.4706,
+              "precision": 0.5714,
+              "recall": 0.4,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.8,
+              "precision": 0.8571,
+              "recall": 0.75,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.2222,
+              "precision": 0.1429,
+              "recall": 0.5,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "FP16",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0029,
+          "CFPR": 0.9971,
+          "FNF_rate": 0.05,
+          "FPF_rate": 0.0018,
+          "counts": {
+            "false_negative_flips": 2,
+            "false_positive_flips": 3,
+            "flips": 5,
+            "fp32_absent": 1702,
+            "fp32_present": 40,
+            "preserved": 1737,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 2
+            },
+            "Cardiomegaly": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 8
+            },
+            "Consolidation": {
+              "fnf": 0,
+              "fpf": 2,
+              "present": 5
+            },
+            "Edema": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 3
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Lung Opacity": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 5
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 5
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 2
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Support Devices": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 8
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.0034,
+          "CFPR": 0.9966,
+          "FNF_rate": 0.0656,
+          "FPF_rate": 0.0012,
+          "counts": {
+            "false_negative_flips": 4,
+            "false_positive_flips": 2,
+            "flips": 6,
+            "fp32_absent": 1681,
+            "fp32_present": 61,
+            "preserved": 1736,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 9
+            },
+            "Cardiomegaly": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 8
+            },
+            "Consolidation": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 8
+            },
+            "Edema": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 3
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 2
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Lung Opacity": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 8
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 7
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 6
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 8
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "biogpt-large"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.252,
+          "micro_f1": 0.3684,
+          "micro_precision": 0.4375,
+          "micro_recall": 0.3182,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.4615,
+              "precision": 0.375,
+              "recall": 0.6,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.75,
+              "precision": 0.75,
+              "recall": 0.75,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.6667,
+              "precision": 1.0,
+              "recall": 0.5,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.4,
+              "precision": 1.0,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.1667,
+              "precision": 0.3333,
+              "recall": 0.1111,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.5455,
+              "precision": 0.75,
+              "recall": 0.4286,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.2857,
+              "precision": 0.2,
+              "recall": 0.5,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.2503,
+          "micro_f1": 0.3551,
+          "micro_precision": 0.3725,
+          "micro_recall": 0.3393,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.1333,
+              "precision": 0.125,
+              "recall": 0.1429,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.5714,
+              "precision": 0.5,
+              "recall": 0.6667,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.4286,
+              "precision": 0.375,
+              "recall": 0.5,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.4444,
+              "precision": 0.6667,
+              "recall": 0.3333,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.4,
+              "precision": 1.0,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.375,
+              "precision": 0.5,
+              "recall": 0.3,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.6154,
+              "precision": 0.8,
+              "recall": 0.5,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.2857,
+              "precision": 0.2,
+              "recall": 0.5,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "INT8-BnB",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0138,
+          "CFPR": 0.9862,
+          "FNF_rate": 0.4,
+          "FPF_rate": 0.0047,
+          "counts": {
+            "false_negative_flips": 16,
+            "false_positive_flips": 8,
+            "flips": 24,
+            "fp32_absent": 1702,
+            "fp32_present": 40,
+            "preserved": 1718,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 1,
+              "fpf": 2,
+              "present": 2
+            },
+            "Cardiomegaly": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 8
+            },
+            "Consolidation": {
+              "fnf": 2,
+              "fpf": 1,
+              "present": 5
+            },
+            "Edema": {
+              "fnf": 2,
+              "fpf": 1,
+              "present": 3
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Lung Lesion": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 1
+            },
+            "Lung Opacity": {
+              "fnf": 3,
+              "fpf": 1,
+              "present": 5
+            },
+            "Pleural Effusion": {
+              "fnf": 2,
+              "fpf": 1,
+              "present": 5
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 2
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Support Devices": {
+              "fnf": 4,
+              "fpf": 1,
+              "present": 8
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.0172,
+          "CFPR": 0.9828,
+          "FNF_rate": 0.3279,
+          "FPF_rate": 0.0059,
+          "counts": {
+            "false_negative_flips": 20,
+            "false_positive_flips": 10,
+            "flips": 30,
+            "fp32_absent": 1681,
+            "fp32_present": 61,
+            "preserved": 1712,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 4,
+              "fpf": 3,
+              "present": 9
+            },
+            "Cardiomegaly": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 8
+            },
+            "Consolidation": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 8
+            },
+            "Edema": {
+              "fnf": 2,
+              "fpf": 2,
+              "present": 3
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 2
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Lung Opacity": {
+              "fnf": 4,
+              "fpf": 2,
+              "present": 8
+            },
+            "Pleural Effusion": {
+              "fnf": 2,
+              "fpf": 0,
+              "present": 7
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 2,
+              "fpf": 1,
+              "present": 6
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 4,
+              "fpf": 1,
+              "present": 8
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "biogpt-large"
+    },
+    {
+      "clinical_efficacy_f1": {
+        "negative": {
+          "macro_f1": 0.1973,
+          "micro_f1": 0.3256,
+          "micro_precision": 0.3333,
+          "micro_recall": 0.3182,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 5
+            },
+            "Cardiomegaly": {
+              "f1": 0.1667,
+              "precision": 0.1429,
+              "recall": 0.2,
+              "support": 5
+            },
+            "Consolidation": {
+              "f1": 0.6667,
+              "precision": 0.6,
+              "recall": 0.75,
+              "support": 4
+            },
+            "Edema": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 4
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.4,
+              "precision": 1.0,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "Lung Opacity": {
+              "f1": 0.3077,
+              "precision": 0.5,
+              "recall": 0.2222,
+              "support": 9
+            },
+            "Pleural Effusion": {
+              "f1": 0.8571,
+              "precision": 0.8571,
+              "recall": 0.8571,
+              "support": 7
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 0
+            },
+            "Support Devices": {
+              "f1": 0.1667,
+              "precision": 0.1,
+              "recall": 0.5,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "macro_f1": 0.2865,
+          "micro_f1": 0.3966,
+          "micro_precision": 0.3833,
+          "micro_recall": 0.4107,
+          "per_category": {
+            "Atelectasis": {
+              "f1": 0.1333,
+              "precision": 0.125,
+              "recall": 0.1429,
+              "support": 7
+            },
+            "Cardiomegaly": {
+              "f1": 0.4286,
+              "precision": 0.375,
+              "recall": 0.5,
+              "support": 6
+            },
+            "Consolidation": {
+              "f1": 0.4286,
+              "precision": 0.375,
+              "recall": 0.5,
+              "support": 6
+            },
+            "Edema": {
+              "f1": 0.4444,
+              "precision": 0.6667,
+              "recall": 0.3333,
+              "support": 6
+            },
+            "Enlarged Cardiomediastinum": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Fracture": {
+              "f1": 0.4,
+              "precision": 1.0,
+              "recall": 0.25,
+              "support": 4
+            },
+            "Lung Lesion": {
+              "f1": 0.4,
+              "precision": 0.5,
+              "recall": 0.3333,
+              "support": 3
+            },
+            "Lung Opacity": {
+              "f1": 0.5,
+              "precision": 0.6667,
+              "recall": 0.4,
+              "support": 10
+            },
+            "Pleural Effusion": {
+              "f1": 0.8235,
+              "precision": 0.7778,
+              "recall": 0.875,
+              "support": 8
+            },
+            "Pleural Other": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumonia": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Pneumothorax": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 1
+            },
+            "Support Devices": {
+              "f1": 0.1667,
+              "precision": 0.1,
+              "recall": 0.5,
+              "support": 2
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "config": "NF4-BnB",
+      "fact_preservation": {
+        "negative": {
+          "CFFR": 0.0184,
+          "CFPR": 0.9816,
+          "FNF_rate": 0.375,
+          "FPF_rate": 0.01,
+          "counts": {
+            "false_negative_flips": 15,
+            "false_positive_flips": 17,
+            "flips": 32,
+            "fp32_absent": 1702,
+            "fp32_present": 40,
+            "preserved": 1710,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 1,
+              "fpf": 2,
+              "present": 2
+            },
+            "Cardiomegaly": {
+              "fnf": 3,
+              "fpf": 2,
+              "present": 8
+            },
+            "Consolidation": {
+              "fnf": 2,
+              "fpf": 2,
+              "present": 5
+            },
+            "Edema": {
+              "fnf": 3,
+              "fpf": 0,
+              "present": 3
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Lung Opacity": {
+              "fnf": 3,
+              "fpf": 2,
+              "present": 5
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 2,
+              "present": 5
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 1,
+              "fpf": 2,
+              "present": 2
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 0
+            },
+            "Support Devices": {
+              "fnf": 2,
+              "fpf": 4,
+              "present": 8
+            }
+          },
+          "uncertain_policy": "negative"
+        },
+        "positive": {
+          "CFFR": 0.0224,
+          "CFPR": 0.9776,
+          "FNF_rate": 0.3279,
+          "FPF_rate": 0.0113,
+          "counts": {
+            "false_negative_flips": 20,
+            "false_positive_flips": 19,
+            "flips": 39,
+            "fp32_absent": 1681,
+            "fp32_present": 61,
+            "preserved": 1703,
+            "total_pairs": 1742
+          },
+          "metric_version": "2.1-null-denominator",
+          "per_category_flips": {
+            "Atelectasis": {
+              "fnf": 4,
+              "fpf": 3,
+              "present": 9
+            },
+            "Cardiomegaly": {
+              "fnf": 2,
+              "fpf": 2,
+              "present": 8
+            },
+            "Consolidation": {
+              "fnf": 3,
+              "fpf": 3,
+              "present": 8
+            },
+            "Edema": {
+              "fnf": 1,
+              "fpf": 1,
+              "present": 3
+            },
+            "Enlarged Cardiomediastinum": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Fracture": {
+              "fnf": 1,
+              "fpf": 0,
+              "present": 2
+            },
+            "Lung Lesion": {
+              "fnf": 0,
+              "fpf": 1,
+              "present": 1
+            },
+            "Lung Opacity": {
+              "fnf": 4,
+              "fpf": 2,
+              "present": 8
+            },
+            "Pleural Effusion": {
+              "fnf": 0,
+              "fpf": 2,
+              "present": 7
+            },
+            "Pleural Other": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 0
+            },
+            "Pneumonia": {
+              "fnf": 3,
+              "fpf": 1,
+              "present": 6
+            },
+            "Pneumothorax": {
+              "fnf": 0,
+              "fpf": 0,
+              "present": 1
+            },
+            "Support Devices": {
+              "fnf": 2,
+              "fpf": 4,
+              "present": 8
+            }
+          },
+          "uncertain_policy": "positive"
+        }
+      },
+      "model": "biogpt-large"
+    }
+  ],
+  "primary_policy": "positive",
+  "provenance": {
+    "archived_primary_metrics_reproduced": true,
+    "data_hash": "0597c49a73f1bffcc199cd3b3f27a7c984ef5337a3efa7ccdc053a7c2d02cf23",
+    "manifest_hash": "09c670d6c7be0db028da43d42248ec655fd46ff24d7638752fc9ea9c1a25ac8f",
+    "run_id": "full_seed777_20260915",
+    "run_identity": {
+      "code_hash": "b03313ddd2bb4a1d0f1fb5fa85970d7155e0348a222c1e266f6a567c6b375cda",
+      "config_hash": "fefe99dc0b2e25f9d81ea784268e4687671a1f15b81c86929509e9ba95b237c3",
+      "data_hash": "0597c49a73f1bffcc199cd3b3f27a7c984ef5337a3efa7ccdc053a7c2d02cf23",
+      "run_id": "full_seed777_20260915"
+    },
+    "script_hash": "945ccbb106e3fc8eab7672118cca4aa7c08121315c8e7bdb9e4c620cc72582a7",
+    "training_or_generation": "none"
+  },
+  "rows": [
+    {
+      "CE_micro_F1_FP32_negative": 0.0423,
+      "CE_micro_F1_FP32_positive": 0.0606,
+      "CE_micro_F1_negative": 0.0438,
+      "CE_micro_F1_positive": 0.0513,
+      "FNF_delta_pp": -2.77,
+      "FNF_negative": 0.1837,
+      "FNF_positive": 0.2114,
+      "FPF_delta_pp": -1.76,
+      "FPF_negative": 0.0079,
+      "FPF_positive": 0.0255,
+      "b_negative": 18,
+      "b_positive": 37,
+      "c_negative": 13,
+      "c_positive": 40,
+      "config": "FP16",
+      "fp32_present_negative": 98,
+      "fp32_present_positive": 175,
+      "model": "distilgpt2"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.0423,
+      "CE_micro_F1_FP32_positive": 0.0606,
+      "CE_micro_F1_negative": 0.0,
+      "CE_micro_F1_positive": 0.0394,
+      "FNF_delta_pp": -6.65,
+      "FNF_negative": 0.4592,
+      "FNF_positive": 0.5257,
+      "FPF_delta_pp": -4.48,
+      "FPF_negative": 0.0286,
+      "FPF_positive": 0.0734,
+      "b_negative": 45,
+      "b_positive": 92,
+      "c_negative": 47,
+      "c_positive": 115,
+      "config": "INT8-BnB",
+      "fp32_present_negative": 98,
+      "fp32_present_positive": 175,
+      "model": "distilgpt2"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.0423,
+      "CE_micro_F1_FP32_positive": 0.0606,
+      "CE_micro_F1_negative": 0.0458,
+      "CE_micro_F1_positive": 0.0543,
+      "FNF_delta_pp": 2.86,
+      "FNF_negative": 0.7143,
+      "FNF_positive": 0.6857,
+      "FPF_delta_pp": -5.79,
+      "FPF_negative": 0.0359,
+      "FPF_positive": 0.0938,
+      "b_negative": 70,
+      "b_positive": 120,
+      "c_negative": 59,
+      "c_positive": 147,
+      "config": "NF4-BnB",
+      "fp32_present_negative": 98,
+      "fp32_present_positive": 175,
+      "model": "distilgpt2"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.069,
+      "CE_micro_F1_FP32_positive": 0.1255,
+      "CE_micro_F1_negative": 0.0602,
+      "CE_micro_F1_positive": 0.0917,
+      "FNF_delta_pp": 3.75,
+      "FNF_negative": 0.2178,
+      "FNF_positive": 0.1803,
+      "FPF_delta_pp": -1.57,
+      "FPF_negative": 0.0061,
+      "FPF_positive": 0.0218,
+      "b_negative": 22,
+      "b_positive": 33,
+      "c_negative": 10,
+      "c_positive": 34,
+      "config": "FP16",
+      "fp32_present_negative": 101,
+      "fp32_present_positive": 183,
+      "model": "gpt2"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.069,
+      "CE_micro_F1_FP32_positive": 0.1255,
+      "CE_micro_F1_negative": 0.0292,
+      "CE_micro_F1_positive": 0.0826,
+      "FNF_delta_pp": 4.87,
+      "FNF_negative": 0.5842,
+      "FNF_positive": 0.5355,
+      "FPF_delta_pp": -3.37,
+      "FPF_negative": 0.0311,
+      "FPF_positive": 0.0648,
+      "b_negative": 59,
+      "b_positive": 98,
+      "c_negative": 51,
+      "c_positive": 101,
+      "config": "INT8-BnB",
+      "fp32_present_negative": 101,
+      "fp32_present_positive": 183,
+      "model": "gpt2"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.069,
+      "CE_micro_F1_FP32_positive": 0.1255,
+      "CE_micro_F1_negative": 0.1176,
+      "CE_micro_F1_positive": 0.1497,
+      "FNF_delta_pp": 3.22,
+      "FNF_negative": 0.7426,
+      "FNF_positive": 0.7104,
+      "FPF_delta_pp": -3.05,
+      "FPF_negative": 0.0195,
+      "FPF_positive": 0.05,
+      "b_negative": 75,
+      "b_positive": 130,
+      "c_negative": 32,
+      "c_positive": 78,
+      "config": "NF4-BnB",
+      "fp32_present_negative": 101,
+      "fp32_present_positive": 183,
+      "model": "gpt2"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.098,
+      "CE_micro_F1_FP32_positive": 0.135,
+      "CE_micro_F1_negative": 0.0909,
+      "CE_micro_F1_positive": 0.122,
+      "FNF_delta_pp": -4.46,
+      "FNF_negative": 0.0862,
+      "FNF_positive": 0.1308,
+      "FPF_delta_pp": -0.15,
+      "FPF_negative": 0.0077,
+      "FPF_positive": 0.0092,
+      "b_negative": 5,
+      "b_positive": 14,
+      "c_negative": 13,
+      "c_positive": 15,
+      "config": "FP16",
+      "fp32_present_negative": 58,
+      "fp32_present_positive": 107,
+      "model": "gpt2-medium"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.098,
+      "CE_micro_F1_FP32_positive": 0.135,
+      "CE_micro_F1_negative": 0.0678,
+      "CE_micro_F1_positive": 0.1264,
+      "FNF_delta_pp": 2.83,
+      "FNF_negative": 0.5517,
+      "FNF_positive": 0.5234,
+      "FPF_delta_pp": -1.25,
+      "FPF_negative": 0.0285,
+      "FPF_positive": 0.041,
+      "b_negative": 32,
+      "b_positive": 56,
+      "c_negative": 48,
+      "c_positive": 67,
+      "config": "INT8-BnB",
+      "fp32_present_negative": 58,
+      "fp32_present_positive": 107,
+      "model": "gpt2-medium"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.098,
+      "CE_micro_F1_FP32_positive": 0.135,
+      "CE_micro_F1_negative": 0.0893,
+      "CE_micro_F1_positive": 0.1429,
+      "FNF_delta_pp": 1.32,
+      "FNF_negative": 0.6207,
+      "FNF_positive": 0.6075,
+      "FPF_delta_pp": -3.26,
+      "FPF_negative": 0.0273,
+      "FPF_positive": 0.0599,
+      "b_negative": 36,
+      "b_positive": 65,
+      "c_negative": 46,
+      "c_positive": 98,
+      "config": "NF4-BnB",
+      "fp32_present_negative": 58,
+      "fp32_present_positive": 107,
+      "model": "gpt2-medium"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.175,
+      "CE_micro_F1_FP32_positive": 0.2609,
+      "CE_micro_F1_negative": 0.175,
+      "CE_micro_F1_positive": 0.2609,
+      "FNF_delta_pp": 0.0,
+      "FNF_negative": 0.0,
+      "FNF_positive": 0.0,
+      "FPF_delta_pp": 0.0,
+      "FPF_negative": 0.0,
+      "FPF_positive": 0.0,
+      "b_negative": 0,
+      "b_positive": 0,
+      "c_negative": 0,
+      "c_positive": 0,
+      "config": "FP16",
+      "fp32_present_negative": 36,
+      "fp32_present_positive": 59,
+      "model": "biogpt"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.175,
+      "CE_micro_F1_FP32_positive": 0.2609,
+      "CE_micro_F1_negative": 0.1842,
+      "CE_micro_F1_positive": 0.2752,
+      "FNF_delta_pp": 5.88,
+      "FNF_negative": 0.1944,
+      "FNF_positive": 0.1356,
+      "FPF_delta_pp": 0.06,
+      "FPF_negative": 0.0018,
+      "FPF_positive": 0.0012,
+      "b_negative": 7,
+      "b_positive": 8,
+      "c_negative": 3,
+      "c_positive": 2,
+      "config": "INT8-BnB",
+      "fp32_present_negative": 36,
+      "fp32_present_positive": 59,
+      "model": "biogpt"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.175,
+      "CE_micro_F1_FP32_positive": 0.2609,
+      "CE_micro_F1_negative": 0.2022,
+      "CE_micro_F1_positive": 0.2645,
+      "FNF_delta_pp": -4.57,
+      "FNF_negative": 0.3611,
+      "FNF_positive": 0.4068,
+      "FPF_delta_pp": -0.49,
+      "FPF_negative": 0.0129,
+      "FPF_positive": 0.0178,
+      "b_negative": 13,
+      "b_positive": 24,
+      "c_negative": 22,
+      "c_positive": 30,
+      "config": "NF4-BnB",
+      "fp32_present_negative": 36,
+      "fp32_present_positive": 59,
+      "model": "biogpt"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.2169,
+      "CE_micro_F1_FP32_positive": 0.2456,
+      "CE_micro_F1_negative": 0.2169,
+      "CE_micro_F1_positive": 0.25,
+      "FNF_delta_pp": -3.45,
+      "FNF_negative": 0.0,
+      "FNF_positive": 0.0345,
+      "FPF_delta_pp": 0.0,
+      "FPF_negative": 0.0,
+      "FPF_positive": 0.0,
+      "b_negative": 0,
+      "b_positive": 2,
+      "c_negative": 0,
+      "c_positive": 0,
+      "config": "FP16",
+      "fp32_present_negative": 39,
+      "fp32_present_positive": 58,
+      "model": "pythia-1b"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.2169,
+      "CE_micro_F1_FP32_positive": 0.2456,
+      "CE_micro_F1_negative": 0.2,
+      "CE_micro_F1_positive": 0.2393,
+      "FNF_delta_pp": -6.98,
+      "FNF_negative": 0.1026,
+      "FNF_positive": 0.1724,
+      "FPF_delta_pp": -0.12,
+      "FPF_negative": 0.0065,
+      "FPF_positive": 0.0077,
+      "b_negative": 4,
+      "b_positive": 10,
+      "c_negative": 11,
+      "c_positive": 13,
+      "config": "INT8-BnB",
+      "fp32_present_negative": 39,
+      "fp32_present_positive": 58,
+      "model": "pythia-1b"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.2169,
+      "CE_micro_F1_FP32_positive": 0.2456,
+      "CE_micro_F1_negative": 0.2308,
+      "CE_micro_F1_positive": 0.2991,
+      "FNF_delta_pp": 5.62,
+      "FNF_negative": 0.4872,
+      "FNF_positive": 0.431,
+      "FPF_delta_pp": -0.25,
+      "FPF_negative": 0.0082,
+      "FPF_positive": 0.0107,
+      "b_negative": 19,
+      "b_positive": 25,
+      "c_negative": 14,
+      "c_positive": 18,
+      "config": "NF4-BnB",
+      "fp32_present_negative": 39,
+      "fp32_present_positive": 58,
+      "model": "pythia-1b"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.3333,
+      "CE_micro_F1_FP32_positive": 0.3932,
+      "CE_micro_F1_negative": 0.3294,
+      "CE_micro_F1_positive": 0.3652,
+      "FNF_delta_pp": -1.56,
+      "FNF_negative": 0.05,
+      "FNF_positive": 0.0656,
+      "FPF_delta_pp": 0.06,
+      "FPF_negative": 0.0018,
+      "FPF_positive": 0.0012,
+      "b_negative": 2,
+      "b_positive": 4,
+      "c_negative": 3,
+      "c_positive": 2,
+      "config": "FP16",
+      "fp32_present_negative": 40,
+      "fp32_present_positive": 61,
+      "model": "biogpt-large"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.3333,
+      "CE_micro_F1_FP32_positive": 0.3932,
+      "CE_micro_F1_negative": 0.3684,
+      "CE_micro_F1_positive": 0.3551,
+      "FNF_delta_pp": 7.21,
+      "FNF_negative": 0.4,
+      "FNF_positive": 0.3279,
+      "FPF_delta_pp": -0.12,
+      "FPF_negative": 0.0047,
+      "FPF_positive": 0.0059,
+      "b_negative": 16,
+      "b_positive": 20,
+      "c_negative": 8,
+      "c_positive": 10,
+      "config": "INT8-BnB",
+      "fp32_present_negative": 40,
+      "fp32_present_positive": 61,
+      "model": "biogpt-large"
+    },
+    {
+      "CE_micro_F1_FP32_negative": 0.3333,
+      "CE_micro_F1_FP32_positive": 0.3932,
+      "CE_micro_F1_negative": 0.3256,
+      "CE_micro_F1_positive": 0.3966,
+      "FNF_delta_pp": 4.71,
+      "FNF_negative": 0.375,
+      "FNF_positive": 0.3279,
+      "FPF_delta_pp": -0.13,
+      "FPF_negative": 0.01,
+      "FPF_positive": 0.0113,
+      "b_negative": 15,
+      "b_positive": 20,
+      "c_negative": 17,
+      "c_positive": 19,
+      "config": "NF4-BnB",
+      "fp32_present_negative": 40,
+      "fp32_present_positive": 61,
+      "model": "biogpt-large"
+    }
+  ],
+  "sensitivity_policy": "negative",
+  "summary": {
+    "nf4_fnf_range": {
+      "negative": [
+        0.3611,
+        0.7426
+      ],
+      "positive": [
+        0.3279,
+        0.7104
+      ]
+    },
+    "nf4_largest_absolute_fnf_shift": {
+      "delta_pp": 5.62,
+      "model": "pythia-1b"
+    },
+    "ordering": {
+      "negative": {
+        "biogpt": {
+          "FNF": {
+            "FP16": 0.0,
+            "INT8-BnB": 0.1944,
+            "NF4-BnB": 0.3611
+          },
+          "strict_FP16_lt_INT8_lt_NF4": true
+        },
+        "biogpt-large": {
+          "FNF": {
+            "FP16": 0.05,
+            "INT8-BnB": 0.4,
+            "NF4-BnB": 0.375
+          },
+          "strict_FP16_lt_INT8_lt_NF4": false
+        },
+        "distilgpt2": {
+          "FNF": {
+            "FP16": 0.1837,
+            "INT8-BnB": 0.4592,
+            "NF4-BnB": 0.7143
+          },
+          "strict_FP16_lt_INT8_lt_NF4": true
+        },
+        "gpt2": {
+          "FNF": {
+            "FP16": 0.2178,
+            "INT8-BnB": 0.5842,
+            "NF4-BnB": 0.7426
+          },
+          "strict_FP16_lt_INT8_lt_NF4": true
+        },
+        "gpt2-medium": {
+          "FNF": {
+            "FP16": 0.0862,
+            "INT8-BnB": 0.5517,
+            "NF4-BnB": 0.6207
+          },
+          "strict_FP16_lt_INT8_lt_NF4": true
+        },
+        "pythia-1b": {
+          "FNF": {
+            "FP16": 0.0,
+            "INT8-BnB": 0.1026,
+            "NF4-BnB": 0.4872
+          },
+          "strict_FP16_lt_INT8_lt_NF4": true
+        }
+      },
+      "positive": {
+        "biogpt": {
+          "FNF": {
+            "FP16": 0.0,
+            "INT8-BnB": 0.1356,
+            "NF4-BnB": 0.4068
+          },
+          "strict_FP16_lt_INT8_lt_NF4": true
+        },
+        "biogpt-large": {
+          "FNF": {
+            "FP16": 0.0656,
+            "INT8-BnB": 0.3279,
+            "NF4-BnB": 0.3279
+          },
+          "strict_FP16_lt_INT8_lt_NF4": false
+        },
+        "distilgpt2": {
+          "FNF": {
+            "FP16": 0.2114,
+            "INT8-BnB": 0.5257,
+            "NF4-BnB": 0.6857
+          },
+          "strict_FP16_lt_INT8_lt_NF4": true
+        },
+        "gpt2": {
+          "FNF": {
+            "FP16": 0.1803,
+            "INT8-BnB": 0.5355,
+            "NF4-BnB": 0.7104
+          },
+          "strict_FP16_lt_INT8_lt_NF4": true
+        },
+        "gpt2-medium": {
+          "FNF": {
+            "FP16": 0.1308,
+            "INT8-BnB": 0.5234,
+            "NF4-BnB": 0.6075
+          },
+          "strict_FP16_lt_INT8_lt_NF4": true
+        },
+        "pythia-1b": {
+          "FNF": {
+            "FP16": 0.0345,
+            "INT8-BnB": 0.1724,
+            "NF4-BnB": 0.431
+          },
+          "strict_FP16_lt_INT8_lt_NF4": true
+        }
+      }
+    },
+    "ordering_holds_all_models": {
+      "negative": false,
+      "positive": false
+    }
+  }
+}

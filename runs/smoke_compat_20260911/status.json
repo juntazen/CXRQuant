@@ -1,0 +1,42 @@
+{
+  "duration_s": 20.843008756637573,
+  "exit_code": 0,
+  "identity": {
+    "code_hash": "f8ede1a7d946c862740bd0035a31092ce91f389885cb5675776247f7fa63465a",
+    "config_hash": "6f7cb613ff259a298ddc6947668b797cbde9d5d6e9d38e50474fee3b74db7ec1",
+    "data_hash": "0597c49a73f1bffcc199cd3b3f27a7c984ef5337a3efa7ccdc053a7c2d02cf23",
+    "run_id": "smoke_compat_20260911"
+  },
+  "jobs": [
+    {
+      "command": [
+        "<local>/.venv/bin/python",
+        "-m",
+        "cxrquant.pipeline",
+        "--mode",
+        "smoke",
+        "--run-dir",
+        "<local>/runs/smoke_compat_20260911",
+        "--worker-models",
+        "distilgpt2"
+      ],
+      "device": "MIG-b229be93-e78c-586d-b229-0de04d9e3436",
+      "models": [
+        "distilgpt2"
+      ],
+      "pid": 39063
+    }
+  ],
+  "matrix": {
+    "comparisons": 3,
+    "configurations": 4,
+    "models": 1,
+    "predictions": 24
+  },
+  "pid": 38998,
+  "started_at": 1789079139.8859036,
+  "status": "complete",
+  "worker_exit_codes": [
+    0
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "checkpoint_hashes": {
+    "biogpt": "da6facf2510b3d573952f5b1c0de040f5bb323acf73134368f36764985f0201f",
+    "biogpt-large": "f3b3c308c558366319bcfbefe0ffa9703db73ac63204a8d2031818aeeb7ee802",
+    "distilgpt2": "a14073562a7683aef96f62048c77d5ad5feaf92f972ac876abc2bd3b060f2f80",
+    "gpt2": "169259d014c46cb9b7847a09578baccce32ef334e180e4abe80cb65e9f540bfd",
+    "gpt2-medium": "8b70d26b291289eb2643a451e7388fb002c4b5d432b3ff72a9206c65abc50838",
+    "pythia-1b": "6822867b1535f1980a741d3b54646708d4dadd4144aa51cf4222e75aa9c33cfd"
+  },
+  "configs": {
+    "files": {
+      "full.json": "5f24c845cfaf53ff787f2fc555c4246bb8733fd0f1679eb64d718cdf8248d76d",
+      "smoke.json": "5bbcbfd1baa50922bc8532468844c85feca4df8e8c4ab066cb6270d5f1e9f8a8"
+    },
+    "sha256": "b59557727b3eab56f2b787dbebfe43c478c17b4ef1039e036080faf184812ea2"
+  },
+  "data_hash": "0597c49a73f1bffcc199cd3b3f27a7c984ef5337a3efa7ccdc053a7c2d02cf23",
+  "executed_run_code_hash": "f8ede1a7d946c862740bd0035a31092ce91f389885cb5675776247f7fa63465a",
+  "note": "Release hash includes post-run reporting/packaging scripts; run identity remains immutable.",
+  "release_source_code_hash": "724e0a32301a0554a976459bdd79f66ddb29b60015591cb57eca9f18b2312a13",
+  "scripts": {
+    "files": {
+      "architecture_diagram.py": "17e1bc29c943bc5be2ed6b1cbb784eef034a0823f82031714a44ae725a8a7efb",
+      "compare_historical_corrected.py": "b816fd78c3b38b7159aaa9259ff6ce4fae8802e691833cd98d4533593fffd379",
+      "compute_bootstrap.py": "c8bf761ad1d84e0cc6cf9ab5e2e6b16bfe514f66e3f594dd2ec24b72f1d2f520",
+      "compute_mcnemar.py": "c8bf761ad1d84e0cc6cf9ab5e2e6b16bfe514f66e3f594dd2ec24b72f1d2f520",
+      "export_tables.py": "c8bf761ad1d84e0cc6cf9ab5e2e6b16bfe514f66e3f594dd2ec24b72f1d2f520",
+      "extractor_comparison.py": "841c945cb2a6674d7653af8d20cbe85f6eb3176c01822dc1fb53fc86d901f964",
+      "finalize_corrected_state.py": "2e58ed72ace7508fdacdd12e8769177f6c1a22d754b19a26478225388a28c2c9",
+      "make_figures.py": "c8bf761ad1d84e0cc6cf9ab5e2e6b16bfe514f66e3f594dd2ec24b72f1d2f520",
+      "make_manuscript_figures.py": "26c3e615746bab312d4cd7fc3f4eb57ddfd25e91807e459ee23a417477d93cdd",
+      "package_candidate.py": "a516d8c926dfbf0fe26cf67a5ad160427c81e1a99c6f1c2d133b676ca14492c6",
+      "prepare_models.py": "d7864ae8898a79201f30c7e493c4f4cf7b12f248c5ee90ab9da128d04bdca3de",
+      "run_multimodel_parallel.py": "9f08d4b9a0e0e1b1e685c437423e556f532bc48832115f91e5ba35340c263fb6",
+      "stage_corrected_candidate.py": "7355c4a4781dcfcc855c6ae2c5902feb803b16f7c5275c2d769f088348c84691",
+      "summarize_corrected_run.py": "bac62032c041061d569847795be1dc1cc0d8887f5eb456820f7aa1dce0f6e5cd",
+      "update_manuscript_corrected.py": "3a1476f06daaa0dc053b7a5543ee0be780b15cf663cd44e8ad07a95357e87099",
+      "verify_replay_determinism.py": "6bf20aade3485ce3432f3486bc4ca9d40a22aa065dd4362bda3264c1759a75b9",
+      "worker_multimodel.py": "9f08d4b9a0e0e1b1e685c437423e556f532bc48832115f91e5ba35340c263fb6"
+    },
+    "sha256": "34b5ff12b2037f1496bc97d635e0841a8ded3feaf8566c0e0dba67b655b2022c"
+  },
+  "src": {
+    "files": {
+      "cxrquant/__init__.py": "1375c693a0099afba33b71b36fcc32df4bf42a9d9965352d4c3bac8a67857931",
+      "cxrquant/cli.py": "7af9b59f1e17f9bfd30684217e513433c4f09b55bee40a42fb55c63055dd5d3e",
+      "cxrquant/clinical_safety/__init__.py": "cbb0ddc4aca7650a23eee4082b4ba5c9360d92b132b634dc8eaf5af7ff5d597d",
+      "cxrquant/clinical_safety/fact_extractor.py": "5436dc966d77f597d502c08689070d7fbd8e354506c450525848d7c6da785837",
+      "cxrquant/clinical_safety/safety_metrics.py": "316e05f1308265320a7793c1f5124f2d219cc939f6e3e4f5b39918537db0599a",
+      "cxrquant/data/__init__.py": "6ab38a3a7cf68de9b92a0379855618fa727f18bd8ff1fb693b8b46b058dfa790",
+      "cxrquant/data/iuxray_dataset.py": "68e527f570ce7e9d7c89af21518a07eab9dfc466e63b9ec1e3bb727497101d12",
+      "cxrquant/evaluation/__init__.py": "f982c62d3fb9182d60c2f7b8e6b451b29df5304f705d17129b98c575f9c0de42",
+      "cxrquant/evaluation/clinical_metrics.py": "575fb3590df380c5639d1e335d37cf29a9dfbbaab9469132a834f1746e516b6c",
+      "cxrquant/evaluation/efficiency_metrics.py": "3b3ef60a42c5a62f8f0a0fb2cd0835bf80697580a0c8b94ea204ba5a3e4213eb",
+      "cxrquant/evaluation/nlg_metrics.py": "5d38d065039f3a028a0cedd3c7e8fc9e15d69730d7670bf3b4d1e2afe495e050",
+      "cxrquant/models/__init__.py": "b6c3f3de2bd37132df332b03ecf0f97d748c48559ab8e4d2e11608d70eb43f56",
+      "cxrquant/models/vlm_pipeline.py": "d0f24a6ccc295d2b3edab3f5618df3d25ea72d926cfe06e327c8de944cd48826",
+      "cxrquant/paths.py": "69cf9e99ee394f87f9934a073ef571f5e7e2560cd91e9525100493189547a956",
+      "cxrquant/pipeline.py": "7413942e82647aa5168428b530e9d88324bb3d44b7e77983740e7053cbc75681",
+      "cxrquant/py.typed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "cxrquant/quantization/__init__.py": "c2bc32e80337d81daa7d9330ec1cf9327bd1c6c3a98b2e5021e99531c343e27d",
+      "cxrquant/quantization/awq_quantizer.py": "9f2553db6c696fba9880bc4335f08669d62a8914450e199eeb1c6b6d2b569f6f",
+      "cxrquant/quantization/efficientqat.py": "cc360a8f1c7ef312076765a1816c4f98c9278d905f918fcc1668895a242303cb",
+      "cxrquant/replay.py": "150ca2b90b82fe1022230c94f6000002e3ba24e5366654847f332d6defa49656",
+      "cxrquant/runio.py": "0c21493b2c8fa936e9737dbefe541a1b6d886097d45a4804ad950c0fd6e029ed",
+      "cxrquant/training_data.py": "5423bb1e60464b856c780fb49c2637403f455e7649f1b470114418bd0e0f2054",
+      "cxrquant/validation.py": "7d098c7d864273a99aba0ae1db8415630f6a4de2e498c3d60425d599b279d066"
+    },
+    "sha256": "2053035432c28e18bd4661704726212162f770fb284f6380407ab01bd8353836"
+  }
+}

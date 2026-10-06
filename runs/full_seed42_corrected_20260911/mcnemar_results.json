@@ -1,0 +1,2118 @@
+{
+  "provenance": {
+    "benchmark_hash": "220f4e529edd7116db370cac7d16babb08cea95ca955c6b44a91f6ec4f0e2284",
+    "config_hash": "6e4084f827716cd546e675dd476f58ad90edea74d238f14d1b18d510ba19f768",
+    "manifest_hash": "9370c68f61b984d3e78c2a1cf7b34d49c1c4a384a2720e8b340b38a6c7276b5b",
+    "metric_version": "2.1-null-denominator",
+    "prediction_provenance": "GPU run; see identity and checkpoints",
+    "run_id": "full_seed42_corrected_20260911"
+  },
+  "rows": [
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "FP16",
+      "model": "distilgpt2",
+      "p": 0.625
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Cardiomegaly",
+      "config": "FP16",
+      "model": "distilgpt2",
+      "p": 0.5
+    },
+    {
+      "b": 7,
+      "bonferroni_significant": false,
+      "c": 5,
+      "category": "Lung Opacity",
+      "config": "FP16",
+      "model": "distilgpt2",
+      "p": 0.7744140625
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 9,
+      "category": "Lung Lesion",
+      "config": "FP16",
+      "model": "distilgpt2",
+      "p": 0.14599609375
+    },
+    {
+      "b": 4,
+      "bonferroni_significant": false,
+      "c": 6,
+      "category": "Edema",
+      "config": "FP16",
+      "model": "distilgpt2",
+      "p": 0.75390625
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 4,
+      "category": "Consolidation",
+      "config": "FP16",
+      "model": "distilgpt2",
+      "p": 0.6875
+    },
+    {
+      "b": 8,
+      "bonferroni_significant": false,
+      "c": 5,
+      "category": "Pneumonia",
+      "config": "FP16",
+      "model": "distilgpt2",
+      "p": 0.5810546875
+    },
+    {
+      "b": 10,
+      "bonferroni_significant": false,
+      "c": 12,
+      "category": "Atelectasis",
+      "config": "FP16",
+      "model": "distilgpt2",
+      "p": 0.8318119049072266
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Pneumothorax",
+      "config": "FP16",
+      "model": "distilgpt2",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Pleural Effusion",
+      "config": "FP16",
+      "model": "distilgpt2",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Other",
+      "config": "FP16",
+      "model": "distilgpt2",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Fracture",
+      "config": "FP16",
+      "model": "distilgpt2",
+      "p": 1.0
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 6,
+      "category": "Support Devices",
+      "config": "FP16",
+      "model": "distilgpt2",
+      "p": 0.2890625
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": 0.625
+    },
+    {
+      "b": 10,
+      "bonferroni_significant": false,
+      "c": 6,
+      "category": "Cardiomegaly",
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": 0.454498291015625
+    },
+    {
+      "b": 13,
+      "bonferroni_significant": false,
+      "c": 5,
+      "category": "Lung Opacity",
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": 0.09625244140625
+    },
+    {
+      "b": 7,
+      "bonferroni_significant": false,
+      "c": 7,
+      "category": "Lung Lesion",
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": 1.0
+    },
+    {
+      "b": 9,
+      "bonferroni_significant": false,
+      "c": 7,
+      "category": "Edema",
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": 0.803619384765625
+    },
+    {
+      "b": 8,
+      "bonferroni_significant": false,
+      "c": 5,
+      "category": "Consolidation",
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": 0.5810546875
+    },
+    {
+      "b": 15,
+      "bonferroni_significant": false,
+      "c": 11,
+      "category": "Pneumonia",
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": 0.557197093963623
+    },
+    {
+      "b": 26,
+      "bonferroni_significant": false,
+      "c": 18,
+      "category": "Atelectasis",
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": 0.2912152365458951
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Pneumothorax",
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": 1.0
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Pleural Effusion",
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Pleural Other",
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": 1.0
+    },
+    {
+      "b": 7,
+      "bonferroni_significant": false,
+      "c": 4,
+      "category": "Fracture",
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": 0.548828125
+    },
+    {
+      "b": 5,
+      "bonferroni_significant": false,
+      "c": 6,
+      "category": "Support Devices",
+      "config": "INT8-BnB",
+      "model": "distilgpt2",
+      "p": 1.0
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 5,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "NF4-BnB",
+      "model": "distilgpt2",
+      "p": 0.453125
+    },
+    {
+      "b": 14,
+      "bonferroni_significant": false,
+      "c": 4,
+      "category": "Cardiomegaly",
+      "config": "NF4-BnB",
+      "model": "distilgpt2",
+      "p": 0.0308837890625
+    },
+    {
+      "b": 12,
+      "bonferroni_significant": false,
+      "c": 13,
+      "category": "Lung Opacity",
+      "config": "NF4-BnB",
+      "model": "distilgpt2",
+      "p": 1.0
+    },
+    {
+      "b": 9,
+      "bonferroni_significant": false,
+      "c": 13,
+      "category": "Lung Lesion",
+      "config": "NF4-BnB",
+      "model": "distilgpt2",
+      "p": 0.5234670639038086
+    },
+    {
+      "b": 13,
+      "bonferroni_significant": false,
+      "c": 4,
+      "category": "Edema",
+      "config": "NF4-BnB",
+      "model": "distilgpt2",
+      "p": 0.049041748046875
+    },
+    {
+      "b": 7,
+      "bonferroni_significant": false,
+      "c": 15,
+      "category": "Consolidation",
+      "config": "NF4-BnB",
+      "model": "distilgpt2",
+      "p": 0.13380050659179688
+    },
+    {
+      "b": 19,
+      "bonferroni_significant": false,
+      "c": 11,
+      "category": "Pneumonia",
+      "config": "NF4-BnB",
+      "model": "distilgpt2",
+      "p": 0.20048842206597328
+    },
+    {
+      "b": 16,
+      "bonferroni_significant": false,
+      "c": 27,
+      "category": "Atelectasis",
+      "config": "NF4-BnB",
+      "model": "distilgpt2",
+      "p": 0.12628947438543037
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Pneumothorax",
+      "config": "NF4-BnB",
+      "model": "distilgpt2",
+      "p": 1.0
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 9,
+      "category": "Pleural Effusion",
+      "config": "NF4-BnB",
+      "model": "distilgpt2",
+      "p": 0.14599609375
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Pleural Other",
+      "config": "NF4-BnB",
+      "model": "distilgpt2",
+      "p": 0.5
+    },
+    {
+      "b": 8,
+      "bonferroni_significant": false,
+      "c": 4,
+      "category": "Fracture",
+      "config": "NF4-BnB",
+      "model": "distilgpt2",
+      "p": 0.3876953125
+    },
+    {
+      "b": 7,
+      "bonferroni_significant": false,
+      "c": 11,
+      "category": "Support Devices",
+      "config": "NF4-BnB",
+      "model": "distilgpt2",
+      "p": 0.480682373046875
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "FP16",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 4,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Cardiomegaly",
+      "config": "FP16",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Lung Opacity",
+      "config": "FP16",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 8,
+      "bonferroni_significant": false,
+      "c": 5,
+      "category": "Lung Lesion",
+      "config": "FP16",
+      "model": "gpt2",
+      "p": 0.5810546875
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 5,
+      "category": "Edema",
+      "config": "FP16",
+      "model": "gpt2",
+      "p": 0.453125
+    },
+    {
+      "b": 4,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Consolidation",
+      "config": "FP16",
+      "model": "gpt2",
+      "p": 0.6875
+    },
+    {
+      "b": 8,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Pneumonia",
+      "config": "FP16",
+      "model": "gpt2",
+      "p": 0.109375
+    },
+    {
+      "b": 11,
+      "bonferroni_significant": false,
+      "c": 8,
+      "category": "Atelectasis",
+      "config": "FP16",
+      "model": "gpt2",
+      "p": 0.6476058959960938
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Pneumothorax",
+      "config": "FP16",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Effusion",
+      "config": "FP16",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Other",
+      "config": "FP16",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Fracture",
+      "config": "FP16",
+      "model": "gpt2",
+      "p": 0.25
+    },
+    {
+      "b": 4,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Support Devices",
+      "config": "FP16",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "INT8-BnB",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 14,
+      "bonferroni_significant": false,
+      "c": 9,
+      "category": "Cardiomegaly",
+      "config": "INT8-BnB",
+      "model": "gpt2",
+      "p": 0.4048728942871094
+    },
+    {
+      "b": 7,
+      "bonferroni_significant": false,
+      "c": 11,
+      "category": "Lung Opacity",
+      "config": "INT8-BnB",
+      "model": "gpt2",
+      "p": 0.480682373046875
+    },
+    {
+      "b": 12,
+      "bonferroni_significant": false,
+      "c": 9,
+      "category": "Lung Lesion",
+      "config": "INT8-BnB",
+      "model": "gpt2",
+      "p": 0.6636238098144531
+    },
+    {
+      "b": 9,
+      "bonferroni_significant": false,
+      "c": 11,
+      "category": "Edema",
+      "config": "INT8-BnB",
+      "model": "gpt2",
+      "p": 0.8238029479980469
+    },
+    {
+      "b": 18,
+      "bonferroni_significant": false,
+      "c": 12,
+      "category": "Consolidation",
+      "config": "INT8-BnB",
+      "model": "gpt2",
+      "p": 0.361594608053565
+    },
+    {
+      "b": 17,
+      "bonferroni_significant": false,
+      "c": 8,
+      "category": "Pneumonia",
+      "config": "INT8-BnB",
+      "model": "gpt2",
+      "p": 0.10775214433670044
+    },
+    {
+      "b": 24,
+      "bonferroni_significant": false,
+      "c": 12,
+      "category": "Atelectasis",
+      "config": "INT8-BnB",
+      "model": "gpt2",
+      "p": 0.06524533522315323
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Pneumothorax",
+      "config": "INT8-BnB",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Pleural Effusion",
+      "config": "INT8-BnB",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Pleural Other",
+      "config": "INT8-BnB",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 4,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Fracture",
+      "config": "INT8-BnB",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 10,
+      "bonferroni_significant": false,
+      "c": 9,
+      "category": "Support Devices",
+      "config": "INT8-BnB",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 17,
+      "bonferroni_significant": false,
+      "c": 12,
+      "category": "Cardiomegaly",
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": 0.45825831964612007
+    },
+    {
+      "b": 12,
+      "bonferroni_significant": false,
+      "c": 9,
+      "category": "Lung Opacity",
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": 0.6636238098144531
+    },
+    {
+      "b": 14,
+      "bonferroni_significant": false,
+      "c": 11,
+      "category": "Lung Lesion",
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": 0.6900379657745361
+    },
+    {
+      "b": 11,
+      "bonferroni_significant": false,
+      "c": 9,
+      "category": "Edema",
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": 0.8238029479980469
+    },
+    {
+      "b": 24,
+      "bonferroni_significant": false,
+      "c": 17,
+      "category": "Consolidation",
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": 0.34888887944907765
+    },
+    {
+      "b": 23,
+      "bonferroni_significant": true,
+      "c": 4,
+      "category": "Pneumonia",
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": 0.000310748815536499
+    },
+    {
+      "b": 29,
+      "bonferroni_significant": false,
+      "c": 12,
+      "category": "Atelectasis",
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": 0.011507789735333063
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Pneumothorax",
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": 0.25
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Pleural Effusion",
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": 0.25
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Pleural Other",
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 4,
+      "bonferroni_significant": false,
+      "c": 4,
+      "category": "Fracture",
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": 1.0
+    },
+    {
+      "b": 16,
+      "bonferroni_significant": false,
+      "c": 5,
+      "category": "Support Devices",
+      "config": "NF4-BnB",
+      "model": "gpt2",
+      "p": 0.02660369873046875
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "FP16",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Cardiomegaly",
+      "config": "FP16",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Lung Opacity",
+      "config": "FP16",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Lung Lesion",
+      "config": "FP16",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Edema",
+      "config": "FP16",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 4,
+      "category": "Consolidation",
+      "config": "FP16",
+      "model": "gpt2-medium",
+      "p": 0.6875
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Pneumonia",
+      "config": "FP16",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 4,
+      "category": "Atelectasis",
+      "config": "FP16",
+      "model": "gpt2-medium",
+      "p": 0.375
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumothorax",
+      "config": "FP16",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Pleural Effusion",
+      "config": "FP16",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Other",
+      "config": "FP16",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 4,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Fracture",
+      "config": "FP16",
+      "model": "gpt2-medium",
+      "p": 0.375
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Support Devices",
+      "config": "FP16",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "INT8-BnB",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Cardiomegaly",
+      "config": "INT8-BnB",
+      "model": "gpt2-medium",
+      "p": 0.5
+    },
+    {
+      "b": 4,
+      "bonferroni_significant": false,
+      "c": 8,
+      "category": "Lung Opacity",
+      "config": "INT8-BnB",
+      "model": "gpt2-medium",
+      "p": 0.3876953125
+    },
+    {
+      "b": 9,
+      "bonferroni_significant": false,
+      "c": 7,
+      "category": "Lung Lesion",
+      "config": "INT8-BnB",
+      "model": "gpt2-medium",
+      "p": 0.803619384765625
+    },
+    {
+      "b": 5,
+      "bonferroni_significant": false,
+      "c": 5,
+      "category": "Edema",
+      "config": "INT8-BnB",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 7,
+      "bonferroni_significant": false,
+      "c": 9,
+      "category": "Consolidation",
+      "config": "INT8-BnB",
+      "model": "gpt2-medium",
+      "p": 0.803619384765625
+    },
+    {
+      "b": 7,
+      "bonferroni_significant": false,
+      "c": 4,
+      "category": "Pneumonia",
+      "config": "INT8-BnB",
+      "model": "gpt2-medium",
+      "p": 0.548828125
+    },
+    {
+      "b": 9,
+      "bonferroni_significant": false,
+      "c": 8,
+      "category": "Atelectasis",
+      "config": "INT8-BnB",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Pneumothorax",
+      "config": "INT8-BnB",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 4,
+      "category": "Pleural Effusion",
+      "config": "INT8-BnB",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Pleural Other",
+      "config": "INT8-BnB",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 6,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Fracture",
+      "config": "INT8-BnB",
+      "model": "gpt2-medium",
+      "p": 0.5078125
+    },
+    {
+      "b": 7,
+      "bonferroni_significant": false,
+      "c": 10,
+      "category": "Support Devices",
+      "config": "INT8-BnB",
+      "model": "gpt2-medium",
+      "p": 0.629058837890625
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "NF4-BnB",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 6,
+      "bonferroni_significant": false,
+      "c": 9,
+      "category": "Cardiomegaly",
+      "config": "NF4-BnB",
+      "model": "gpt2-medium",
+      "p": 0.60723876953125
+    },
+    {
+      "b": 5,
+      "bonferroni_significant": false,
+      "c": 10,
+      "category": "Lung Opacity",
+      "config": "NF4-BnB",
+      "model": "gpt2-medium",
+      "p": 0.3017578125
+    },
+    {
+      "b": 10,
+      "bonferroni_significant": false,
+      "c": 16,
+      "category": "Lung Lesion",
+      "config": "NF4-BnB",
+      "model": "gpt2-medium",
+      "p": 0.32693958282470703
+    },
+    {
+      "b": 6,
+      "bonferroni_significant": false,
+      "c": 8,
+      "category": "Edema",
+      "config": "NF4-BnB",
+      "model": "gpt2-medium",
+      "p": 0.79052734375
+    },
+    {
+      "b": 13,
+      "bonferroni_significant": false,
+      "c": 14,
+      "category": "Consolidation",
+      "config": "NF4-BnB",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 7,
+      "bonferroni_significant": false,
+      "c": 18,
+      "category": "Pneumonia",
+      "config": "NF4-BnB",
+      "model": "gpt2-medium",
+      "p": 0.043285250663757324
+    },
+    {
+      "b": 10,
+      "bonferroni_significant": false,
+      "c": 11,
+      "category": "Atelectasis",
+      "config": "NF4-BnB",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Pneumothorax",
+      "config": "NF4-BnB",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Effusion",
+      "config": "NF4-BnB",
+      "model": "gpt2-medium",
+      "p": 0.25
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Pleural Other",
+      "config": "NF4-BnB",
+      "model": "gpt2-medium",
+      "p": 1.0
+    },
+    {
+      "b": 6,
+      "bonferroni_significant": false,
+      "c": 10,
+      "category": "Fracture",
+      "config": "NF4-BnB",
+      "model": "gpt2-medium",
+      "p": 0.454498291015625
+    },
+    {
+      "b": 8,
+      "bonferroni_significant": false,
+      "c": 14,
+      "category": "Support Devices",
+      "config": "NF4-BnB",
+      "model": "gpt2-medium",
+      "p": 0.28627872467041016
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "FP16",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Cardiomegaly",
+      "config": "FP16",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Lung Opacity",
+      "config": "FP16",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Lung Lesion",
+      "config": "FP16",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Edema",
+      "config": "FP16",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Consolidation",
+      "config": "FP16",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumonia",
+      "config": "FP16",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Atelectasis",
+      "config": "FP16",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumothorax",
+      "config": "FP16",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Effusion",
+      "config": "FP16",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Other",
+      "config": "FP16",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Fracture",
+      "config": "FP16",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Support Devices",
+      "config": "FP16",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "INT8-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Cardiomegaly",
+      "config": "INT8-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Lung Opacity",
+      "config": "INT8-BnB",
+      "model": "biogpt",
+      "p": 0.25
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Lung Lesion",
+      "config": "INT8-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Edema",
+      "config": "INT8-BnB",
+      "model": "biogpt",
+      "p": 0.625
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Consolidation",
+      "config": "INT8-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Pneumonia",
+      "config": "INT8-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 4,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Atelectasis",
+      "config": "INT8-BnB",
+      "model": "biogpt",
+      "p": 0.6875
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumothorax",
+      "config": "INT8-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Effusion",
+      "config": "INT8-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Other",
+      "config": "INT8-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Fracture",
+      "config": "INT8-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Support Devices",
+      "config": "INT8-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "NF4-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 4,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Cardiomegaly",
+      "config": "NF4-BnB",
+      "model": "biogpt",
+      "p": 0.125
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Lung Opacity",
+      "config": "NF4-BnB",
+      "model": "biogpt",
+      "p": 0.25
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Lung Lesion",
+      "config": "NF4-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 5,
+      "category": "Edema",
+      "config": "NF4-BnB",
+      "model": "biogpt",
+      "p": 0.453125
+    },
+    {
+      "b": 4,
+      "bonferroni_significant": false,
+      "c": 4,
+      "category": "Consolidation",
+      "config": "NF4-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumonia",
+      "config": "NF4-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 10,
+      "bonferroni_significant": true,
+      "c": 0,
+      "category": "Atelectasis",
+      "config": "NF4-BnB",
+      "model": "biogpt",
+      "p": 0.001953125
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumothorax",
+      "config": "NF4-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 5,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Pleural Effusion",
+      "config": "NF4-BnB",
+      "model": "biogpt",
+      "p": 0.453125
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Other",
+      "config": "NF4-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Fracture",
+      "config": "NF4-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Support Devices",
+      "config": "NF4-BnB",
+      "model": "biogpt",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "FP16",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Cardiomegaly",
+      "config": "FP16",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Lung Opacity",
+      "config": "FP16",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Lung Lesion",
+      "config": "FP16",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Edema",
+      "config": "FP16",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Consolidation",
+      "config": "FP16",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumonia",
+      "config": "FP16",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Atelectasis",
+      "config": "FP16",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumothorax",
+      "config": "FP16",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Effusion",
+      "config": "FP16",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Other",
+      "config": "FP16",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Fracture",
+      "config": "FP16",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Support Devices",
+      "config": "FP16",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "INT8-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 5,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Cardiomegaly",
+      "config": "INT8-BnB",
+      "model": "pythia-1b",
+      "p": 0.0625
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Lung Opacity",
+      "config": "INT8-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Lung Lesion",
+      "config": "INT8-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Edema",
+      "config": "INT8-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Consolidation",
+      "config": "INT8-BnB",
+      "model": "pythia-1b",
+      "p": 0.5
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumonia",
+      "config": "INT8-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Atelectasis",
+      "config": "INT8-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumothorax",
+      "config": "INT8-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Effusion",
+      "config": "INT8-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Other",
+      "config": "INT8-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Fracture",
+      "config": "INT8-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Support Devices",
+      "config": "INT8-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "NF4-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 7,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Cardiomegaly",
+      "config": "NF4-BnB",
+      "model": "pythia-1b",
+      "p": 0.0703125
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 5,
+      "category": "Lung Opacity",
+      "config": "NF4-BnB",
+      "model": "pythia-1b",
+      "p": 0.7265625
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Lung Lesion",
+      "config": "NF4-BnB",
+      "model": "pythia-1b",
+      "p": 0.625
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Edema",
+      "config": "NF4-BnB",
+      "model": "pythia-1b",
+      "p": 0.25
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Consolidation",
+      "config": "NF4-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumonia",
+      "config": "NF4-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 4,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Atelectasis",
+      "config": "NF4-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumothorax",
+      "config": "NF4-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Pleural Effusion",
+      "config": "NF4-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Other",
+      "config": "NF4-BnB",
+      "model": "pythia-1b",
+      "p": 1.0
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Fracture",
+      "config": "NF4-BnB",
+      "model": "pythia-1b",
+      "p": 0.5
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Support Devices",
+      "config": "NF4-BnB",
+      "model": "pythia-1b",
+      "p": 0.625
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "FP16",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Cardiomegaly",
+      "config": "FP16",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Lung Opacity",
+      "config": "FP16",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Lung Lesion",
+      "config": "FP16",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Edema",
+      "config": "FP16",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Consolidation",
+      "config": "FP16",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumonia",
+      "config": "FP16",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Atelectasis",
+      "config": "FP16",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumothorax",
+      "config": "FP16",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Effusion",
+      "config": "FP16",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Other",
+      "config": "FP16",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Fracture",
+      "config": "FP16",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Support Devices",
+      "config": "FP16",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "INT8-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Cardiomegaly",
+      "config": "INT8-BnB",
+      "model": "biogpt-large",
+      "p": 0.25
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Lung Opacity",
+      "config": "INT8-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Lung Lesion",
+      "config": "INT8-BnB",
+      "model": "biogpt-large",
+      "p": 0.5
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Edema",
+      "config": "INT8-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Consolidation",
+      "config": "INT8-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumonia",
+      "config": "INT8-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Atelectasis",
+      "config": "INT8-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pneumothorax",
+      "config": "INT8-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Pleural Effusion",
+      "config": "INT8-BnB",
+      "model": "biogpt-large",
+      "p": 0.5
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Other",
+      "config": "INT8-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Fracture",
+      "config": "INT8-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Support Devices",
+      "config": "INT8-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Enlarged Cardiomediastinum",
+      "config": "NF4-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 3,
+      "bonferroni_significant": false,
+      "c": 5,
+      "category": "Cardiomegaly",
+      "config": "NF4-BnB",
+      "model": "biogpt-large",
+      "p": 0.7265625
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Lung Opacity",
+      "config": "NF4-BnB",
+      "model": "biogpt-large",
+      "p": 0.625
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Lung Lesion",
+      "config": "NF4-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Edema",
+      "config": "NF4-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 4,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Consolidation",
+      "config": "NF4-BnB",
+      "model": "biogpt-large",
+      "p": 0.6875
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Pneumonia",
+      "config": "NF4-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 7,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Atelectasis",
+      "config": "NF4-BnB",
+      "model": "biogpt-large",
+      "p": 0.0703125
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 1,
+      "category": "Pneumothorax",
+      "config": "NF4-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 1,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Pleural Effusion",
+      "config": "NF4-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 0,
+      "category": "Pleural Other",
+      "config": "NF4-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    },
+    {
+      "b": 0,
+      "bonferroni_significant": false,
+      "c": 2,
+      "category": "Fracture",
+      "config": "NF4-BnB",
+      "model": "biogpt-large",
+      "p": 0.5
+    },
+    {
+      "b": 2,
+      "bonferroni_significant": false,
+      "c": 3,
+      "category": "Support Devices",
+      "config": "NF4-BnB",
+      "model": "biogpt-large",
+      "p": 1.0
+    }
+  ]
+}

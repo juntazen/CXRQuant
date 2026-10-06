@@ -1,0 +1,99 @@
+{
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:13:31) [GCC 14.3.0]",
+  "executable": "<local-root>/miniconda3/bin/python3",
+  "allocation": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "NVIDIA_VISIBLE_DEVICES": "MIG-b229be93-e78c-586d-b229-0de04d9e3436, MIG-75de047f-10b5-51a4-b25e-af65e6219128",
+    "SLURM_JOB_ID": null,
+    "SLURM_JOB_GPUS": null,
+    "PBS_JOBID": null
+  },
+  "scheduler_commands": {
+    "srun": null,
+    "sbatch": null,
+    "qsub": null
+  },
+  "packages": {
+    "torch": "2.7.1+cu118",
+    "transformers": "5.10.2",
+    "accelerate": "1.13.0",
+    "bitsandbytes": "0.49.2",
+    "tokenizers": "0.22.2",
+    "sacremoses": "0.1.1",
+    "sentencepiece": "0.2.1",
+    "pytest": "9.0.3",
+    "python-docx": "1.2.0"
+  },
+  "commands": [
+    {
+      "command": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "exit_code": 127,
+      "duration_s": 0.0005328655242919922,
+      "stdout": "",
+      "stderr": "[Errno 2] No such file or directory: 'git'"
+    },
+    {
+      "command": [
+        "nvidia-smi"
+      ],
+      "exit_code": 0,
+      "duration_s": 0.6509518623352051,
+      "stdout": "Thu Sep 10 16:46:06 2026       \n+-----------------------------------------------------------------------------+\n| NVIDIA-SMI 525.147.05   Driver Version: 525.147.05   CUDA Version: N/A      |\n|-------------------------------+----------------------+----------------------+\n| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |\n|                               |                      |               MIG M. |\n|===============================+======================+======================|\n|   0  NVIDIA A100-SXM...  On   | 00000000:07:00.0 Off |                   On |\n| N/A   27C    P0    46W / 400W |                  N/A |     N/A      Default |\n|                               |                      |              Enabled |\n+-------------------------------+----------------------+----------------------+\n|   1  NVIDIA A100-SXM...  On   | 00000000:47:00.0 Off |                   On |\n| N/A   26C    P0    48W / 400W |                  N/A |     N/A      Default |\n|                               |                      |              Enabled |\n+-------------------------------+----------------------+----------------------+\n\n+-----------------------------------------------------------------------------+\n| MIG devices:                                                                |\n+------------------+----------------------+-----------+-----------------------+\n| GPU  GI  CI  MIG |         Memory-Usage |        Vol|         Shared        |\n|      ID  ID  Dev |           BAR1-Usage | SM     Unc| CE  ENC  DEC  OFA  JPG|\n|                  |                      |        ECC|                       |\n|==================+======================+===========+=======================|\n|  0    0   0   0  |      0MiB / 40337MiB | 98      0 |  7   0    5    1    1 |\n|                  |      1MiB / 65536MiB |           |                       |\n+------------------+----------------------+-----------+-----------------------+\n|  1    0   0   0  |   5017MiB / 40337MiB | 98      0 |  7   0    5    1    1 |\n|                  |      5MiB / 65536MiB |           |                       |\n+------------------+----------------------+-----------+-----------------------+\n                                                                               \n+-----------------------------------------------------------------------------+\n| Processes:                                                                  |\n|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |\n|        ID   ID                                                   Usage      |\n|=============================================================================|\n+-----------------------------------------------------------------------------+\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "nvidia-smi",
+        "-L"
+      ],
+      "exit_code": 0,
+      "duration_s": 0.06710553169250488,
+      "stdout": "GPU 0: NVIDIA A100-SXM4-40GB (UUID: GPU-4b7ef6e5-60ff-8573-6a5e-f760e28bb5dd)\n  MIG 7g.40gb     Device  0: (UUID: MIG-b229be93-e78c-586d-b229-0de04d9e3436)\nGPU 1: NVIDIA A100-SXM4-40GB (UUID: GPU-87bc26aa-c3ee-db9d-dbf6-167ccf9f1dea)\n  MIG 7g.40gb     Device  0: (UUID: MIG-75de047f-10b5-51a4-b25e-af65e6219128)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "df",
+        "-h",
+        "<local>",
+        "/tmp"
+      ],
+      "exit_code": 0,
+      "duration_s": 0.0026044845581054688,
+      "stdout": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/md1         11T  8.7T  1.2T  89% /home\noverlay          11T  8.7T  1.2T  89% /\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "lscpu"
+      ],
+      "exit_code": 0,
+      "duration_s": 0.06422638893127441,
+      "stdout": "Architecture:                    x86_64\nCPU op-mode(s):                  32-bit, 64-bit\nByte Order:                      Little Endian\nAddress sizes:                   43 bits physical, 48 bits virtual\nCPU(s):                          256\nOn-line CPU(s) list:             0-255\nThread(s) per core:              2\nCore(s) per socket:              64\nSocket(s):                       2\nNUMA node(s):                    8\nVendor ID:                       AuthenticAMD\nCPU family:                      23\nModel:                           49\nModel name:                      AMD EPYC 7742 64-Core Processor\nStepping:                        0\nFrequency boost:                 enabled\nCPU MHz:                         3377.343\nCPU max MHz:                     2250.0000\nCPU min MHz:                     1500.0000\nBogoMIPS:                        4491.41\nVirtualization:                  AMD-V\nL1d cache:                       4 MiB\nL1i cache:                       4 MiB\nL2 cache:                        64 MiB\nL3 cache:                        512 MiB\nNUMA node0 CPU(s):               0-15,128-143\nNUMA node1 CPU(s):               16-31,144-159\nNUMA node2 CPU(s):               32-47,160-175\nNUMA node3 CPU(s):               48-63,176-191\nNUMA node4 CPU(s):               64-79,192-207\nNUMA node5 CPU(s):               80-95,208-223\nNUMA node6 CPU(s):               96-111,224-239\nNUMA node7 CPU(s):               112-127,240-255\nVulnerability Itlb multihit:     Not affected\nVulnerability L1tf:              Not affected\nVulnerability Mds:               Not affected\nVulnerability Meltdown:          Not affected\nVulnerability Mmio stale data:   Not affected\nVulnerability Retbleed:          Vulnerable\nVulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:        Mitigation; Retpolines, IBPB conditional, IBRS_FW, STIBP conditional, RSB filling, PBRSB-eIBRS Not affected\nVulnerability Srbds:             Not affected\nVulnerability Tsx async abort:   Not affected\nFlags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate sme ssbd mba sev ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr wbnoinvd arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip rdpid overflow_recov succor smca\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "<local-root>/miniconda3/bin/python3",
+        "-m",
+        "pip",
+        "freeze"
+      ],
+      "exit_code": 0,
+      "duration_s": 0.3317444324493408,
+      "stdout": "absl-py==2.4.0\naccelerate==1.13.0\naiohappyeyeballs==2.6.2\naiohttp==3.14.1\naiosignal==1.4.0\nanaconda-anon-usage @ file:///opt/miniconda3/conda-bld/anaconda-anon-usage_1764636648062/work\nanaconda-auth @ file:///home/task_177249124085225/croot/anaconda-cloud-auth-split_1772491269211/work\nanaconda-cli-base @ file:///home/task_177038556646156/croot/anaconda-cli-base_1770385830159/work\nannotated-types @ file:///home/task_176174487847081/conda-bld/annotated-types_1761744928471/work\nanyio @ file:///home/task_175862240717140/conda-bld/anyio_1758622421932/work\nappdirs==1.4.4\narchspec @ file:///home/task_175812491784513/conda-bld/archspec_1758124989039/work\nattrs==26.1.0\nautoawq==0.2.9\nbitsandbytes==0.49.2\nblack==26.5.1\nbleach==6.3.0\nboltons @ file:///croot/boltons_1751383775419/work\nbrotlicffi @ file:///home/task_176496126124857/conda-bld/brotlicffi_1764961326114/work\n# Editable install with no version control (carenet==0.1.0)\n-e <local>/carenet_q0/carenet-bench\ncertifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1781719850827/work/certifi\ncffi @ file:///home/task_176183214835616/conda-bld/cffi_1761832774688/work\ncharset-normalizer @ file:///home/task_176174481524083/conda-bld/charset-normalizer_1761744828711/work\nclick==8.4.1\nconda @ file:///home/task_177140125005974/croot/conda_1771402194624/work/conda-src\nconda-anaconda-telemetry @ file:///croot/conda-anaconda-telemetry_1755883788794/work\nconda-anaconda-tos @ file:///croot/conda-anaconda-tos_1755123313635/work\nconda-content-trust @ file:///work/perseverance-python-buildout/croot/conda-content-trust_1728487058234/work\nconda-libmamba-solver @ file:///C:/miniconda3/conda-bld/conda-libmamba-solver_1764245615235/work/src\nconda-package-handling @ file:///home/task_176236637997838/conda-bld/conda-package-handling_1762366405159/work\nconda_package_streaming @ file:///home/task_176236152622180/conda-bld/conda-package-streaming_1762361633858/work\ncontourpy==1.3.3\ncryptography @ file:///home/task_177247526678653/croot/cryptography-split_1772475308901/work\ncuda-bindings==13.3.1\ncuda-pathfinder==1.5.5\ncuda-toolkit==13.0.2\ncycler==0.12.1\ndatasets==5.0.0\nDefuser==0.0.22\nDevice-SMI==0.5.6\ndill==0.4.1\ndistro @ file:///work/perseverance-python-buildout/croot/distro_1728396110052/work\neinops==0.8.2\net_xmlfile==2.0.0\nevaluate==0.4.6\nf1chexbert==0.0.2\nfastjsonschema==2.21.2\nfilelock==3.29.0\nfonttools==4.63.0\nfrozendict @ file:///home/task_176175049677026/conda-bld/frozendict_1761750665451/work\nfrozenlist==1.8.0\nfsspec==2026.4.0\nh11 @ file:///home/task_176193111687894/conda-bld/h11_1761931259172/work\nhf-xet==1.5.0\nhttpcore @ file:///croot/httpcore_1748526048470/work\nhttpx @ file:///home/task_176044729083783/conda-bld/httpx_1760447344657/work\nhuggingface_hub==1.18.0\nidna @ file:///home/task_176191175488988/conda-bld/idna_1761911981595/work\niniconfig==2.3.0\njaraco.classes @ file:///croot/jaraco.classes_1755516327832/work\njaraco.context @ file:///home/task_176947759528748/croot/jaraco.context_1769477842447/work\njaraco.functools @ file:///home/task_176838874890348/croot/jaraco.functools_1768389366336/work\njeepney @ file:///tmp/build/80754af9/jeepney_1627537048313/work\nJinja2==3.1.6\njoblib==1.5.3\njsonpatch @ file:///work/perseverance-python-buildout/croot/jsonpatch_1728399595941/work\njsonpointer @ file:///croot/jsonpointer_1753788433671/work\njsonschema==4.26.0\njsonschema-specifications==2025.9.1\njupyter_core==5.9.1\njupytext==1.19.1\nkaggle==2.1.0\nkagglesdk==0.1.21\nkeyring @ file:///home/task_176363713576885/conda-bld/keyring_1763637184857/work\nkiwisolver==1.5.0\nlibmambapy @ file:///home/task_176311149180614/conda-bld/mamba-split_1763111570862/work/libmambapy\nLogBar==0.4.3\nlxml==6.1.1\nmarkdown-it-py @ file:///home/task_176700162971740/croot/markdown-it-py_1767001650253/work\nMarkupSafe==3.0.3\nmatplotlib==3.10.9\nmaturin==1.13.3\nmdit-py-plugins==0.5.0\nmdurl @ file:///home/task_175855216352428/conda-bld/mdurl_1758552176751/work\nmenuinst @ file:///home/task_176538230483207/conda-bld/menuinst_1765382366331/work\nmore-itertools @ file:///home/task_176112148319406/conda-bld/more-itertools_1761121494880/work\nmpmath==1.3.0\nmsgpack @ file:///croot/msgpack-python_1750958623279/work\nmultidict==6.7.1\nmultiprocess==0.70.19\nmypy_extensions==1.1.0\nnarwhals==2.22.1\nnbformat==5.10.4\nnetworkx==3.6.1\nninja==1.13.0\nnltk==3.9.4\nnumpy==2.2.6\nnvidia-cublas-cu11==11.11.3.6\nnvidia-cuda-cupti-cu11==11.8.87\nnvidia-cuda-nvrtc-cu11==11.8.89\nnvidia-cuda-runtime-cu11==11.8.89\nnvidia-cudnn-cu11==9.1.0.70\nnvidia-cufft==12.0.0.61\nnvidia-cufft-cu11==10.9.0.58\nnvidia-cufile==1.15.1.6\nnvidia-curand==10.4.0.35\nnvidia-curand-cu11==10.3.0.86\nnvidia-cusolver==12.0.4.66\nnvidia-cusolver-cu11==11.4.1.48\nnvidia-cusparse==12.6.3.3\nnvidia-cusparse-cu11==11.7.5.86\nnvidia-cusparselt-cu13==0.8.1\nnvidia-ml-py==13.610.43\nnvidia-nccl-cu11==2.21.5\nnvidia-nccl-cu13==2.29.7\nnvidia-nvjitlink==13.0.88\nnvidia-nvshmem-cu13==3.4.5\nnvidia-nvtx==13.0.85\nnvidia-nvtx-cu11==11.8.86\nopenpyxl==3.1.5\npackaging @ file:///home/task_176104878999627/conda-bld/packaging_1761049078606/work\npandas==3.0.3\npandoc==2.4\npathspec==1.1.1\npeft==0.19.1\npillow==12.2.0\npkce @ file:///work/perseverance-python-buildout/croot/pkce_1728388093137/work\nplatformdirs @ file:///home/task_176235602006708/conda-bld/platformdirs_1762356487962/work\npluggy @ file:///croot/pluggy_1733169602837/work\nplumbum==2.0.1\nply==3.11\npropcache==0.5.2\nprotobuf==7.34.1\npsutil==7.2.2\npyarrow==24.0.0\npyConTextNLP==0.7.0.1\npycosat @ file:///croot/pycosat_1736868416091/work\npycparser @ file:///home/task_175749564936714/conda-bld/pycparser_1757496040682/work\npydantic @ file:///home/task_176408303339170/conda-bld/pydantic_1764083529211/work\npydantic-settings @ file:///home/task_176416496069032/conda-bld/pydantic-settings_1764165165402/work\npydantic_core @ file:///home/task_176400924785639/conda-bld/pydantic-core_1764009747660/work\nPygments @ file:///home/task_176243137807904/conda-bld/pygments_1762431407645/work\nPyJWT @ file:///home/task_176433208417911/conda-bld/pyjwt_1764332098101/work\npynvml==13.0.1\npyparsing==3.3.2\nPyPcre==0.3.2\nPySocks @ file:///home/task_176175235884818/conda-bld/pysocks_1761753009495/work\npytest==9.0.3\npython-dateutil==2.9.0.post0\npython-docx==1.2.0\npython-dotenv @ file:///home/task_176855885656798/croot/python-dotenv_1768559688221/work\npython-slugify==8.0.4\npytokens==0.4.1\nPyYAML==6.0.3\npyzmq==27.1.0\nreadchar @ file:///home/task_176061336965958/conda-bld/readchar_1760613437376/work\nreferencing==0.37.0\nregex==2026.5.9\nrequests @ file:///home/task_176235918788486/conda-bld/requests_1762359591632/work\nrich @ file:///home/task_176037557612320/conda-bld/rich_1760375632000/work\nrouge_score==0.1.2\nrpds-py==0.30.0\nruamel.yaml @ file:///home/task_176253595903435/conda-bld/ruamel.yaml_1762535972567/work\nruamel.yaml.clib @ file:///home/task_176253026438192/conda-bld/ruamel.yaml.clib_1762530278005/work\nruff==0.15.20\nsacremoses==0.1.1\nsafetensors==0.7.0\nscikit-learn==1.9.0\nscipy==1.17.1\nSecretStorage @ file:///home/task_175793143758247/conda-bld/secretstorage_1757931467244/work\nsemver @ file:///home/task_176190313959014/conda-bld/semver_1761903196627/work\nsentencepiece==0.2.1\nsetuptools==80.10.2\nshellingham @ file:///home/task_176191203629823/conda-bld/shellingham_1761912204430/work\nsix==1.17.0\nsniffio @ file:///home/task_176432917442011/conda-bld/sniffio_1764329188237/work\nsympy==1.14.0\ntext-unidecode==1.3\nthreadpoolctl==3.6.0\nTokeNicer==0.0.13\ntokenizers==0.22.2\ntomli @ file:///home/task_176829646049141/croot/tomli_1768296482268/work\ntomlkit @ file:///home/task_176289666312502/conda-bld/tomlkit_1762896676945/work\ntorch==2.7.1+cu118\ntorchao==0.17.0\ntorchvision==0.22.1+cu118\ntqdm @ file:///home/task_177139827237424/croot/tqdm_1771398701478/work\ntraitlets==5.14.3\ntransformers==5.10.2\ntriton==3.3.1\ntruststore @ file:///home/task_176252074050774/conda-bld/truststore_1762520903993/work\ntyper==0.20.0\ntyper-slim==0.20.0\ntyping-inspection @ file:///home/task_176061348700415/conda-bld/typing-inspection_1760614166875/work\ntyping_extensions @ file:///croot/typing_extensions_1756280817316/work\nurllib3 @ file:///home/task_176781010304586/croot/urllib3_1767810267320/work\nwebencodings==0.5.1\nwheel==0.46.3\nxxhash==3.7.0\nyarl==1.24.2\nzstandard @ file:///home/task_175818846949212/conda-bld/zstandard_1758189073015/work\n",
+      "stderr": ""
+    }
+  ],
+  "torch": {
+    "version": "2.7.1+cu118",
+    "cuda_runtime": "11.8",
+    "available": false,
+    "count": 2
+  },
+  "torch_error": "RuntimeError('Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx')"
+}

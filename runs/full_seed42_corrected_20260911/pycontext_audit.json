@@ -1,0 +1,363 @@
+{
+  "agreement_predictions_pooled": {
+    "agreement": 0.9754,
+    "kappa": 0.716,
+    "n": 28944
+  },
+  "analysis": "differential audit with pyConTextNLP on nine categories",
+  "categories": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Consolidation",
+    "Edema",
+    "Fracture",
+    "Lung Lesion",
+    "Pleural Effusion",
+    "Pneumonia",
+    "Pneumothorax"
+  ],
+  "per_extractor": {
+    "cxrquant_9cat_uncertain_negative": {
+      "ordering": {
+        "biogpt": {
+          "non_decreasing": true,
+          "strict": true
+        },
+        "biogpt-large": {
+          "non_decreasing": true,
+          "strict": true
+        },
+        "distilgpt2": {
+          "non_decreasing": true,
+          "strict": true
+        },
+        "gpt2": {
+          "non_decreasing": true,
+          "strict": true
+        },
+        "gpt2-medium": {
+          "non_decreasing": true,
+          "strict": true
+        },
+        "pythia-1b": {
+          "non_decreasing": true,
+          "strict": true
+        }
+      },
+      "per_model": {
+        "biogpt": {
+          "FP16": {
+            "FNF_rate": 0.0,
+            "FPF_rate": 0.0,
+            "b": 0,
+            "c": 0,
+            "fp32_present": 41
+          },
+          "INT8-BnB": {
+            "FNF_rate": 0.122,
+            "FPF_rate": 0.0026,
+            "b": 5,
+            "c": 3,
+            "fp32_present": 41
+          },
+          "NF4-BnB": {
+            "FNF_rate": 0.561,
+            "FPF_rate": 0.0077,
+            "b": 23,
+            "c": 9,
+            "fp32_present": 41
+          }
+        },
+        "biogpt-large": {
+          "FP16": {
+            "FNF_rate": 0.0357,
+            "FPF_rate": 0.0,
+            "b": 1,
+            "c": 0,
+            "fp32_present": 28
+          },
+          "INT8-BnB": {
+            "FNF_rate": 0.1071,
+            "FPF_rate": 0.0059,
+            "b": 3,
+            "c": 7,
+            "fp32_present": 28
+          },
+          "NF4-BnB": {
+            "FNF_rate": 0.3571,
+            "FPF_rate": 0.0102,
+            "b": 10,
+            "c": 12,
+            "fp32_present": 28
+          }
+        },
+        "distilgpt2": {
+          "FP16": {
+            "FNF_rate": 0.1688,
+            "FPF_rate": 0.0133,
+            "b": 13,
+            "c": 15,
+            "fp32_present": 77
+          },
+          "INT8-BnB": {
+            "FNF_rate": 0.4935,
+            "FPF_rate": 0.0301,
+            "b": 38,
+            "c": 34,
+            "fp32_present": 77
+          },
+          "NF4-BnB": {
+            "FNF_rate": 0.6364,
+            "FPF_rate": 0.0354,
+            "b": 49,
+            "c": 40,
+            "fp32_present": 77
+          }
+        },
+        "gpt2": {
+          "FP16": {
+            "FNF_rate": 0.1833,
+            "FPF_rate": 0.0113,
+            "b": 11,
+            "c": 13,
+            "fp32_present": 60
+          },
+          "INT8-BnB": {
+            "FNF_rate": 0.5333,
+            "FPF_rate": 0.0209,
+            "b": 32,
+            "c": 24,
+            "fp32_present": 60
+          },
+          "NF4-BnB": {
+            "FNF_rate": 0.7667,
+            "FPF_rate": 0.0297,
+            "b": 46,
+            "c": 34,
+            "fp32_present": 60
+          }
+        },
+        "gpt2-medium": {
+          "FP16": {
+            "FNF_rate": 0.1316,
+            "FPF_rate": 0.0051,
+            "b": 5,
+            "c": 6,
+            "fp32_present": 38
+          },
+          "INT8-BnB": {
+            "FNF_rate": 0.3947,
+            "FPF_rate": 0.0171,
+            "b": 15,
+            "c": 20,
+            "fp32_present": 38
+          },
+          "NF4-BnB": {
+            "FNF_rate": 0.7632,
+            "FPF_rate": 0.0325,
+            "b": 29,
+            "c": 38,
+            "fp32_present": 38
+          }
+        },
+        "pythia-1b": {
+          "FP16": {
+            "FNF_rate": 0.0,
+            "FPF_rate": 0.0,
+            "b": 0,
+            "c": 0,
+            "fp32_present": 37
+          },
+          "INT8-BnB": {
+            "FNF_rate": 0.2432,
+            "FPF_rate": 0.0034,
+            "b": 9,
+            "c": 4,
+            "fp32_present": 37
+          },
+          "NF4-BnB": {
+            "FNF_rate": 0.4865,
+            "FPF_rate": 0.0086,
+            "b": 18,
+            "c": 10,
+            "fp32_present": 37
+          }
+        }
+      }
+    },
+    "pycontextnlp": {
+      "ordering": {
+        "biogpt": {
+          "non_decreasing": true,
+          "strict": true
+        },
+        "biogpt-large": {
+          "non_decreasing": true,
+          "strict": true
+        },
+        "distilgpt2": {
+          "non_decreasing": true,
+          "strict": true
+        },
+        "gpt2": {
+          "non_decreasing": true,
+          "strict": true
+        },
+        "gpt2-medium": {
+          "non_decreasing": true,
+          "strict": true
+        },
+        "pythia-1b": {
+          "non_decreasing": true,
+          "strict": true
+        }
+      },
+      "per_model": {
+        "biogpt": {
+          "FP16": {
+            "FNF_rate": 0.0,
+            "FPF_rate": 0.0,
+            "b": 0,
+            "c": 0,
+            "fp32_present": 46
+          },
+          "INT8-BnB": {
+            "FNF_rate": 0.1304,
+            "FPF_rate": 0.0052,
+            "b": 6,
+            "c": 6,
+            "fp32_present": 46
+          },
+          "NF4-BnB": {
+            "FNF_rate": 0.5217,
+            "FPF_rate": 0.0086,
+            "b": 24,
+            "c": 10,
+            "fp32_present": 46
+          }
+        },
+        "biogpt-large": {
+          "FP16": {
+            "FNF_rate": 0.0541,
+            "FPF_rate": 0.0,
+            "b": 2,
+            "c": 0,
+            "fp32_present": 37
+          },
+          "INT8-BnB": {
+            "FNF_rate": 0.1081,
+            "FPF_rate": 0.0043,
+            "b": 4,
+            "c": 5,
+            "fp32_present": 37
+          },
+          "NF4-BnB": {
+            "FNF_rate": 0.3243,
+            "FPF_rate": 0.0094,
+            "b": 12,
+            "c": 11,
+            "fp32_present": 37
+          }
+        },
+        "distilgpt2": {
+          "FP16": {
+            "FNF_rate": 0.1478,
+            "FPF_rate": 0.0202,
+            "b": 17,
+            "c": 22,
+            "fp32_present": 115
+          },
+          "INT8-BnB": {
+            "FNF_rate": 0.5304,
+            "FPF_rate": 0.0477,
+            "b": 61,
+            "c": 52,
+            "fp32_present": 115
+          },
+          "NF4-BnB": {
+            "FNF_rate": 0.6348,
+            "FPF_rate": 0.0632,
+            "b": 73,
+            "c": 69,
+            "fp32_present": 115
+          }
+        },
+        "gpt2": {
+          "FP16": {
+            "FNF_rate": 0.2364,
+            "FPF_rate": 0.0155,
+            "b": 26,
+            "c": 17,
+            "fp32_present": 110
+          },
+          "INT8-BnB": {
+            "FNF_rate": 0.6,
+            "FPF_rate": 0.0401,
+            "b": 66,
+            "c": 44,
+            "fp32_present": 110
+          },
+          "NF4-BnB": {
+            "FNF_rate": 0.7909,
+            "FPF_rate": 0.0502,
+            "b": 87,
+            "c": 55,
+            "fp32_present": 110
+          }
+        },
+        "gpt2-medium": {
+          "FP16": {
+            "FNF_rate": 0.1923,
+            "FPF_rate": 0.0069,
+            "b": 10,
+            "c": 8,
+            "fp32_present": 52
+          },
+          "INT8-BnB": {
+            "FNF_rate": 0.5577,
+            "FPF_rate": 0.0208,
+            "b": 29,
+            "c": 24,
+            "fp32_present": 52
+          },
+          "NF4-BnB": {
+            "FNF_rate": 0.7308,
+            "FPF_rate": 0.0459,
+            "b": 38,
+            "c": 53,
+            "fp32_present": 52
+          }
+        },
+        "pythia-1b": {
+          "FP16": {
+            "FNF_rate": 0.0,
+            "FPF_rate": 0.0,
+            "b": 0,
+            "c": 0,
+            "fp32_present": 46
+          },
+          "INT8-BnB": {
+            "FNF_rate": 0.1739,
+            "FPF_rate": 0.0043,
+            "b": 8,
+            "c": 5,
+            "fp32_present": 46
+          },
+          "NF4-BnB": {
+            "FNF_rate": 0.413,
+            "FPF_rate": 0.0086,
+            "b": 19,
+            "c": 10,
+            "fp32_present": 46
+          }
+        }
+      }
+    }
+  },
+  "positive_policy": "definite, non-negated mentions (uncertain counted as absent) for both extractors",
+  "provenance": {
+    "run_id": "full_seed42_corrected_20260911",
+    "script_hash": "1c8213bad842eb6be8d61621dceaa762143100ea76e16d26580167534a29d3b4",
+    "unique_texts": 1809
+  }
+}

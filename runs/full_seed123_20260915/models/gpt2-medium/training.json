@@ -1,0 +1,28 @@
+{
+  "checkpoint_files": {
+    "config.json": "47e4fbf3483d3de3da07d4162bdddc7a1cee4e473d7e0de69446571f303721c0",
+    "generation_config.json": "b722360509010566179ef69ddc6fa1448ae1ccd170d93b6d39e468271ee07b8e",
+    "model.safetensors": "9fbccd0f17acc9716d3f6bb7be0dbde81d4a741219cc78cc38855142c2436011",
+    "tokenizer.json": "1fe93b6152957cf9cfd6d89002467f789ce8b3f3e000b3a2edf27c808ddd0b9e",
+    "tokenizer_config.json": "2ec6e8751bff5617ea5f342d96c69b50fba71826c0b2b9449c34fb55253432f4",
+    "training_args.bin": "01e6eec54fd91f0b908db5b29f3731f14e298de7e4f60211bfe0c299c43c6676"
+  },
+  "checkpoint_hash": "5f61350519eb24e6cb88916abd90842f77a17061cd3375f299abb238ac48e131",
+  "checkpoint_weight_bytes": 1419322880,
+  "identity": {
+    "code_hash": "88e6b10d7179883b3d32ec9c6a1092c137851452c697d035fc1658eaed7d6f0f",
+    "config_hash": "8825fbcb77091e7a1ea69bb161e7611545d8c7599ed17ccaac9f8958e547614f",
+    "data_hash": "0597c49a73f1bffcc199cd3b3f27a7c984ef5337a3efa7ccdc053a7c2d02cf23",
+    "run_id": "full_seed123_20260915"
+  },
+  "model_revision": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+  "params_m": 354.823168,
+  "resumed_from": null,
+  "status": "complete",
+  "token_nll_sum": 7832.086669921875,
+  "token_weighted_val_loss": 1.594804860501298,
+  "train_time_s_this_invocation": 209.26608980353922,
+  "trainer_eval_loss": 1.564009666442871,
+  "val_perplexity": 4.927367454282416,
+  "valid_target_tokens": 4911
+}

@@ -1,0 +1,8 @@
+{
+  "code_hash": "5e3aaad04d758f3ffaef6a0c2808a091ea7fbc6c2e12dc023ee32da19c2829d5",
+  "data_hash": "0597c49a73f1bffcc199cd3b3f27a7c984ef5337a3efa7ccdc053a7c2d02cf23",
+  "gpu_training_rerun": false,
+  "historical_prediction_hash": "80c9bd5997b4cd72068bceb976bf5e4e4be1a6ba605a931717c280ff3769ac5b",
+  "note": "CPU replay source identity; original GPU source and revision not reconstructible from checkpoint because original weights were not supplied",
+  "run_id": "archive_replay_20260910"
+}

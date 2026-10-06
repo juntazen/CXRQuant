@@ -1,0 +1,2506 @@
+{
+  "CFFR": 0.0086,
+  "CFPR": 0.9914,
+  "FNF_rate": 0.129,
+  "FPF_rate": 0.0042,
+  "backend": {
+    "bnb_config": {
+      "_load_in_4bit": false,
+      "_load_in_8bit": true,
+      "bnb_4bit_compute_dtype": "float32",
+      "bnb_4bit_quant_storage": "uint8",
+      "bnb_4bit_quant_type": "fp4",
+      "bnb_4bit_use_double_quant": false,
+      "llm_int8_enable_fp32_cpu_offload": false,
+      "llm_int8_has_fp16_weight": false,
+      "llm_int8_skip_modules": null,
+      "llm_int8_threshold": 6.0,
+      "load_in_4bit": false,
+      "load_in_8bit": true,
+      "quant_method": "bitsandbytes"
+    },
+    "device_map": {},
+    "parameter_dtypes": [
+      "torch.float16",
+      "torch.int8"
+    ],
+    "quantized_modules": {
+      "biogpt.layers.0.fc1": "Linear8bitLt",
+      "biogpt.layers.0.fc2": "Linear8bitLt",
+      "biogpt.layers.0.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.0.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.0.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.0.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.1.fc1": "Linear8bitLt",
+      "biogpt.layers.1.fc2": "Linear8bitLt",
+      "biogpt.layers.1.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.1.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.1.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.1.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.10.fc1": "Linear8bitLt",
+      "biogpt.layers.10.fc2": "Linear8bitLt",
+      "biogpt.layers.10.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.10.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.10.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.10.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.11.fc1": "Linear8bitLt",
+      "biogpt.layers.11.fc2": "Linear8bitLt",
+      "biogpt.layers.11.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.11.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.11.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.11.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.12.fc1": "Linear8bitLt",
+      "biogpt.layers.12.fc2": "Linear8bitLt",
+      "biogpt.layers.12.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.12.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.12.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.12.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.13.fc1": "Linear8bitLt",
+      "biogpt.layers.13.fc2": "Linear8bitLt",
+      "biogpt.layers.13.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.13.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.13.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.13.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.14.fc1": "Linear8bitLt",
+      "biogpt.layers.14.fc2": "Linear8bitLt",
+      "biogpt.layers.14.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.14.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.14.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.14.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.15.fc1": "Linear8bitLt",
+      "biogpt.layers.15.fc2": "Linear8bitLt",
+      "biogpt.layers.15.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.15.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.15.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.15.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.16.fc1": "Linear8bitLt",
+      "biogpt.layers.16.fc2": "Linear8bitLt",
+      "biogpt.layers.16.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.16.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.16.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.16.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.17.fc1": "Linear8bitLt",
+      "biogpt.layers.17.fc2": "Linear8bitLt",
+      "biogpt.layers.17.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.17.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.17.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.17.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.18.fc1": "Linear8bitLt",
+      "biogpt.layers.18.fc2": "Linear8bitLt",
+      "biogpt.layers.18.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.18.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.18.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.18.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.19.fc1": "Linear8bitLt",
+      "biogpt.layers.19.fc2": "Linear8bitLt",
+      "biogpt.layers.19.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.19.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.19.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.19.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.2.fc1": "Linear8bitLt",
+      "biogpt.layers.2.fc2": "Linear8bitLt",
+      "biogpt.layers.2.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.2.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.2.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.2.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.20.fc1": "Linear8bitLt",
+      "biogpt.layers.20.fc2": "Linear8bitLt",
+      "biogpt.layers.20.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.20.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.20.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.20.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.21.fc1": "Linear8bitLt",
+      "biogpt.layers.21.fc2": "Linear8bitLt",
+      "biogpt.layers.21.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.21.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.21.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.21.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.22.fc1": "Linear8bitLt",
+      "biogpt.layers.22.fc2": "Linear8bitLt",
+      "biogpt.layers.22.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.22.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.22.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.22.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.23.fc1": "Linear8bitLt",
+      "biogpt.layers.23.fc2": "Linear8bitLt",
+      "biogpt.layers.23.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.23.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.23.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.23.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.24.fc1": "Linear8bitLt",
+      "biogpt.layers.24.fc2": "Linear8bitLt",
+      "biogpt.layers.24.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.24.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.24.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.24.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.25.fc1": "Linear8bitLt",
+      "biogpt.layers.25.fc2": "Linear8bitLt",
+      "biogpt.layers.25.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.25.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.25.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.25.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.26.fc1": "Linear8bitLt",
+      "biogpt.layers.26.fc2": "Linear8bitLt",
+      "biogpt.layers.26.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.26.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.26.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.26.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.27.fc1": "Linear8bitLt",
+      "biogpt.layers.27.fc2": "Linear8bitLt",
+      "biogpt.layers.27.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.27.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.27.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.27.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.28.fc1": "Linear8bitLt",
+      "biogpt.layers.28.fc2": "Linear8bitLt",
+      "biogpt.layers.28.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.28.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.28.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.28.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.29.fc1": "Linear8bitLt",
+      "biogpt.layers.29.fc2": "Linear8bitLt",
+      "biogpt.layers.29.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.29.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.29.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.29.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.3.fc1": "Linear8bitLt",
+      "biogpt.layers.3.fc2": "Linear8bitLt",
+      "biogpt.layers.3.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.3.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.3.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.3.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.30.fc1": "Linear8bitLt",
+      "biogpt.layers.30.fc2": "Linear8bitLt",
+      "biogpt.layers.30.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.30.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.30.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.30.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.31.fc1": "Linear8bitLt",
+      "biogpt.layers.31.fc2": "Linear8bitLt",
+      "biogpt.layers.31.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.31.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.31.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.31.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.32.fc1": "Linear8bitLt",
+      "biogpt.layers.32.fc2": "Linear8bitLt",
+      "biogpt.layers.32.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.32.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.32.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.32.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.33.fc1": "Linear8bitLt",
+      "biogpt.layers.33.fc2": "Linear8bitLt",
+      "biogpt.layers.33.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.33.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.33.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.33.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.34.fc1": "Linear8bitLt",
+      "biogpt.layers.34.fc2": "Linear8bitLt",
+      "biogpt.layers.34.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.34.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.34.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.34.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.35.fc1": "Linear8bitLt",
+      "biogpt.layers.35.fc2": "Linear8bitLt",
+      "biogpt.layers.35.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.35.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.35.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.35.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.36.fc1": "Linear8bitLt",
+      "biogpt.layers.36.fc2": "Linear8bitLt",
+      "biogpt.layers.36.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.36.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.36.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.36.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.37.fc1": "Linear8bitLt",
+      "biogpt.layers.37.fc2": "Linear8bitLt",
+      "biogpt.layers.37.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.37.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.37.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.37.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.38.fc1": "Linear8bitLt",
+      "biogpt.layers.38.fc2": "Linear8bitLt",
+      "biogpt.layers.38.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.38.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.38.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.38.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.39.fc1": "Linear8bitLt",
+      "biogpt.layers.39.fc2": "Linear8bitLt",
+      "biogpt.layers.39.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.39.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.39.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.39.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.4.fc1": "Linear8bitLt",
+      "biogpt.layers.4.fc2": "Linear8bitLt",
+      "biogpt.layers.4.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.4.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.4.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.4.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.40.fc1": "Linear8bitLt",
+      "biogpt.layers.40.fc2": "Linear8bitLt",
+      "biogpt.layers.40.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.40.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.40.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.40.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.41.fc1": "Linear8bitLt",
+      "biogpt.layers.41.fc2": "Linear8bitLt",
+      "biogpt.layers.41.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.41.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.41.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.41.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.42.fc1": "Linear8bitLt",
+      "biogpt.layers.42.fc2": "Linear8bitLt",
+      "biogpt.layers.42.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.42.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.42.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.42.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.43.fc1": "Linear8bitLt",
+      "biogpt.layers.43.fc2": "Linear8bitLt",
+      "biogpt.layers.43.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.43.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.43.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.43.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.44.fc1": "Linear8bitLt",
+      "biogpt.layers.44.fc2": "Linear8bitLt",
+      "biogpt.layers.44.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.44.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.44.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.44.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.45.fc1": "Linear8bitLt",
+      "biogpt.layers.45.fc2": "Linear8bitLt",
+      "biogpt.layers.45.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.45.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.45.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.45.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.46.fc1": "Linear8bitLt",
+      "biogpt.layers.46.fc2": "Linear8bitLt",
+      "biogpt.layers.46.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.46.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.46.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.46.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.47.fc1": "Linear8bitLt",
+      "biogpt.layers.47.fc2": "Linear8bitLt",
+      "biogpt.layers.47.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.47.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.47.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.47.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.5.fc1": "Linear8bitLt",
+      "biogpt.layers.5.fc2": "Linear8bitLt",
+      "biogpt.layers.5.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.5.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.5.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.5.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.6.fc1": "Linear8bitLt",
+      "biogpt.layers.6.fc2": "Linear8bitLt",
+      "biogpt.layers.6.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.6.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.6.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.6.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.7.fc1": "Linear8bitLt",
+      "biogpt.layers.7.fc2": "Linear8bitLt",
+      "biogpt.layers.7.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.7.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.7.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.7.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.8.fc1": "Linear8bitLt",
+      "biogpt.layers.8.fc2": "Linear8bitLt",
+      "biogpt.layers.8.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.8.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.8.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.8.self_attn.v_proj": "Linear8bitLt",
+      "biogpt.layers.9.fc1": "Linear8bitLt",
+      "biogpt.layers.9.fc2": "Linear8bitLt",
+      "biogpt.layers.9.self_attn.k_proj": "Linear8bitLt",
+      "biogpt.layers.9.self_attn.out_proj": "Linear8bitLt",
+      "biogpt.layers.9.self_attn.q_proj": "Linear8bitLt",
+      "biogpt.layers.9.self_attn.v_proj": "Linear8bitLt"
+    },
+    "size_note": "Only the saved FP32 checkpoint is measured on disk; quantized disk compression is not reported."
+  },
+  "bleu_1": 0.3469,
+  "bleu_4": 0.1463,
+  "ce_macro_f1": 0.2473,
+  "ce_micro_f1": 0.3761,
+  "checkpoint_hash": "f3b3c308c558366319bcfbefe0ffa9703db73ac63204a8d2031818aeeb7ee802",
+  "config": "INT8-BnB",
+  "efficiency": {
+    "amortized_latency_ms": 533.3271106677269,
+    "batch_timings": [
+      {
+        "latency_s": 4.326850871555507,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 3.9712052680552006,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 2.9566002134233713,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 2.5731857819482684,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 7.429406923241913,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 4.433392328210175,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 4.124156521633267,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 5.26564899366349,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 1.794949248433113,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 2.689837384968996,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 4.257743924856186,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 5.383736377581954,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 7.882678615860641,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 4.264912286773324,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 1.1723824832588434,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 5.267274487763643,
+        "n_reports": 8
+      },
+      {
+        "latency_s": 3.671871118247509,
+        "n_reports": 6
+      }
+    ],
+    "generated_tokens": 1666,
+    "peak_allocated_bytes": 2140467200,
+    "peak_reserved_bytes": 2269118464,
+    "reports_per_second": 1.8750218768140203,
+    "tokens_per_second": 23.311839155016102,
+    "total_generation_s": 71.4658328294754,
+    "warmup_new_tokens": 16,
+    "warmup_reports": 2
+  },
+  "identity": {
+    "code_hash": "f8ede1a7d946c862740bd0035a31092ce91f389885cb5675776247f7fa63465a",
+    "config_hash": "6e4084f827716cd546e675dd476f58ad90edea74d238f14d1b18d510ba19f768",
+    "data_hash": "0597c49a73f1bffcc199cd3b3f27a7c984ef5337a3efa7ccdc053a7c2d02cf23",
+    "run_id": "full_seed42_corrected_20260911"
+  },
+  "per_category_flips": {
+    "Atelectasis": {
+      "fnf": 1,
+      "fpf": 0,
+      "present": 14
+    },
+    "Cardiomegaly": {
+      "fnf": 3,
+      "fpf": 0,
+      "present": 8
+    },
+    "Consolidation": {
+      "fnf": 1,
+      "fpf": 1,
+      "present": 8
+    },
+    "Edema": {
+      "fnf": 0,
+      "fpf": 0,
+      "present": 4
+    },
+    "Enlarged Cardiomediastinum": {
+      "fnf": 0,
+      "fpf": 0,
+      "present": 0
+    },
+    "Fracture": {
+      "fnf": 0,
+      "fpf": 0,
+      "present": 0
+    },
+    "Lung Lesion": {
+      "fnf": 0,
+      "fpf": 2,
+      "present": 2
+    },
+    "Lung Opacity": {
+      "fnf": 1,
+      "fpf": 0,
+      "present": 7
+    },
+    "Pleural Effusion": {
+      "fnf": 0,
+      "fpf": 2,
+      "present": 9
+    },
+    "Pleural Other": {
+      "fnf": 0,
+      "fpf": 0,
+      "present": 0
+    },
+    "Pneumonia": {
+      "fnf": 1,
+      "fpf": 0,
+      "present": 4
+    },
+    "Pneumothorax": {
+      "fnf": 0,
+      "fpf": 0,
+      "present": 0
+    },
+    "Support Devices": {
+      "fnf": 1,
+      "fpf": 2,
+      "present": 6
+    }
+  },
+  "predictions": [
+    "No acute cardiopulmonary abnormality.",
+    "No acute findings",
+    "No acute process",
+    "No evidence of active disease.",
+    "1. No acute cardiopulmonary findings.",
+    "1. Stable moderate cardiomegaly without acute cardiopulmonary abnormality.",
+    "1. Minimally increased bilateral airspace disease / edema, most prominently in the lower lungs; 2. Otherwise unremarkable chest exam < / FREETEXT > < / PARAGRAPH > \u2583",
+    "No evidence of active cardiopulmonary disease.",
+    "Bibasilar atelectasis.",
+    "Hyperinflation with flattening of the diaphragm and calcified right upper lobe nodule.",
+    "No acute findings",
+    "Clear lungs without acute pulmonary process.",
+    "Low volume study without acute cardiopulmonary abnormality.",
+    "1. No evidence of active disease.",
+    "1. Significant interval improvement in right middle and right lower lobe opacities, consistent with improved pulmonary edema or infiltrate. 2. Small persistent right pleural effusion.",
+    "No acute cardiopulmonary abnormality.",
+    "No acute cardiopulmonary disease",
+    "1. Question mild irregularity in the right apex which may represent scar or atelectasis",
+    "Negative for acute abnormality.",
+    "1. Hyperexpanded lungs suggesting emphysema. 2. Mild atherosclerotic calcification in the aortic XXXX.",
+    "1. No acute intrathoracic abnormality.",
+    "No active disease.",
+    "Limited evaluation for acute cardiopulmonary disease secondary to excluded upper lung zones and obscuration by overlying soft tissues.",
+    "No acute cardiopulmonary process.",
+    "No active disease.",
+    "Negative for acute cardiopulmonary findings.",
+    "Cardiomegaly with low lung volumes which may be compatible with chronic obstructive pulmonary disease (COPD).",
+    "1. No acute cardiopulmonary abnormality.. 2. Exaggerated thoracic kyphosis.",
+    "Cardiomegaly",
+    "1. No acute cardiopulmonary findings.",
+    "Normal chest",
+    "No acute cardiopulmonary disease.",
+    "1. No acute cardiopulmonary abnormality..",
+    "1. No acute cardiopulmonary findings. 2. Question mild left-sided mediastinal shift, possibly related to a large pleural effusion versus an anterior mediastinal mass. Followup radiographs in 8 - 12weeks after removal of the central line would be helpful for further evaluation if clinically indicated.",
+    "1. Clear lungs. 2. Small left pleural effusion and / or associated airspace disease.",
+    "No acute disease.",
+    "1. No acute radiographic cardiopulmonary process.",
+    "1. No acute radiographic cardiopulmonary process.",
+    "1. Clear lungs.",
+    "1. No evidence of active disease.",
+    "No acute cardiopulmonary abnormality.",
+    "1. No acute cardiopulmonary abnormality. 2. A small calcified nodule in the left midlung, possibly representing a granuloma. 3. Mild COPD.",
+    "No acute cardiopulmonary findings.",
+    "No acute cardiopulmonary process.",
+    "1. Mild blunting of the right posterior costophrenic XXXX representing a small to moderate sized pleural effusion. 2. No evidence for active cardiopulmonary process.",
+    "1. Worsening tricompartmental degenerative changes of the right knee. 2. Stable, mild XXXX deformity of the mid-thoracic vertebral body.",
+    "Bilateral lower lobe airspace disease with left greater than right-sided effusion.",
+    "1. No radiographic evidence of acute cardiopulmonary process. 2. Mild dextroscoliosis of the upper thorax. 3. Mildly lordotic alignment of lower thoracic segments.",
+    "1. No acute cardiopulmonary process.",
+    "1. No evidence of active disease.",
+    "Negative for acute cardiopulmonary findings",
+    "1. Mildly enlarged cardiac silhouette consistent with chronic heart failure. 2. Increased interstitial markings and bilateral basilar opacities suggestive of possible pneumonia.",
+    "No evidence of active disease.",
+    "1. No acute cardiopulmonary disease",
+    "Negative for acute cardiopulmonary findings",
+    "1. No evidence of active disease.",
+    "No acute cardiopulmonary findings.",
+    "1. Cardiomegaly without acute disease process identified. 2. Large right-sided pleural effusion with possible underlying compressive atelectasis. 3. Mildly prominent perihilar interstitial markings, possibly mild pulmonary edema.",
+    "1. Bibasilar airspace disease and / or atelectasis, left worse right? 2. Vascular congestion, mild worsening on repeat study.",
+    "No active disease.",
+    "No acute disease.",
+    "No acute cardiopulmonary finding",
+    "1. No acute radiographic cardiopulmonary process.",
+    "Normal chest",
+    "No acute cardiopulmonary findings.",
+    "1. No acute cardiopulmonary abnormalities.. 2. Mild spine curvature.",
+    "1. No evidence of active disease.",
+    "1. No acute radiographic cardiopulmonary process.",
+    "1. No acute cardiopulmonary finding.",
+    "Negative for acute cardiopulmonary disease.",
+    "1. No acute cardiopulmonary abnormality.",
+    "No acute cardiopulmonary disease..",
+    "1. Persistent, marked enlargement of the pulmonary arteries. 2. No evidence of active cardiopulmonary disease.",
+    "Normal chest film",
+    "Negative for acute cardiopulmonary abnormality.",
+    "1. No acute intrathoracic abnormality.",
+    "No acute cardiopulmonary abnormality..",
+    "No acute cardiopulmonary abnormalities.",
+    "1. No acute radiographic cardiopulmonary process.",
+    "1. No acute cardiopulmonary abnormality..",
+    "1. Small bilateral pleural effusions. 2. Acromioclavicular degenerative joint disease, right greater than left.",
+    "No active disease.",
+    "1. Multiple bilateral calcified granulomas most prominent in the left lung base, possibly persistent granulomatous disease versus old granulomatous infection. 2. Otherwise unremarkable chest x-XXXX",
+    "1. No acute cardiopulmonary process. 2. Evidence for previous granulomatous infection. 3. Possible spondylosis.",
+    "1. No acute cardiopulmonary process.",
+    "1. No acute cardiopulmonary process.",
+    "1. No evidence of active cardiopulmonary disease. 2. Prominent tortuous descending aorta, consistent with atherosclerotic vascular disease.",
+    "Normal chest exam",
+    "1. No acute pulmonary findings. 2. Hyperexpansion lung, suggestive of obstructive sleep apnea.",
+    "Biapical bullae with associated basilar airspace disease / atelectasis.",
+    "No active disease.",
+    "Stable postsurgical changes with no acute disease.",
+    "1. No acute cardiopulmonary findings.. 2. Bibasilar atelectasis, possibly related to chronic obstructive pulmonary disease (COPD).",
+    "1. Streaky XXXX left basilar opacities, possibly atelectasis versus scarring.",
+    "1. No acute cardiopulmonary process.",
+    "1. Hyperexpanded lungs, suggestive of chronic obstructive pulmonary disease (COPD). 2. Flattening of the right hemidiaphragm, suggesting right-sided diaphragmatic eventration.",
+    "1. No acute radiographic cardiopulmonary process.",
+    "No acute disease.",
+    "1. No acute cardiopulmonary abnormality.. 2. Emphysema.",
+    "No acute cardiopulmonary findings.",
+    "1. Decreased volume of a small right apical effusion versus scarring / atelectasis. 2. Stable mild hyperinflation of both lungs.",
+    "No acute findings",
+    "No acute process.",
+    "1. No evidence of active cardiopulmonary disease. 2. Stable 0. 0.7 cm nodule in the left upper lobe. This may represent a small primary lung carcinoma versus metastatic lesion; however, given its stability over several months' time interval, consideration should be made for repeat imaging if clinical concern persists.",
+    "1. Exam limitations due to patient habitus. 2. Multiple air-fluid levels in the abdomen consistent with ileus. 3. Bilateral hip degenerative changes.",
+    "1. Low lung volumes. 2. Normal chest exam.",
+    "No acute cardiopulmonary disease.",
+    "No acute cardiopulmonary abnormality..",
+    "Normal chest",
+    "No acute process.",
+    "1. Diffuse bilateral interstitial and alveolar opacities; possible superimposed atelectasis versus pneumonia",
+    "1. No acute cardiopulmonary abnormality.. 2. Stable appearance of the heart size.",
+    "Low volume study without acute cardiopulmonary abnormality.",
+    "No acute cardiopulmonary abnormality.",
+    "No acute findings",
+    "No acute cardiopulmonary abnormalities.",
+    "No acute cardiopulmonary disease.",
+    "Negative for acute abnormality.",
+    "No acute disease.",
+    "1. No acute cardiopulmonary abnormality.",
+    "No acute disease",
+    "1. Moderate right-sided pleural effusion, small left sided. 2. Bibasilar subsegmental atelectasis, infiltrates, effusions.",
+    "No acute cardiopulmonary abnormality.",
+    "1. Patchy bilateral subsegmental atelectasis or infiltrates, left worse right. 2. Mild elevated right hemidiaphragm. 3. Questionable small amount of pleural fluid on the right.",
+    "Negative for acute abnormality.",
+    "No acute cardiopulmonary disease",
+    "Left upper lobe pneumonia.",
+    "No acute cardiopulmonary abnormality.",
+    "No acute cardiopulmonary abnormality.",
+    "No acute cardiopulmonary disease",
+    "1. No acute pulmonary disease process. 2. Marked narrowing of the left medial compartment, compatible with chronic obstructive lung disease.",
+    "1. Diffuse interstitial opacities 2. Mild blunting of the posterior costochondral junctions, possibly representing small amounts of effusion / atelectasis",
+    "No active disease.",
+    "Low lung volumes with basilar atelectasis."
+  ],
+  "rouge_1": 0.5257,
+  "rouge_2": 0.4008,
+  "rouge_l": 0.4647,
+  "safety_counts": {
+    "false_negative_flips": 8,
+    "false_positive_flips": 7,
+    "flips": 15,
+    "fp32_absent": 1680,
+    "fp32_present": 62,
+    "preserved": 1727,
+    "total_pairs": 1742
+  },
+  "samples": [
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: The cardiomediastinal silhouette and pulmonary vasculature are within normal limits. There is no pneumothorax or pleural effusion. There are no focal areas of consolidation. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary abnormality.",
+      "prompt_audit": {
+        "full_tokens": 40,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary abnormality.",
+      "reference": "No acute cardiopulmonary abnormality.",
+      "sample_id": "CXR1009"
+    },
+    {
+      "generated_tokens": 4,
+      "input": "FINDINGS: Cardiac and mediastinal contours are within normal limits. The lungs are clear. Acromioclavicular arthritis is present, XXXX severe. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute findings",
+      "prompt_audit": {
+        "full_tokens": 33,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute findings",
+      "reference": "No acute preoperative findings.",
+      "sample_id": "CXR1028"
+    },
+    {
+      "generated_tokens": 4,
+      "input": "FINDINGS: The cardiac contours are normal. The lungs are clear. Thoracic spondylosis. Mild dextrocurvature the spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute process",
+      "prompt_audit": {
+        "full_tokens": 28,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute process",
+      "reference": "No acute process.",
+      "sample_id": "CXR1060"
+    },
+    {
+      "generated_tokens": 7,
+      "input": "FINDINGS: The cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. The lungs are clear of focal airspace disease, pneumothorax, or pleural effusion. There are no acute bony findings. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No evidence of active disease.",
+      "prompt_audit": {
+        "full_tokens": 49,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No evidence of active disease.",
+      "reference": "No acute cardiopulmonary findings.",
+      "sample_id": "CXR1144"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: The heart is enlarged. The mediastinum is unremarkable. Atherosclerotic calcifications present within the thoracic aorta. There is no pleural effusion, pneumothorax, or focal airspace disease. Chronic degenerative changes are noted within the spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary findings.",
+      "prompt_audit": {
+        "full_tokens": 49,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary findings.",
+      "reference": "1. Cardiomegaly without acute cardiopulmonary abnormality.",
+      "sample_id": "CXR1152"
+    },
+    {
+      "generated_tokens": 12,
+      "input": "FINDINGS: PA and moderate loss of the chest demonstrate stable moderate cardiomediastinal silhouette with atherosclerotic calcifications of the aortic XXXX and mild aortic ectasia. Emphysematous changes with flattening of the hemidiaphragms. Blunting of the costophrenic XXXX, and XXXX secondary to scarring/emphysematous changes. No evidence of focal airspace consolidation large pleural effusion or pneumothorax. Visualized osseous structures appear intact. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Stable moderate cardiomegaly without acute cardiopulmonary abnormality.",
+      "prompt_audit": {
+        "full_tokens": 92,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Stable moderate cardiomegaly without acute cardiopulmonary abnormality.",
+      "reference": "Emphysematous changes without evidence of focal airspace disease or pulmonary edema.",
+      "sample_id": "CXR1173"
+    },
+    {
+      "generated_tokens": 34,
+      "input": "FINDINGS: Minimally increased XXXX airspace opacities bilaterally, most prominent in the lung bases. Heart size is within normal limits. No pneumothorax or pleural effusion. Osseous structures are grossly intact. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Minimally increased bilateral airspace disease / edema, most prominently in the lower lungs; 2. Otherwise unremarkable chest exam < / FREETEXT > < / PARAGRAPH > \u2583",
+      "prompt_audit": {
+        "full_tokens": 43,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Minimally increased bilateral airspace disease / edema, most prominently in the lower lungs; 2. Otherwise unremarkable chest exam < / FREETEXT > < / PARAGRAPH > \u2583",
+      "reference": "Minimally increased air space opacities bilaterally, most prominent in the lung bases. Findings are nonspecific, but may represent subsegmental atelectasis versus mild interstitial edema or an atypical infectious process.",
+      "sample_id": "CXR1187"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: Normal heart size and hilar vascular markings. Evidence of prior granulomatous disease. The lungs are clear without focal area of consolidation, pleural effusion, or pneumothorax. There are no acute osseous abnormalities present. Mild degenerative changes of the thoracic spine. The soft tissues are within normal limits. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No evidence of active cardiopulmonary disease.",
+      "prompt_audit": {
+        "full_tokens": 62,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No evidence of active cardiopulmonary disease.",
+      "reference": "1. No acute radiographic cardiopulmonary process.",
+      "sample_id": "CXR1189"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: The heart is normal in size. The mediastinum is unremarkable. The lungs are hypoinflated with blunted costophrenic XXXX. No focal consolidation is seen. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Bibasilar atelectasis.",
+      "prompt_audit": {
+        "full_tokens": 38,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Bibasilar atelectasis.",
+      "reference": "No acute infiltrate.",
+      "sample_id": "CXR1217"
+    },
+    {
+      "generated_tokens": 15,
+      "input": "FINDINGS: Normal heart size. There is a round density in the AP XXXX. XXXX study performed in XXXX is not available for review at this time. Lungs are hyperinflated with flattened diaphragms. Calcified right lower lobe granuloma. No focal airspace consolidation, pneumothorax, or pleural effusion. No pulmonary edema. No acute bony abnormality. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Hyperinflation with flattening of the diaphragm and calcified right upper lobe nodule.",
+      "prompt_audit": {
+        "full_tokens": 76,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Hyperinflation with flattening of the diaphragm and calcified right upper lobe nodule.",
+      "reference": "Circumscribed structure in the AP XXXX could represent lymphadenopathy, mass, pulmonary arterial abnormality XXXX as aneurysm, or enlargement of the left atrial appendage. As prior chest x-XXXX are not available online at this XXXX should be considered.",
+      "sample_id": "CXR1265"
+    },
+    {
+      "generated_tokens": 4,
+      "input": "FINDINGS: Cardiac and mediastinal contours are within normal limits. The lungs are clear. Mild prominence left hilar contour. Bony structures are intact. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute findings",
+      "prompt_audit": {
+        "full_tokens": 33,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute findings",
+      "reference": "No acute preoperative findings.",
+      "sample_id": "CXR1291"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: Lungs are clear. No pleural effusions or pneumothoraces. heart and mediastinum are stable with ectasia of the aorta. Heart size is upper limits of normal. Degenerative changes in the spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Clear lungs without acute pulmonary process.",
+      "prompt_audit": {
+        "full_tokens": 45,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Clear lungs without acute pulmonary process.",
+      "reference": "Stable appearance of the chest without acute abnormality.",
+      "sample_id": "CXR1302"
+    },
+    {
+      "generated_tokens": 9,
+      "input": "FINDINGS: Calcified granuloma is noted in the left upper lobe. There are low lung volumes, with bronchovascular crowding as a result. Heart size is within normal limits. Normal mediastinal contours. No pleural effusion, pneumothorax or focal airspace disease. No free subdiaphragmatic air. The osseous structures are grossly intact. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Low volume study without acute cardiopulmonary abnormality.",
+      "prompt_audit": {
+        "full_tokens": 67,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Low volume study without acute cardiopulmonary abnormality.",
+      "reference": "Low lung volumes. No acute pulmonary disease.",
+      "sample_id": "CXR1320"
+    },
+    {
+      "generated_tokens": 9,
+      "input": "FINDINGS: The heart size and mediastinal contours appear within normal limits. No focal airspace consolidation, pleural effusions or pneumothorax. No acute bony abnormalities. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No evidence of active disease.",
+      "prompt_audit": {
+        "full_tokens": 34,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No evidence of active disease.",
+      "reference": "No acute cardiopulmonary findings.",
+      "sample_id": "CXR1359"
+    },
+    {
+      "generated_tokens": 31,
+      "input": "FINDINGS: There is significant interval decrease in right middle and right lower lobe opacification. Persistent small right pleural effusion and XXXX XXXX atelectasis. No pneumothorax. Stable appearance of the cardiomediastinal silhouette. No acute bone abnormality. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Significant interval improvement in right middle and right lower lobe opacities, consistent with improved pulmonary edema or infiltrate. 2. Small persistent right pleural effusion.",
+      "prompt_audit": {
+        "full_tokens": 54,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Significant interval improvement in right middle and right lower lobe opacities, consistent with improved pulmonary edema or infiltrate. 2. Small persistent right pleural effusion.",
+      "reference": "1. Improved right mid lung and right basilar consolidation. 2. Decreasing right pleural effusion.",
+      "sample_id": "CXR1383"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: Normal heart size. Stable position of 2 pacemaker electrodes, with a XXXX tip in the expected region of the right atrium and another XXXX tip in the expected region of the right ventricle. There is no pulmonary edema. There is no focal consolidation. There are no XXXX of pleural effusion. There is no evidence of pneumothorax. XXXX are unremarkable. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary abnormality.",
+      "prompt_audit": {
+        "full_tokens": 78,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary abnormality.",
+      "reference": "There is no evidence of acute cardiopulmonary disease. .",
+      "sample_id": "CXR1457"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: The heart, pulmonary XXXX and mediastinum are within normal limits. There is no pleural effusion or pneumothorax. There is no focal air space opacity to suggest a pneumonia. There is a calcified granuloma in the left lung base. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary disease",
+      "prompt_audit": {
+        "full_tokens": 51,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary disease",
+      "reference": "No acute cardiopulmonary disease. Evidence of previous granulomatous infection.",
+      "sample_id": "CXR1464"
+    },
+    {
+      "generated_tokens": 17,
+      "input": "FINDINGS: Stable cardiomediastinal silhouette with normal heart size, mediastinal calcifications suggest a previous granulomatous process. Apical irregularities also present on the previous exam suggestive of scarring. No focal alveolar consolidation, no definite pleural effusion seen. No typical findings of pulmonary edema. No pneumothorax. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Question mild irregularity in the right apex which may represent scar or atelectasis",
+      "prompt_audit": {
+        "full_tokens": 63,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Question mild irregularity in the right apex which may represent scar or atelectasis",
+      "reference": "No acute findings",
+      "sample_id": "CXR1478"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: Cardiomediastinal silhouette is normal. Pulmonary vasculature and XXXX are normal. No consolidation, pneumothorax or large pleural effusion. Postsurgical changes of the cervical spine are present. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Negative for acute abnormality.",
+      "prompt_audit": {
+        "full_tokens": 45,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Negative for acute abnormality.",
+      "reference": "No acute cardiopulmonary disease.",
+      "sample_id": "CXR1520"
+    },
+    {
+      "generated_tokens": 23,
+      "input": "FINDINGS: Heart size slightly upper normal. Atherosclerotic calcifications within the aorta.. Lungs are hyperexpanded with flattening of the diaphragms consistent with emphysematous change. No focal airspace disease, pleural effusion, or pneumothorax. Degenerative changes of the spine are noted. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Hyperexpanded lungs suggesting emphysema. 2. Mild atherosclerotic calcification in the aortic XXXX.",
+      "prompt_audit": {
+        "full_tokens": 59,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Hyperexpanded lungs suggesting emphysema. 2. Mild atherosclerotic calcification in the aortic XXXX.",
+      "reference": "1. Emphysematous change without acute radiographic cardiopulmonary process.",
+      "sample_id": "CXR1527"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: The cardiomediastinal silhouette is within normal limits for appearance. No focal areas of pulmonary consolidation. No pneumothorax. No pleural effusion. The thoracic spine appears intact. No acute, displaced rib fractures. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute intrathoracic abnormality.",
+      "prompt_audit": {
+        "full_tokens": 50,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute intrathoracic abnormality.",
+      "reference": "1. No acute intrathoracic abnormality.",
+      "sample_id": "CXR1551"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: The lungs are clear. There is no pleural effusion. The heart and mediastinum are normal. The skeletal structures show arthritic changes. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No active disease.",
+      "prompt_audit": {
+        "full_tokens": 32,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No active disease.",
+      "reference": "No acute pulmonary disease.",
+      "sample_id": "CXR1569"
+    },
+    {
+      "generated_tokens": 21,
+      "input": "FINDINGS: Evaluation for pneumothorax is limited due to exclusion of the superior-most pulmonary apices. No visible pleural XXXX. No focal air space opacities or pleural effusion. Cardiomediastinal silhouette is within normal limits. No free subdiaphragmatic air. Mild degenerative changes of the thoracic spine. Included osseous structures are grossly intact. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Limited evaluation for acute cardiopulmonary disease secondary to excluded upper lung zones and obscuration by overlying soft tissues.",
+      "prompt_audit": {
+        "full_tokens": 73,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Limited evaluation for acute cardiopulmonary disease secondary to excluded upper lung zones and obscuration by overlying soft tissues.",
+      "reference": "No acute pulmonary disease.",
+      "sample_id": "CXR1570"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: There is some minimal biapical scarring. A calcified granuloma is present in the right middle lobe. There is no pleural effusion or pneumothorax. The heart is not significantly enlarged. There are atherosclerotic changes of the aorta. Arthritic changes of the skeletal structures are noted. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary process.",
+      "prompt_audit": {
+        "full_tokens": 59,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary process.",
+      "reference": "No acute pulmonary disease.",
+      "sample_id": "CXR165"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: Both lungs are clear and expanded. Heart and mediastinum normal. XXXX-A-XXXX XXXX has its tip at the caval atrial junction. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No active disease.",
+      "prompt_audit": {
+        "full_tokens": 37,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No active disease.",
+      "reference": "No active disease.",
+      "sample_id": "CXR1670"
+    },
+    {
+      "generated_tokens": 7,
+      "input": "FINDINGS: The heart size and cardiomediastinal silhouette are normal. The lungs are clear without focal airspace opacity, pleural effusion, or pneumothorax. The osseous structures are intact. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Negative for acute cardiopulmonary findings.",
+      "prompt_audit": {
+        "full_tokens": 44,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Negative for acute cardiopulmonary findings.",
+      "reference": "No acute cardiopulmonary findings.",
+      "sample_id": "CXR1802"
+    },
+    {
+      "generated_tokens": 20,
+      "input": "FINDINGS: There is mild cardiomegaly and tortuous aorta. Mildly low lung volumes. No focal consolidation, pleural effusion, or pneumothorax. The XXXX XXXX are intact and without acute osseous abnormality. Mild degenerative changes of the thoracic spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Cardiomegaly with low lung volumes which may be compatible with chronic obstructive pulmonary disease (COPD).",
+      "prompt_audit": {
+        "full_tokens": 54,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Cardiomegaly with low lung volumes which may be compatible with chronic obstructive pulmonary disease (COPD).",
+      "reference": "Chest radiograph. No acute radiographic cardiopulmonary process.",
+      "sample_id": "CXR1811"
+    },
+    {
+      "generated_tokens": 16,
+      "input": "FINDINGS: Left anterior chest wall pacemaker/defibrillator. Stable cardiomediastinal silhouette. No focal consolidation, pneumothorax or large pleural effusion. Exaggerated thoracic kyphosis. Spurring of thoracic spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary abnormality.. 2. Exaggerated thoracic kyphosis.",
+      "prompt_audit": {
+        "full_tokens": 48,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary abnormality.. 2. Exaggerated thoracic kyphosis.",
+      "reference": "Negative for acute abnormality.",
+      "sample_id": "CXR1830"
+    },
+    {
+      "generated_tokens": 3,
+      "input": "FINDINGS: Mild cardiomegaly. Normal size and mediastinal contours. Clear lungs. No pneumothorax or pleural effusion. Unremarkable XXXX. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Cardiomegaly",
+      "prompt_audit": {
+        "full_tokens": 31,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Cardiomegaly",
+      "reference": "Mild cardiomegaly. Clear lungs. .",
+      "sample_id": "CXR1857"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: Normal heart size. Stable tortuous aorta. No pneumothorax, pleural effusion or suspicious focal airspace opacity. Prior granulomatous disease. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary findings.",
+      "prompt_audit": {
+        "full_tokens": 32,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary findings.",
+      "reference": "Unchanged exam without acute abnormality.",
+      "sample_id": "CXR187"
+    },
+    {
+      "generated_tokens": 3,
+      "input": "FINDINGS: Heart size normal. Lungs are clear. XXXX are normal. No pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Normal chest",
+      "prompt_audit": {
+        "full_tokens": 37,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Normal chest",
+      "reference": "Normal chest",
+      "sample_id": "CXR1877"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: The heart, pulmonary XXXX and mediastinum are within normal limits. There is no pleural effusion or pneumothorax. There is no focal air space opacity to suggest a pneumonia. There is an 8mm nodule identified within the left lateral midlung partially overlying the posterior left 7th rib. There are mild degenerative changes of the spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary disease.",
+      "prompt_audit": {
+        "full_tokens": 70,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary disease.",
+      "reference": "Left midlung pulmonary nodule. Comparison to a previous XXXX would be most helpful alternatively a noncontrast chest CT could be performed in the nonemergent setting for further characterization. No acute disease.",
+      "sample_id": "CXR1880"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: Clear lungs bilaterally. Normal cardiac contours. No pneumothorax or pleural effusion. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary abnormality..",
+      "prompt_audit": {
+        "full_tokens": 21,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary abnormality..",
+      "reference": "1. No acute cardiopulmonary abnormality.",
+      "sample_id": "CXR1882"
+    },
+    {
+      "generated_tokens": 58,
+      "input": "FINDINGS: Left chest wall Mediport placement with venous catheter tip in superior XXXX XXXX. Normal cardiac contours. No pneumothorax or pleural effusions. Clear lungs bilaterally. XXXX fracture seen at T5 and L2 with areas of sclerosis throughout the thoracic and lumbar spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary findings. 2. Question mild left-sided mediastinal shift, possibly related to a large pleural effusion versus an anterior mediastinal mass. Followup radiographs in 8 - 12weeks after removal of the central line would be helpful for further evaluation if clinically indicated.",
+      "prompt_audit": {
+        "full_tokens": 57,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary findings. 2. Question mild left-sided mediastinal shift, possibly related to a large pleural effusion versus an anterior mediastinal mass. Followup radiographs in 8 - 12weeks after removal of the central line would be helpful for further evaluation if clinically indicated.",
+      "reference": "1. Pathologic fractures seen at T5 and L2. 2. Left venous catheter in SVC.",
+      "sample_id": "CXR2084"
+    },
+    {
+      "generated_tokens": 20,
+      "input": "FINDINGS: Lungs are clear. blunting of the left costophrenic XXXX consistent with a small left pleural effusion and associated airspace disease. The right lung is clear. Sequelae of old granulomatous disease. Heart size is upper limits of normal. Degenerative changes in the spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Clear lungs. 2. Small left pleural effusion and / or associated airspace disease.",
+      "prompt_audit": {
+        "full_tokens": 64,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Clear lungs. 2. Small left pleural effusion and / or associated airspace disease.",
+      "reference": "1. Heart size upper limits of normal. 2. Small left pleural effusion with associated airspace disease.",
+      "sample_id": "CXR2289"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: The heart is normal in size. The mediastinum is unremarkable. The lungs are clear. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute disease.",
+      "prompt_audit": {
+        "full_tokens": 24,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute disease.",
+      "reference": "No acute disease.",
+      "sample_id": "CXR2312"
+    },
+    {
+      "generated_tokens": 9,
+      "input": "FINDINGS: The heart size is normal. The mediastinal contour is within normal limits. The lungs are free of any focal infiltrates. There are no nodules or masses. There is calcified granuloma in the left lingula. No visible pneumothorax. No visible pleural fluid. The XXXX are grossly normal. There is no visible free intraperitoneal air under the diaphragm. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute radiographic cardiopulmonary process.",
+      "prompt_audit": {
+        "full_tokens": 74,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute radiographic cardiopulmonary process.",
+      "reference": "1. No acute radiographic cardiopulmonary process.",
+      "sample_id": "CXR2315"
+    },
+    {
+      "generated_tokens": 9,
+      "input": "FINDINGS: Heart size is normal. The lungs are clear. There are no XXXX focal air space consolidations. No pleural effusions or pneumothoraces. The hilar and mediastinal contours are unchanged. Again noted is tortuosity and unfolding of the thoracic aorta. Aortic vascular calcifications. Normal pulmonary vascularity. Bone demineralization. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute radiographic cardiopulmonary process.",
+      "prompt_audit": {
+        "full_tokens": 67,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute radiographic cardiopulmonary process.",
+      "reference": "No acute abnormality.",
+      "sample_id": "CXR2328"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: Lungs are hyperinflated but clear. No focal infiltrate or effusion. Heart and mediastinal contours within normal limits. Calcified mediastinal XXXX identified. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Clear lungs.",
+      "prompt_audit": {
+        "full_tokens": 36,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Clear lungs.",
+      "reference": "Hyperinflated but clear lungs.",
+      "sample_id": "CXR2336"
+    },
+    {
+      "generated_tokens": 9,
+      "input": "FINDINGS: The heart size and pulmonary vascularity appear within normal limits. The lungs are free of focal airspace disease. No pleural effusion or pneumothorax is seen. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No evidence of active disease.",
+      "prompt_audit": {
+        "full_tokens": 36,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No evidence of active disease.",
+      "reference": "No evidence of active disease.",
+      "sample_id": "CXR2365"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: There are T-spine osteophytes. The cardiomediastinal silhouette and pulmonary vasculature are within normal limits. There is no pneumothorax or pleural effusion. There are no focal areas of consolidation. There are low lung volumes. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary abnormality.",
+      "prompt_audit": {
+        "full_tokens": 54,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary abnormality.",
+      "reference": "Lung volumes with streaky left basilar opacity consistent with subsegmental atelectasis.",
+      "sample_id": "CXR2371"
+    },
+    {
+      "generated_tokens": 30,
+      "input": "FINDINGS: Heart size is normal. No pneumothorax or pleural effusions. There is an 8 mm calcified nodule in the left midlung. There is also a 7 mm calcified nodule near the left hilum. Hyperexpanded lungs consistent with chronic obstructive pulmonary disease. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary abnormality. 2. A small calcified nodule in the left midlung, possibly representing a granuloma. 3. Mild COPD.",
+      "prompt_audit": {
+        "full_tokens": 58,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary abnormality. 2. A small calcified nodule in the left midlung, possibly representing a granuloma. 3. Mild COPD.",
+      "reference": "No acute cardiopulmonary findings.",
+      "sample_id": "CXR2386"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: The heart is normal in size with normal appearance of the cardiomediastinal silhouette. The lungs are clear without focal airspace opacity, pleural effusion, or pneumothorax. The osseous structures are intact, with mild degenerative changes in the thoracic spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary findings.",
+      "prompt_audit": {
+        "full_tokens": 58,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary findings.",
+      "reference": "No acute cardiopulmonary finding.",
+      "sample_id": "CXR2426"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: The lungs and pleural spaces show no acute abnormality. Heart size and pulmonary vascularity within normal limits. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary process.",
+      "prompt_audit": {
+        "full_tokens": 26,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary process.",
+      "reference": "1. No acute pulmonary abnormality.",
+      "sample_id": "CXR2438"
+    },
+    {
+      "generated_tokens": 33,
+      "input": "FINDINGS: There is mild blunting of the right costophrenic XXXX which may represent a small right pleural effusion. No focal consolidation or pneumothorax identified. Cardiomediastinal silhouette demonstrates stable mild tortuosity of the thoracic aorta, and heart size within normal limits and stable. No acute osseous abnormality. There is redemonstration of mild multilevel degenerative disc disease of the thoracolumbar spine. Old, healed left rib fractures are noted. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Mild blunting of the right posterior costophrenic XXXX representing a small to moderate sized pleural effusion. 2. No evidence for active cardiopulmonary process.",
+      "prompt_audit": {
+        "full_tokens": 91,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Mild blunting of the right posterior costophrenic XXXX representing a small to moderate sized pleural effusion. 2. No evidence for active cardiopulmonary process.",
+      "reference": "Possible small right pleural effusion, without focal consolidation or pneumothorax.",
+      "sample_id": "CXR2441"
+    },
+    {
+      "generated_tokens": 33,
+      "input": "FINDINGS: Chest. Heart size within normal limits. No focal airspace disease. No pneumothorax or effusions. Mild degenerative changes throughout the thoracic spine. Right knee. There has been prior ligamentous repair. There is tricompartmental joint space narrowing and marginal osteophyte formation which is severe in the medial compartment. No knee joint effusion. No fractures or dislocations. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Worsening tricompartmental degenerative changes of the right knee. 2. Stable, mild XXXX deformity of the mid-thoracic vertebral body.",
+      "prompt_audit": {
+        "full_tokens": 76,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Worsening tricompartmental degenerative changes of the right knee. 2. Stable, mild XXXX deformity of the mid-thoracic vertebral body.",
+      "reference": "1. Chest. No acute cardiopulmonary findings. 2. Right knee. Stable advanced degenerative changes, most severe in the medial compartment.",
+      "sample_id": "CXR2451"
+    },
+    {
+      "generated_tokens": 16,
+      "input": "FINDINGS: There is bilateral lower lung airspace disease. There are small to moderate sized bilateral pleural effusions, left greater than right. There is no pneumothorax. Mediastinal silhouette normal. Calcified left hilar lymph XXXX. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Bilateral lower lobe airspace disease with left greater than right-sided effusion.",
+      "prompt_audit": {
+        "full_tokens": 53,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Bilateral lower lobe airspace disease with left greater than right-sided effusion.",
+      "reference": "Small to moderate sized bilateral pleural effusions with adjacent infiltrate or atelectasis.",
+      "sample_id": "CXR2485"
+    },
+    {
+      "generated_tokens": 34,
+      "input": "FINDINGS: Chest: The cardiomediastinal silhouette is within normal limits for size and contour. The lungs are normally inflated without evidence of focal airspace disease, pleural effusion, or pneumothorax. Thoracic spine: Mild dextro curvature the upper thoracic spine. Evaluation of the upper thoracic bodies is limited secondary to osseous overlap. Vertebral body XXXX and disc spaces are maintained. Mild degenerative endplate changes. Lumbar spine: There are 5 nonrib-bearing lumbar type vertebral bodies. Alignment is within normal limits. Vertebral body XXXX and disc spaces are maintained. Mild degenerative change without acute displaced fracture or dislocation. Moderate amount of stool.. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No radiographic evidence of acute cardiopulmonary process. 2. Mild dextroscoliosis of the upper thorax. 3. Mildly lordotic alignment of lower thoracic segments.",
+      "prompt_audit": {
+        "full_tokens": 134,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No radiographic evidence of acute cardiopulmonary process. 2. Mild dextroscoliosis of the upper thorax. 3. Mildly lordotic alignment of lower thoracic segments.",
+      "reference": "Chest. No acute radiographic cardiopulmonary process. Thoracic spine. Mild degenerative change without acute bony abnormality. Lumbar spine. Mild degenerative change without acute bony abnormality.",
+      "sample_id": "CXR2487"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: The lungs are hyperexpanded, with increased AP diameter of the chest. The cardiomediastinal silhouette is stable and normal. There is no pneumothorax or large pleural effusion. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary process.",
+      "prompt_audit": {
+        "full_tokens": 45,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary process.",
+      "reference": "No acute cardiopulmonary abnormality. Chronic changes consistent with emphysema.",
+      "sample_id": "CXR2509"
+    },
+    {
+      "generated_tokens": 9,
+      "input": "FINDINGS: The heart size and pulmonary vascularity appear within normal limits. The lungs are free of focal airspace disease. No pleural effusion or pneumothorax is seen. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No evidence of active disease.",
+      "prompt_audit": {
+        "full_tokens": 36,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No evidence of active disease.",
+      "reference": "No evidence of active disease.",
+      "sample_id": "CXR2559"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: Normal cardiac size and contour unremarkable mediastinal silhouette. Lungs clear, no airspace disease, pleural effusion, or pneumothorax. No active/acute cardiopulmonary disease. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Negative for acute cardiopulmonary findings",
+      "prompt_audit": {
+        "full_tokens": 41,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Negative for acute cardiopulmonary findings",
+      "reference": "Normal cardiac size and contour unremarkable mediastinal silhouette. Lungs clear, no airspace disease, pleural effusion, or pneumothorax. No active/acute cardiopulmonary disease.",
+      "sample_id": "CXR2564"
+    },
+    {
+      "generated_tokens": 32,
+      "input": "FINDINGS: There has been interval increase in size of the cardiac silhouette from XXXX. The cardiac fluid is now mildly enlarged. Pulmonary vasculature is increased with mildly increased interstitial markings and fissural thickening, suggesting mild pulmonary edema. There is no focal airspace disease, pneumothorax, or large pleural effusion. Descending thoracic aorta is tortuous. There are no acute bony findings. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Mildly enlarged cardiac silhouette consistent with chronic heart failure. 2. Increased interstitial markings and bilateral basilar opacities suggestive of possible pneumonia.",
+      "prompt_audit": {
+        "full_tokens": 83,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Mildly enlarged cardiac silhouette consistent with chronic heart failure. 2. Increased interstitial markings and bilateral basilar opacities suggestive of possible pneumonia.",
+      "reference": "Cardiomegaly which appears XXXX from XXXX with probable mild pulmonary edema. .",
+      "sample_id": "CXR2570"
+    },
+    {
+      "generated_tokens": 7,
+      "input": "FINDINGS: The cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. The lungs are clear of focal airspace disease, pneumothorax, or pleural effusion. There are no acute bony findings. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No evidence of active disease.",
+      "prompt_audit": {
+        "full_tokens": 49,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No evidence of active disease.",
+      "reference": "No acute cardiopulmonary findings. .",
+      "sample_id": "CXR2612"
+    },
+    {
+      "generated_tokens": 7,
+      "input": "FINDINGS: The cardiomediastinal silhouette is normal in size in appearance and stable from XXXX. The lungs are clear. Soft tissues and bony structures are unremarkable. No pneumothorax or pleural effusion. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary disease",
+      "prompt_audit": {
+        "full_tokens": 47,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary disease",
+      "reference": "Unremarkable examination of the chest.",
+      "sample_id": "CXR2655"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: Heart size normal. No focal airspace disease. No pneumothorax or effusions. No bony abnormalities. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Negative for acute cardiopulmonary findings",
+      "prompt_audit": {
+        "full_tokens": 26,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Negative for acute cardiopulmonary findings",
+      "reference": "No acute cardiopulmonary findings.",
+      "sample_id": "CXR2667"
+    },
+    {
+      "generated_tokens": 9,
+      "input": "FINDINGS: The cardiomediastinal contours are within normal limits. Pulmonary vasculature is unremarkable. There is no focal airspace opacity. No pleural effusion or pneumothorax is seen. There are mild degenerative changes along the thoracic spine. No acute bony abnormality is identified. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No evidence of active disease.",
+      "prompt_audit": {
+        "full_tokens": 56,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No evidence of active disease.",
+      "reference": "No acute cardiopulmonary abnormality.",
+      "sample_id": "CXR2718"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: Heart size within normal limits. No focal airspace disease. No pneumothorax or effusions. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary findings.",
+      "prompt_audit": {
+        "full_tokens": 24,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary findings.",
+      "reference": "No acute cardiopulmonary findings.",
+      "sample_id": "CXR2739"
+    },
+    {
+      "generated_tokens": 41,
+      "input": "FINDINGS: The cardiac silhouette is mildly enlarged. Mediastinal contours are within normal limits. The pulmonary vasculaturity is increased. There is large right-sided pleural effusion and probable underlying associated compressive atelectasis. Mild perihilar XXXX opacities, XXXX edema. No pneumothorax is seen. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Cardiomegaly without acute disease process identified. 2. Large right-sided pleural effusion with possible underlying compressive atelectasis. 3. Mildly prominent perihilar interstitial markings, possibly mild pulmonary edema.",
+      "prompt_audit": {
+        "full_tokens": 65,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Cardiomegaly without acute disease process identified. 2. Large right-sided pleural effusion with possible underlying compressive atelectasis. 3. Mildly prominent perihilar interstitial markings, possibly mild pulmonary edema.",
+      "reference": "1. Cardiomegaly and central vascular congestion with perihilar opacities, possibly edema. 2. Large right pleural effusion.",
+      "sample_id": "CXR2752"
+    },
+    {
+      "generated_tokens": 28,
+      "input": "FINDINGS: Bilateral patchy pulmonary opacities noted. Interval improvement in left base consolidative opacity. Pulmonary vascular congestion again noted. Stable enlarged cardiomediastinal silhouette. Stable left XXXX. No evidence of pneumothorax. No large pleural effusions. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Bibasilar airspace disease and / or atelectasis, left worse right? 2. Vascular congestion, mild worsening on repeat study.",
+      "prompt_audit": {
+        "full_tokens": 54,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Bibasilar airspace disease and / or atelectasis, left worse right? 2. Vascular congestion, mild worsening on repeat study.",
+      "reference": "1. Interval improvement in consolidative left base opacity. Multifocal scattered bibasilar patchy and XXXX pulmonary opacities again noted, most consistent with atelectasis/infiltrate. 2. Stable enlarged cardiomediastinal silhouette. Stable pulmonary vascular congestion. .",
+      "sample_id": "CXR28"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: The heart and lungs have XXXX XXXX in the interval. Both lungs are clear and expanded. Heart and mediastinum normal. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No active disease.",
+      "prompt_audit": {
+        "full_tokens": 32,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No active disease.",
+      "reference": "No active disease.",
+      "sample_id": "CXR280"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: The heart is normal in size. The mediastinum is unremarkable. Granulomatous sequela are noted. The lungs are otherwise clear. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute disease.",
+      "prompt_audit": {
+        "full_tokens": 32,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute disease.",
+      "reference": "No acute disease.",
+      "sample_id": "CXR2815"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: Lungs are clear. Heart size normal. The XXXX are unremarkable. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary finding",
+      "prompt_audit": {
+        "full_tokens": 22,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary finding",
+      "reference": "No acute cardiopulmonary finding.",
+      "sample_id": "CXR2845"
+    },
+    {
+      "generated_tokens": 9,
+      "input": "FINDINGS: The heart size is within normal limits. The thoracic aorta is tortuous, stable from the prior radiograph. Aortic stent graft overlies the descending thoracic aorta and upper abdominal aorta, grossly stable from the prior chest radiograph. There are scattered calcified granulomas. There is no focal airspace consolidation. No pleural effusion or pneumothorax. The left hemidiaphragm remains mildly elevated. There are mild degenerative changes of the spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute radiographic cardiopulmonary process.",
+      "prompt_audit": {
+        "full_tokens": 89,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute radiographic cardiopulmonary process.",
+      "reference": "No acute findings.",
+      "sample_id": "CXR2847"
+    },
+    {
+      "generated_tokens": 3,
+      "input": "FINDINGS: Heart and mediastinal contour normal. Pulmonary vascularity normal. Lungs clear. No pleural effusions or pneumothoraces. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Normal chest",
+      "prompt_audit": {
+        "full_tokens": 29,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Normal chest",
+      "reference": "Normal chest.",
+      "sample_id": "CXR2880"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: The cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. Lungs are clear of focal airspace disease. There is no pneumothorax. There is mild blunting of the right costophrenic XXXX, without definite pleural effusion. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary findings.",
+      "prompt_audit": {
+        "full_tokens": 60,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary findings.",
+      "reference": "1. Clear lungs. 2. Mildly blunted right costophrenic XXXX without definite pleural effusion.",
+      "sample_id": "CXR2946"
+    },
+    {
+      "generated_tokens": 14,
+      "input": "FINDINGS: Heart size within normal limits, stable mediastinal and hilar contours. No focal alveolar consolidation, no definite pleural effusion seen. No typical findings of pulmonary edema. Mild spine curvature again noted. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary abnormalities.. 2. Mild spine curvature.",
+      "prompt_audit": {
+        "full_tokens": 43,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary abnormalities.. 2. Mild spine curvature.",
+      "reference": "No acute findings",
+      "sample_id": "CXR302"
+    },
+    {
+      "generated_tokens": 9,
+      "input": "FINDINGS: The heart size and pulmonary vascularity appear within normal limits. The lungs are free of focal airspace disease. No pleural effusion or pneumothorax is seen. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No evidence of active disease.",
+      "prompt_audit": {
+        "full_tokens": 36,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No evidence of active disease.",
+      "reference": "No evidence of active disease.",
+      "sample_id": "CXR3047"
+    },
+    {
+      "generated_tokens": 9,
+      "input": "FINDINGS: Normal heart size. Density surrounding superior mediastinum reflex combination of vascular, osseous common pleural structures. No focal airspace consolidation. Moderate degenerative disc disease with osteophyte formation bridging. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute radiographic cardiopulmonary process.",
+      "prompt_audit": {
+        "full_tokens": 41,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute radiographic cardiopulmonary process.",
+      "reference": "No acute cardiopulmonary abnormality.",
+      "sample_id": "CXR3052"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: The heart is normal in size. The aorta is tortuous and ectatic. The lungs are clear without focal airspace opacity, pleural effusion, or pneumothorax. The osseous structures are intact. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary finding.",
+      "prompt_audit": {
+        "full_tokens": 45,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary finding.",
+      "reference": "No acute cardiopulmonary findings.",
+      "sample_id": "CXR3081"
+    },
+    {
+      "generated_tokens": 7,
+      "input": "FINDINGS: Heart size is normal. No focal airspace consolidations. No pneumothorax or pleural effusion. No acute osseous findings. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Negative for acute cardiopulmonary disease.",
+      "prompt_audit": {
+        "full_tokens": 31,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Negative for acute cardiopulmonary disease.",
+      "reference": "No acute cardiopulmonary findings. .",
+      "sample_id": "CXR3119"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: The heart is normal in size and contour. There is no mediastinal widening. The lungs are clear bilaterally. No large pleural effusion or pneumothorax. Fractures of the posterior left 4th, 5th, and 6th ribs, age-indeterminate. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary abnormality.",
+      "prompt_audit": {
+        "full_tokens": 52,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary abnormality.",
+      "reference": "1. No acute cardiopulmonary abnormalities. Specifically, no pneumothorax. 2. Fractures of the posterior left 4th, 5th, and 6th ribs, age-indeterminate.",
+      "sample_id": "CXR3120"
+    },
+    {
+      "generated_tokens": 7,
+      "input": "FINDINGS: The cardiomediastinal silhouette is normal size and configuration. Pulmonary vasculature within normal limits. The lungs are well-aerated. There is no pneumothorax, pleural effusion, or focal consolidation. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary disease..",
+      "prompt_audit": {
+        "full_tokens": 47,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary disease..",
+      "reference": "No acute cardiopulmonary disease. .",
+      "sample_id": "CXR3122"
+    },
+    {
+      "generated_tokens": 21,
+      "input": "FINDINGS: There is persistent, marked enlargement of the pulmonary arteries. Normal heart size. No focal airspace consolidation. No pleural effusion or pneumothorax. Visualized osseous structures are unremarkable in appearance. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Persistent, marked enlargement of the pulmonary arteries. 2. No evidence of active cardiopulmonary disease.",
+      "prompt_audit": {
+        "full_tokens": 43,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Persistent, marked enlargement of the pulmonary arteries. 2. No evidence of active cardiopulmonary disease.",
+      "reference": "1. Enlarged pulmonary arteries. This may be due to previous/chronic pulmonary embolism or XXXX pulmonary arterial hypertension. 2. No evidence of pneumonia or other acute cardiopulmonary abnormality.",
+      "sample_id": "CXR3124"
+    },
+    {
+      "generated_tokens": 4,
+      "input": "FINDINGS: The lungs are clear. The cardiomediastinal silhouette is within normal limits. No pneumothorax or pleural effusion. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Normal chest film",
+      "prompt_audit": {
+        "full_tokens": 32,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Normal chest film",
+      "reference": "Negative chest .",
+      "sample_id": "CXR3234"
+    },
+    {
+      "generated_tokens": 7,
+      "input": "FINDINGS: The heart size is normal and cardiomediastinal silhouette is normal in contour. Lungs are clear bilaterally. There is no pleural effusion or pneumothorax. No bony or soft tissue abnormalities. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Negative for acute cardiopulmonary abnormality.",
+      "prompt_audit": {
+        "full_tokens": 47,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Negative for acute cardiopulmonary abnormality.",
+      "reference": "No acute cardiopulmonary abnormality.",
+      "sample_id": "CXR3279"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: The cardiomediastinal silhouette is within normal limits for appearance. The thoracic aorta is tortuous. A calcified granuloma is identified in the right middle lobe. No focal areas of pulmonary consolidation. No pneumothorax. No pleural effusion. The thoracic spine appears intact. No acute displaced rib fractures. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute intrathoracic abnormality.",
+      "prompt_audit": {
+        "full_tokens": 67,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute intrathoracic abnormality.",
+      "reference": "1. No acute intrathoracic abnormality.",
+      "sample_id": "CXR3294"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: Heart size, mediastinal contour, and pulmonary vascularity are within normal limits. No focal consolidation, suspicious pulmonary opacity, large pleural effusion, or pneumothorax is identified. Visualized osseous structures appear intact. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary abnormality..",
+      "prompt_audit": {
+        "full_tokens": 45,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary abnormality..",
+      "reference": "No acute cardiopulmonary abnormality.",
+      "sample_id": "CXR330"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: The heart is normal in size and contour. There is no mediastinal widening. The lungs are clear bilaterally. No large pleural effusion or pneumothorax. The XXXX are intact. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary abnormalities.",
+      "prompt_audit": {
+        "full_tokens": 41,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary abnormalities.",
+      "reference": "No acute cardiopulmonary abnormalities.",
+      "sample_id": "CXR3329"
+    },
+    {
+      "generated_tokens": 9,
+      "input": "FINDINGS: The cardiomediastinal silhouette and vasculature are within normal limits for size and contour. The lungs are normally inflated and clear. Osseous structures are within normal limits for patient age. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute radiographic cardiopulmonary process.",
+      "prompt_audit": {
+        "full_tokens": 46,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute radiographic cardiopulmonary process.",
+      "reference": "1. No acute radiographic cardiopulmonary process.",
+      "sample_id": "CXR3352"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: The lungs are clear bilaterally without focal consolidation, pneumothorax, or effusion. Calcified granuloma noted in the right midlung. The heart size is within normal limits. No acute bony abnormality is identified. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary abnormality..",
+      "prompt_audit": {
+        "full_tokens": 46,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary abnormality..",
+      "reference": "No acute cardiopulmonary abnormality.",
+      "sample_id": "CXR3356"
+    },
+    {
+      "generated_tokens": 23,
+      "input": "FINDINGS: Prominent interstitial markings. There are small bilateral pleural effusions. No pneumothorax or focal consolidation. Normal heart size. Catheter tubing present in the upper midabdomen. There is bilateral acromioclavicular degenerative joint disease, right greater than left. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Small bilateral pleural effusions. 2. Acromioclavicular degenerative joint disease, right greater than left.",
+      "prompt_audit": {
+        "full_tokens": 54,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Small bilateral pleural effusions. 2. Acromioclavicular degenerative joint disease, right greater than left.",
+      "reference": "Small bilateral pleural effusions. .",
+      "sample_id": "CXR3382"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: The heart and lungs have XXXX XXXX in the interval. Both lungs are clear and expanded. Heart and mediastinum normal. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No active disease.",
+      "prompt_audit": {
+        "full_tokens": 32,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No active disease.",
+      "reference": "No active disease.",
+      "sample_id": "CXR3389"
+    },
+    {
+      "generated_tokens": 33,
+      "input": "FINDINGS: The heart size is normal. The mediastinal contour is within normal limits. There are multiple calcified granulomas within the left lower lobe. The lungs are free of any focal infiltrates. There are no nodules or masses. No visible pneumothorax. No visible pleural fluid. The XXXX are grossly normal. There is no visible free intraperitoneal air under the diaphragm. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Multiple bilateral calcified granulomas most prominent in the left lung base, possibly persistent granulomatous disease versus old granulomatous infection. 2. Otherwise unremarkable chest x-XXXX",
+      "prompt_audit": {
+        "full_tokens": 75,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Multiple bilateral calcified granulomas most prominent in the left lung base, possibly persistent granulomatous disease versus old granulomatous infection. 2. Otherwise unremarkable chest x-XXXX",
+      "reference": "No acute radiographic cardiopulmonary process.",
+      "sample_id": "CXR3424"
+    },
+    {
+      "generated_tokens": 22,
+      "input": "FINDINGS: Stable appearance of lower cervical fusion XXXX. Heart size normal. No pneumothorax or pleural effusion. No focal airspace disease. Calcified nodules consistent with chronic granulomatous disease. Bony structures appear intact. DISH of the thoracic spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary process. 2. Evidence for previous granulomatous infection. 3. Possible spondylosis.",
+      "prompt_audit": {
+        "full_tokens": 54,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary process. 2. Evidence for previous granulomatous infection. 3. Possible spondylosis.",
+      "reference": "Negative for acute cardiopulmonary disease.",
+      "sample_id": "CXR3459"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: Normal heart size and pulmonary vascularity. There are changes of chronic lung disease noticed by hyperinflated lungs and streaky opacities compatible with scar. Interval placement of the chest XXXX with the tip in the superior XXXX XXXX. No focal infiltrate, pneumothorax or pleural effusion is identified. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary process.",
+      "prompt_audit": {
+        "full_tokens": 63,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary process.",
+      "reference": "Chronic changes with no acute cardiopulmonary disease.",
+      "sample_id": "CXR3469"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: The patient is rotated. The heart is normal in size. The pulmonary vascularity is within normal limits in appearance. No pneumothorax or pleural effusion. No focal airspace opacities. Mild degenerative changes of the thoracic spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary process.",
+      "prompt_audit": {
+        "full_tokens": 49,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary process.",
+      "reference": "No acute cardiopulmonary abnormalities.",
+      "sample_id": "CXR3470"
+    },
+    {
+      "generated_tokens": 25,
+      "input": "FINDINGS: The heart size and pulmonary vascularity appear within normal limits. The thoracic aorta is prominent with calcification within the aorta. Azygos lobe is noted. Lungs are free of focal airspace disease. No pleural effusion or pneumothorax is seen. Degenerative changes noted in the spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No evidence of active cardiopulmonary disease. 2. Prominent tortuous descending aorta, consistent with atherosclerotic vascular disease.",
+      "prompt_audit": {
+        "full_tokens": 62,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No evidence of active cardiopulmonary disease. 2. Prominent tortuous descending aorta, consistent with atherosclerotic vascular disease.",
+      "reference": "Prominent transverse aorta. Otherwise clear.",
+      "sample_id": "CXR3491"
+    },
+    {
+      "generated_tokens": 4,
+      "input": "FINDINGS: Heart size is within normal limits. Trachea is midline. The lung volumes are slightly on the low side. Lungs are otherwise clear without pleural effusion or pneumothorax. No focal consolidations. No bony or soft tissue abnormalities. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Normal chest exam",
+      "prompt_audit": {
+        "full_tokens": 54,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Normal chest exam",
+      "reference": "No acute cardiopulmonary abnormality.",
+      "sample_id": "CXR3493"
+    },
+    {
+      "generated_tokens": 23,
+      "input": "FINDINGS: The lungs and pleural spaces show no acute abnormality. Lungs are hyperexpanded. Minimal XXXX scarring in both lower lobes. Heart size and pulmonary vascularity within normal limits. Stable mild tortuosity of the descending thoracic aorta. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute pulmonary findings. 2. Hyperexpansion lung, suggestive of obstructive sleep apnea.",
+      "prompt_audit": {
+        "full_tokens": 51,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute pulmonary findings. 2. Hyperexpansion lung, suggestive of obstructive sleep apnea.",
+      "reference": "1. No acute pulmonary abnormality.",
+      "sample_id": "CXR351"
+    },
+    {
+      "generated_tokens": 14,
+      "input": "FINDINGS: The XXXX examination consists of frontal and lateral radiographs of the chest. The cardiomediastinal contours are within normal limits. There is right greater than left biapical bullous emphysema. No focal consolidation, pleural effusion, or pneumothorax identified. There are XXXX degenerative changes of the thoracic spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Biapical bullae with associated basilar airspace disease / atelectasis.",
+      "prompt_audit": {
+        "full_tokens": 65,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Biapical bullae with associated basilar airspace disease / atelectasis.",
+      "reference": "No evidence of acute cardiopulmonary process.",
+      "sample_id": "CXR3521"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: The heart and lungs have XXXX XXXX in the interval. Both lungs are clear and expanded. Heart and mediastinum normal. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No active disease.",
+      "prompt_audit": {
+        "full_tokens": 32,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No active disease.",
+      "reference": "No active disease.",
+      "sample_id": "CXR3537"
+    },
+    {
+      "generated_tokens": 9,
+      "input": "FINDINGS: The heart is top normal in size. The mediastinum is stable. Surgical clips again seen overlying the superior mediastinum.There is an retrocardiac density compatible hiatal hernia. The lungs are mildly hypoinflated. No acute infiltrate or pleural effusion are seen. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Stable postsurgical changes with no acute disease.",
+      "prompt_audit": {
+        "full_tokens": 56,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Stable postsurgical changes with no acute disease.",
+      "reference": "1. Mild hypoinflation without acute disease. 2. Retrocardiac density compatible with hiatal hernia.",
+      "sample_id": "CXR3564"
+    },
+    {
+      "generated_tokens": 25,
+      "input": "FINDINGS: Normal heart size and mediastinal contours. Low lung volumes mild bibasilar atelectasis. No focal airspace consolidation. No pleural effusion or pneumothorax. Visualized osseous structures are unremarkable in appearance. The lateral views are limited by patient positioning and motion. Large cervical spine osteophytes. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary findings.. 2. Bibasilar atelectasis, possibly related to chronic obstructive pulmonary disease (COPD).",
+      "prompt_audit": {
+        "full_tokens": 60,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary findings.. 2. Bibasilar atelectasis, possibly related to chronic obstructive pulmonary disease (COPD).",
+      "reference": "1. No acute cardiopulmonary abnormality. 2. Technically limited exam. 3. Incidental note XXXX of large cervical spine osteophytes. .",
+      "sample_id": "CXR3566"
+    },
+    {
+      "generated_tokens": 17,
+      "input": "FINDINGS: Cardiomediastinal contour and pulmonary vascularity stable and within normal limits. Lung volumes are slightly low. There are streaky left basal opacities. No pleural effusion or pneumothorax. No acute osseous findings. No free air is demonstrated. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Streaky XXXX left basilar opacities, possibly atelectasis versus scarring.",
+      "prompt_audit": {
+        "full_tokens": 52,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Streaky XXXX left basilar opacities, possibly atelectasis versus scarring.",
+      "reference": "Streaky left basilar airspace opacities, which could reflect atelectasis and/or infection.",
+      "sample_id": "CXR3589"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: Stable appearance of the cardiomediastinal silhouette. The aorta is calcified and tortuous. There is dextroscoliosis of the thoracolumbar spine. Multiple thoracic XXXX deformities appear unchanged. There is no displaced rib fracture identified. There is no pneumothorax or large pleural effusion. Stable changes of chronic lung disease with flattening of the left hemidiaphragm. There is mild right basilar airspace disease which may represent atelectasis versus infiltrate. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary process.",
+      "prompt_audit": {
+        "full_tokens": 93,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary process.",
+      "reference": "1. No acute posttraumatic finding. 2. Mild right basilar airspace consolidation may represent atelectasis versus infiltrate. 3. Changes of chronic lung disease.",
+      "sample_id": "CXR3611"
+    },
+    {
+      "generated_tokens": 42,
+      "input": "FINDINGS: There is hyperexpansion of lungs and flattening of the diaphragm consistent with COPD. No focal lung consolidation. No pneumothorax or pleural effusion. Heart size and pulmonary vascularity are within normal limits. There is a kyphosis and osteopenia of the thoracic spine. No displaced rib fractures. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Hyperexpanded lungs, suggestive of chronic obstructive pulmonary disease (COPD). 2. Flattening of the right hemidiaphragm, suggesting right-sided diaphragmatic eventration.",
+      "prompt_audit": {
+        "full_tokens": 60,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Hyperexpanded lungs, suggestive of chronic obstructive pulmonary disease (COPD). 2. Flattening of the right hemidiaphragm, suggesting right-sided diaphragmatic eventration.",
+      "reference": "No focal lung consolidation. COPD. No displaced fractures.",
+      "sample_id": "CXR3759"
+    },
+    {
+      "generated_tokens": 9,
+      "input": "FINDINGS: The cardiomediastinal silhouette is within normal limits for size and contour. The lungs are normally inflated without evidence of focal airspace disease, pleural effusion, or pneumothorax. Osseous structures are within normal limits for patient age.. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute radiographic cardiopulmonary process.",
+      "prompt_audit": {
+        "full_tokens": 55,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute radiographic cardiopulmonary process.",
+      "reference": "1. No active disease. Specifically, no radiographic evidence for tuberculosis.",
+      "sample_id": "CXR3765"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: The heart is normal in size. The mediastinum is grossly within normal limits. Moderate thoracolumbar scoliosis and patient rotation somewhat limits evaluation of the mediastinum. The lungs are clear. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute disease.",
+      "prompt_audit": {
+        "full_tokens": 40,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute disease.",
+      "reference": "No acute disease.",
+      "sample_id": "CXR3806"
+    },
+    {
+      "generated_tokens": 14,
+      "input": "FINDINGS: Normal heart size and mediastinal contour. Atherosclerotic calcification of the aortic XXXX. No abnormal airspace consolidation. No pleural effusion or pneumothorax. Stable biapical lucency and apical scarring, consistent with emphysema. Visualized osseous structures are unremarkable. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary abnormality.. 2. Emphysema.",
+      "prompt_audit": {
+        "full_tokens": 55,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary abnormality.. 2. Emphysema.",
+      "reference": "No acute cardiopulmonary abnormality.",
+      "sample_id": "CXR3812"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: Normal heart size. No focal air space consolidation, pneumothorax, pleural effusion, or pulmonary edema. Anterior osteophytes of the thoracic spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary findings.",
+      "prompt_audit": {
+        "full_tokens": 34,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary findings.",
+      "reference": "No acute cardiopulmonary disease.",
+      "sample_id": "CXR383"
+    },
+    {
+      "generated_tokens": 26,
+      "input": "FINDINGS: Both lungs remain hyperexpanded. No XXXX focal infiltrates. A small pleural or collection is XXXX present in the right apex. However, it has decreased considerably since the previous examination. Heart size remains normal. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Decreased volume of a small right apical effusion versus scarring / atelectasis. 2. Stable mild hyperinflation of both lungs.",
+      "prompt_audit": {
+        "full_tokens": 50,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Decreased volume of a small right apical effusion versus scarring / atelectasis. 2. Stable mild hyperinflation of both lungs.",
+      "reference": "COPD with almost completely resolved right apical pleural air collection.",
+      "sample_id": "CXR3847"
+    },
+    {
+      "generated_tokens": 4,
+      "input": "FINDINGS: Heart size within normal limits, stable mediastinal and hilar contours. No focal alveolar consolidation, no definite pleural effusion seen. Bronchovascular crowding without typical findings of pulmonary edema. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute findings",
+      "prompt_audit": {
+        "full_tokens": 41,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute findings",
+      "reference": "No acute findings",
+      "sample_id": "CXR386"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: The cardiac contours are normal. The lungs are clear. Thoracic spondylosis. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute process.",
+      "prompt_audit": {
+        "full_tokens": 22,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute process.",
+      "reference": "No acute process.",
+      "sample_id": "CXR3872"
+    },
+    {
+      "generated_tokens": 61,
+      "input": "FINDINGS: Compared to prior chest radiograph from XXXX, there has been removal of right-sided tunneled dialysis catheter. The cardiomediastinal silhouette is stable and within normal limits for size and contour. Mildly increased atherosclerotic calcifications of the thoracic aorta. 1.0 cm nodular opacity in the left midlung is stable compared to prior examination from XXXX. No XXXX nodules, focal consolidation, or pneumothorax identified. There are XXXX bilateral pleural effusions posteriorly. There is mild central pulmonary vascular congestion without XXXX pulmonary edema. No acute bony abnormality. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No evidence of active cardiopulmonary disease. 2. Stable 0. 0.7 cm nodule in the left upper lobe. This may represent a small primary lung carcinoma versus metastatic lesion; however, given its stability over several months' time interval, consideration should be made for repeat imaging if clinical concern persists.",
+      "prompt_audit": {
+        "full_tokens": 118,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No evidence of active cardiopulmonary disease. 2. Stable 0. 0.7 cm nodule in the left upper lobe. This may represent a small primary lung carcinoma versus metastatic lesion; however, given its stability over several months' time interval, consideration should be made for repeat imaging if clinical concern persists.",
+      "reference": "Central pulmonary vascular congestion without XXXX edema, consolidation. XXXX bilateral pleural effusions.",
+      "sample_id": "CXR3877"
+    },
+    {
+      "generated_tokens": 33,
+      "input": "FINDINGS: Chest. Mildly hyperexpanded lungs. The right lung base is excluded from view. No visualized consolidation. No pneumothorax. No large pleural effusions. Heart size is unremarkable. Abdomen. There are multiple air filled nondilated loops of small and large bowel. There is extensive stool XXXX seen throughout the descending colon. Supine examinations are limited for evaluation of pneumoperitoneum. There is bilateral hip degenerative change. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Exam limitations due to patient habitus. 2. Multiple air-fluid levels in the abdomen consistent with ileus. 3. Bilateral hip degenerative changes.",
+      "prompt_audit": {
+        "full_tokens": 88,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Exam limitations due to patient habitus. 2. Multiple air-fluid levels in the abdomen consistent with ileus. 3. Bilateral hip degenerative changes.",
+      "reference": "Chest 1. No acute cardiopulmonary findings. Abdomen 1. Nonspecific bowel XXXX pattern without evidence of obstruction.",
+      "sample_id": "CXR3899"
+    },
+    {
+      "generated_tokens": 13,
+      "input": "FINDINGS: Low lung volumes. Heart size normal. No focal airspace consolidations. No pneumothorax or effusions. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Low lung volumes. 2. Normal chest exam.",
+      "prompt_audit": {
+        "full_tokens": 28,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Low lung volumes. 2. Normal chest exam.",
+      "reference": "No acute cardiopulmonary findings.",
+      "sample_id": "CXR391"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: The heart size is upper limits of normal. The pulmonary XXXX and mediastinum are within normal limits. There is no pleural effusion or pneumothorax. There is no focal air space opacity to suggest a pneumonia. There are minimal degenerative changes of the spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary disease.",
+      "prompt_audit": {
+        "full_tokens": 56,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary disease.",
+      "reference": "No acute cardiopulmonary disease.",
+      "sample_id": "CXR3937"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: Lungs are clear bilaterally with no focal infiltrate, pleural effusion, or pneumothoraces. Cardiomediastinal silhouette is within normal limits. XXXX and soft tissues are unremarkable. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary abnormality..",
+      "prompt_audit": {
+        "full_tokens": 46,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary abnormality..",
+      "reference": "No acute cardiopulmonary abnormality. .",
+      "sample_id": "CXR3970"
+    },
+    {
+      "generated_tokens": 3,
+      "input": "FINDINGS: Heart size and mediastinal contour are normal. Pulmonary vascularity is normal. Lungs are clear. No pleural effusions or pneumothoraces. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Normal chest",
+      "prompt_audit": {
+        "full_tokens": 33,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Normal chest",
+      "reference": "No acute cardiopulmonary process.",
+      "sample_id": "CXR3976"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: The cardiac contours are normal. The lungs are clear. Thoracic spondylosis. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute process.",
+      "prompt_audit": {
+        "full_tokens": 22,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute process.",
+      "reference": "No acute preoperative findings.",
+      "sample_id": "CXR3991"
+    },
+    {
+      "generated_tokens": 15,
+      "input": "FINDINGS: There are diffuse bilateral interstitial and alveolar opacities consistent with chronic obstructive lung disease and bullous emphysema. There are irregular opacities in the left lung apex, that could represent a cavitary lesion in the left lung apex.There are streaky opacities in the right upper lobe, XXXX scarring. The cardiomediastinal silhouette is normal in size and contour. There is no pneumothorax or large pleural effusion. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Diffuse bilateral interstitial and alveolar opacities; possible superimposed atelectasis versus pneumonia",
+      "prompt_audit": {
+        "full_tokens": 89,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Diffuse bilateral interstitial and alveolar opacities; possible superimposed atelectasis versus pneumonia",
+      "reference": "1. Bullous emphysema and interstitial fibrosis. 2. Probably scarring in the left apex, although difficult to exclude a cavitary lesion. 3. Opacities in the bilateral upper lobes could represent scarring, however the absence of comparison exam, recommend short interval followup radiograph or CT thorax to document resolution.",
+      "sample_id": "CXR4"
+    },
+    {
+      "generated_tokens": 17,
+      "input": "FINDINGS: Stable enlargement of the cardiac silhouette, stable mediastinal and hilar contours, surgical clips and CABG markers. Stable XXXX densities in the left base compatible with scarring or chronic subsegmental atelectasis. No focal alveolar consolidation, no definite pleural effusion seen. Right hilar calcifications suggest a previous granulomatous process. No typical findings of pulmonary edema. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary abnormality.. 2. Stable appearance of the heart size.",
+      "prompt_audit": {
+        "full_tokens": 73,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary abnormality.. 2. Stable appearance of the heart size.",
+      "reference": "No acute findings",
+      "sample_id": "CXR418"
+    },
+    {
+      "generated_tokens": 9,
+      "input": "FINDINGS: There are low lung volumes with associated bronchovascular crowding and basilar subsegmental atelectasis. There is stable prominence of the right cardiac silhouette. The mediastinum is unremarkable. There is no pleural effusion, pneumothorax, or focal airspace disease. There are stable chronic degenerative changes of the thoracic spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Low volume study without acute cardiopulmonary abnormality.",
+      "prompt_audit": {
+        "full_tokens": 66,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Low volume study without acute cardiopulmonary abnormality.",
+      "reference": "No acute cardiopulmonary abnormality.",
+      "sample_id": "CXR455"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: The cardiac and mediastinal contours are within normal limits. The lungs are well-inflated and clear. There is no focal consolidation, pneumothorax, or effusion. The bony structures of the thorax are unremarkable. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary abnormality.",
+      "prompt_audit": {
+        "full_tokens": 46,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary abnormality.",
+      "reference": "No evidence of acute cardiopulmonary process. Stable appearance of the chest.",
+      "sample_id": "CXR470"
+    },
+    {
+      "generated_tokens": 4,
+      "input": "FINDINGS: Cardiac and mediastinal contours are within normal limits. The lungs are clear. Bony structures are intact. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute findings",
+      "prompt_audit": {
+        "full_tokens": 27,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute findings",
+      "reference": "No x-XXXX evidence of metastatic disease.",
+      "sample_id": "CXR506"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: Normal heart size and mediastinal contours. No focal airspace consolidation. No pleural effusion or pneumothorax. Visualized osseous structures are unremarkable. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary abnormalities.",
+      "prompt_audit": {
+        "full_tokens": 33,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary abnormalities.",
+      "reference": "No acute cardiopulmonary abnormality.",
+      "sample_id": "CXR508"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: The heart is normal in size. The mediastinum is unremarkable. Left perihilar scarring is noted in the upper lobe. Streaky opacities in the retrocardiac region XXXX reflect mild subsegmental atelectasis. There is no focal infiltrate or pleural effusion. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary disease.",
+      "prompt_audit": {
+        "full_tokens": 56,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary disease.",
+      "reference": "Mild left-sided scarring/subsegmental atelectasis. No definite infiltrate.",
+      "sample_id": "CXR534"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: Heart and mediastinum are normal. No focal consolidation. No pleural effusion or pneumothorax. Bony structures are intact. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Negative for acute abnormality.",
+      "prompt_audit": {
+        "full_tokens": 29,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Negative for acute abnormality.",
+      "reference": "1. No acute cardiopulmonary findings.",
+      "sample_id": "CXR544"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: The heart is normal in size. The mediastinum is unremarkable. Atherosclerotic calcifications of the aortic XXXX are noted. The lungs are clear. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute disease.",
+      "prompt_audit": {
+        "full_tokens": 35,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute disease.",
+      "reference": "No acute disease.",
+      "sample_id": "CXR580"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: The heart is normal in size. The mediastinum is unremarkable. The right chest XXXX tip is visualized in the mid SVC. There is no pneumothorax. The lungs are clear. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute cardiopulmonary abnormality.",
+      "prompt_audit": {
+        "full_tokens": 42,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute cardiopulmonary abnormality.",
+      "reference": "No acute disease.",
+      "sample_id": "CXR596"
+    },
+    {
+      "generated_tokens": 4,
+      "input": "FINDINGS: The heart is normal in size. The mediastinum is stable. Atherosclerotic calcifications of the aorta. There is again a pleural based density in the right lung base, XXXX related to subpleural fat. The appearance is stable from multiple previous studies. The lungs are clear. There is no pleural effusion. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute disease",
+      "prompt_audit": {
+        "full_tokens": 67,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute disease",
+      "reference": "No acute disease.",
+      "sample_id": "CXR623"
+    },
+    {
+      "generated_tokens": 26,
+      "input": "FINDINGS: Rotated examination. Tortuous aorta. Moderate right-sided pleural effusion, small left sided. No pneumothorax. Mixed nodular interstitial opacities distributed through bilateral lungs, right greater than left. Cardiomediastinal silhouette is mildly enlarged. Obliquely oriented left humeral neck fracture, transverse, with 5 mm displacement of the distal fragment. Limited evaluation of the aorto iliac stent. No cavitary lesion to suggest. active tuberculosis. Large hiatal hernia. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Moderate right-sided pleural effusion, small left sided. 2. Bibasilar subsegmental atelectasis, infiltrates, effusions.",
+      "prompt_audit": {
+        "full_tokens": 99,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Moderate right-sided pleural effusion, small left sided. 2. Bibasilar subsegmental atelectasis, infiltrates, effusions.",
+      "reference": "1. Moderate right-sided pleural effusion. 2. No cavitary lung changes to suggest active tuberculosis. The airspace opacities in right upper lobe seen on XXXX chest are not visualized on this study which could be due to difference in technique and patient rotation. 3. Cardiomegaly with prominent aorta which may be accentuated due to AP view. 4. Left humerus fracture. .",
+      "sample_id": "CXR650"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: No focal consolidation, suspicious pulmonary opacity or definite pleural effusion. Heart size and pulmonary vascularity within normal limits. Stable mediastinal contour. Calcified hilar lymph XXXX. Visualized osseous structures unremarkable. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary abnormality.",
+      "prompt_audit": {
+        "full_tokens": 45,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary abnormality.",
+      "reference": "No acute cardiopulmonary abnormality.",
+      "sample_id": "CXR660"
+    },
+    {
+      "generated_tokens": 40,
+      "input": "FINDINGS: There is persistent mild elevation right hemidiaphragm. There is suggestion of subtle patchy opacities in lower lung XXXX bilaterally. This is XXXX to be similar to XXXX scan. The heart is normal. The aorta is calcified and tortuous. The skeletal structures show scoliosis and arthritic changes. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Patchy bilateral subsegmental atelectasis or infiltrates, left worse right. 2. Mild elevated right hemidiaphragm. 3. Questionable small amount of pleural fluid on the right.",
+      "prompt_audit": {
+        "full_tokens": 66,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Patchy bilateral subsegmental atelectasis or infiltrates, left worse right. 2. Mild elevated right hemidiaphragm. 3. Questionable small amount of pleural fluid on the right.",
+      "reference": "COPD and chronic opacities more pronounced in the lower lung XXXX.",
+      "sample_id": "CXR695"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: Lungs are clear without focal consolidation, effusion, or pneumothorax. Normal heart size. Bony thorax and soft tissues grossly unremarkable. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Negative for acute abnormality.",
+      "prompt_audit": {
+        "full_tokens": 33,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Negative for acute abnormality.",
+      "reference": "Negative acute cardiopulmonary abnormality.",
+      "sample_id": "CXR72"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: The lungs appear clear. The heart and pulmonary XXXX are normal. The pleural spaces are clear. Mediastinal contours are normal. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary disease",
+      "prompt_audit": {
+        "full_tokens": 34,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary disease",
+      "reference": "No acute acute cardiopulmonary disease.",
+      "sample_id": "CXR792"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: There are XXXX left upper lobe opacities. Lungs otherwise appear clear. No pleural effusion or pneumothorax. Heart size is as is within normal limits. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Left upper lobe pneumonia.",
+      "prompt_audit": {
+        "full_tokens": 37,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Left upper lobe pneumonia.",
+      "reference": "1. No evidence of active tuberculosis. 2. XXXX left upper lobe opacities. The appearance XXXX subsegmental atelectasis or scarring.",
+      "sample_id": "CXR817"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: No airspace disease, effusion or noncalcified nodule. Normal heart size and mediastinum. Left axillary surgical clips unchanged Visualized XXXX of the chest XXXX are within normal limits. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary abnormality.",
+      "prompt_audit": {
+        "full_tokens": 43,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary abnormality.",
+      "reference": "No acute cardiopulmonary abnormality.",
+      "sample_id": "CXR82"
+    },
+    {
+      "generated_tokens": 6,
+      "input": "FINDINGS: Stable appearance of the cardiomediastinal silhouette. There is no pneumothorax, pleural effusion, or focal airspace consolidation. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary abnormality.",
+      "prompt_audit": {
+        "full_tokens": 34,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary abnormality.",
+      "reference": "No acute cardiopulmonary findings.",
+      "sample_id": "CXR850"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: The lungs appear clear. The heart and pulmonary XXXX appear normal. The pleural spaces are clear. These XXXX't contours appear normal. There is a XXXX fracture of the midthoracic vertebral body. This vertebral body does not appear sclerotic. The age of this fracture is unknown. There are healed fractures of several left anterior ribs. There is a healed left clavicle fracture. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No acute cardiopulmonary disease",
+      "prompt_audit": {
+        "full_tokens": 82,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No acute cardiopulmonary disease",
+      "reference": "1. No acute cardiopulmonary disease. No evidence of pulmonary nodules. 2. A single nonsclerotic mid thoracic vertebral XXXX fracture is present. Without a comparison study, the age of this fracture is unknown. Metastatic disease is possible, however given the nonsclerotic appearance, is not XXXX. 3. Healed left clavicle and left anterior rib fractures.",
+      "sample_id": "CXR854"
+    },
+    {
+      "generated_tokens": 26,
+      "input": "FINDINGS: Chest. The heart and lungs have XXXX XXXX in the interval. Both lungs are clear and expanded. Heart and mediastinum normal. Left knee. The right total knee prosthesis remains in XXXX. The medial compartment is markedly narrow. Large osteophytes are present on the left femur and tibial lateral plateaus. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. No acute pulmonary disease process. 2. Marked narrowing of the left medial compartment, compatible with chronic obstructive lung disease.",
+      "prompt_audit": {
+        "full_tokens": 70,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. No acute pulmonary disease process. 2. Marked narrowing of the left medial compartment, compatible with chronic obstructive lung disease.",
+      "reference": "1. Chest. No active disease. 2. The knee. Advanced degenerative joint disease.",
+      "sample_id": "CXR875"
+    },
+    {
+      "generated_tokens": 28,
+      "input": "FINDINGS: Cardiomediastinal silhouette is within normal limits of size In appearance. Pulmonary vascularity is unremarkable. There are diffuse, bilateral interstitial opacities, with XXXX B lines demonstrated. Small amount of subpleural edema is demonstrated in the fissures. There is mild blunting of both posterior costophrenic sulci, which may reflect XXXX effusions. Negative for pneumothorax. Limited evaluation reveals the XXXX XXXX the grossly intact. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "1. Diffuse interstitial opacities 2. Mild blunting of the posterior costochondral junctions, possibly representing small amounts of effusion / atelectasis",
+      "prompt_audit": {
+        "full_tokens": 93,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "1. Diffuse interstitial opacities 2. Mild blunting of the posterior costochondral junctions, possibly representing small amounts of effusion / atelectasis",
+      "reference": "1. Heart failure with pulmonary edema.",
+      "sample_id": "CXR934"
+    },
+    {
+      "generated_tokens": 5,
+      "input": "FINDINGS: In the interval, the heart size has become normal. Pulmonary XXXX are normal. Lungs are clear and expanded. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "No active disease.",
+      "prompt_audit": {
+        "full_tokens": 31,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "No active disease.",
+      "reference": "Resolution of cardiomegaly. No active disease.",
+      "sample_id": "CXR964"
+    },
+    {
+      "generated_tokens": 8,
+      "input": "FINDINGS: Frontal and lateral views of the chest show an unchanged cardiomediastinal silhouette. Reduced lung volumes with basilar atelectasis. No XXXX focal airspace consolidation or pleural effusion. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Low lung volumes with basilar atelectasis.",
+      "prompt_audit": {
+        "full_tokens": 44,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": "Low lung volumes with basilar atelectasis.",
+      "reference": "No acute or active cardiac, pulmonary or pleural disease.",
+      "sample_id": "CXR98"
+    }
+  ],
+  "status": "complete"
+}

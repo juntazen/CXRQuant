@@ -1,0 +1,122 @@
+<local-root>/miniconda3/lib/python3.13/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.7.1+cu118).
+
+Loading weights:   0%|                                                                                     | 0/76 [00:00<?, ?it/s]
+Loading weights: 100%|██████████████████████████████████████████████████████████████████████████| 76/76 [00:00<00:00, 1513.20it/s]
+distilgpt2 FP32 reproduced 134 / 134
+
+Loading weights:   0%|                                                                                     | 0/76 [00:00<?, ?it/s]
+Loading weights: 100%|███████████████████████████████████████████████████████████████████████████| 76/76 [00:00<00:00, 857.72it/s]
+distilgpt2 FP16 reproduced 134 / 134
+<local-root>/miniconda3/lib/python3.13/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+Loading weights:   0%|                                                                                     | 0/76 [00:00<?, ?it/s]
+Loading weights:  34%|█████████████████████████▋                                                 | 26/76 [00:00<00:00, 246.19it/s]
+Loading weights:  88%|██████████████████████████████████████████████████████████████████         | 67/76 [00:00<00:00, 339.75it/s]
+Loading weights: 100%|███████████████████████████████████████████████████████████████████████████| 76/76 [00:00<00:00, 301.93it/s]
+distilgpt2 INT8-BnB reproduced 134 / 134
+
+Loading weights:   0%|                                                                                     | 0/76 [00:00<?, ?it/s]
+Loading weights:  45%|█████████████████████████████████▌                                         | 34/76 [00:00<00:00, 324.93it/s]
+Loading weights: 100%|███████████████████████████████████████████████████████████████████████████| 76/76 [00:00<00:00, 423.69it/s]
+distilgpt2 NF4-BnB reproduced 134 / 134
+{
+ "FP16": {
+  "diverged_reports": 75,
+  "reports": 134,
+  "flips_in_identical_token_reports": 0,
+  "hazard_by_fp32_margin_quintile": [
+   {
+    "quintile": 1,
+    "steps": 1031,
+    "divergences": 75
+   },
+   {
+    "quintile": 2,
+    "steps": 1031,
+    "divergences": 0
+   },
+   {
+    "quintile": 3,
+    "steps": 1030,
+    "divergences": 0
+   },
+   {
+    "quintile": 4,
+    "steps": 1031,
+    "divergences": 0
+   },
+   {
+    "quintile": 5,
+    "steps": 1030,
+    "divergences": 0
+   }
+  ]
+ },
+ "INT8-BnB": {
+  "diverged_reports": 120,
+  "reports": 134,
+  "flips_in_identical_token_reports": 0,
+  "hazard_by_fp32_margin_quintile": [
+   {
+    "quintile": 1,
+    "steps": 424,
+    "divergences": 110
+   },
+   {
+    "quintile": 2,
+    "steps": 424,
+    "divergences": 9
+   },
+   {
+    "quintile": 3,
+    "steps": 424,
+    "divergences": 1
+   },
+   {
+    "quintile": 4,
+    "steps": 424,
+    "divergences": 0
+   },
+   {
+    "quintile": 5,
+    "steps": 423,
+    "divergences": 0
+   }
+  ]
+ },
+ "NF4-BnB": {
+  "diverged_reports": 132,
+  "reports": 134,
+  "flips_in_identical_token_reports": 0,
+  "hazard_by_fp32_margin_quintile": [
+   {
+    "quintile": 1,
+    "steps": 166,
+    "divergences": 86
+   },
+   {
+    "quintile": 2,
+    "steps": 166,
+    "divergences": 41
+   },
+   {
+    "quintile": 3,
+    "steps": 166,
+    "divergences": 5
+   },
+   {
+    "quintile": 4,
+    "steps": 166,
+    "divergences": 0
+   },
+   {
+    "quintile": 5,
+    "steps": 165,
+    "divergences": 0
+   }
+  ]
+ }
+}

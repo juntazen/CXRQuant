@@ -1,0 +1,2149 @@
+{
+ "data_flow": {
+  "openi_reports": 3955,
+  "openi_reports_with_images": 3851,
+  "openi_reports_without_images": 104,
+  "openi_reports_with_findings_and_impression": 3419,
+  "openi_with_images_and_both_sections": 3331,
+  "corpus_records": 781,
+  "corpus_records_in_openi": 781,
+  "corpus_records_text_identical_to_openi": 781,
+  "corpus_records_without_images": 0,
+  "corpus_image_files_listed": 878,
+  "openi_image_files_for_same_records": 1574,
+  "split_procedure": "unique source UIDs sorted, shuffled with numpy default_rng(42), 70/10/20 cut (int truncation), filtering of empty sections applied after the split",
+  "raw_partition_sizes": {
+   "train": 546,
+   "val": 78,
+   "test": 157
+  },
+  "excluded_empty_sections": {
+   "train": 81,
+   "val": 10,
+   "test": 23
+  },
+  "excluded_reason_counts": {
+   "findings_empty": 113,
+   "impression_empty": 1
+  },
+  "usable_partition_sizes": {
+   "train": 465,
+   "val": 68,
+   "test": 134
+  },
+  "duplicate_uids": 0,
+  "representativeness": {
+   "used_667": {
+    "n": 667,
+    "findings_words_mean": 32.5,
+    "impression_words_mean": 8.2,
+    "mesh_normal_pct": 35.5,
+    "impression_any_positive_category_pct": 22.9,
+    "category_prevalence_pct": {
+     "Enlarged Cardiomediastinum": 0.3,
+     "Cardiomegaly": 7.0,
+     "Lung Opacity": 6.7,
+     "Lung Lesion": 2.4,
+     "Edema": 3.0,
+     "Consolidation": 5.1,
+     "Pneumonia": 2.2,
+     "Atelectasis": 6.9,
+     "Pneumothorax": 0.7,
+     "Pleural Effusion": 4.3,
+     "Pleural Other": 0.7,
+     "Fracture": 0.9,
+     "Support Devices": 2.8
+    }
+   },
+   "remaining_openi_with_images": {
+    "n": 2664,
+    "findings_words_mean": 31.2,
+    "impression_words_mean": 8.1,
+    "mesh_normal_pct": 36.0,
+    "impression_any_positive_category_pct": 22.8,
+    "category_prevalence_pct": {
+     "Enlarged Cardiomediastinum": 0.2,
+     "Cardiomegaly": 6.0,
+     "Lung Opacity": 5.0,
+     "Lung Lesion": 2.8,
+     "Edema": 1.7,
+     "Consolidation": 4.8,
+     "Pneumonia": 2.3,
+     "Atelectasis": 6.3,
+     "Pneumothorax": 0.4,
+     "Pleural Effusion": 3.5,
+     "Pleural Other": 0.9,
+     "Fracture": 1.2,
+     "Support Devices": 2.2
+    }
+   }
+  }
+ },
+ "overlap": {
+  "val_vs_train_findings": {
+   "n": 68,
+   "exact": 14,
+   "jaccard_ge_0.9": 15
+  },
+  "test_vs_train+val_findings": {
+   "n": 134,
+   "exact": 19,
+   "jaccard_ge_0.9": 25
+  },
+  "val_vs_train_impression": {
+   "n": 68,
+   "exact": 38,
+   "jaccard_ge_0.9": 38
+  },
+  "test_vs_train+val_impression": {
+   "n": 134,
+   "exact": 78,
+   "jaccard_ge_0.9": 79
+  },
+  "test_distinct_impressions": 83,
+  "test_top_impressions": [
+   [
+    "no acute cardiopulmonary abnormality",
+    13
+   ],
+   [
+    "no acute cardiopulmonary findings",
+    11
+   ],
+   [
+    "no acute disease",
+    6
+   ],
+   [
+    "no acute findings",
+    5
+   ],
+   [
+    "no acute cardiopulmonary disease",
+    4
+   ]
+  ]
+ },
+ "overlap_sensitivity": {
+  "excluded_test_reports": 25,
+  "kept": 109,
+  "seed42_dedup_rows": [
+   {
+    "model": "distilgpt2",
+    "precision": "FP16",
+    "n_reports": 109,
+    "fp32_bleu4": 0.0079,
+    "bleu4": 0.008,
+    "fp32_pos": 149,
+    "fp32_neg": 1268,
+    "b": 28,
+    "c": 41,
+    "FNF": 0.1879,
+    "FPF": 0.0323
+   },
+   {
+    "model": "distilgpt2",
+    "precision": "INT8",
+    "n_reports": 109,
+    "fp32_bleu4": 0.0079,
+    "bleu4": 0.0069,
+    "fp32_pos": 149,
+    "fp32_neg": 1268,
+    "b": 82,
+    "c": 59,
+    "FNF": 0.5503,
+    "FPF": 0.0465
+   },
+   {
+    "model": "distilgpt2",
+    "precision": "NF4",
+    "n_reports": 109,
+    "fp32_bleu4": 0.0079,
+    "bleu4": 0.0095,
+    "fp32_pos": 149,
+    "fp32_neg": 1268,
+    "b": 83,
+    "c": 96,
+    "FNF": 0.557,
+    "FPF": 0.0757
+   },
+   {
+    "model": "gpt2",
+    "precision": "FP16",
+    "n_reports": 109,
+    "fp32_bleu4": 0.0075,
+    "bleu4": 0.0075,
+    "fp32_pos": 163,
+    "fp32_neg": 1254,
+    "b": 39,
+    "c": 32,
+    "FNF": 0.2393,
+    "FPF": 0.0255
+   },
+   {
+    "model": "gpt2",
+    "precision": "INT8",
+    "n_reports": 109,
+    "fp32_bleu4": 0.0075,
+    "bleu4": 0.006,
+    "fp32_pos": 163,
+    "fp32_neg": 1254,
+    "b": 91,
+    "c": 82,
+    "FNF": 0.5583,
+    "FPF": 0.0654
+   },
+   {
+    "model": "gpt2",
+    "precision": "NF4",
+    "n_reports": 109,
+    "fp32_bleu4": 0.0075,
+    "bleu4": 0.0063,
+    "fp32_pos": 163,
+    "fp32_neg": 1254,
+    "b": 127,
+    "c": 82,
+    "FNF": 0.7791,
+    "FPF": 0.0654
+   },
+   {
+    "model": "gpt2-medium",
+    "precision": "FP16",
+    "n_reports": 109,
+    "fp32_bleu4": 0.0104,
+    "bleu4": 0.0105,
+    "fp32_pos": 97,
+    "fp32_neg": 1320,
+    "b": 16,
+    "c": 17,
+    "FNF": 0.1649,
+    "FPF": 0.0129
+   },
+   {
+    "model": "gpt2-medium",
+    "precision": "INT8",
+    "n_reports": 109,
+    "fp32_bleu4": 0.0104,
+    "bleu4": 0.0103,
+    "fp32_pos": 97,
+    "fp32_neg": 1320,
+    "b": 54,
+    "c": 52,
+    "FNF": 0.5567,
+    "FPF": 0.0394
+   },
+   {
+    "model": "gpt2-medium",
+    "precision": "NF4",
+    "n_reports": 109,
+    "fp32_bleu4": 0.0104,
+    "bleu4": 0.008,
+    "fp32_pos": 97,
+    "fp32_neg": 1320,
+    "b": 68,
+    "c": 99,
+    "FNF": 0.701,
+    "FPF": 0.075
+   },
+   {
+    "model": "biogpt",
+    "precision": "FP16",
+    "n_reports": 109,
+    "fp32_bleu4": 0.1408,
+    "bleu4": 0.1446,
+    "fp32_pos": 64,
+    "fp32_neg": 1353,
+    "b": 0,
+    "c": 0,
+    "FNF": 0.0,
+    "FPF": 0.0
+   },
+   {
+    "model": "biogpt",
+    "precision": "INT8",
+    "n_reports": 109,
+    "fp32_bleu4": 0.1408,
+    "bleu4": 0.1415,
+    "fp32_pos": 64,
+    "fp32_neg": 1353,
+    "b": 11,
+    "c": 5,
+    "FNF": 0.1719,
+    "FPF": 0.0037
+   },
+   {
+    "model": "biogpt",
+    "precision": "NF4",
+    "n_reports": 109,
+    "fp32_bleu4": 0.1408,
+    "bleu4": 0.1444,
+    "fp32_pos": 64,
+    "fp32_neg": 1353,
+    "b": 33,
+    "c": 13,
+    "FNF": 0.5156,
+    "FPF": 0.0096
+   },
+   {
+    "model": "pythia-1b",
+    "precision": "FP16",
+    "n_reports": 109,
+    "fp32_bleu4": 0.138,
+    "bleu4": 0.1378,
+    "fp32_pos": 65,
+    "fp32_neg": 1352,
+    "b": 0,
+    "c": 0,
+    "FNF": 0.0,
+    "FPF": 0.0
+   },
+   {
+    "model": "pythia-1b",
+    "precision": "INT8",
+    "n_reports": 109,
+    "fp32_bleu4": 0.138,
+    "bleu4": 0.1276,
+    "fp32_pos": 65,
+    "fp32_neg": 1352,
+    "b": 10,
+    "c": 8,
+    "FNF": 0.1538,
+    "FPF": 0.0059
+   },
+   {
+    "model": "pythia-1b",
+    "precision": "NF4",
+    "n_reports": 109,
+    "fp32_bleu4": 0.138,
+    "bleu4": 0.1439,
+    "fp32_pos": 65,
+    "fp32_neg": 1352,
+    "b": 28,
+    "c": 18,
+    "FNF": 0.4308,
+    "FPF": 0.0133
+   },
+   {
+    "model": "biogpt-large",
+    "precision": "FP16",
+    "n_reports": 109,
+    "fp32_bleu4": 0.1199,
+    "bleu4": 0.12,
+    "fp32_pos": 62,
+    "fp32_neg": 1355,
+    "b": 3,
+    "c": 0,
+    "FNF": 0.0484,
+    "FPF": 0.0
+   },
+   {
+    "model": "biogpt-large",
+    "precision": "INT8",
+    "n_reports": 109,
+    "fp32_bleu4": 0.1199,
+    "bleu4": 0.1119,
+    "fp32_pos": 62,
+    "fp32_neg": 1355,
+    "b": 8,
+    "c": 7,
+    "FNF": 0.129,
+    "FPF": 0.0052
+   },
+   {
+    "model": "biogpt-large",
+    "precision": "NF4",
+    "n_reports": 109,
+    "fp32_bleu4": 0.1199,
+    "bleu4": 0.1165,
+    "fp32_pos": 62,
+    "fp32_neg": 1355,
+    "b": 22,
+    "c": 22,
+    "FNF": 0.3548,
+    "FPF": 0.0162
+   }
+  ],
+  "seed42_full_rows": [
+   {
+    "model": "distilgpt2",
+    "precision": "FP16",
+    "n_reports": 134,
+    "fp32_bleu4": 0.0082,
+    "bleu4": 0.0083,
+    "fp32_pos": 185,
+    "fp32_neg": 1557,
+    "b": 43,
+    "c": 53,
+    "FNF": 0.2324,
+    "FPF": 0.034
+   },
+   {
+    "model": "distilgpt2",
+    "precision": "INT8",
+    "n_reports": 134,
+    "fp32_bleu4": 0.0082,
+    "bleu4": 0.0075,
+    "fp32_pos": 185,
+    "fp32_neg": 1557,
+    "b": 106,
+    "c": 77,
+    "FNF": 0.573,
+    "FPF": 0.0495
+   },
+   {
+    "model": "distilgpt2",
+    "precision": "NF4",
+    "n_reports": 134,
+    "fp32_bleu4": 0.0082,
+    "bleu4": 0.0103,
+    "fp32_pos": 185,
+    "fp32_neg": 1557,
+    "b": 112,
+    "c": 119,
+    "FNF": 0.6054,
+    "FPF": 0.0764
+   },
+   {
+    "model": "gpt2",
+    "precision": "FP16",
+    "n_reports": 134,
+    "fp32_bleu4": 0.0087,
+    "bleu4": 0.0087,
+    "fp32_pos": 194,
+    "fp32_neg": 1548,
+    "b": 45,
+    "c": 35,
+    "FNF": 0.232,
+    "FPF": 0.0226
+   },
+   {
+    "model": "gpt2",
+    "precision": "INT8",
+    "n_reports": 134,
+    "fp32_bleu4": 0.0087,
+    "bleu4": 0.0091,
+    "fp32_pos": 194,
+    "fp32_neg": 1548,
+    "b": 118,
+    "c": 88,
+    "FNF": 0.6082,
+    "FPF": 0.0568
+   },
+   {
+    "model": "gpt2",
+    "precision": "NF4",
+    "n_reports": 134,
+    "fp32_bleu4": 0.0087,
+    "bleu4": 0.0062,
+    "fp32_pos": 194,
+    "fp32_neg": 1548,
+    "b": 154,
+    "c": 92,
+    "FNF": 0.7938,
+    "FPF": 0.0594
+   },
+   {
+    "model": "gpt2-medium",
+    "precision": "FP16",
+    "n_reports": 134,
+    "fp32_bleu4": 0.012,
+    "bleu4": 0.012,
+    "fp32_pos": 106,
+    "fp32_neg": 1636,
+    "b": 21,
+    "c": 21,
+    "FNF": 0.1981,
+    "FPF": 0.0128
+   },
+   {
+    "model": "gpt2-medium",
+    "precision": "INT8",
+    "n_reports": 134,
+    "fp32_bleu4": 0.012,
+    "bleu4": 0.0125,
+    "fp32_pos": 106,
+    "fp32_neg": 1636,
+    "b": 60,
+    "c": 62,
+    "FNF": 0.566,
+    "FPF": 0.0379
+   },
+   {
+    "model": "gpt2-medium",
+    "precision": "NF4",
+    "n_reports": 134,
+    "fp32_bleu4": 0.012,
+    "bleu4": 0.0103,
+    "fp32_pos": 106,
+    "fp32_neg": 1636,
+    "b": 77,
+    "c": 114,
+    "FNF": 0.7264,
+    "FPF": 0.0697
+   },
+   {
+    "model": "biogpt",
+    "precision": "FP16",
+    "n_reports": 134,
+    "fp32_bleu4": 0.1788,
+    "bleu4": 0.1824,
+    "fp32_pos": 64,
+    "fp32_neg": 1678,
+    "b": 0,
+    "c": 0,
+    "FNF": 0.0,
+    "FPF": 0.0
+   },
+   {
+    "model": "biogpt",
+    "precision": "INT8",
+    "n_reports": 134,
+    "fp32_bleu4": 0.1788,
+    "bleu4": 0.1786,
+    "fp32_pos": 64,
+    "fp32_neg": 1678,
+    "b": 11,
+    "c": 5,
+    "FNF": 0.1719,
+    "FPF": 0.003
+   },
+   {
+    "model": "biogpt",
+    "precision": "NF4",
+    "n_reports": 134,
+    "fp32_bleu4": 0.1788,
+    "bleu4": 0.1853,
+    "fp32_pos": 64,
+    "fp32_neg": 1678,
+    "b": 33,
+    "c": 13,
+    "FNF": 0.5156,
+    "FPF": 0.0077
+   },
+   {
+    "model": "pythia-1b",
+    "precision": "FP16",
+    "n_reports": 134,
+    "fp32_bleu4": 0.1775,
+    "bleu4": 0.1771,
+    "fp32_pos": 65,
+    "fp32_neg": 1677,
+    "b": 0,
+    "c": 0,
+    "FNF": 0.0,
+    "FPF": 0.0
+   },
+   {
+    "model": "pythia-1b",
+    "precision": "INT8",
+    "n_reports": 134,
+    "fp32_bleu4": 0.1775,
+    "bleu4": 0.1676,
+    "fp32_pos": 65,
+    "fp32_neg": 1677,
+    "b": 10,
+    "c": 8,
+    "FNF": 0.1538,
+    "FPF": 0.0048
+   },
+   {
+    "model": "pythia-1b",
+    "precision": "NF4",
+    "n_reports": 134,
+    "fp32_bleu4": 0.1775,
+    "bleu4": 0.1831,
+    "fp32_pos": 65,
+    "fp32_neg": 1677,
+    "b": 28,
+    "c": 18,
+    "FNF": 0.4308,
+    "FPF": 0.0107
+   },
+   {
+    "model": "biogpt-large",
+    "precision": "FP16",
+    "n_reports": 134,
+    "fp32_bleu4": 0.1591,
+    "bleu4": 0.159,
+    "fp32_pos": 62,
+    "fp32_neg": 1680,
+    "b": 3,
+    "c": 0,
+    "FNF": 0.0484,
+    "FPF": 0.0
+   },
+   {
+    "model": "biogpt-large",
+    "precision": "INT8",
+    "n_reports": 134,
+    "fp32_bleu4": 0.1591,
+    "bleu4": 0.1463,
+    "fp32_pos": 62,
+    "fp32_neg": 1680,
+    "b": 8,
+    "c": 7,
+    "FNF": 0.129,
+    "FPF": 0.0042
+   },
+   {
+    "model": "biogpt-large",
+    "precision": "NF4",
+    "n_reports": 134,
+    "fp32_bleu4": 0.1591,
+    "bleu4": 0.1553,
+    "fp32_pos": 62,
+    "fp32_neg": 1680,
+    "b": 22,
+    "c": 22,
+    "FNF": 0.3548,
+    "FPF": 0.0131
+   }
+  ],
+  "strict_ordering_dedup_runs": 28,
+  "non_decreasing_dedup_runs": 30,
+  "strict_ordering_full_runs": 28
+ },
+ "denominators_seed42": [
+  {
+   "seed": 42,
+   "model": "distilgpt2",
+   "precision": "FP16",
+   "fp32_pos": 185,
+   "fp32_neg": 1557,
+   "b_lost": 43,
+   "c_gained": 53,
+   "FNF": 0.2324,
+   "FNF_ci_low": 0.1632,
+   "FNF_ci_high": 0.3041,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.034,
+   "FPF_ci_low": 0.0238,
+   "FPF_ci_high": 0.045,
+   "reports_with_any_change": 51,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "distilgpt2",
+   "precision": "INT8",
+   "fp32_pos": 185,
+   "fp32_neg": 1557,
+   "b_lost": 106,
+   "c_gained": 77,
+   "FNF": 0.573,
+   "FNF_ci_low": 0.4907,
+   "FNF_ci_high": 0.6528,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0495,
+   "FPF_ci_low": 0.0369,
+   "FPF_ci_high": 0.0624,
+   "reports_with_any_change": 89,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "distilgpt2",
+   "precision": "NF4",
+   "fp32_pos": 185,
+   "fp32_neg": 1557,
+   "b_lost": 112,
+   "c_gained": 119,
+   "FNF": 0.6054,
+   "FNF_ci_low": 0.5304,
+   "FNF_ci_high": 0.6836,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0764,
+   "FPF_ci_low": 0.0649,
+   "FPF_ci_high": 0.0889,
+   "reports_with_any_change": 111,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "gpt2",
+   "precision": "FP16",
+   "fp32_pos": 194,
+   "fp32_neg": 1548,
+   "b_lost": 45,
+   "c_gained": 35,
+   "FNF": 0.232,
+   "FNF_ci_low": 0.1568,
+   "FNF_ci_high": 0.3087,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0226,
+   "FPF_ci_low": 0.0147,
+   "FPF_ci_high": 0.0316,
+   "reports_with_any_change": 45,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "gpt2",
+   "precision": "INT8",
+   "fp32_pos": 194,
+   "fp32_neg": 1548,
+   "b_lost": 118,
+   "c_gained": 88,
+   "FNF": 0.6082,
+   "FNF_ci_low": 0.534,
+   "FNF_ci_high": 0.6897,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0568,
+   "FPF_ci_low": 0.0431,
+   "FPF_ci_high": 0.0724,
+   "reports_with_any_change": 90,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "gpt2",
+   "precision": "NF4",
+   "fp32_pos": 194,
+   "fp32_neg": 1548,
+   "b_lost": 154,
+   "c_gained": 92,
+   "FNF": 0.7938,
+   "FNF_ci_low": 0.7398,
+   "FNF_ci_high": 0.8526,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0594,
+   "FPF_ci_low": 0.0463,
+   "FPF_ci_high": 0.0731,
+   "reports_with_any_change": 104,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "gpt2-medium",
+   "precision": "FP16",
+   "fp32_pos": 106,
+   "fp32_neg": 1636,
+   "b_lost": 21,
+   "c_gained": 21,
+   "FNF": 0.1981,
+   "FNF_ci_low": 0.1158,
+   "FNF_ci_high": 0.2917,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0128,
+   "FPF_ci_low": 0.0061,
+   "FPF_ci_high": 0.0203,
+   "reports_with_any_change": 25,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "gpt2-medium",
+   "precision": "INT8",
+   "fp32_pos": 106,
+   "fp32_neg": 1636,
+   "b_lost": 60,
+   "c_gained": 62,
+   "FNF": 0.566,
+   "FNF_ci_low": 0.4775,
+   "FNF_ci_high": 0.6596,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0379,
+   "FPF_ci_low": 0.028,
+   "FPF_ci_high": 0.0491,
+   "reports_with_any_change": 73,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "gpt2-medium",
+   "precision": "NF4",
+   "fp32_pos": 106,
+   "fp32_neg": 1636,
+   "b_lost": 77,
+   "c_gained": 114,
+   "FNF": 0.7264,
+   "FNF_ci_low": 0.6392,
+   "FNF_ci_high": 0.8152,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0697,
+   "FPF_ci_low": 0.0559,
+   "FPF_ci_high": 0.0837,
+   "reports_with_any_change": 98,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "biogpt",
+   "precision": "FP16",
+   "fp32_pos": 64,
+   "fp32_neg": 1678,
+   "b_lost": 0,
+   "c_gained": 0,
+   "FNF": 0.0,
+   "FNF_ci_low": 0.0,
+   "FNF_ci_high": 0.0,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0,
+   "FPF_ci_low": 0.0,
+   "FPF_ci_high": 0.0,
+   "reports_with_any_change": 0,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "biogpt",
+   "precision": "INT8",
+   "fp32_pos": 64,
+   "fp32_neg": 1678,
+   "b_lost": 11,
+   "c_gained": 5,
+   "FNF": 0.1719,
+   "FNF_ci_low": 0.0714,
+   "FNF_ci_high": 0.2712,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.003,
+   "FPF_ci_low": 0.0006,
+   "FPF_ci_high": 0.0059,
+   "reports_with_any_change": 11,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "biogpt",
+   "precision": "NF4",
+   "fp32_pos": 64,
+   "fp32_neg": 1678,
+   "b_lost": 33,
+   "c_gained": 13,
+   "FNF": 0.5156,
+   "FNF_ci_low": 0.3469,
+   "FNF_ci_high": 0.6667,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0077,
+   "FPF_ci_low": 0.0035,
+   "FPF_ci_high": 0.0132,
+   "reports_with_any_change": 21,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "pythia-1b",
+   "precision": "FP16",
+   "fp32_pos": 65,
+   "fp32_neg": 1677,
+   "b_lost": 0,
+   "c_gained": 0,
+   "FNF": 0.0,
+   "FNF_ci_low": 0.0,
+   "FNF_ci_high": 0.0,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0,
+   "FPF_ci_low": 0.0,
+   "FPF_ci_high": 0.0,
+   "reports_with_any_change": 0,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "pythia-1b",
+   "precision": "INT8",
+   "fp32_pos": 65,
+   "fp32_neg": 1677,
+   "b_lost": 10,
+   "c_gained": 8,
+   "FNF": 0.1538,
+   "FNF_ci_low": 0.0512,
+   "FNF_ci_high": 0.2692,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0048,
+   "FPF_ci_low": 0.0012,
+   "FPF_ci_high": 0.009,
+   "reports_with_any_change": 12,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "pythia-1b",
+   "precision": "NF4",
+   "fp32_pos": 65,
+   "fp32_neg": 1677,
+   "b_lost": 28,
+   "c_gained": 18,
+   "FNF": 0.4308,
+   "FNF_ci_low": 0.283,
+   "FNF_ci_high": 0.5714,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0107,
+   "FPF_ci_low": 0.0054,
+   "FPF_ci_high": 0.0168,
+   "reports_with_any_change": 24,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "biogpt-large",
+   "precision": "FP16",
+   "fp32_pos": 62,
+   "fp32_neg": 1680,
+   "b_lost": 3,
+   "c_gained": 0,
+   "FNF": 0.0484,
+   "FNF_ci_low": 0.0,
+   "FNF_ci_high": 0.1346,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0,
+   "FPF_ci_low": 0.0,
+   "FPF_ci_high": 0.0,
+   "reports_with_any_change": 2,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "biogpt-large",
+   "precision": "INT8",
+   "fp32_pos": 62,
+   "fp32_neg": 1680,
+   "b_lost": 8,
+   "c_gained": 7,
+   "FNF": 0.129,
+   "FNF_ci_low": 0.0492,
+   "FNF_ci_high": 0.2308,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0042,
+   "FPF_ci_low": 0.0006,
+   "FPF_ci_high": 0.0089,
+   "reports_with_any_change": 10,
+   "n_reports": 134
+  },
+  {
+   "seed": 42,
+   "model": "biogpt-large",
+   "precision": "NF4",
+   "fp32_pos": 62,
+   "fp32_neg": 1680,
+   "b_lost": 22,
+   "c_gained": 22,
+   "FNF": 0.3548,
+   "FNF_ci_low": 0.2131,
+   "FNF_ci_high": 0.5,
+   "FNF_undefined_resamples": 0,
+   "FPF": 0.0131,
+   "FPF_ci_low": 0.0071,
+   "FPF_ci_high": 0.0203,
+   "reports_with_any_change": 25,
+   "n_reports": 134
+  }
+ ],
+ "extractor": {
+  "silver_per_category": {
+   "Atelectasis": {
+    "tp": 9,
+    "fp": 1,
+    "fn": 2,
+    "silver_pos": 11,
+    "precision": 0.9,
+    "recall": 0.818,
+    "f1": 0.857
+   },
+   "Cardiomegaly": {
+    "tp": 5,
+    "fp": 2,
+    "fn": 1,
+    "silver_pos": 6,
+    "precision": 0.714,
+    "recall": 0.833,
+    "f1": 0.769
+   },
+   "Consolidation": {
+    "tp": 2,
+    "fp": 5,
+    "fn": 1,
+    "silver_pos": 3,
+    "precision": 0.286,
+    "recall": 0.667,
+    "f1": 0.4
+   },
+   "Edema": {
+    "tp": 2,
+    "fp": 3,
+    "fn": 0,
+    "silver_pos": 2,
+    "precision": 0.4,
+    "recall": 1.0,
+    "f1": 0.571
+   },
+   "Fracture": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "silver_pos": 5,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "Lung Lesion": {
+    "tp": 4,
+    "fp": 2,
+    "fn": 0,
+    "silver_pos": 4,
+    "precision": 0.667,
+    "recall": 1.0,
+    "f1": 0.8
+   },
+   "Pleural Effusion": {
+    "tp": 7,
+    "fp": 3,
+    "fn": 1,
+    "silver_pos": 8,
+    "precision": 0.7,
+    "recall": 0.875,
+    "f1": 0.778
+   },
+   "Pneumonia": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "silver_pos": 0,
+    "precision": null,
+    "recall": null,
+    "f1": null
+   },
+   "Pneumothorax": {
+    "tp": 0,
+    "fp": 3,
+    "fn": 1,
+    "silver_pos": 1,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": null
+   }
+  },
+  "n_reports": 134,
+  "uncovered_categories": [
+   "Enlarged Cardiomediastinum",
+   "Lung Opacity",
+   "Pleural Other",
+   "Support Devices"
+  ],
+  "agreement_keys": [
+   "chexbert_vs_chexpert",
+   "cxrquant_vs_chexbert",
+   "cxrquant_vs_chexpert"
+  ],
+  "agreement": {
+   "chexbert_vs_chexpert": {
+    "predictions_all_configs": {
+     "ALL_13_POOLED": {
+      "agreement": 0.9773,
+      "kappa": 0.8316,
+      "n": 41808,
+      "positive_rate_a": 0.0676,
+      "positive_rate_b": 0.078
+     },
+     "Atelectasis": {
+      "agreement": 0.9919,
+      "kappa": 0.9683,
+      "n": 3216,
+      "positive_rate_a": 0.1527,
+      "positive_rate_b": 0.1477
+     },
+     "Cardiomegaly": {
+      "agreement": 0.9841,
+      "kappa": 0.9414,
+      "n": 3216,
+      "positive_rate_a": 0.1598,
+      "positive_rate_b": 0.1626
+     },
+     "Consolidation": {
+      "agreement": 0.9888,
+      "kappa": 0.7216,
+      "n": 3216,
+      "positive_rate_a": 0.0227,
+      "positive_rate_b": 0.0183
+     },
+     "Edema": {
+      "agreement": 0.9894,
+      "kappa": 0.9134,
+      "n": 3216,
+      "positive_rate_a": 0.0669,
+      "positive_rate_b": 0.0637
+     },
+     "Enlarged Cardiomediastinum": {
+      "agreement": 0.9674,
+      "kappa": 0.4824,
+      "n": 3216,
+      "positive_rate_a": 0.0426,
+      "positive_rate_b": 0.0224
+     },
+     "Fracture": {
+      "agreement": 0.9963,
+      "kappa": 0.9299,
+      "n": 3216,
+      "positive_rate_a": 0.0267,
+      "positive_rate_b": 0.028
+     },
+     "Lung Lesion": {
+      "agreement": 0.986,
+      "kappa": 0.8851,
+      "n": 3216,
+      "positive_rate_a": 0.0625,
+      "positive_rate_b": 0.0678
+     },
+     "Lung Opacity": {
+      "agreement": 0.9453,
+      "kappa": 0.8312,
+      "n": 3216,
+      "positive_rate_a": 0.1872,
+      "positive_rate_b": 0.2189
+     },
+     "Pleural Effusion": {
+      "agreement": 0.9891,
+      "kappa": 0.878,
+      "n": 3216,
+      "positive_rate_a": 0.0463,
+      "positive_rate_b": 0.0473
+     },
+     "Pleural Other": {
+      "agreement": 0.9981,
+      "kappa": 0.8627,
+      "n": 3216,
+      "positive_rate_a": 0.0072,
+      "positive_rate_b": 0.0065
+     },
+     "Pneumonia": {
+      "agreement": 0.9546,
+      "kappa": 0.7322,
+      "n": 3216,
+      "positive_rate_a": 0.0725,
+      "positive_rate_b": 0.1135
+     },
+     "Pneumothorax": {
+      "agreement": 0.9953,
+      "kappa": 0.6917,
+      "n": 3216,
+      "positive_rate_a": 0.0053,
+      "positive_rate_b": 0.01
+     },
+     "Support Devices": {
+      "agreement": 0.9179,
+      "kappa": 0.3613,
+      "n": 3216,
+      "positive_rate_a": 0.0271,
+      "positive_rate_b": 0.1073
+     }
+    },
+    "references": {
+     "ALL_13_POOLED": {
+      "agreement": 0.9954,
+      "kappa": 0.9298,
+      "n": 1742,
+      "positive_rate_a": 0.0344,
+      "positive_rate_b": 0.0333
+     },
+     "Atelectasis": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0597,
+      "positive_rate_b": 0.0597
+     },
+     "Cardiomegaly": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0522,
+      "positive_rate_b": 0.0522
+     },
+     "Consolidation": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0224,
+      "positive_rate_b": 0.0224
+     },
+     "Edema": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0448,
+      "positive_rate_b": 0.0448
+     },
+     "Enlarged Cardiomediastinum": {
+      "agreement": 0.9776,
+      "kappa": 0.3927,
+      "n": 134,
+      "positive_rate_a": 0.0299,
+      "positive_rate_b": 0.0075
+     },
+     "Fracture": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0299,
+      "positive_rate_b": 0.0299
+     },
+     "Lung Lesion": {
+      "agreement": 0.9925,
+      "kappa": 0.7964,
+      "n": 134,
+      "positive_rate_a": 0.0224,
+      "positive_rate_b": 0.0149
+     },
+     "Lung Opacity": {
+      "agreement": 0.9851,
+      "kappa": 0.9085,
+      "n": 134,
+      "positive_rate_a": 0.0821,
+      "positive_rate_b": 0.097
+     },
+     "Pleural Effusion": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0597,
+      "positive_rate_b": 0.0597
+     },
+     "Pleural Other": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0075,
+      "positive_rate_b": 0.0075
+     },
+     "Pneumonia": {
+      "agreement": 0.9925,
+      "kappa": 0.8534,
+      "n": 134,
+      "positive_rate_a": 0.0299,
+      "positive_rate_b": 0.0224
+     },
+     "Pneumothorax": {
+      "agreement": 1.0,
+      "kappa": null,
+      "n": 134,
+      "positive_rate_a": 0.0,
+      "positive_rate_b": 0.0
+     },
+     "Support Devices": {
+      "agreement": 0.9925,
+      "kappa": 0.6633,
+      "n": 134,
+      "positive_rate_a": 0.0075,
+      "positive_rate_b": 0.0149
+     }
+    }
+   },
+   "cxrquant_vs_chexbert": {
+    "predictions_all_configs": {
+     "ALL_13_POOLED": {
+      "agreement": 0.9613,
+      "kappa": 0.6804,
+      "n": 41808,
+      "positive_rate_a": 0.0619,
+      "positive_rate_b": 0.0676
+     },
+     "Atelectasis": {
+      "agreement": 0.9857,
+      "kappa": 0.9442,
+      "n": 3216,
+      "positive_rate_a": 0.1489,
+      "positive_rate_b": 0.1527
+     },
+     "Cardiomegaly": {
+      "agreement": 0.9776,
+      "kappa": 0.9121,
+      "n": 3216,
+      "positive_rate_a": 0.1393,
+      "positive_rate_b": 0.1598
+     },
+     "Consolidation": {
+      "agreement": 0.9117,
+      "kappa": 0.2515,
+      "n": 3216,
+      "positive_rate_a": 0.0998,
+      "positive_rate_b": 0.0227
+     },
+     "Edema": {
+      "agreement": 0.9841,
+      "kappa": 0.8619,
+      "n": 3216,
+      "positive_rate_a": 0.0553,
+      "positive_rate_b": 0.0669
+     },
+     "Enlarged Cardiomediastinum": {
+      "agreement": 0.9605,
+      "kappa": 0.2362,
+      "n": 3216,
+      "positive_rate_a": 0.01,
+      "positive_rate_b": 0.0426
+     },
+     "Fracture": {
+      "agreement": 0.9928,
+      "kappa": 0.8535,
+      "n": 3216,
+      "positive_rate_a": 0.0233,
+      "positive_rate_b": 0.0267
+     },
+     "Lung Lesion": {
+      "agreement": 0.9726,
+      "kappa": 0.7708,
+      "n": 3216,
+      "positive_rate_a": 0.065,
+      "positive_rate_b": 0.0625
+     },
+     "Lung Opacity": {
+      "agreement": 0.8595,
+      "kappa": 0.3858,
+      "n": 3216,
+      "positive_rate_a": 0.0665,
+      "positive_rate_b": 0.1872
+     },
+     "Pleural Effusion": {
+      "agreement": 0.9888,
+      "kappa": 0.8683,
+      "n": 3216,
+      "positive_rate_a": 0.0426,
+      "positive_rate_b": 0.0463
+     },
+     "Pleural Other": {
+      "agreement": 0.9975,
+      "kappa": 0.7988,
+      "n": 3216,
+      "positive_rate_a": 0.0053,
+      "positive_rate_b": 0.0072
+     },
+     "Pneumonia": {
+      "agreement": 0.9543,
+      "kappa": 0.6551,
+      "n": 3216,
+      "positive_rate_a": 0.0703,
+      "positive_rate_b": 0.0725
+     },
+     "Pneumothorax": {
+      "agreement": 0.9963,
+      "kappa": 0.6648,
+      "n": 3216,
+      "positive_rate_a": 0.0059,
+      "positive_rate_b": 0.0053
+     },
+     "Support Devices": {
+      "agreement": 0.9151,
+      "kappa": 0.1091,
+      "n": 3216,
+      "positive_rate_a": 0.0721,
+      "positive_rate_b": 0.0271
+     }
+    },
+    "references": {
+     "ALL_13_POOLED": {
+      "agreement": 0.9885,
+      "kappa": 0.8217,
+      "n": 1742,
+      "positive_rate_a": 0.0321,
+      "positive_rate_b": 0.0344
+     },
+     "Atelectasis": {
+      "agreement": 0.9925,
+      "kappa": 0.9294,
+      "n": 134,
+      "positive_rate_a": 0.0522,
+      "positive_rate_b": 0.0597
+     },
+     "Cardiomegaly": {
+      "agreement": 0.9776,
+      "kappa": 0.7575,
+      "n": 134,
+      "positive_rate_a": 0.0448,
+      "positive_rate_b": 0.0522
+     },
+     "Consolidation": {
+      "agreement": 0.9776,
+      "kappa": 0.6564,
+      "n": 134,
+      "positive_rate_a": 0.0448,
+      "positive_rate_b": 0.0224
+     },
+     "Edema": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0448,
+      "positive_rate_b": 0.0448
+     },
+     "Enlarged Cardiomediastinum": {
+      "agreement": 0.9776,
+      "kappa": 0.3927,
+      "n": 134,
+      "positive_rate_a": 0.0075,
+      "positive_rate_b": 0.0299
+     },
+     "Fracture": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0299,
+      "positive_rate_b": 0.0299
+     },
+     "Lung Lesion": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0224,
+      "positive_rate_b": 0.0224
+     },
+     "Lung Opacity": {
+      "agreement": 0.9776,
+      "kappa": 0.845,
+      "n": 134,
+      "positive_rate_a": 0.0746,
+      "positive_rate_b": 0.0821
+     },
+     "Pleural Effusion": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0597,
+      "positive_rate_b": 0.0597
+     },
+     "Pleural Other": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0075,
+      "positive_rate_b": 0.0075
+     },
+     "Pneumonia": {
+      "agreement": 0.9776,
+      "kappa": 0.3927,
+      "n": 134,
+      "positive_rate_a": 0.0075,
+      "positive_rate_b": 0.0299
+     },
+     "Pneumothorax": {
+      "agreement": 0.9925,
+      "kappa": 0.0,
+      "n": 134,
+      "positive_rate_a": 0.0075,
+      "positive_rate_b": 0.0
+     },
+     "Support Devices": {
+      "agreement": 0.9776,
+      "kappa": -0.0101,
+      "n": 134,
+      "positive_rate_a": 0.0149,
+      "positive_rate_b": 0.0075
+     }
+    }
+   },
+   "cxrquant_vs_chexpert": {
+    "predictions_all_configs": {
+     "ALL_13_POOLED": {
+      "agreement": 0.9567,
+      "kappa": 0.6672,
+      "n": 41808,
+      "positive_rate_a": 0.0619,
+      "positive_rate_b": 0.078
+     },
+     "Atelectasis": {
+      "agreement": 0.9863,
+      "kappa": 0.9458,
+      "n": 3216,
+      "positive_rate_a": 0.1489,
+      "positive_rate_b": 0.1477
+     },
+     "Cardiomegaly": {
+      "agreement": 0.9754,
+      "kappa": 0.9043,
+      "n": 3216,
+      "positive_rate_a": 0.1393,
+      "positive_rate_b": 0.1626
+     },
+     "Consolidation": {
+      "agreement": 0.9104,
+      "kappa": 0.2179,
+      "n": 3216,
+      "positive_rate_a": 0.0998,
+      "positive_rate_b": 0.0183
+     },
+     "Edema": {
+      "agreement": 0.9848,
+      "kappa": 0.864,
+      "n": 3216,
+      "positive_rate_a": 0.0553,
+      "positive_rate_b": 0.0637
+     },
+     "Enlarged Cardiomediastinum": {
+      "agreement": 0.9857,
+      "kappa": 0.5515,
+      "n": 3216,
+      "positive_rate_a": 0.01,
+      "positive_rate_b": 0.0224
+     },
+     "Fracture": {
+      "agreement": 0.9928,
+      "kappa": 0.857,
+      "n": 3216,
+      "positive_rate_a": 0.0233,
+      "positive_rate_b": 0.028
+     },
+     "Lung Lesion": {
+      "agreement": 0.9761,
+      "kappa": 0.8069,
+      "n": 3216,
+      "positive_rate_a": 0.065,
+      "positive_rate_b": 0.0678
+     },
+     "Lung Opacity": {
+      "agreement": 0.8396,
+      "kappa": 0.374,
+      "n": 3216,
+      "positive_rate_a": 0.0665,
+      "positive_rate_b": 0.2189
+     },
+     "Pleural Effusion": {
+      "agreement": 0.9916,
+      "kappa": 0.9022,
+      "n": 3216,
+      "positive_rate_a": 0.0426,
+      "positive_rate_b": 0.0473
+     },
+     "Pleural Other": {
+      "agreement": 0.9988,
+      "kappa": 0.8941,
+      "n": 3216,
+      "positive_rate_a": 0.0053,
+      "positive_rate_b": 0.0065
+     },
+     "Pneumonia": {
+      "agreement": 0.9499,
+      "kappa": 0.7017,
+      "n": 3216,
+      "positive_rate_a": 0.0703,
+      "positive_rate_b": 0.1135
+     },
+     "Pneumothorax": {
+      "agreement": 0.9947,
+      "kappa": 0.6642,
+      "n": 3216,
+      "positive_rate_a": 0.0059,
+      "positive_rate_b": 0.01
+     },
+     "Support Devices": {
+      "agreement": 0.8504,
+      "kappa": 0.0877,
+      "n": 3216,
+      "positive_rate_a": 0.0721,
+      "positive_rate_b": 0.1073
+     }
+    },
+    "references": {
+     "ALL_13_POOLED": {
+      "agreement": 0.9885,
+      "kappa": 0.8186,
+      "n": 1742,
+      "positive_rate_a": 0.0321,
+      "positive_rate_b": 0.0333
+     },
+     "Atelectasis": {
+      "agreement": 0.9925,
+      "kappa": 0.9294,
+      "n": 134,
+      "positive_rate_a": 0.0522,
+      "positive_rate_b": 0.0597
+     },
+     "Cardiomegaly": {
+      "agreement": 0.9776,
+      "kappa": 0.7575,
+      "n": 134,
+      "positive_rate_a": 0.0448,
+      "positive_rate_b": 0.0522
+     },
+     "Consolidation": {
+      "agreement": 0.9776,
+      "kappa": 0.6564,
+      "n": 134,
+      "positive_rate_a": 0.0448,
+      "positive_rate_b": 0.0224
+     },
+     "Edema": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0448,
+      "positive_rate_b": 0.0448
+     },
+     "Enlarged Cardiomediastinum": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0075,
+      "positive_rate_b": 0.0075
+     },
+     "Fracture": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0299,
+      "positive_rate_b": 0.0299
+     },
+     "Lung Lesion": {
+      "agreement": 0.9925,
+      "kappa": 0.7964,
+      "n": 134,
+      "positive_rate_a": 0.0224,
+      "positive_rate_b": 0.0149
+     },
+     "Lung Opacity": {
+      "agreement": 0.9627,
+      "kappa": 0.7626,
+      "n": 134,
+      "positive_rate_a": 0.0746,
+      "positive_rate_b": 0.097
+     },
+     "Pleural Effusion": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0597,
+      "positive_rate_b": 0.0597
+     },
+     "Pleural Other": {
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "n": 134,
+      "positive_rate_a": 0.0075,
+      "positive_rate_b": 0.0075
+     },
+     "Pneumonia": {
+      "agreement": 0.9851,
+      "kappa": 0.4943,
+      "n": 134,
+      "positive_rate_a": 0.0075,
+      "positive_rate_b": 0.0224
+     },
+     "Pneumothorax": {
+      "agreement": 0.9925,
+      "kappa": 0.0,
+      "n": 134,
+      "positive_rate_a": 0.0075,
+      "positive_rate_b": 0.0
+     },
+     "Support Devices": {
+      "agreement": 0.9701,
+      "kappa": -0.0152,
+      "n": 134,
+      "positive_rate_a": 0.0149,
+      "positive_rate_b": 0.0149
+     }
+    }
+   }
+  }
+ },
+ "strata": {
+  "seed42_gap": [
+   0.012,
+   0.1591
+  ],
+  "degenerate_range_all_seeds": [
+   0.0071,
+   0.0126
+  ],
+  "functional_range_all_seeds": [
+   0.1364,
+   0.1848
+  ],
+  "any_threshold_in_gap_gives_same_partition_all_seeds": true,
+  "spearman_fp32bleu_vs_nf4fnf_30runs": {
+   "rho": -0.628,
+   "p": 0.00020251238773542522
+  },
+  "all_model_nf4_fnf_seed42": {
+   "distilgpt2": 0.6054,
+   "gpt2": 0.7938,
+   "gpt2-medium": 0.7264,
+   "biogpt": 0.5156,
+   "pythia-1b": 0.4308,
+   "biogpt-large": 0.3548
+  },
+  "all_model_ordering_seed42_strict": 6,
+  "fp32_bleu4": {
+   "42": {
+    "distilgpt2": 0.0082,
+    "gpt2": 0.0087,
+    "gpt2-medium": 0.012,
+    "biogpt": 0.1788,
+    "pythia-1b": 0.1775,
+    "biogpt-large": 0.1591
+   },
+   "123": {
+    "distilgpt2": 0.0071,
+    "gpt2": 0.0119,
+    "gpt2-medium": 0.0108,
+    "biogpt": 0.1509,
+    "pythia-1b": 0.1689,
+    "biogpt-large": 0.1364
+   },
+   "777": {
+    "distilgpt2": 0.0089,
+    "gpt2": 0.0086,
+    "gpt2-medium": 0.0102,
+    "biogpt": 0.1523,
+    "pythia-1b": 0.1832,
+    "biogpt-large": 0.1463
+   },
+   "2024": {
+    "distilgpt2": 0.0071,
+    "gpt2": 0.0113,
+    "gpt2-medium": 0.0126,
+    "biogpt": 0.1532,
+    "pythia-1b": 0.1734,
+    "biogpt-large": 0.153
+   },
+   "31415": {
+    "distilgpt2": 0.0078,
+    "gpt2": 0.0104,
+    "gpt2-medium": 0.0101,
+    "biogpt": 0.1613,
+    "pythia-1b": 0.1848,
+    "biogpt-large": 0.1406
+   }
+  }
+ },
+ "hierarchical": {
+  "report_level": {
+   "n_report_model_seed_units_with_fp32_positive": 1710,
+   "mean_report_fnf": {
+    "FP16": 0.1485,
+    "INT8": 0.4383,
+    "NF4": 0.614
+   },
+   "pct_units_INT8_ge_FP16": 95.0,
+   "pct_units_NF4_ge_INT8": 88.1,
+   "pct_units_INT8_gt_FP16": 43.1,
+   "pct_units_NF4_gt_INT8": 36.1,
+   "pct_units_INT8_lt_FP16": 5.0,
+   "pct_units_NF4_lt_INT8": 11.9,
+   "wilcoxon_INT8_vs_FP16_p": 1.1763801194962138e-98,
+   "wilcoxon_NF4_vs_INT8_p": 3.073134331238718e-43
+  },
+  "cluster_bootstrap_pooled_fnf": {
+   "point": {
+    "FP16": 0.1523,
+    "INT8": 0.4431,
+    "NF4": 0.6263
+   },
+   "ci95": {
+    "FP16": [
+     0.1329,
+     0.1748
+    ],
+    "INT8": [
+     0.4077,
+     0.4861
+    ],
+    "NF4": [
+     0.5901,
+     0.6694
+    ]
+   },
+   "diff_INT8_minus_FP16": [
+    0.2633,
+    0.3231
+   ],
+   "diff_NF4_minus_INT8": [
+    0.1592,
+    0.2079
+   ],
+   "n_reports": 133,
+   "draws": 2000
+  },
+  "cluster_bootstrap_functional": {
+   "point": {
+    "FP16": 0.0157,
+    "INT8": 0.1657,
+    "NF4": 0.3852
+   },
+   "ci95": {
+    "FP16": [
+     0.0065,
+     0.027
+    ],
+    "INT8": [
+     0.131,
+     0.2031
+    ],
+    "NF4": [
+     0.3246,
+     0.4505
+    ]
+   },
+   "diff_INT8_minus_FP16": [
+    0.117,
+    0.1854
+   ],
+   "diff_NF4_minus_INT8": [
+    0.1787,
+    0.268
+   ]
+  },
+  "cluster_bootstrap_degenerate": {
+   "point": {
+    "FP16": 0.201,
+    "INT8": 0.5419,
+    "NF4": 0.7121
+   },
+   "ci95": {
+    "FP16": [
+     0.1792,
+     0.225
+    ],
+    "INT8": [
+     0.508,
+     0.5815
+    ],
+    "NF4": [
+     0.6786,
+     0.7473
+    ]
+   },
+   "diff_INT8_minus_FP16": [
+    0.3094,
+    0.3732
+   ],
+   "diff_NF4_minus_INT8": [
+    0.1403,
+    0.2006
+   ]
+  },
+  "gee_fnf": {
+   "C(precision)[T.INT8]": {
+    "OR": 4.92,
+    "ci95": [
+     4.27,
+     5.66
+    ],
+    "p": 5.676665635001437e-109
+   },
+   "C(precision)[T.NF4]": {
+    "OR": 11.78,
+    "ci95": [
+     10.03,
+     13.84
+    ],
+    "p": 1.3178542607507747e-197
+   },
+   "n_pairs": 10203,
+   "n_clusters": 133,
+   "NF4_vs_INT8": {
+    "OR": 2.39,
+    "ci95": [
+     2.13,
+     2.69
+    ],
+    "p": 6.309337578211537e-48
+   }
+  },
+  "mixed_glmm_fnf": {
+   "fixed_effects_vs_FP16": {
+    "C(precision, Treatment('FP16'))[T.INT8]": {
+     "OR": 6.07,
+     "ci95": [
+      5.62,
+      6.54
+     ]
+    },
+    "C(precision, Treatment('FP16'))[T.NF4]": {
+     "OR": 15.78,
+     "ci95": [
+      14.6,
+      17.07
+     ]
+    }
+   },
+   "random_effect_sd": {
+    "report": 0.644,
+    "category": 0.562,
+    "model": 0.765,
+    "seed": 0.15
+   },
+   "method": "BinomialBayesMixedGLM (statsmodels), variational Bayes, crossed random intercepts"
+  },
+  "concentration": {
+   "nf4_flips_by_category": {
+    "Atelectasis": 398,
+    "Cardiomegaly": 231,
+    "Consolidation": 282,
+    "Edema": 168,
+    "Enlarged Cardiomediastinum": 27,
+    "Fracture": 75,
+    "Lung Lesion": 172,
+    "Lung Opacity": 212,
+    "Pleural Effusion": 70,
+    "Pleural Other": 18,
+    "Pneumonia": 232,
+    "Pneumothorax": 22,
+    "Support Devices": 223
+   },
+   "nf4_fnf_by_category": {
+    "Atelectasis": 0.575,
+    "Cardiomegaly": 0.408,
+    "Consolidation": 0.629,
+    "Edema": 0.796,
+    "Enlarged Cardiomediastinum": 0.794,
+    "Fracture": 0.926,
+    "Lung Lesion": 0.764,
+    "Lung Opacity": 0.671,
+    "Pleural Effusion": 0.458,
+    "Pleural Other": 0.857,
+    "Pneumonia": 0.761,
+    "Pneumothorax": 0.759,
+    "Support Devices": 0.697
+   },
+   "leave_one_category_out_non_decreasing_runs_of_30": {
+    "Enlarged Cardiomediastinum": 30,
+    "Cardiomegaly": 28,
+    "Lung Opacity": 30,
+    "Lung Lesion": 30,
+    "Edema": 30,
+    "Consolidation": 29,
+    "Pneumonia": 29,
+    "Atelectasis": 30,
+    "Pneumothorax": 30,
+    "Pleural Effusion": 30,
+    "Pleural Other": 30,
+    "Fracture": 30,
+    "Support Devices": 30
+   },
+   "share_of_nf4_losses_in_top10pct_reports": 0.222,
+   "reports_with_any_nf4_loss": 132,
+   "reports_with_fp32_positive": 133
+  },
+  "cluster_bootstrap_pooled_fpf_point": {
+   "FP16": 0.0106,
+   "INT8": 0.0292,
+   "NF4": 0.039
+  }
+ },
+ "restricted_categories": {
+  "dropped": [
+   "Consolidation",
+   "Enlarged Cardiomediastinum",
+   "Lung Opacity",
+   "Support Devices"
+  ],
+  "seed42_fnf": {
+   "distilgpt2": {
+    "FP16": 0.2123,
+    "INT8": 0.5411,
+    "NF4": 0.5753
+   },
+   "gpt2": {
+    "FP16": 0.2519,
+    "INT8": 0.626,
+    "NF4": 0.7634
+   },
+   "gpt2-medium": {
+    "FP16": 0.2388,
+    "INT8": 0.6119,
+    "NF4": 0.7463
+   },
+   "biogpt": {
+    "FP16": 0.0,
+    "INT8": 0.1556,
+    "NF4": 0.5333
+   },
+   "pythia-1b": {
+    "FP16": 0.0,
+    "INT8": 0.1915,
+    "NF4": 0.4255
+   },
+   "biogpt-large": {
+    "FP16": 0.0488,
+    "INT8": 0.122,
+    "NF4": 0.3659
+   }
+  },
+  "seed42_denominators": {
+   "distilgpt2": 146,
+   "gpt2": 131,
+   "gpt2-medium": 67,
+   "biogpt": 45,
+   "pythia-1b": 47,
+   "biogpt-large": 41
+  },
+  "strict_runs": 28,
+  "non_decreasing_runs": 29
+ },
+ "efficiency": {
+  "ms_per_token_ratio_vs_fp32": {
+   "FP16": {
+    "min_over_runs": 0.81,
+    "max_over_runs": 1.01
+   },
+   "INT8": {
+    "min_over_runs": 2.61,
+    "max_over_runs": 5.16
+   },
+   "NF4": {
+    "min_over_runs": 1.46,
+    "max_over_runs": 2.84
+   }
+  },
+  "runs": 30,
+  "INT8_slowest_runs": 30,
+  "NF4_slower_than_FP32_runs": 30,
+  "FP16_within_5pct_or_faster_runs": 30,
+  "device_ratio_b229_over_75de_ms_token": {
+   "min": 0.9,
+   "max": 1.1,
+   "median": 0.99
+  },
+  "within_run_batch_cv_pct_median": 18.0,
+  "ms_token_between_run_cv_pct_range": [
+   0.4,
+   6.4
+  ]
+ },
+ "tolerance": {
+  "bleu_tolerance": {
+   "0.5": {
+    "accepted": 14,
+    "accepted_with_fnf_ge_30": 7
+   },
+   "1.0": {
+    "accepted": 17,
+    "accepted_with_fnf_ge_30": 9
+   },
+   "2.0": {
+    "accepted": 18,
+    "accepted_with_fnf_ge_30": 9
+   }
+  },
+  "fnf_upper_ci_tolerance": {
+   "0.05": {
+    "accepted": [
+     "biogpt:FP16",
+     "pythia-1b:FP16"
+    ]
+   },
+   "0.1": {
+    "accepted": [
+     "biogpt:FP16",
+     "pythia-1b:FP16"
+    ]
+   },
+   "0.2": {
+    "accepted": [
+     "biogpt:FP16",
+     "pythia-1b:FP16",
+     "biogpt-large:FP16"
+    ]
+   },
+   "0.3": {
+    "accepted": [
+     "gpt2-medium:FP16",
+     "biogpt:FP16",
+     "biogpt:INT8",
+     "pythia-1b:FP16",
+     "pythia-1b:INT8",
+     "biogpt-large:FP16",
+     "biogpt-large:INT8"
+    ]
+   }
+  },
+  "critical_category_fnf": {
+   "distilgpt2:FP16": {
+    "fp32_pos": 59,
+    "lost": 17,
+    "FNF": 0.288
+   },
+   "distilgpt2:INT8": {
+    "fp32_pos": 59,
+    "lost": 37,
+    "FNF": 0.627
+   },
+   "distilgpt2:NF4": {
+    "fp32_pos": 59,
+    "lost": 44,
+    "FNF": 0.746
+   },
+   "gpt2:FP16": {
+    "fp32_pos": 66,
+    "lost": 14,
+    "FNF": 0.212
+   },
+   "gpt2:INT8": {
+    "fp32_pos": 66,
+    "lost": 44,
+    "FNF": 0.667
+   },
+   "gpt2:NF4": {
+    "fp32_pos": 66,
+    "lost": 58,
+    "FNF": 0.879
+   },
+   "gpt2-medium:FP16": {
+    "fp32_pos": 37,
+    "lost": 7,
+    "FNF": 0.189
+   },
+   "gpt2-medium:INT8": {
+    "fp32_pos": 37,
+    "lost": 23,
+    "FNF": 0.622
+   },
+   "gpt2-medium:NF4": {
+    "fp32_pos": 37,
+    "lost": 30,
+    "FNF": 0.811
+   },
+   "biogpt:FP16": {
+    "fp32_pos": 24,
+    "lost": 0,
+    "FNF": 0.0
+   },
+   "biogpt:INT8": {
+    "fp32_pos": 24,
+    "lost": 3,
+    "FNF": 0.125
+   },
+   "biogpt:NF4": {
+    "fp32_pos": 24,
+    "lost": 13,
+    "FNF": 0.542
+   },
+   "pythia-1b:FP16": {
+    "fp32_pos": 19,
+    "lost": 0,
+    "FNF": 0.0
+   },
+   "pythia-1b:INT8": {
+    "fp32_pos": 19,
+    "lost": 2,
+    "FNF": 0.105
+   },
+   "pythia-1b:NF4": {
+    "fp32_pos": 19,
+    "lost": 6,
+    "FNF": 0.316
+   },
+   "biogpt-large:FP16": {
+    "fp32_pos": 25,
+    "lost": 1,
+    "FNF": 0.04
+   },
+   "biogpt-large:INT8": {
+    "fp32_pos": 25,
+    "lost": 2,
+    "FNF": 0.08
+   },
+   "biogpt-large:NF4": {
+    "fp32_pos": 25,
+    "lost": 8,
+    "FNF": 0.32
+   }
+  },
+  "critical_categories": [
+   "Pneumothorax",
+   "Edema",
+   "Consolidation",
+   "Pneumonia",
+   "Pleural Effusion"
+  ]
+ }
+}

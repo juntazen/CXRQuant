@@ -1,0 +1,138 @@
+{
+  "backend": {
+    "bnb_config": null,
+    "device_map": {},
+    "parameter_dtypes": [
+      "torch.float32"
+    ],
+    "quantized_modules": {},
+    "size_note": "Only the saved FP32 checkpoint is measured on disk; quantized disk compression is not reported."
+  },
+  "bleu_1": 0.0061,
+  "bleu_4": 0.0,
+  "ce_macro_f1": 0.0,
+  "ce_micro_f1": 0.0,
+  "checkpoint_hash": "6594c8bcf135202fddaf156555977ba9305fc7a49d54e0a64cec5a303f2ab13a",
+  "config": "FP32",
+  "efficiency": {
+    "amortized_latency_ms": 50.538480281829834,
+    "batch_timings": [
+      {
+        "latency_s": 0.303230881690979,
+        "n_reports": 6
+      }
+    ],
+    "generated_tokens": 384,
+    "peak_allocated_bytes": 420060160,
+    "peak_reserved_bytes": 465567744,
+    "reports_per_second": 19.786902859434246,
+    "tokens_per_second": 1266.3617830037917,
+    "total_generation_s": 0.303230881690979,
+    "warmup_new_tokens": 16,
+    "warmup_reports": 2
+  },
+  "identity": {
+    "code_hash": "f8ede1a7d946c862740bd0035a31092ce91f389885cb5675776247f7fa63465a",
+    "config_hash": "6f7cb613ff259a298ddc6947668b797cbde9d5d6e9d38e50474fee3b74db7ec1",
+    "data_hash": "0597c49a73f1bffcc199cd3b3f27a7c984ef5337a3efa7ccdc053a7c2d02cf23",
+    "run_id": "smoke_compat_20260911"
+  },
+  "predictions": [
+    "A small number of patients have been admitted to the hospital for a period that has not yet begun, but there may be some complications associated with this condition in their care if they continue on an outpatient basis (e-mail me at [email protected].\nThe patient's symptoms include nausea, vomiting, headache, fatigue,",
+    "Aortic valve syndrome (ICT) can be seen in the upper extremities of a person with Ictal cancer or other serious disease that may cause an increased risk for myocardial infarction; it has been reported to occur at least once per year among patients who have had this condition before but never",
+    "A high-density lipoprotein (LDL) is a common cause of death in patients with coronary artery disease, and it can be caused by heart failure or stroke due to excessive blood pressure during exercise; however, there may also be other factors that contribute to this condition including increased risk for cardiovascular diseases such as diabetes",
+    "A study published this week found that the average adult male has a lower risk for lung cancer than female patients with an enlarged prostate (PVC) compared to men who have not had any other type of breast-cancer diagnosis at all; however, there is evidence from studies showing increased mortality among women without mammography due to",
+    "A large number of patients with chronic kidney failure have been treated for renal dysfunction and other conditions that may result from this condition (e-mail me at [email protected]].\nThe patient has anemia; he/she suffers severe hypertension in his left arm while on medication to prevent him from receiving treatment due not being",
+    "A small number of patients have been treated for this condition in recent years (see Table 1). The patient was not present at any time during treatment; however, there were no significant differences between these two conditions on either side [1].\nThe primary outcome is an increased risk of coronary artery disease by 20% compared against"
+  ],
+  "rouge_1": 0.0303,
+  "rouge_2": 0.0,
+  "rouge_l": 0.0061,
+  "samples": [
+    {
+      "generated_tokens": 64,
+      "input": "FINDINGS: The cardiomediastinal silhouette and pulmonary vasculature are within normal limits. There is no pneumothorax or pleural effusion. There are no focal areas of consolidation. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "A small number of patients have been admitted to the hospital for a period that has not yet begun, but there may be some complications associated with this condition in their care if they continue on an outpatient basis (e-mail me at [email protected].\nThe patient's symptoms include nausea, vomiting, headache, fatigue,",
+      "prompt_audit": {
+        "full_tokens": 47,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": " A small number of patients have been admitted to the hospital for a period that has not yet begun, but there may be some complications associated with this condition in their care if they continue on an outpatient basis (e-mail me at [email protected].\nThe patient's symptoms include nausea, vomiting, headache, fatigue,",
+      "reference": "No acute cardiopulmonary abnormality.",
+      "sample_id": "CXR1009"
+    },
+    {
+      "generated_tokens": 64,
+      "input": "FINDINGS: Cardiac and mediastinal contours are within normal limits. The lungs are clear. Acromioclavicular arthritis is present, XXXX severe. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "Aortic valve syndrome (ICT) can be seen in the upper extremities of a person with Ictal cancer or other serious disease that may cause an increased risk for myocardial infarction; it has been reported to occur at least once per year among patients who have had this condition before but never",
+      "prompt_audit": {
+        "full_tokens": 40,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": " Aortic valve syndrome (ICT) can be seen in the upper extremities of a person with Ictal cancer or other serious disease that may cause an increased risk for myocardial infarction; it has been reported to occur at least once per year among patients who have had this condition before but never",
+      "reference": "No acute preoperative findings.",
+      "sample_id": "CXR1028"
+    },
+    {
+      "generated_tokens": 64,
+      "input": "FINDINGS: The cardiac contours are normal. The lungs are clear. Thoracic spondylosis. Mild dextrocurvature the spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "A high-density lipoprotein (LDL) is a common cause of death in patients with coronary artery disease, and it can be caused by heart failure or stroke due to excessive blood pressure during exercise; however, there may also be other factors that contribute to this condition including increased risk for cardiovascular diseases such as diabetes",
+      "prompt_audit": {
+        "full_tokens": 38,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": " A high-density lipoprotein (LDL) is a common cause of death in patients with coronary artery disease, and it can be caused by heart failure or stroke due to excessive blood pressure during exercise; however, there may also be other factors that contribute to this condition including increased risk for cardiovascular diseases such as diabetes",
+      "reference": "No acute process.",
+      "sample_id": "CXR1060"
+    },
+    {
+      "generated_tokens": 64,
+      "input": "FINDINGS: The cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. The lungs are clear of focal airspace disease, pneumothorax, or pleural effusion. There are no acute bony findings. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "A study published this week found that the average adult male has a lower risk for lung cancer than female patients with an enlarged prostate (PVC) compared to men who have not had any other type of breast-cancer diagnosis at all; however, there is evidence from studies showing increased mortality among women without mammography due to",
+      "prompt_audit": {
+        "full_tokens": 56,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": " A study published this week found that the average adult male has a lower risk for lung cancer than female patients with an enlarged prostate (PVC) compared to men who have not had any other type of breast-cancer diagnosis at all; however, there is evidence from studies showing increased mortality among women without mammography due to",
+      "reference": "No acute cardiopulmonary findings.",
+      "sample_id": "CXR1144"
+    },
+    {
+      "generated_tokens": 64,
+      "input": "FINDINGS: The heart is enlarged. The mediastinum is unremarkable. Atherosclerotic calcifications present within the thoracic aorta. There is no pleural effusion, pneumothorax, or focal airspace disease. Chronic degenerative changes are noted within the spine. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "A large number of patients with chronic kidney failure have been treated for renal dysfunction and other conditions that may result from this condition (e-mail me at [email protected]].\nThe patient has anemia; he/she suffers severe hypertension in his left arm while on medication to prevent him from receiving treatment due not being",
+      "prompt_audit": {
+        "full_tokens": 66,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": " A large number of patients with chronic kidney failure have been treated for renal dysfunction and other conditions that may result from this condition (e-mail me at [email protected]].\nThe patient has anemia; he/she suffers severe hypertension in his left arm while on medication to prevent him from receiving treatment due not being",
+      "reference": "1. Cardiomegaly without acute cardiopulmonary abnormality.",
+      "sample_id": "CXR1152"
+    },
+    {
+      "generated_tokens": 64,
+      "input": "FINDINGS: PA and moderate loss of the chest demonstrate stable moderate cardiomediastinal silhouette with atherosclerotic calcifications of the aortic XXXX and mild aortic ectasia. Emphysematous changes with flattening of the hemidiaphragms. Blunting of the costophrenic XXXX, and XXXX secondary to scarring/emphysematous changes. No evidence of focal airspace consolidation large pleural effusion or pneumothorax. Visualized osseous structures appear intact. IMPRESSION:",
+      "output_status": "generated",
+      "prediction": "A small number of patients have been treated for this condition in recent years (see Table 1). The patient was not present at any time during treatment; however, there were no significant differences between these two conditions on either side [1].\nThe primary outcome is an increased risk of coronary artery disease by 20% compared against",
+      "prompt_audit": {
+        "full_tokens": 118,
+        "marker_preserved": true,
+        "truncated": false
+      },
+      "raw_prediction": " A small number of patients have been treated for this condition in recent years (see Table 1). The patient was not present at any time during treatment; however, there were no significant differences between these two conditions on either side [1].\nThe primary outcome is an increased risk of coronary artery disease by 20% compared against",
+      "reference": "Emphysematous changes without evidence of focal airspace disease or pulmonary edema.",
+      "sample_id": "CXR1173"
+    }
+  ],
+  "status": "complete"
+}

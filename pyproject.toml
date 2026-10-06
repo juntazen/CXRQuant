@@ -1,0 +1,114 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cxrquant"
+version = "2.3.0"
+description = "Paired, finding-level stability auditing of reduced-precision inference for radiology impression generation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+keywords = [
+    "chest x-ray", "radiology report generation", "model quantization", "reduced-precision inference",
+    "finding-level evaluation", "clinical natural language processing", "reproducible benchmarking",
+]
+authors = [
+    { name = "Junta Zeniarja" },
+    { name = "Guruh Fajar Shidik" },
+    { name = "Heru Suhartanto" },
+    { name = "Aris Marjuni" },
+    { name = "Ashraf Alomoush" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+
+# The audit core is deliberately dependency-free: installing cxrquant with no
+# extras pulls in NOTHING beyond the standard library. That is what makes the
+# headline results reproducible on any machine, including CI runners.
+dependencies = []
+
+[project.optional-dependencies]
+# Everything needed to re-verify the paper's numbers from stored predictions
+# (bootstrap CIs, McNemar, extractor comparison, tables) — CPU only.
+repro = [
+    "numpy>=1.24",
+]
+# Adds figure rendering on top of `repro`.
+figures = [
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+]
+# Full GPU path: re-train the six decoders and re-run the quantization sweep.
+gpu = [
+    "numpy>=1.24",
+    "torch>=2.2.0",
+    "transformers>=4.40.0",
+    "accelerate>=0.28.0",
+    "datasets>=2.18.0",
+    "safetensors>=0.4.3",
+    "bitsandbytes>=0.43.0",
+    "tqdm>=4.66.0",
+]
+# Optional third-party extractors used only by the comparison script; the script
+# degrades gracefully and reports "not installed" instead of failing.
+comparators = [
+    "medspacy>=1.0.0",
+    "pyConTextNLP>=0.6.2.0",
+]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/juntazen/CXRQuant"
+Repository = "https://github.com/juntazen/CXRQuant"
+Issues = "https://github.com/juntazen/CXRQuant/issues"
+
+[project.scripts]
+cxrquant-audit = "cxrquant.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cxrquant = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+# Correctness first. Pyflakes (F) and syntax errors (E9) catch real defects:
+# undefined names, shadowed definitions, dead imports. The remaining pycodestyle
+# rules are advisory for a research codebase and are not enforced in CI, so a
+# stylistic preference can never block a reproduction run.
+select = ["F", "E9", "B905"]
+ignore = []
+
+[tool.ruff.lint.per-file-ignores]
+# Optional heavy dependencies are imported inside try/except purely to detect
+# availability and raise a helpful message; the import itself is the test.
+"src/cxrquant/models/*.py" = ["F401", "F841"]
+"src/cxrquant/experiments/*.py" = ["F401", "F841", "B905"]
+# Scripts print tables and zip fixed-length sequences by construction.
+"scripts/*.py" = ["B905"]

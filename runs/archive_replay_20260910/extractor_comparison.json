@@ -1,0 +1,83 @@
+{
+  "gt_positive_pairs": 40,
+  "n_reports": 134,
+  "provenance": {
+    "data_hash": "0597c49a73f1bffcc199cd3b3f27a7c984ef5337a3efa7ccdc053a7c2d02cf23",
+    "evaluation_text": "human findings + impression",
+    "positive_policy": "only definite positive; uncertain excluded",
+    "run_id": "archive_replay_20260910",
+    "script_hash": "841c945cb2a6674d7653af8d20cbe85f6eb3176c01822dc1fb53fc86d901f964",
+    "status": "partial_optional_comparators"
+  },
+  "results": [
+    {
+      "available": true,
+      "dependencies": "pure-Python stdlib only",
+      "extractor": "CXRQuant NegEx (ours)",
+      "f1": 0.7312,
+      "fn": 6,
+      "fp": 19,
+      "precision": 0.6415,
+      "recall": 0.85,
+      "runtime_ms_per_report": 1.739,
+      "runtime_ms_total": 233.0,
+      "tp": 34
+    },
+    {
+      "available": true,
+      "dependencies": "stdlib (ablation)",
+      "extractor": "Keyword (no negation)",
+      "f1": 0.2091,
+      "fn": 1,
+      "fp": 294,
+      "precision": 0.1171,
+      "recall": 0.975,
+      "runtime_ms_per_report": 0.011,
+      "runtime_ms_total": 1.5,
+      "tp": 39
+    },
+    {
+      "available": true,
+      "dependencies": "stdlib (simple \u00b16-tok)",
+      "extractor": "Window-negation baseline",
+      "f1": 0.5766,
+      "fn": 8,
+      "fp": 39,
+      "precision": 0.4507,
+      "recall": 0.8,
+      "runtime_ms_per_report": 0.092,
+      "runtime_ms_total": 12.3,
+      "tp": 32
+    },
+    {
+      "available": false,
+      "dependencies": "unavailable (ModuleNotFoundError): No module named 'medspacy'",
+      "extractor": "medspaCy ConText"
+    },
+    {
+      "available": true,
+      "dependencies": "pyConTextNLP + networkx",
+      "extractor": "pyConTextNLP (NegEx)",
+      "f1": 0.8148,
+      "fn": 7,
+      "fp": 8,
+      "precision": 0.8049,
+      "recall": 0.825,
+      "runtime_ms_per_report": 1.086,
+      "runtime_ms_total": 145.6,
+      "tp": 33
+    }
+  ],
+  "scorable_categories": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Consolidation",
+    "Edema",
+    "Fracture",
+    "Lung Lesion",
+    "Pleural Effusion",
+    "Pneumonia",
+    "Pneumothorax"
+  ],
+  "task": "extractor comparison vs IU-XRAY MeSH silver standard"
+}

@@ -1,0 +1,85 @@
+pair,text_set,category,agreement,kappa,positive_rate_a,positive_rate_b,n
+cxrquant_vs_chexbert,references,Enlarged Cardiomediastinum,0.9776,0.3927,0.0075,0.0299,134
+cxrquant_vs_chexbert,references,Cardiomegaly,0.9776,0.7575,0.0448,0.0522,134
+cxrquant_vs_chexbert,references,Lung Opacity,0.9776,0.845,0.0746,0.0821,134
+cxrquant_vs_chexbert,references,Lung Lesion,1.0,1.0,0.0224,0.0224,134
+cxrquant_vs_chexbert,references,Edema,1.0,1.0,0.0448,0.0448,134
+cxrquant_vs_chexbert,references,Consolidation,0.9776,0.6564,0.0448,0.0224,134
+cxrquant_vs_chexbert,references,Pneumonia,0.9776,0.3927,0.0075,0.0299,134
+cxrquant_vs_chexbert,references,Atelectasis,0.9925,0.9294,0.0522,0.0597,134
+cxrquant_vs_chexbert,references,Pneumothorax,0.9925,0.0,0.0075,0.0,134
+cxrquant_vs_chexbert,references,Pleural Effusion,1.0,1.0,0.0597,0.0597,134
+cxrquant_vs_chexbert,references,Pleural Other,1.0,1.0,0.0075,0.0075,134
+cxrquant_vs_chexbert,references,Fracture,1.0,1.0,0.0299,0.0299,134
+cxrquant_vs_chexbert,references,Support Devices,0.9776,-0.0101,0.0149,0.0075,134
+cxrquant_vs_chexbert,references,ALL_13_POOLED,0.9885,0.8217,0.0321,0.0344,1742
+cxrquant_vs_chexbert,predictions_all_configs,Enlarged Cardiomediastinum,0.9605,0.2362,0.01,0.0426,3216
+cxrquant_vs_chexbert,predictions_all_configs,Cardiomegaly,0.9776,0.9121,0.1393,0.1598,3216
+cxrquant_vs_chexbert,predictions_all_configs,Lung Opacity,0.8595,0.3858,0.0665,0.1872,3216
+cxrquant_vs_chexbert,predictions_all_configs,Lung Lesion,0.9726,0.7708,0.065,0.0625,3216
+cxrquant_vs_chexbert,predictions_all_configs,Edema,0.9841,0.8619,0.0553,0.0669,3216
+cxrquant_vs_chexbert,predictions_all_configs,Consolidation,0.9117,0.2515,0.0998,0.0227,3216
+cxrquant_vs_chexbert,predictions_all_configs,Pneumonia,0.9543,0.6551,0.0703,0.0725,3216
+cxrquant_vs_chexbert,predictions_all_configs,Atelectasis,0.9857,0.9442,0.1489,0.1527,3216
+cxrquant_vs_chexbert,predictions_all_configs,Pneumothorax,0.9963,0.6648,0.0059,0.0053,3216
+cxrquant_vs_chexbert,predictions_all_configs,Pleural Effusion,0.9888,0.8683,0.0426,0.0463,3216
+cxrquant_vs_chexbert,predictions_all_configs,Pleural Other,0.9975,0.7988,0.0053,0.0072,3216
+cxrquant_vs_chexbert,predictions_all_configs,Fracture,0.9928,0.8535,0.0233,0.0267,3216
+cxrquant_vs_chexbert,predictions_all_configs,Support Devices,0.9151,0.1091,0.0721,0.0271,3216
+cxrquant_vs_chexbert,predictions_all_configs,ALL_13_POOLED,0.9613,0.6804,0.0619,0.0676,41808
+cxrquant_vs_chexpert,references,Enlarged Cardiomediastinum,1.0,1.0,0.0075,0.0075,134
+cxrquant_vs_chexpert,references,Cardiomegaly,0.9776,0.7575,0.0448,0.0522,134
+cxrquant_vs_chexpert,references,Lung Opacity,0.9627,0.7626,0.0746,0.097,134
+cxrquant_vs_chexpert,references,Lung Lesion,0.9925,0.7964,0.0224,0.0149,134
+cxrquant_vs_chexpert,references,Edema,1.0,1.0,0.0448,0.0448,134
+cxrquant_vs_chexpert,references,Consolidation,0.9776,0.6564,0.0448,0.0224,134
+cxrquant_vs_chexpert,references,Pneumonia,0.9851,0.4943,0.0075,0.0224,134
+cxrquant_vs_chexpert,references,Atelectasis,0.9925,0.9294,0.0522,0.0597,134
+cxrquant_vs_chexpert,references,Pneumothorax,0.9925,0.0,0.0075,0.0,134
+cxrquant_vs_chexpert,references,Pleural Effusion,1.0,1.0,0.0597,0.0597,134
+cxrquant_vs_chexpert,references,Pleural Other,1.0,1.0,0.0075,0.0075,134
+cxrquant_vs_chexpert,references,Fracture,1.0,1.0,0.0299,0.0299,134
+cxrquant_vs_chexpert,references,Support Devices,0.9701,-0.0152,0.0149,0.0149,134
+cxrquant_vs_chexpert,references,ALL_13_POOLED,0.9885,0.8186,0.0321,0.0333,1742
+cxrquant_vs_chexpert,predictions_all_configs,Enlarged Cardiomediastinum,0.9857,0.5515,0.01,0.0224,3216
+cxrquant_vs_chexpert,predictions_all_configs,Cardiomegaly,0.9754,0.9043,0.1393,0.1626,3216
+cxrquant_vs_chexpert,predictions_all_configs,Lung Opacity,0.8396,0.374,0.0665,0.2189,3216
+cxrquant_vs_chexpert,predictions_all_configs,Lung Lesion,0.9761,0.8069,0.065,0.0678,3216
+cxrquant_vs_chexpert,predictions_all_configs,Edema,0.9848,0.864,0.0553,0.0637,3216
+cxrquant_vs_chexpert,predictions_all_configs,Consolidation,0.9104,0.2179,0.0998,0.0183,3216
+cxrquant_vs_chexpert,predictions_all_configs,Pneumonia,0.9499,0.7017,0.0703,0.1135,3216
+cxrquant_vs_chexpert,predictions_all_configs,Atelectasis,0.9863,0.9458,0.1489,0.1477,3216
+cxrquant_vs_chexpert,predictions_all_configs,Pneumothorax,0.9947,0.6642,0.0059,0.01,3216
+cxrquant_vs_chexpert,predictions_all_configs,Pleural Effusion,0.9916,0.9022,0.0426,0.0473,3216
+cxrquant_vs_chexpert,predictions_all_configs,Pleural Other,0.9988,0.8941,0.0053,0.0065,3216
+cxrquant_vs_chexpert,predictions_all_configs,Fracture,0.9928,0.857,0.0233,0.028,3216
+cxrquant_vs_chexpert,predictions_all_configs,Support Devices,0.8504,0.0877,0.0721,0.1073,3216
+cxrquant_vs_chexpert,predictions_all_configs,ALL_13_POOLED,0.9567,0.6672,0.0619,0.078,41808
+chexbert_vs_chexpert,references,Enlarged Cardiomediastinum,0.9776,0.3927,0.0299,0.0075,134
+chexbert_vs_chexpert,references,Cardiomegaly,1.0,1.0,0.0522,0.0522,134
+chexbert_vs_chexpert,references,Lung Opacity,0.9851,0.9085,0.0821,0.097,134
+chexbert_vs_chexpert,references,Lung Lesion,0.9925,0.7964,0.0224,0.0149,134
+chexbert_vs_chexpert,references,Edema,1.0,1.0,0.0448,0.0448,134
+chexbert_vs_chexpert,references,Consolidation,1.0,1.0,0.0224,0.0224,134
+chexbert_vs_chexpert,references,Pneumonia,0.9925,0.8534,0.0299,0.0224,134
+chexbert_vs_chexpert,references,Atelectasis,1.0,1.0,0.0597,0.0597,134
+chexbert_vs_chexpert,references,Pneumothorax,1.0,,0.0,0.0,134
+chexbert_vs_chexpert,references,Pleural Effusion,1.0,1.0,0.0597,0.0597,134
+chexbert_vs_chexpert,references,Pleural Other,1.0,1.0,0.0075,0.0075,134
+chexbert_vs_chexpert,references,Fracture,1.0,1.0,0.0299,0.0299,134
+chexbert_vs_chexpert,references,Support Devices,0.9925,0.6633,0.0075,0.0149,134
+chexbert_vs_chexpert,references,ALL_13_POOLED,0.9954,0.9298,0.0344,0.0333,1742
+chexbert_vs_chexpert,predictions_all_configs,Enlarged Cardiomediastinum,0.9674,0.4824,0.0426,0.0224,3216
+chexbert_vs_chexpert,predictions_all_configs,Cardiomegaly,0.9841,0.9414,0.1598,0.1626,3216
+chexbert_vs_chexpert,predictions_all_configs,Lung Opacity,0.9453,0.8312,0.1872,0.2189,3216
+chexbert_vs_chexpert,predictions_all_configs,Lung Lesion,0.986,0.8851,0.0625,0.0678,3216
+chexbert_vs_chexpert,predictions_all_configs,Edema,0.9894,0.9134,0.0669,0.0637,3216
+chexbert_vs_chexpert,predictions_all_configs,Consolidation,0.9888,0.7216,0.0227,0.0183,3216
+chexbert_vs_chexpert,predictions_all_configs,Pneumonia,0.9546,0.7322,0.0725,0.1135,3216
+chexbert_vs_chexpert,predictions_all_configs,Atelectasis,0.9919,0.9683,0.1527,0.1477,3216
+chexbert_vs_chexpert,predictions_all_configs,Pneumothorax,0.9953,0.6917,0.0053,0.01,3216
+chexbert_vs_chexpert,predictions_all_configs,Pleural Effusion,0.9891,0.878,0.0463,0.0473,3216
+chexbert_vs_chexpert,predictions_all_configs,Pleural Other,0.9981,0.8627,0.0072,0.0065,3216
+chexbert_vs_chexpert,predictions_all_configs,Fracture,0.9963,0.9299,0.0267,0.028,3216
+chexbert_vs_chexpert,predictions_all_configs,Support Devices,0.9179,0.3613,0.0271,0.1073,3216
+chexbert_vs_chexpert,predictions_all_configs,ALL_13_POOLED,0.9773,0.8316,0.0676,0.078,41808

@@ -1,0 +1,579 @@
+{
+  "analysis": "word-level divergence onset and localisation of category flips",
+  "per_model": {
+    "biogpt": {
+      "FP16": {
+        "b": 0,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 0,
+            "c": 0
+          },
+          "late": {
+            "b": 0,
+            "c": 0
+          },
+          "middle": {
+            "b": 0,
+            "c": 0
+          }
+        },
+        "c": 0,
+        "decided_after_divergence": 0,
+        "diverged": 1,
+        "flips": 0,
+        "flips_in_identical_text": 0,
+        "identical_text": 133,
+        "median_onset_relative": 0.667,
+        "median_onset_word": 2,
+        "reports": 134,
+        "revised_after_divergence": 0
+      },
+      "INT8-BnB": {
+        "b": 8,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 3,
+            "c": 2
+          },
+          "late": {
+            "b": 1,
+            "c": 4
+          },
+          "middle": {
+            "b": 4,
+            "c": 5
+          }
+        },
+        "c": 11,
+        "decided_after_divergence": 19,
+        "diverged": 24,
+        "flips": 19,
+        "flips_in_identical_text": 0,
+        "identical_text": 110,
+        "median_onset_relative": 0.569,
+        "median_onset_word": 8.0,
+        "reports": 134,
+        "revised_after_divergence": 0
+      },
+      "NF4-BnB": {
+        "b": 20,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 14,
+            "c": 8
+          },
+          "late": {
+            "b": 1,
+            "c": 0
+          },
+          "middle": {
+            "b": 5,
+            "c": 3
+          }
+        },
+        "c": 11,
+        "decided_after_divergence": 31,
+        "diverged": 60,
+        "flips": 31,
+        "flips_in_identical_text": 0,
+        "identical_text": 74,
+        "median_onset_relative": 0.317,
+        "median_onset_word": 3.0,
+        "reports": 134,
+        "revised_after_divergence": 0
+      }
+    },
+    "biogpt-large": {
+      "FP16": {
+        "b": 0,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 0,
+            "c": 0
+          },
+          "late": {
+            "b": 0,
+            "c": 0
+          },
+          "middle": {
+            "b": 0,
+            "c": 0
+          }
+        },
+        "c": 0,
+        "decided_after_divergence": 0,
+        "diverged": 2,
+        "flips": 0,
+        "flips_in_identical_text": 0,
+        "identical_text": 132,
+        "median_onset_relative": 0.182,
+        "median_onset_word": 2.0,
+        "reports": 134,
+        "revised_after_divergence": 0
+      },
+      "INT8-BnB": {
+        "b": 18,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 11,
+            "c": 6
+          },
+          "late": {
+            "b": 0,
+            "c": 0
+          },
+          "middle": {
+            "b": 7,
+            "c": 5
+          }
+        },
+        "c": 11,
+        "decided_after_divergence": 29,
+        "diverged": 42,
+        "flips": 29,
+        "flips_in_identical_text": 0,
+        "identical_text": 92,
+        "median_onset_relative": 0.333,
+        "median_onset_word": 3.0,
+        "reports": 134,
+        "revised_after_divergence": 0
+      },
+      "NF4-BnB": {
+        "b": 21,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 18,
+            "c": 15
+          },
+          "late": {
+            "b": 0,
+            "c": 1
+          },
+          "middle": {
+            "b": 3,
+            "c": 5
+          }
+        },
+        "c": 21,
+        "decided_after_divergence": 41,
+        "diverged": 59,
+        "flips": 42,
+        "flips_in_identical_text": 0,
+        "identical_text": 75,
+        "median_onset_relative": 0.235,
+        "median_onset_word": 3,
+        "reports": 134,
+        "revised_after_divergence": 1
+      }
+    },
+    "distilgpt2": {
+      "FP16": {
+        "b": 41,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 30,
+            "c": 45
+          },
+          "late": {
+            "b": 8,
+            "c": 6
+          },
+          "middle": {
+            "b": 3,
+            "c": 11
+          }
+        },
+        "c": 62,
+        "decided_after_divergence": 101,
+        "diverged": 73,
+        "flips": 103,
+        "flips_in_identical_text": 0,
+        "identical_text": 61,
+        "median_onset_relative": 0.304,
+        "median_onset_word": 13,
+        "reports": 134,
+        "revised_after_divergence": 2
+      },
+      "INT8-BnB": {
+        "b": 99,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 89,
+            "c": 71
+          },
+          "late": {
+            "b": 2,
+            "c": 1
+          },
+          "middle": {
+            "b": 8,
+            "c": 5
+          }
+        },
+        "c": 77,
+        "decided_after_divergence": 176,
+        "diverged": 125,
+        "flips": 176,
+        "flips_in_identical_text": 0,
+        "identical_text": 9,
+        "median_onset_relative": 0.156,
+        "median_onset_word": 6,
+        "reports": 134,
+        "revised_after_divergence": 0
+      },
+      "NF4-BnB": {
+        "b": 128,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 128,
+            "c": 100
+          },
+          "late": {
+            "b": 0,
+            "c": 0
+          },
+          "middle": {
+            "b": 0,
+            "c": 1
+          }
+        },
+        "c": 101,
+        "decided_after_divergence": 227,
+        "diverged": 133,
+        "flips": 229,
+        "flips_in_identical_text": 0,
+        "identical_text": 1,
+        "median_onset_relative": 0.07,
+        "median_onset_word": 3,
+        "reports": 134,
+        "revised_after_divergence": 2
+      }
+    },
+    "gpt2": {
+      "FP16": {
+        "b": 48,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 23,
+            "c": 32
+          },
+          "late": {
+            "b": 4,
+            "c": 2
+          },
+          "middle": {
+            "b": 21,
+            "c": 22
+          }
+        },
+        "c": 56,
+        "decided_after_divergence": 101,
+        "diverged": 77,
+        "flips": 104,
+        "flips_in_identical_text": 0,
+        "identical_text": 57,
+        "median_onset_relative": 0.419,
+        "median_onset_word": 17,
+        "reports": 134,
+        "revised_after_divergence": 3
+      },
+      "INT8-BnB": {
+        "b": 78,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 73,
+            "c": 82
+          },
+          "late": {
+            "b": 0,
+            "c": 3
+          },
+          "middle": {
+            "b": 5,
+            "c": 10
+          }
+        },
+        "c": 95,
+        "decided_after_divergence": 172,
+        "diverged": 128,
+        "flips": 173,
+        "flips_in_identical_text": 0,
+        "identical_text": 6,
+        "median_onset_relative": 0.196,
+        "median_onset_word": 7.0,
+        "reports": 134,
+        "revised_after_divergence": 1
+      },
+      "NF4-BnB": {
+        "b": 148,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 147,
+            "c": 81
+          },
+          "late": {
+            "b": 0,
+            "c": 0
+          },
+          "middle": {
+            "b": 1,
+            "c": 0
+          }
+        },
+        "c": 81,
+        "decided_after_divergence": 229,
+        "diverged": 133,
+        "flips": 229,
+        "flips_in_identical_text": 0,
+        "identical_text": 1,
+        "median_onset_relative": 0.044,
+        "median_onset_word": 2,
+        "reports": 134,
+        "revised_after_divergence": 0
+      }
+    },
+    "gpt2-medium": {
+      "FP16": {
+        "b": 30,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 24,
+            "c": 8
+          },
+          "late": {
+            "b": 1,
+            "c": 1
+          },
+          "middle": {
+            "b": 5,
+            "c": 3
+          }
+        },
+        "c": 12,
+        "decided_after_divergence": 42,
+        "diverged": 49,
+        "flips": 42,
+        "flips_in_identical_text": 0,
+        "identical_text": 85,
+        "median_onset_relative": 0.341,
+        "median_onset_word": 15,
+        "reports": 134,
+        "revised_after_divergence": 0
+      },
+      "INT8-BnB": {
+        "b": 80,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 71,
+            "c": 55
+          },
+          "late": {
+            "b": 0,
+            "c": 1
+          },
+          "middle": {
+            "b": 9,
+            "c": 14
+          }
+        },
+        "c": 70,
+        "decided_after_divergence": 149,
+        "diverged": 122,
+        "flips": 150,
+        "flips_in_identical_text": 0,
+        "identical_text": 12,
+        "median_onset_relative": 0.152,
+        "median_onset_word": 6.5,
+        "reports": 134,
+        "revised_after_divergence": 1
+      },
+      "NF4-BnB": {
+        "b": 90,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 90,
+            "c": 99
+          },
+          "late": {
+            "b": 0,
+            "c": 4
+          },
+          "middle": {
+            "b": 0,
+            "c": 5
+          }
+        },
+        "c": 108,
+        "decided_after_divergence": 198,
+        "diverged": 132,
+        "flips": 198,
+        "flips_in_identical_text": 0,
+        "identical_text": 2,
+        "median_onset_relative": 0.058,
+        "median_onset_word": 2.0,
+        "reports": 134,
+        "revised_after_divergence": 0
+      }
+    },
+    "pythia-1b": {
+      "FP16": {
+        "b": 0,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 0,
+            "c": 0
+          },
+          "late": {
+            "b": 0,
+            "c": 0
+          },
+          "middle": {
+            "b": 0,
+            "c": 0
+          }
+        },
+        "c": 0,
+        "decided_after_divergence": 0,
+        "diverged": 0,
+        "flips": 0,
+        "flips_in_identical_text": 0,
+        "identical_text": 134,
+        "median_onset_relative": null,
+        "median_onset_word": null,
+        "reports": 134,
+        "revised_after_divergence": 0
+      },
+      "INT8-BnB": {
+        "b": 9,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 3,
+            "c": 4
+          },
+          "late": {
+            "b": 5,
+            "c": 6
+          },
+          "middle": {
+            "b": 1,
+            "c": 2
+          }
+        },
+        "c": 12,
+        "decided_after_divergence": 21,
+        "diverged": 30,
+        "flips": 21,
+        "flips_in_identical_text": 0,
+        "identical_text": 104,
+        "median_onset_relative": 0.623,
+        "median_onset_word": 9.0,
+        "reports": 134,
+        "revised_after_divergence": 0
+      },
+      "NF4-BnB": {
+        "b": 32,
+        "b_c_by_onset_third": {
+          "early": {
+            "b": 22,
+            "c": 13
+          },
+          "late": {
+            "b": 4,
+            "c": 1
+          },
+          "middle": {
+            "b": 6,
+            "c": 6
+          }
+        },
+        "c": 20,
+        "decided_after_divergence": 52,
+        "diverged": 53,
+        "flips": 52,
+        "flips_in_identical_text": 0,
+        "identical_text": 81,
+        "median_onset_relative": 0.387,
+        "median_onset_word": 4,
+        "reports": 134,
+        "revised_after_divergence": 0
+      }
+    }
+  },
+  "pooled": {
+    "FP16": {
+      "b": 119,
+      "b_c_by_onset_third": {
+        "early": {
+          "b": 77,
+          "c": 85
+        },
+        "late": {
+          "b": 13,
+          "c": 9
+        },
+        "middle": {
+          "b": 29,
+          "c": 36
+        }
+      },
+      "c": 130,
+      "decided_after_divergence": 244,
+      "diverged": 202,
+      "flips": 249,
+      "reports": 804,
+      "share_decided_after_divergence": 0.9799
+    },
+    "INT8-BnB": {
+      "b": 292,
+      "b_c_by_onset_third": {
+        "early": {
+          "b": 250,
+          "c": 220
+        },
+        "late": {
+          "b": 8,
+          "c": 15
+        },
+        "middle": {
+          "b": 34,
+          "c": 41
+        }
+      },
+      "c": 276,
+      "decided_after_divergence": 566,
+      "diverged": 471,
+      "flips": 568,
+      "reports": 804,
+      "share_decided_after_divergence": 0.9965
+    },
+    "NF4-BnB": {
+      "b": 439,
+      "b_c_by_onset_third": {
+        "early": {
+          "b": 419,
+          "c": 316
+        },
+        "late": {
+          "b": 5,
+          "c": 6
+        },
+        "middle": {
+          "b": 15,
+          "c": 20
+        }
+      },
+      "c": 342,
+      "decided_after_divergence": 778,
+      "diverged": 570,
+      "flips": 781,
+      "reports": 804,
+      "share_decided_after_divergence": 0.9962
+    }
+  },
+  "provenance": {
+    "manifest_hash": "c4f3b6c0eb135785b029e992408f00bef5f8fd0e9d42d980b2aa1583d6b4530a",
+    "run_id": "full_seed123_20260915",
+    "script_hash": "9decc42dc99afbd6da2de66b69597a170d7e6e7322901ab713ace9adaf4edaf1"
+  }
+}

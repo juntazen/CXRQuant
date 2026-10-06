@@ -1,0 +1,222 @@
+{
+  "train": [
+    {
+      "full_tokens": 83,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 8,
+      "kept_tokens": 83,
+      "sample_id": "CXR1007",
+      "truncated": false,
+      "valid_shifted_tokens": 82
+    },
+    {
+      "full_tokens": 91,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 22,
+      "kept_tokens": 91,
+      "sample_id": "CXR1015",
+      "truncated": false,
+      "valid_shifted_tokens": 90
+    },
+    {
+      "full_tokens": 54,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 4,
+      "kept_tokens": 54,
+      "sample_id": "CXR1022",
+      "truncated": false,
+      "valid_shifted_tokens": 53
+    },
+    {
+      "full_tokens": 100,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 9,
+      "kept_tokens": 100,
+      "sample_id": "CXR1032",
+      "truncated": false,
+      "valid_shifted_tokens": 99
+    },
+    {
+      "full_tokens": 58,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 4,
+      "kept_tokens": 58,
+      "sample_id": "CXR1034",
+      "truncated": false,
+      "valid_shifted_tokens": 57
+    },
+    {
+      "full_tokens": 73,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 9,
+      "kept_tokens": 73,
+      "sample_id": "CXR1036",
+      "truncated": false,
+      "valid_shifted_tokens": 72
+    },
+    {
+      "full_tokens": 99,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 34,
+      "kept_tokens": 99,
+      "sample_id": "CXR1050",
+      "truncated": false,
+      "valid_shifted_tokens": 98
+    },
+    {
+      "full_tokens": 48,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 8,
+      "kept_tokens": 48,
+      "sample_id": "CXR1055",
+      "truncated": false,
+      "valid_shifted_tokens": 47
+    },
+    {
+      "full_tokens": 60,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 8,
+      "kept_tokens": 60,
+      "sample_id": "CXR1059",
+      "truncated": false,
+      "valid_shifted_tokens": 59
+    },
+    {
+      "full_tokens": 158,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 43,
+      "kept_tokens": 158,
+      "sample_id": "CXR1070",
+      "truncated": false,
+      "valid_shifted_tokens": 157
+    },
+    {
+      "full_tokens": 84,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 23,
+      "kept_tokens": 84,
+      "sample_id": "CXR1072",
+      "truncated": false,
+      "valid_shifted_tokens": 83
+    },
+    {
+      "full_tokens": 48,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 5,
+      "kept_tokens": 48,
+      "sample_id": "CXR1078",
+      "truncated": false,
+      "valid_shifted_tokens": 47
+    },
+    {
+      "full_tokens": 73,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 13,
+      "kept_tokens": 73,
+      "sample_id": "CXR1087",
+      "truncated": false,
+      "valid_shifted_tokens": 72
+    },
+    {
+      "full_tokens": 41,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 4,
+      "kept_tokens": 41,
+      "sample_id": "CXR1091",
+      "truncated": false,
+      "valid_shifted_tokens": 40
+    },
+    {
+      "full_tokens": 58,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 8,
+      "kept_tokens": 58,
+      "sample_id": "CXR1099",
+      "truncated": false,
+      "valid_shifted_tokens": 57
+    },
+    {
+      "full_tokens": 41,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 8,
+      "kept_tokens": 41,
+      "sample_id": "CXR110",
+      "truncated": false,
+      "valid_shifted_tokens": 40
+    }
+  ],
+  "val": [
+    {
+      "full_tokens": 60,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 5,
+      "kept_tokens": 60,
+      "sample_id": "CXR1024",
+      "truncated": false,
+      "valid_shifted_tokens": 59
+    },
+    {
+      "full_tokens": 59,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 6,
+      "kept_tokens": 59,
+      "sample_id": "CXR1057",
+      "truncated": false,
+      "valid_shifted_tokens": 58
+    },
+    {
+      "full_tokens": 92,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 30,
+      "kept_tokens": 92,
+      "sample_id": "CXR1076",
+      "truncated": false,
+      "valid_shifted_tokens": 91
+    },
+    {
+      "full_tokens": 45,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 7,
+      "kept_tokens": 45,
+      "sample_id": "CXR1322",
+      "truncated": false,
+      "valid_shifted_tokens": 44
+    },
+    {
+      "full_tokens": 69,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 3,
+      "kept_tokens": 69,
+      "sample_id": "CXR1376",
+      "truncated": false,
+      "valid_shifted_tokens": 68
+    },
+    {
+      "full_tokens": 48,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 2,
+      "kept_tokens": 48,
+      "sample_id": "CXR1415",
+      "truncated": false,
+      "valid_shifted_tokens": 47
+    },
+    {
+      "full_tokens": 73,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 11,
+      "kept_tokens": 73,
+      "sample_id": "CXR1419",
+      "truncated": false,
+      "valid_shifted_tokens": 72
+    },
+    {
+      "full_tokens": 41,
+      "impression_fully_truncated": false,
+      "impression_tokens_kept": 4,
+      "kept_tokens": 41,
+      "sample_id": "CXR151",
+      "truncated": false,
+      "valid_shifted_tokens": 40
+    }
+  ]
+}

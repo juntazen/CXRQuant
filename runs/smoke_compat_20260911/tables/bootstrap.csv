@@ -1,0 +1,13 @@
+model,config,metric,point,ci95_low,ci95_high,undefined_resamples,n_reports
+distilgpt2,FP16,FNF_rate,0.0,0.0,0.0,686,6
+distilgpt2,FP16,FPF_rate,0.0,0.0,0.0,0,6
+distilgpt2,FP16,CFPR,1.0,1.0,1.0,0,6
+distilgpt2,FP16,CFFR,0.0,0.0,0.0,0,6
+distilgpt2,INT8-BnB,FNF_rate,1.0,1.0,1.0,670,6
+distilgpt2,INT8-BnB,FPF_rate,0.0,0.0,0.0,0,6
+distilgpt2,INT8-BnB,CFPR,0.9871794871794872,0.9615384615384616,1.0,0,6
+distilgpt2,INT8-BnB,CFFR,0.012820512820512775,0.0,0.038461538461538436,0,6
+distilgpt2,NF4-BnB,FNF_rate,1.0,1.0,1.0,709,6
+distilgpt2,NF4-BnB,FPF_rate,0.0,0.0,0.0,0,6
+distilgpt2,NF4-BnB,CFPR,0.9871794871794872,0.9615384615384616,1.0,0,6
+distilgpt2,NF4-BnB,CFFR,0.012820512820512775,0.0,0.038461538461538436,0,6

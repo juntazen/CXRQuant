@@ -1,0 +1,15 @@
+{
+  "hashes": {
+    "bootstrap_fnf_ci.json": "ed18c3ead899da473c1dfea1111f123d22a155f383d8f1076dbdafa9e1def80c",
+    "figures/fnf_matrix.png": "dc44bda8e15fa023546bbcb99cd46eef04bc1ff9123e3a2e9f5ced3633936913",
+    "mcnemar_pooled.json": "1bac3faee0a12a15e112dcfc92212f5c7c2793f90ae18282add841d21f10161e",
+    "mcnemar_results.json": "6af504c9cfee0265eeb26526d10df5685ced4cbe86c33f906000464ca216ab76",
+    "replay_status.json": "9763f039f8b80c753e9cc0d2fae12fb17e3a80f5234f9a63e2d8126cd7622f10",
+    "tables/bootstrap.csv": "bc78631cabd8120d09350850bbed98b21cb7a1a85769d85899a0bfd153bfd55d",
+    "tables/mcnemar_pooled.csv": "8b36f53052d2c46ef8561fb811e07be87759f752935f63074775f941286e3ad5",
+    "tables/metrics.csv": "fa2c707d81b3556f2431bf73f5bb860c4cffbae0aa966bc5959af096f30bd66b"
+  },
+  "note": "CPU scoring replay of archived predictions; not repeat training",
+  "runs": 2,
+  "status": "passed"
+}
